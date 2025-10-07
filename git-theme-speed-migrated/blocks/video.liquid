@@ -9,7 +9,7 @@
         {%- assign poster_image = block.settings.poster | default: block.settings.video.preview_image -%}
   
         {%- if block.settings.autoplay == false and poster_image != blank -%}
-          {%- capture sizes -%}(max-width: 740px) calc(100vw - 40px), (max-width: 999px) calc(100vw - 64px), min({{ settings.page_width }}px, 100vw - 96px){%- endcapture -%}
+          {%- capture sizes -%}(max-width: 740px) calc(100vw - 40px), (max-width: 999px) calc(100vw - 64px), {{ settings.page_width }}px{%- endcapture -%}
           {{- poster_image | image_url: width: poster_image.width | image_tag: sizes: sizes, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200' -}}
         {%- endif -%}
       {%- endcapture -%}
@@ -100,7 +100,8 @@
       "type": "image_picker",
       "id": "poster",
       "label": "Poster image",
-      "info": "3200 x 1600px .jpg recommended. Poster is not visible when autoplay is enabled."
+      "info": "3200 x 1600px .jpg recommended.",
+      "visible_if": "{{ block.settings.autoplay == false }}"
     },
     {
       "type": "color",

@@ -1,15 +1,15 @@
 {%- if block.settings.image != blank -%}
   {%- assign alignment = block.settings.alignment | replace: 'left', 'start' | replace: 'right', 'end' -%}
 
-  <div class="justify-items-{{ alignment }}" {{ block.shopify_attributes }}>
+  <div class="v-stack" {{ block.shopify_attributes }}>
     {%- if block.settings.width_mode == 'custom' -%}
       {%- capture image_style_attribute -%}--image-max-width: {{ block.settings.max_width }}px; --image-mobile-max-width: {{ block.settings.mobile_max_width }}px{%- endcapture -%}
-      {%- capture image_sizes_attribute -%}(max-width: 699px) {{ block.settings.mobile_max_width }}, {{ block.settings.max_width }}px{%- endcapture -%}
+      {%- capture image_sizes_attribute -%}(max-width: 699px) {{ block.settings.mobile_max_width }}px, {{ block.settings.max_width }}px{%- endcapture -%}
     {%- else -%}
       {%- capture image_sizes_attribute -%}{{ settings.page_width }}px{%- endcapture -%}
     {%- endif -%}
 
-    <div class="v-stack">
+    <div class="justify-self-{{ alignment }}">
       <picture>
         {%- if block.settings.mobile_image != blank -%}
           <source
@@ -21,7 +21,6 @@
         {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: sizes: image_sizes_attribute, widths: '200,300,400,500,600,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', style: image_style_attribute -}}
       </picture>
     </div>
-
   </div>
 {%- endif -%}
 
