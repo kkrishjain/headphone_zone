@@ -1,6 +1,6 @@
 .country-flags {
-  background: -webkit-image-set(url("//www.headphonezone.in/cdn/shop/t/491/assets/country-flags.png?v=37230036826556269641759815935") 1x, url("//www.headphonezone.in/cdn/shop/t/491/assets/country-flags-2x.png?v=119388446682176363021759815934") 2x) no-repeat top left;
-  background: image-set(url("//www.headphonezone.in/cdn/shop/t/491/assets/country-flags.png?v=37230036826556269641759815935") 1x, url("//www.headphonezone.in/cdn/shop/t/491/assets/country-flags-2x.png?v=119388446682176363021759815934") 2x) no-repeat top left;
+  background: -webkit-image-set(url("//www.headphonezone.in/cdn/shop/t/489/assets/country-flags.png?v=37230036826556269641759734802") 1x, url("//www.headphonezone.in/cdn/shop/t/489/assets/country-flags-2x.png?v=119388446682176363021759734801") 2x) no-repeat top left;
+  background: image-set(url("//www.headphonezone.in/cdn/shop/t/489/assets/country-flags.png?v=37230036826556269641759734802") 1x, url("//www.headphonezone.in/cdn/shop/t/489/assets/country-flags-2x.png?v=119388446682176363021759734801") 2x) no-repeat top left;
   width: 20px;
   height: 20px;
   flex-shrink: 0;
