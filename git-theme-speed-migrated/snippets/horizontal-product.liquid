@@ -19,25 +19,23 @@ Supported variables
 
 {%- capture class -%}horizontal-product {% if size == 'sm' %}horizontal-product--sm{% endif %} {% if background != 'rgba(0,0,0,0)' %}rounded-xs{% endif %} snap-start{%- endcapture -%}
 
-<div {% render 'surface', class: class, background: background, text_color: text_color %}>
+<div {% render 'surface', class: class, background: background, text_color: text_color %} data-product-handle="{{ product.handle }}">
   {%- if product.featured_media != blank -%}
-    {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: '(max-width: 740px) 64px, 80px', widths: '64,128,80,160', class: 'horizontal-product__image rounded-xs' -}}
+    <a href="{{ product.url }}">
+      {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: '(max-width: 740px) 64px, 80px', widths: '64,128,80,160', class: 'horizontal-product__image rounded-xs' -}}
+    </a>
   {%- endif -%}
 
   <div class="horizontal-product__info">
     <div class="v-stack gap-0.5">
-          {% if product.metafields.hpz.accessories_subtitle != blank %}
-         <span class="accessories-subtitle">{{ product.metafields.hpz.accessories_subtitle.value }}</span>
-      {%- endif %}
       {%- if output_link == false -%}
         <span class="text-sm bold">{{ product.title }}</span>
       {%- else -%}
         <a href="{{ product.url }}" data-instant class="text-sm bold">
-          <span class="reversed-link">{{ product.title }}</span>
+          <span class="reversed-link hover:show">{{ product.title }}</span>
         </a>
       {%- endif -%}
-      
-      <p class="text-sm text-subdued">{{ product.metafields.descriptors.subtitle }}</p>
+
       {%- render 'price-list', product: product, size: 'sm' -%}
     </div>
 

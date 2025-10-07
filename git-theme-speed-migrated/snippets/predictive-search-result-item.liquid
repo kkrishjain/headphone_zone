@@ -32,10 +32,8 @@ Supported variables
           <span class="bold">
             <span class="reversed-link">{{ product.title }}</span>
           </span>
-          {% unless product.tags contains 'no-price' %}
-            {%- render 'previous-sale-price', product: product -%}
-            {%- render 'price-list', product: product -%}
-          {% endunless %}
+
+          {%- render 'price-list', product: product -%}
         </div>
       </div>
     </a>

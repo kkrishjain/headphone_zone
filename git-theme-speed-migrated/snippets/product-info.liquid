@@ -72,88 +72,23 @@ Supported variables
         {%- when '@app' -%}
           {%- render block -%}
 
-          {%- when 'vendor' -%}
-            {%- if product.vendor != blank -%}
-              <div class="product-info__vendor">
-                {%- if product.handle == 'lypertek-x-headphone-zone-pureplay-z3' -%}
-                  Lypertek X Headphone Zone
-                {%- elsif product.handle == 'headphone-zone-x-ddhifi-hi-res-dac' or 
-                          product.handle == 'headphone-zone-x-ddhifi-hi-res-dac-pro' or 
-                          product.handle == 'headphone-zone-x-ddhifi-hi-res-dac-pro-highway-star'
-                -%}
-                  Headphone Zone X DDHiFi
-                {%- elsif product.handle == 'headphone-zone-x-fiio-jd1' -%}
-                  Headphone Zone X FiiO
-                {%- elsif product.handle == 'headphone-zone-x-tangzu-waner-s-g' -%}
-                  Headphone Zone X Tangzu
-                {%- elsif product.handle == 'headphone-zone-x-oriveti-od200' -%}
-                  Headphone Zone X Oriveti
-                  {%- elsif product.handle == 'headphone-zone-x-oriveti-blackbird' -%}
-                  Headphone Zone X Oriveti
-                {%- elsif product.handle == 'headphone-zone-fortress-iem-storage-case' -%}
-                  Headphone Zone
-                {%- elsif product.handle == 'headphone-zone-x-kiwi-ears-cadenza' -%}
-                  Headphone Zone X Kiwi Ears
-                {%- elsif product.handle == 'headphone-zone-x-kz-edx-pro' -%}
-                  Headphone Zone X KZ
-                {%- elsif product.handle == 'headphone-zone-x-7hz-salnotes-zero-ltd-ed' -%}
-                  Headphone Zone X 7HZ
-                {%- elsif product.handle == 'headphone-zone-x-tangzu-waner-s-g-2' -%}
-                  Headphone Zone X Tangzu
-                {% else %}
-                  {%- render 'vendor' with product.vendor -%}
-                {%- endif -%}  
-              </div>
-            {%- endif -%}
-  
-          {%- when 'title' -%}
-            {%- if request.page_type == 'product' -%}
-              <h1 class="product-info__title {{ block.settings.heading_tag }}">
-                {%- if template contains 'hpz-x-lypertek-pureplayz3' -%}
-                  PurePlay Z3
-                {%- elsif template contains 'hpz-x-ddhifi-hi-res-dac' -%}
-                  Hi-Res DAC
-                {%- elsif template contains 'headphone-zone-fiio-jd1' -%}
-                  JD1
-                {%- elsif product.handle == 'headphone-zone-x-tangzu-waner-s-g' -%}
-                  Wan'er S.G 
-                {%- elsif product.handle == 'headphone-zone-x-oriveti-od200' -%}
-                  OD200
-                {%- elsif product.handle == 'headphone-zone-x-kz-edx-pro' -%}
-                  EDX Pro
-                {%- elsif product.handle == 'headphone-zone-x-oriveti-blackbird' -%}
-                  Blackbird
-                {%- elsif product.handle == 'headphone-zone-fortress-iem-storage-case' -%}
-                  Fortress IEM Storage Case
-                {%- elsif product.handle == 'headphone-zone-x-kiwi-ears-cadenza' -%}
-                  Cadenza
-                {%- elsif product.handle == 'headphone-zone-x-ddhifi-hi-res-dac-pro' -%}
-                  Hi-Res DAC Pro
-                {%- elsif product.handle == 'headphone-zone-x-7hz-salnotes-zero-ltd-ed' -%}
-                  Salnotes Zero Ltd. Ed.
-                {%- elsif product.handle == 'headphone-zone-x-ddhifi-hi-res-dac-pro-highway-star' -%}
-                  Hi-Res DAC Pro + Highway Star Balanced Cable
-                {%- elsif product.handle == 'headphone-zone-x-tangzu-waner-s-g-2' -%}
-                 Wan'er S.G 2
+        {%- when 'vendor' -%}
+          {%- if product.vendor != blank -%}
+            <div class="product-info__vendor">
+              {%- render 'vendor' with product.vendor -%}
+            </div>
+          {%- endif -%}
 
-                {%- else -%}
-                  {{ product.title }}
-                {%- endif -%}
-              </h1>
-              {%- if product.metafields.descriptors.subtitle -%}
-                {%- unless product.type contains 'Bundles' -%}
-                  <span class="pp-subtitle">{{ product.metafields.descriptors.subtitle }}</span>
-                {%- endunless -%}
-                {%- if product.type contains 'Bundles' -%}
-                  <span class="pp-subtitle" style="color:#5b996e;">{{ product.metafields.descriptors.subtitle }}</span>
-                {%- endif -%}
-              {%- endif -%}
-              
-            {%- else -%}
-              <h2 class="product-info__title {{ block.settings.heading_tag }}">
-                <a href="{{ product.url }}">{{ product.title }}</a>
-              </h2>
-            {%- endif -%}
+        {%- when 'title' -%}
+          {%- if request.page_type == 'product' -%}
+            <h1 class="product-info__title {{ block.settings.heading_tag }}">
+              {{- product.title -}}
+            </h1>
+          {%- else -%}
+            <h2 class="product-info__title {{ block.settings.heading_tag }}">
+              <a href="{{ product.url }}">{{ product.title }}</a>
+            </h2>
+          {%- endif -%}
 
         {%- when 'badges' -%}
           {%- render 'product-badges', product: product, context: 'product', types: 'custom', class: 'product-info__badge-list' -%}
@@ -166,48 +101,34 @@ Supported variables
           {%- endif -%}
 
         {%- when 'price' -%}
-          {%- if product.selected_or_first_available_variant != null -%}
-            {% unless product.tags contains 'no-price' %}
-              <div class="product-info__price">
-                <div class="rating-with-text">
-                  {% if request.page_type == 'product' and product.tags contains 'Senn'  %}
-                    {%- render 'previous-sale-price' -%}
-                  {%- endif -%}
-                  {% if request.page_type == 'product' and product.tags contains 'FOSS'  %}
-                    {%- render 'previous-sale-price' -%}
-                  {%- endif -%}
-                  {%- render 'price-list', variant: product.selected_or_first_available_variant, size: 'lg' -%}
-                  {%- render 'product-badges', types: 'sold_out, discount', product: product, context: 'product', class: 'product-info__badge-list'-%}
-                  {%- comment -%}If the next block is a rating block, then we add it as part of this one to have it inline{%- endcomment -%}
-                  {%- if next_block.type == 'rating' -%}
-                    {%- render 'product-rating', product: product, show_empty: next_block.settings.show_empty, block: next_block -%}
-                  {%- endif -%}
-                </div>
+          {%- if product.selected_or_first_available_variant != nil -%}
+            <div class="product-info__price">
+              <div class="rating-with-text">
+                {%- render 'price-list', variant: product.selected_or_first_available_variant, size: 'lg' -%}
+                {%- render 'product-badges', types: 'sold_out, discount', product: product, context: 'product', class: 'product-info__badge-list' -%}
 
-                {%- if block.settings.show_taxes_notice -%}
-                  <p class="text-sm text-subdued">
-                    {%- if cart.taxes_included -%}
-                      {{ 'product.general.taxes_included' | t }}
-                    {%- else -%}
-                      {{ 'product.general.taxes_excluded' | t }}
-                    {%- endif -%}
-                    {%- if shop.shipping_policy.body != blank -%}
-                      {{ 'product.general.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                    {%- endif -%}
-                  </p>
+                {%- comment -%}If the next block is a rating block, then we add it as part of this one to have it inline{%- endcomment -%}
+                {%- if next_block.type == 'rating' -%}
+                  {%- render 'product-rating', product: product, show_empty: next_block.settings.show_empty, block: next_block -%}
                 {%- endif -%}
               </div>
-            {% endunless %}
-            {%- unless product.tags contains 'museum' or product.tags contains 'no-price' -%}
-              {%- render 'emi' -%}
-            {% endunless %}
+
+              {%- if block.settings.show_taxes_notice -%}
+                <p class="text-sm text-subdued">
+                  {%- if cart.taxes_included -%}
+                    {{ 'product.general.taxes_included' | t }}
+                  {%- else -%}
+                    {{ 'product.general.taxes_excluded' | t }}
+                  {%- endif -%}
+
+                  {%- if shop.shipping_policy.body != blank -%}
+                    {{ 'product.general.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                  {%- endif -%}
+                </p>
+              {%- endif -%}
+            </div>
           {%- endif -%}
 
-                <div class="pp-subtitle fomo-inline" data-aid="98391" style="display: none;" data-min-count-to-show="1">
-          **{{ count | number }} audiophiles** chose to buy this in the last 30 days
-        </div>
-        <script async src="https://load.fomo.com/widget/inline/98391.js"></script>
-    
         {%- when 'rating' -%}
           {%- comment -%}If the previous block is of type price, then the rating has been rendered inside it so we do not render it twice{%- endcomment -%}
 
@@ -283,14 +204,12 @@ Supported variables
                   {%- assign metafield_key = metafield_parts | last -%}
 
                   {%- if block.settings.option_name != blank -%}
-                  <div class="variant-picker__option-info">
+                    <div class="variant-picker__option-info">
                       <div class="h-stack gap-2">
-                        <legend class="text-subdued">{%- unless block.settings.option_name contains 'with Unboxed' -%}{{ block.settings.option_name }}:{%- endunless -%}
-                    {%- if block.settings.option_name contains 'with Unboxed' -%}{% assign unboxed = product.metafields.hpz.unboxed.value %}{% assign unboxed_price_difference = product.price | minus: unboxed.price %}<span class="save-unboxed-text cursorpointer" aria-controls="unboxed-learn-more" aria-expanded="false">Save upto <span class="unboxed-price-style">{{ unboxed_price_difference | money }}</span> with Unboxed</span> {% render 'icon' with 'info', color: '#444' %}{%- endif -%}</legend>
-                        {%- unless block.settings.option_name contains 'with Unboxed' -%}<span>{{ product.metafields[metafield_namespace][metafield_key].value | escape }}</span>{%- endunless -%}
-                      </div>            
+                        <legend class="text-subdued">{{ block.settings.option_name }}:</legend>
+                        <span>{{ product.metafields[metafield_namespace][metafield_key].value | escape }}</span>
+                      </div>
                     </div>
-                    {% render 'bbb-drawer' with 'unboxed-learn-more' %}
                   {%- endif -%}
 
                   <div class="variant-picker__option-values wrap gap-2">
@@ -314,7 +233,7 @@ Supported variables
                           {%- render 'option-value', type: 'block', url: product_variation.url, label: label, selected: selected -%}
 
                         {%- when 'block_swatch' -%}
-                        {%- render 'option-value', type: 'block', url: product_variation.url, label: label, selected: selected, show_swatch: true -%}
+                          {%- render 'option-value', type: 'block', url: product_variation.url, label: label, selected: selected, show_swatch: true -%}
                       {%- endcase -%}
                     {%- endfor -%}
                   </div>
@@ -391,21 +310,11 @@ Supported variables
         {%- when 'buy_buttons' -%}
           {%- assign main_form_exists = true -%}
 
-          {% if product.tags contains 'special-enquiry' %}
-            <button class="button" aria-controls="enquire-now" aria-expanded="false" style="width: 100%;">
-              <div>ENQUIRE NOW</div>
-            </button>
-            <x-drawer id="enquire-now" class="drawer">
-              <h6 class="h6">We'll contact you with a special offer on {{ product.title }}</h6>
-              {% render 'jotforms' with 'special-enquiry' %}
-            </x-drawer>
-          {% else %}
-            {%- if request.page_type != 'password' -%}
-              <div class="product-info__buy-buttons">
-                {%- render 'buy-buttons', product: product, form_id: product_form_id, show_payment_button: block.settings.show_payment_button, show_gift_card_recipient: block.settings.show_gift_card_recipient, atc_button_background: block.settings.atc_button_background, atc_button_text_color: block.settings.atc_button_text_color, payment_button_background: block.settings.payment_button_background, payment_button_text_color: block.settings.payment_button_text_color -%}
-              </div>
-            {%- endif -%}
-          {% endif %}
+          {%- if request.page_type != 'password' -%}
+            <div class="product-info__buy-buttons">
+              {%- render 'buy-buttons', product: product, form_id: product_form_id, show_payment_button: block.settings.show_payment_button, show_gift_card_recipient: block.settings.show_gift_card_recipient, atc_button_background: block.settings.atc_button_background, atc_button_text_color: block.settings.atc_button_text_color, payment_button_background: block.settings.payment_button_background, payment_button_text_color: block.settings.payment_button_text_color -%}
+            </div>
+          {%- endif -%}
 
         {%- when 'pickup_availability' -%}
           <div class="product-info__pickup-availability">

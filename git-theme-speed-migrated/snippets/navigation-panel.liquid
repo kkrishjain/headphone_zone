@@ -36,7 +36,7 @@ Supported variables
 
                 for block in section.blocks
                   assign menu_item_downcase = block.settings.menu_item | strip | downcase
-              
+
                   if menu_item_downcase == link_title_downcase
                     assign mega_menu_block = block
 
@@ -47,35 +47,26 @@ Supported variables
 
                     break
                   endif
-                endfor 
-              %}
+                endfor %}
 
             {%- else -%}
-              {% liquid 
-                assign is_image_shown = false 
-                
-                if mega_menu_block.settings.drawer_link_image == 'show' 
-                  assign is_image_shown = true 
-                endif
-              %}
+              {%- assign is_image_shown = false -%}
+
+              {%- if mega_menu_block.settings.drawer_link_image == 'show' -%}
+                {%- assign is_image_shown = true -%}
+              {%- endif -%}
 
             {%- endunless -%}
 
-            <li class="h3 sm:h4 mega-font" style="font-size:1.8rem;">
+            <li class="h3 sm:h4">
               {%- if link.links.size > 0 or mega_menu_block != '' and is_mega_menu == false -%}
-                <button class="text-with-icon w-full group justify-between {% if link.title contains 'Favourites' %} blue-color {% endif %}" 
-                  {% if link.title contains 'SALE' %} style="color:#FF4343;" {% endif %}
-                   aria-expanded="false" data-panel="1-{% increment level_1 %}">
+                <button class="text-with-icon w-full group justify-between" aria-expanded="false" data-panel="1-{% increment level_1 %}">
                   <span>{{ link.title }}</span>
                   <span class="circle-chevron group-hover:colors group-expanded:colors">{%- render 'icon' with 'chevron-right-small', direction_aware: true -%}</span>
                 </button>
               {%- else -%}
                 <a href="{{ link.url }}" class="group block w-full">
-                  <span>
-                    <span class="reversed-link" {% if link.title contains 'SALE' %} style="color:#FF4343;" {% endif %}>
-                      {{ link.title }}
-                    </span>
-                  </span>
+                  <span><span class="reversed-link">{{ link.title }}</span></span>
                 </a>
               {%- endif -%}
             </li>
@@ -85,7 +76,7 @@ Supported variables
                 {{- link_level_2 -}}
 
                 <div class="panel__wrapper" {% if mega_menu_block.settings.promo_content_layout == 'grid' or mega_menu_block.settings.promo_content_layout == 'collage' %}style="--panel-wrapper-justify-content: flex-start"{% endif %} hidden>
-                  <ul class="v-stack {% if is_mega_menu and is_image_shown == 'show' %}gap-3{% else %}gap-4{% endif %}{%if link.title == 'Brands'%} brands-menu-mob{% endif %} {% if link.title == 'Categories'%} categories-menu-mob{% endif %}">
+                  <ul class="v-stack {% if is_mega_menu and is_image_shown == 'show' %}gap-3{% else %}gap-4{% endif %}">
                     <li class="{% if layout != 'drawer' %}lg:hidden{% endif %}">
                       <button class="text-with-icon h6 text-subdued" data-panel="0">
                         {%- render 'icon' with 'chevron-left', direction_aware: true -%} {{ link.title }}
@@ -94,7 +85,7 @@ Supported variables
 
                     {%- if link.links.size > 0 -%}
                       {%- for sub_link in link.links -%}
-                        <li class="h3 {% if is_mega_menu %}sm:h5{% else %}sm:h4 {% endif %}">
+                        <li class="h3 {% if is_mega_menu %}sm:h5{% else %}sm:h4{% endif %}">
                           {%- if sub_link.links.size > 0 -%}
                             <button class="text-with-icon w-full justify-between" aria-expanded="false" data-panel="2-{% increment level_2 %}">
                               <span>{{ sub_link.title }}</span>
@@ -124,7 +115,7 @@ Supported variables
                                 {%- endif -%}
                               {%- endif -%}
 
-                              <span><span class="reversed-link submenu-font">{{ sub_link.title }}</span></span>
+                              <span><span class="reversed-link">{{ sub_link.title }}</span></span>
                             </a>
                           {%- endif -%}
                         </li>
@@ -134,8 +125,8 @@ Supported variables
                             {{- link_level_3 -}}
 
                             <div class="panel__wrapper" hidden>
-                              <ul class="v-stack {% if is_image_shown %}gap-3{% else %}gap-4{% endif %}{%- if link.title == 'Categories'%} categories-menu-mob{%- endif -%}">
-                                <li class="text-with-icon {% if layout != 'drawer' %}lg:hidden {% endif %}">
+                              <ul class="v-stack {% if is_image_shown %}gap-3{% else %}gap-4{% endif %}">
+                                <li class="text-with-icon {% if layout != 'drawer' %}lg:hidden{% endif %}">
                                   <button class="text-with-icon h6 text-subdued" data-panel="1">
                                     {%- render 'icon' with 'chevron-left', direction_aware: true -%} {{ sub_link.title }}
                                   </button>

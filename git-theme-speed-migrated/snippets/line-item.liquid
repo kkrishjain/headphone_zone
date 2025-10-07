@@ -97,6 +97,12 @@ Supported variables
         {%- for discount_allocation in line_item.line_level_discount_allocations -%}
           <li class="badge">
             {%- render 'icon' with 'discount' -%} {{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money }})
+
+            {%- if section.settings.allow_discount_application and discount_allocation.discount_application.type != '' -%}
+              <cart-discount-remove-button discount-code="{{ discount_allocation.discount_application.title | escape }}" class="h-stack align-center">
+                <button type="button">{%- render 'icon' with 'delete', width: 8, stroke_width: 3 -%}</button>
+              </cart-discount-remove-button>
+            {%- endif -%}
           </li>
         {%- endfor -%}
       </ul>
