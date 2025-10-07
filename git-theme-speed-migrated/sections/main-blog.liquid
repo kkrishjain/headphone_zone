@@ -64,7 +64,7 @@
                 {%- assign button_content = 'blog.comments.submit' | t -%}
 
                 {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
-                {%- render 'button', content: button_content, type: 'submit', size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color -%}
+                {%- render 'button', content: button_content, icon: 'email', type: 'submit', size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color -%}
               </div>
             {%- endform -%}
           {%- endif -%}
@@ -72,7 +72,7 @@
 
         {%- if section.settings.show_tags and blog.all_tags.size > 0 -%}
           <div class="scroll-area bleed sm:unbleed justify-items-center">
-            <div class="blog-filter-list">
+            <div class="nav-categories">
               <ul class="h-stack bold text-base" role="tablist">
                 <li role="tab" aria-selected="{% if current_tags == blank %}true{% else %}false{% endif %}">
                   <a href="{{ blog.url }}" class="{% if current_tags == blank %}selected{% endif %}">{{ 'blog.general.all_posts' | t }}</a>
