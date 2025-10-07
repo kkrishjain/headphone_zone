@@ -1,0 +1,11 @@
+{% assign exception = product.metafields.hpz.warranty_exception %}
+<p>
+  Don't sweat it, this
+  <strong> {{ product.title }} comes with a {{ product.metafields.hpz.warranty_period }} warranty
+    {% if exception contains 'x on the' %}{{ exception | replace: 'x ', '' }}{% endif %}
+  </strong> from {{ product.vendor }} that covers manufacturing defects.
+  {% if exception contains 'You get' %}{{ exception }}.{% endif %}
+  All products featured on Headphone Zone are backed by an original manufacturer's warranty.<br>
+  <br>
+  <a href="{{ product.metafields.hpz.warranty_link }}" target="_blank">Read more</a> about {{ product.vendor }}'s warranty in India.
+</p>

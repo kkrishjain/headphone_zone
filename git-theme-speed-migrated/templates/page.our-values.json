@@ -1,0 +1,190 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "c800d304-e97a-4265-b7ba-d42fcc98c7eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15989744009404__c800d304-e97a-4265-b7ba-d42fcc98c7eb-16780866859d0eba58-0": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--15989744009404__c800d304-e97a-4265-b7ba-d42fcc98c7eb-16780866859d0eba58-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Values",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--15989744009404__c800d304-e97a-4265-b7ba-d42fcc98c7eb-16780866859d0eba58-2": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15989744009404__c800d304-e97a-4265-b7ba-d42fcc98c7eb-16780866859d0eba58-0",
+        "template--15989744009404__c800d304-e97a-4265-b7ba-d42fcc98c7eb-16780866859d0eba58-1",
+        "template--15989744009404__c800d304-e97a-4265-b7ba-d42fcc98c7eb-16780866859d0eba58-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "8fa9380a-e767-4203-bc7d-40b478471e31": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--15989744009404__8fa9380a-e767-4203-bc7d-40b478471e31-167808689360da3ef7-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Our-Value-01.jpg",
+            "media_width": 45,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<p>At Headphone Zone, we're inspired by the service motto of one of the most celebrated brands in the hospitality industry - The Ritz-Carlton.<br/><br/>We borrow their service motto at Headphone Zone (with thanks), to remind ourselves that we are no different from our customers, and to treat them with the same gratitude and grace, as we would like to be treated by those who serve us. And that's the core of our ethos.<br/></p><p>We’re committed to a level of service excellence that we would be proud to receive as customers ourselves. And as ladies and gentlemen, we are to be held to the same standards by our customers.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "48d673e2-803c-44fd-83b5-1bf673fdfd8b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Our-Value-02.jpg",
+            "media_width": 45,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<p>Very early in our journey, we decided that rather than trying to be the biggest Headphone store, we’d prefer to simply be the best. We’ve carried that thinking in everything we do.<br/><br/>To begin with, our selection of products and brands reflects our desire to bring you the world's finest headphones, rather than the world’s most popular headphones. We pride ourselves on being focused on just the best sounding products in a vast yet highly curated catalog. But this goes beyond just our products. By making this choice, we believe that we will always remain a niche and small brand in the face of large corporate giants. We’re proud of the fact that we’ve carved our space for ourselves to serve the most discerning of audiophiles from India, and it’s our privilege to be a part of their community with a responsibility to give them the very best service. And this means that we’ll have to say no to several things - poor products, poor service and the easy way out. It also means we’re not going to be the biggest retailer out there. And that's fine, because we’d rather be the best.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "04787f78-8eac-4a58-9a07-c692999b33da": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Our-Value-03.jpg",
+            "media_width": 45,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<p>It’s important to remember that despite the millions of headphones we’ve shipped over the years, that ultimately the reason we do what we do, is our love for music. Headphones are just a channel for us to connect with our music better. Take the music away, and there’s really no reason to continue.<br/><br/>Our passion for music is really the only thing we have in common with our partner brands, our customers and really each other. We remind ourselves that while we’re certainly not a music company, everything we do at Headphone Zone comes from our love for music. It’s what brings us to work everyday and keeps us on our toes. And we want to spread our passion for music with everyone.<br/><br/>But, we don’t want you to just listen to music. We want you to experience it, as the artist intended it to be heard. We believe that to listen to a great piece of music, on crappy sounding headphones or speakers, is to do a great injustice to the artist who created it. To be able to experience your favourite song, something you’ve heard hundreds of times before, but on a great pair of headphones, is the most magical and satisfying experience. We do this everyday with hundreds of discerning music listeners across India.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "098a6e8e-8c59-4ca8-9c60-a911b5b66418": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Our-Value-04.jpg",
+            "media_width": 45,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<p>In today's startup culture of fast fundraising and growth, we at Headphone Zone made a conscious choice to remain a bootstrapped business without using any external funding or investments. Headphone Zone continues to remain a nil debt, non-borrowing, 100% family equity funded business since the very beginning. It's a privilege and a responsibility we don't take lightly. We’re very dignified about the fact that we’re a 100% Indian company.<br/><br/>As such, we identify as a small, independent and local business alongside millions of family owned local businesses across India that serve our local communities everyday. It’s important that we remind ourselves, local businesses may not have the scale and gloss of Multinational corporations, or well funded startups, but are made of honest, hard working citizens who live, work and play in the same neighbourhood as their customers. Our customers are friends, neighbours, and community members that we interact with everyday.<br/><br/>We at Headphone Zone are proud to be an independent, local business serving fellow citizens of India.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "7352b144-5cb1-49b3-b0b7-9273b0928ce8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Our-Value-05.jpg",
+            "media_width": 45,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<p>We at Headphone Zone have had the support of several brands and independent businesses that before us led the way with their grit and resilience, and have served as an inspiration and guide to us over the years. We thank them for their support, and choose to pay it forward by supporting other local, independent small brands that have followed after us. Our expertise and experience in building and scaling an e-commerce brand in a niche vertical has had many takers who look to take learnings from ‘the Headphone Zone way’ in their own businesses.<br/><br/> We are nothing without our community. We resonate deeply with other small, local businesses. We see so much of ourselves in their never-say-die spirit of entrepreneurship, wilful sense of independence and good old honest hard work.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15989744009404__8fa9380a-e767-4203-bc7d-40b478471e31-167808689360da3ef7-0",
+        "48d673e2-803c-44fd-83b5-1bf673fdfd8b",
+        "04787f78-8eac-4a58-9a07-c692999b33da",
+        "098a6e8e-8c59-4ca8-9c60-a911b5b66418",
+        "7352b144-5cb1-49b3-b0b7-9273b0928ce8"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "medium"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c800d304-e97a-4265-b7ba-d42fcc98c7eb",
+    "8fa9380a-e767-4203-bc7d-40b478471e31"
+  ]
+}

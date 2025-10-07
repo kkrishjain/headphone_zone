@@ -1,0 +1,504 @@
+{% comment %} PLEASE DON'T MAKE CHANGES IN THIS FILE IT'S AFFECT THE CODE IF YOU NEED ANY HELP PLEASE CONTACT TO FLITS TEAM support@getflits.com {% endcomment %}
+{% comment %}
+<div class="flits-custom-lion-page" style="display: none;">
+  <div data-lion-integrated-page=""></div>
+</div>
+{% endcomment %}
+{% if template contains 'customers/account' %}
+<div class="nector_flits" style="display: none;">
+  <div class="nector_inner_data">
+    <script async="" src="https://cdn.nector.io/nector-static/no-cache/reward-widget/mainloader.min.js" data-op="reward" data-api_key="2a03389ae082e87a1644f0c5cd61e0d6a61f40516a5d7a4251dbf255aa8cb33a" data-customer_id="{{customer.id}}" data-platform="shopify"></script>
+  </div>
+</div>
+  {% endif %}
+{% comment %} {% render 'flits_old_account_page_cancel_btn_code' %} {% endcomment %}
+
+{% if template contains 'customers/account' %}
+  {% assign customerGrade = customer.metafields.hpz.customer_grade %}
+  {% assign customer_grade_array = 'Grade - 1, Grade - 2, Grade - 3, Grade - 4, Grade - 5' | remove: ' ' | split: ',' %}
+  <div class="headphone-zone-contact-us-body" style="display: none;">
+    <!-- <h2>CONTACT US</h2> -->
+    <div class="customer-row flits-row">
+      {% if customerGrade == 'Grade - 1'
+        or customerGrade == 'Grade - 2'
+        or customerGrade == 'Grade - 3'
+        or customerGrade == 'Grade - 4'
+        or customerGrade == 'Grade - 5'
+      %}
+        <div class="flits-custom-col flits-col-md-4">
+          <div class="flits-custom-col-inner">
+            <h6 class="drawer__title heading h6">SPEAK TO OUR HEADPHONE GURUS</h6>
+            <p><a href="tel: +917506646988" class="flits-link">+91 7506646988</a></p>
+          </div>
+        </div>
+        <!--
+          <div class="flits-custom-col flits-col-md-4">
+              <div class="flits-custom-col-inner">
+              	<h6 class="drawer__title heading h6">CHAT WITH OUR HEADPHONE GURUS</h6>
+          <p><a href="https://wa.me/917506984340" target="_blank" class="flits-link">WhatsApp Us</a></p>
+              </div>
+            </div>
+        -->
+      {% endif %}
+
+      <div class="flits-custom-col flits-col-md-4">
+        <div class="flits-custom-col-inner">
+          <h6 class="drawer__title heading h6">RAISE A TICKET</h6>
+          <p>
+            <a href="https://help.headphonezone.in/support/tickets/new" class="flits-link" target="_blank"
+              >Submit a Ticket</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .flits-modal-content .btn {
+      display: inline-block;
+      margin-bottom: 0;
+      font-weight: normal;
+      text-align: center;
+      vertical-align: middle;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      white-space: nowrap;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      border-radius: 4px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none
+    }
+
+    .flits-modal-content .btn:active,
+    .flits-modal-content .btn.active {
+      outline: 0;
+      background-image: none;
+      -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+      box-shadow: inset 0 3px 5px rgba(0,0,0,0.125)
+    }
+
+    .flits-modal-content .btn.disabled,
+    .flits-modal-content .btn[disabled],
+    .flits-modal-content fieldset[disabled] .btn {
+      cursor: not-allowed;
+      opacity: .65;
+      filter: alpha(opacity=65);
+      -webkit-box-shadow: none;
+      box-shadow: none
+    }
+
+    .flits-modal-content .close {
+      float: right;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 1;
+      color: #000;
+      text-shadow: 0 1px 0 #fff;
+      opacity: .2;
+      filter: alpha(opacity=20)
+    }
+
+    .flits-modal-content.modal {
+      display: none;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1050;
+      -webkit-overflow-scrolling: touch;
+      outline: 0
+    }
+
+    .flits-modal-content.modal.fade .modal-dialog {
+      -webkit-transform: translate(0, -25%);
+      -ms-transform: translate(0, -25%);
+      -o-transform: translate(0, -25%);
+      transform: translate(0, -25%);
+      -webkit-transition: -webkit-transform 0.3s ease-out;
+      -o-transition: -o-transform 0.3s ease-out;
+      transition: transform 0.3s ease-out
+    }
+
+    .flits-modal-content.modal.in .modal-dialog {
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      transform: translate(0, 0)
+    }
+
+    .modal-open .flits-modal-content.modal {
+      overflow-x: hidden;
+      overflow-y: auto
+    }
+
+    .modal-dialog {
+      position: relative;
+      width: auto;
+      margin: 10px
+    }
+
+    .modal__content {
+      position: relative;
+      background-color: #fff;
+      border: 1px solid #999;
+      border: 1px solid rgba(0,0,0,0.2);
+      border-radius: 6px;
+      -webkit-box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+      box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      outline: 0
+    }
+
+    .flits-modal-content.modal-backdrop {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1040;
+      background-color: #000
+    }
+
+    .modal-header {
+      padding: 15px;
+      border-bottom: 1px solid #e5e5e5
+    }
+
+    .modal-header .close {
+      margin-top: -2px
+    }
+
+    .modal-title {
+      margin: 0;
+      line-height: 1.42857143
+    }
+
+    .modal-body {
+      position: relative;
+      padding: 15px
+    }
+
+    .modal-footer {
+      padding: 15px;
+      text-align: right;
+      border-top: 1px solid #e5e5e5
+    }
+
+    .modal-footer .btn+.btn {
+      margin-left: 5px;
+      margin-bottom: 0
+    }
+
+    .modal-footer .btn-group .btn+.btn {
+      margin-left: -1px
+    }
+
+    .modal-footer .btn-block+.btn-block {
+      margin-left: 0
+    }
+
+    @media (min-width: 768px) {
+      .modal-dialog {
+        width:600px;
+        margin: 30px auto
+      }
+
+      .modal__content {
+        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5)
+      }
+
+    }
+    .flits-modal-content.modal-backdrop{
+      background: rgba(0, 0, 0, 0.15);
+    }
+    .flits-modal-content .modal__content{
+      top: 50%;
+      margin-top: -137px;
+      position: fixed;
+      width: 600px;
+    }
+    @media(max-width:500px){
+      .flits-modal-content .modal__content{
+        width: 94vw;
+      }
+    }
+    .flits-modal-content .selection-label{
+      display: flex;
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: -ms-flex;
+      align-items:center;
+    }
+    .flits-modal-content .selection-label input{
+      margin-right:10px;
+      margin-top:4px;
+    }
+    /*   select{
+    width:350px;
+    text-overflow:ellipse;
+    } */
+    /*   Form model starts */
+    #formModal .modal__content{
+      margin-top: 0; /*overriding default css*/
+      transform: translate(-50%,-50%);
+      left:50%;
+    }
+    #formModal textarea{
+      margin-bottom: 15px;
+      min-height: 120px;
+    }
+    #formModal .warning{
+      color: red;
+      font-weight: 400; /*overriding default css*/
+    }
+    .input_error{
+      border-color: red !important; /*overriding default css*/
+    }
+    #formModal label{
+      font-weight: bold;
+    }
+    #formModal .input__wrapper{
+      margin-bottom: 15px;
+      display: block;
+    }
+    #formModal .date_range_holder{
+      display:-webkit-box;
+      display:-ms-flexbox;
+      display:flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+
+    #formModal .date_range{
+      width: 45%;
+    }
+    #formModal .date_range_label{
+      margin-top: 8px;
+      margin-bottom: 18px;
+      width:100%;
+    }
+    .flits-modal-content .success{
+      color: green;
+    }
+    /*   Form model ends */
+    .flits-modal-content .modal-footer button{
+      font-weight: 600 !important;
+      letter-spacing: 2px !important;
+      text-transform: uppercase;
+      font-family: Roboto;
+      border-radius: 100px;
+      outline:none;
+      padding: 6px 16px;
+    }
+    @media(max-width:749px){
+      .flits-modal-content .modal-footer button {
+        padding: 6px 14px;
+        height:35px;
+        min-height:35px;
+        font-size:10px;
+      }
+    }
+    .flits-modal-content .modal-footer button:focus,
+    .flits-modal-content .modal-footer button:active{
+      outline:0 !important;
+    }
+    .flits-modal-content .modal-title{
+      font-size: 25px;
+      color: #444444;
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-family: Roboto;
+      text-transform:uppercase;
+    }
+    @media(max-width:749px){
+      .flits-modal-content .modal-title{
+        font-size:16px;
+      }
+    }
+    .flits-modal-content .modal-footer button{
+      border-radius: 100px;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 10px 14px;
+      letter-spacing: 2px!important;
+      line-height: 1.9;
+      background: var(--primaryButtonBGColor)!important;
+        border: 1px solid var(--primaryButtonBGColor)!important;
+          color: var(--primaryButtonTextColor)!important
+            }
+    .flits-modal-content .modal__close-button{
+      text-align: center;
+      min-height: 44px;
+      height: 40px;
+      line-height: 1.2;
+      vertical-align: top;
+      float: right;
+      position:static;
+      top:0;
+    }
+
+    .flits-order-action-row .cancelBtn,
+    .flits-order-action-row #reason_date,
+    .flits-order-action-row #success,
+    .flits-order-action-row .dummy__button {
+      color: #3b08ff !important;
+      background: #ffffff !important;
+      border-color: #3b08ff !important;
+      border: 1px solid !important;
+      border-radius: 100px;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 10px 14px;
+      letter-spacing: 2px!important;
+      line-height: 1.9;
+      font-weight:700;
+      font-family: 'Roboto' !important;
+      text-align:center;
+    }
+    .flits-order-action-row .cancelBtn:hover,
+    .flits-order-action-row #reason_date:hover,
+    .flits-order-action-row #success:hover,
+    .flits-order-action-row .dummy__button:hover{
+      color: #ffffff !important;
+      background: #3b08ff !important;
+      border-color: #3b08ff !important;
+    }
+    .flits-modal-content textarea,
+    .flits-modal-content select,
+    .flits-modal-content input{
+      display: block;
+      font-size: 14px;
+      width: 100%;
+      height: 44px;
+      min-height: 44px;
+      padding: 10px;
+      margin: 0;
+      line-height: 22px;
+      border: 1px solid #9d9d9d;
+      outline: none;
+      background: #fff;
+      color: #5f6a7d;
+      font: 13px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin-bottom: 15px;
+      -webkit-appearance: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      border-radius: 3px;
+      text-align:left
+    }
+    .flits-modal-content input[type=number]::-webkit-inner-spin-button,
+    .flits-modal-content input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+    }
+    .flits-modal-content#formModal label{
+      font-weight: bold;
+      display: block;
+      font-size: 13px;
+      text-align: left;
+      margin-bottom: 5px;
+    }
+
+    .flits-modal-content select{
+      background: #fff url({{ "select.png" | asset_url }}) no-repeat 96% 50%!important;
+      background-size: 18px 12px!important;
+      padding: 8px 14px 8px!important;
+      border-radius: 3px!important;
+      border: 1px solid #d9dbdc;
+      -webkit-appearance: none;
+      -ms-appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      -moz-appearance: none;
+      text-indent: 0.01px;
+      text-overflow: '';
+    }
+    /*   modal-content.modal[open]{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    } */
+    /*   modal-content.modal-backdrop{
+    visibility:visible!important;
+    } */
+    .flits-modal-content#formModal p.warning{ font-size: 14px; }
+    .flits-modal-content .modal-footer button:hover{ background:#444444!important;}
+    @media(max-width:749px){
+      .flits-modal-content .modal-footer button {
+        height:auto!important;
+        min-height:auto!important;
+      }
+    }
+    @media(max-width:992px){
+      .flits-account-page-container .flits-order-action-row .flits-button, .flits-account-page-container .flits-order-action-row button {
+        width: 100%;
+        margin-top:10px;
+      }
+    }
+    @media screen and (min-width: 741px){
+      .flits-modal-content .modal__content{
+        margin-left: 0!important;
+        margin-right: 0!important;
+        margin-bottom:0!important;
+      }
+    }
+    /* Styles for the popup */
+    .flits-custom-popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 40px 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+    }
+
+    .flits-custom-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9998;
+    }
+    .flits-custom-close-popup {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        cursor: pointer;
+    }
+    #flits-raise-ticket{
+        font-weight: bold!important;
+        text-decoration: underline!important;
+        color: blue;
+    }
+</style>
+
+<div class="flits-custom-overlay"></div>
+<div class="flits-custom-popup">
+        <p>It seems your order is already fulfilled, therefore, we cannot cancel your order now.</p>
+    <button class="flits-custom-close-popup">X</button>
+</div>
+
+{% endif %}

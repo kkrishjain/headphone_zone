@@ -1,0 +1,81 @@
+{%- comment -%}
+HPZ shipping timeline snippet (METAOBJECT ONLY)
+- Reads the slowest line-item's numeric timeline (hpz.timeline) and final_price
+- Tries to use product.metafields.hpz.timeline_reference (if Shopify provides a dereferenced object)
+- If product metafield is not dereferenced, falls back to the singleton metaobject:
+    shop.metaobjects.product_page_timeline['product-page-timeline']
+- DOES NOT provide any hard-coded text; if metaobject fields are missing, values will be empty
+- Exposes JSON in #hpz-shipping-timeline -> JS will POST it to cart attributes
+{%- endcomment -%}
+
+{%- assign max_timeline = 0 -%}
+{%- assign max_price = 0 -%}
+{%- for item in cart.items -%}
+  {%- assign tl = item.product.metafields.hpz.timeline | plus: 0 -%}
+  {%- assign p  = item.final_price | plus: 0 -%}
+  {%- if tl > max_timeline -%}
+    {%- assign max_timeline = tl -%}
+    {%- assign max_price = p -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign weekday_text = "" -%}
+{%- assign weekend_text = "" -%}
+
+{%- assign raw_ref = cart.items.first.product.metafields.hpz.timeline_reference -%}
+
+{%- if raw_ref and raw_ref.handle %}
+  {%- assign pp = raw_ref -%}
+{%- else %}
+  {%- if shop.metaobjects and shop.metaobjects.product_page_timeline and shop.metaobjects.product_page_timeline['product-page-timeline'] %}
+    {%- assign pp = shop.metaobjects.product_page_timeline['product-page-timeline'] -%}
+  {%- else %}
+    {%- assign pp = nil -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- if pp and max_timeline > 0 -%}
+  {%- if max_timeline == 24 -%}
+    {%- if max_price <= 5000000 -%}
+      {%- assign weekday_text = pp.monday_friday_timeline_24_and_price_50k -%}
+    {%- else -%}
+      {%- assign weekday_text = pp.monday_friday_timeline_24_and_price_a50k -%}
+    {%- endif -%}
+    {%- assign weekend_text = pp.saturday_sunday_timeline_24 -%}
+
+  {%- elsif max_timeline == 48 -%}
+    {%- if max_price <= 5000000 -%}
+      {%- assign weekday_text = pp.monday_friday_timeline_48_and_price_50k -%}
+    {%- else -%}
+      {%- assign weekday_text = pp.monday_friday_timeline_48_and_price_a50k -%}
+    {%- endif -%}
+    {%- assign weekend_text = pp.saturday_sunday_timeline_48 -%}
+
+  {%- elsif max_timeline == 72 -%}
+    {%- assign weekday_text = pp.timeline_72 -%}
+    {%- assign weekend_text = pp.timeline_72 -%}
+
+  {%- elsif max_timeline == 100 -%}
+    {%- assign weekday_text = pp.timeline_100 -%}
+    {%- assign weekend_text = pp.timeline_100 -%}
+
+  {%- elsif max_timeline == 120 -%}
+    {%- assign weekday_text = pp.timeline_120 -%}
+    {%- assign weekend_text = pp.timeline_120 -%}
+
+  {%- elsif max_timeline == 240 -%}
+    {%- assign weekday_text = pp.timeline_240 -%}
+    {%- assign weekend_text = pp.timeline_240 -%}
+
+  {%- elsif max_timeline == 336 -%}
+    {%- assign weekday_text = pp.timeline_336 -%}
+    {%- assign weekend_text = pp.timeline_336 -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- capture _timeline_payload -%}{
+  "weekday": {{ weekday_text | default: "" | strip | strip_newlines | json }},
+  "weekend": {{ weekend_text | default: "" | strip | strip_newlines | json }}
+}{%- endcapture -%}
+
+<div id="hpz-shipping-timeline" data-json='{{ _timeline_payload | escape }}' style="display:none"></div>

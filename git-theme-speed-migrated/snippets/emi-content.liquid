@@ -1,0 +1,2504 @@
+{% case emi-content %}
+  {% when 'axis' %}
+    <div class="low-cost-emi-interest-grid">
+      <b>Tenure</b>
+      <b>Interest%</b>
+      <b>Installment</b>
+      <b>Interest</b>
+      {% comment %} AXIS - 3 Months - 16% {% endcomment %}
+
+      {% unless product.price > 1000000 %}
+        {% if product.price > 300000 %}
+          <p>3</p>
+          <p>16%</p>
+          <p>
+            {% liquid
+              assign p = product.price
+              assign r = 16.00 | divided_by: 12 | divided_by: 100
+              assign r1 = r | plus: 1
+              assign r13 = r1 | times: r1 | times: r1
+              assign r131 = r13 | minus: 1
+              assign right = r13 | divided_by: r131
+              assign emi = p | times: r | times: right
+              assign emi = emi | money
+            %}
+            {{ emi }}
+          </p>
+          <p>
+            {% liquid
+              assign iemi = p | times: r | times: right
+              assign pi = iemi | times: 3
+              assign int = pi | minus: p
+              assign int = int | money
+            %}
+            {{ int }}
+          </p>
+        {%- endif %}
+      {%- endunless %}
+
+      {% if product.price > 1000000 %}
+        <p>3</p>
+        <p>Low Cost EMI</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 16.00 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r131 = r13 | minus: 1
+            assign right = r13 | divided_by: r131
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 3
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          <strike>{{ int }}</strike>
+          {% liquid
+            assign p = product.price
+            assign rn = 12.8975 | divided_by: 12 | divided_by: 100
+            assign rn1 = rn | plus: 1
+            assign rn13 = rn1 | times: rn1 | times: rn1
+            assign rn131 = rn13 | minus: 1
+            assign right = rn13 | divided_by: rn131
+            assign nemi = p | times: rn | times: right
+            assign nemi = nemi | money
+            assign iemin = p | times: rn | times: right
+            assign pin = iemin | times: 3
+            assign intn = pin | minus: p
+            assign intn = intn | money
+          %}
+          {{ intn }}
+        </p>
+      {%- endif %}
+
+      {% comment %} AXIS - 6 Months - 16% {% endcomment %}
+      {% unless product.price > 1000000 %}
+        {% if product.price > 300000 %}
+          <p>6</p>
+          <p>16%</p>
+          <p>
+            {% liquid
+              assign p = product.price
+              assign r = 16.00 | divided_by: 12 | divided_by: 100
+              assign r1 = r | plus: 1
+              assign r13 = r1 | times: r1 | times: r1
+              assign r16 = r13 | times: r13
+              assign r161 = r16 | minus: 1
+              assign right = r16 | divided_by: r161
+              assign emi = p | times: r | times: right
+              assign emi = emi | money
+            %}
+            {{ emi }}
+          </p>
+          <p>
+            {% liquid
+              assign iemi = p | times: r | times: right
+              assign pi = iemi | times: 6
+              assign int = pi | minus: p
+              assign int = int | money
+            %}
+            {{ int }}
+          </p>
+        {% endif %}
+      {%- endunless %}
+
+      {% if product.price > 1000000 %}
+        <p>6</p>
+        <p>Low Cost EMI</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 16.00 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r16 = r13 | times: r13
+            assign r161 = r16 | minus: 1
+            assign right = r16 | divided_by: r161
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 6
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          <strike>{{ int }}</strike>
+          {% liquid
+            assign p = product.price
+            assign rn = 12.9634 | divided_by: 12 | divided_by: 100
+            assign rn1 = rn | plus: 1
+            assign rn13 = rn1 | times: rn1 | times: rn1
+            assign rn16 = rn13 | times: rn13
+            assign rn161 = rn16 | minus: 1
+            assign right = rn16 | divided_by: rn161
+            assign nemi = p | times: rn | times: right
+            assign nemi = nemi | money
+            assign iemin = p | times: rn | times: right
+            assign pin = iemin | times: 6
+            assign intn = pin | minus: p
+            assign intn = intn | money
+          %}
+          {{ intn }}
+        </p>
+      {%- endif %}
+      {% if product.price > 300000 %}
+        {% comment %} AXIS - 9 Months - 16% {% endcomment %}
+        <p>9</p>
+        <p>16%</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 16.00 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r19 = r13 | times: r13 | times: r13
+            assign r191 = r19 | minus: 1
+            assign right = r19 | divided_by: r191
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 9
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          {{ int }}
+        </p>
+
+        {% comment %} AXIS - 12 Months - 16% {% endcomment %}
+        <p>12</p>
+        <p>16%</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 14.00 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r112 = r13 | times: r13 | times: r13 | times: r13
+            assign r1121 = r112 | minus: 1
+            assign right = r112 | divided_by: r1121
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 12
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          {{ int }}
+        </p>
+
+        {% comment %} AXIS - 18 Months - 16% {% endcomment %}
+        <p>18</p>
+        <p>16%</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 16.00 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r16 = r13 | times: r13
+            assign r18 = r16 | times: r16 | times: r16
+            assign r181 = r18 | minus: 1
+            assign right = r18 | divided_by: r181
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 18
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          {{ int }}
+        </p>
+
+        {% comment %} AXIS - 24 Months - 16% {% endcomment %}
+        <p>24</p>
+        <p>16%</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 16.00 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r112 = r13 | times: r13 | times: r13 | times: r13
+            assign r24 = r112 | times: r112
+            assign r241 = r24 | minus: 1
+            assign right = r24 | divided_by: r241
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 24
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          {{ int }}
+        </p>
+      {% endif %}
+    </div>
+
+  {% when 'hdfc' %}
+    <div class="low-cost-emi-interest-grid">
+      <b>Tenure</b>
+      <b>Interest%</b>
+      <b>Installment</b>
+      <b>Interest</b>
+      {% comment %} HDFC - 3 Months - 16% {% endcomment %}
+
+      {% unless product.price > 1000000 %}
+        <p>3</p>
+        <p>16%</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 16.00 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r131 = r13 | minus: 1
+            assign right = r13 | divided_by: r131
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 3
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          {{ int }}
+        </p>
+      {%- endunless %}
+
+      {% if product.price > 1000000 %}
+        <p>3</p>
+        <p>Low Cost EMI</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 16.00 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r131 = r13 | minus: 1
+            assign right = r13 | divided_by: r131
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 3
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          <strike>{{ int }}</strike>
+          {% liquid
+            assign p = product.price
+            assign rn = 12.8975 | divided_by: 12 | divided_by: 100
+            assign rn1 = rn | plus: 1
+            assign rn13 = rn1 | times: rn1 | times: rn1
+            assign rn131 = rn13 | minus: 1
+            assign right = rn13 | divided_by: rn131
+            assign nemi = p | times: rn | times: right
+            assign nemi = nemi | money
+            assign iemin = p | times: rn | times: right
+            assign pin = iemin | times: 3
+            assign intn = pin | minus: p
+            assign intn = intn | money
+          %}
+          {{ intn }}
+        </p>
+      {%- endif %}
+
+      {% comment %} HDFC - 6 Months - 16% {% endcomment %}
+      {% unless product.price > 1000000 %}
+        <p>6</p>
+        <p>16%</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 16.00 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r16 = r13 | times: r13
+            assign r161 = r16 | minus: 1
+            assign right = r16 | divided_by: r161
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 6
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          {{ int }}
+        </p>
+      {%- endunless %}
+
+      {% if product.price > 1000000 %}
+        <p>6</p>
+        <p>Low Cost EMI</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 16.00 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r16 = r13 | times: r13
+            assign r161 = r16 | minus: 1
+            assign right = r16 | divided_by: r161
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 6
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          <strike>{{ int }}</strike>
+          {% liquid
+            assign p = product.price
+            assign rn = 12.9634 | divided_by: 12 | divided_by: 100
+            assign rn1 = rn | plus: 1
+            assign rn13 = rn1 | times: rn1 | times: rn1
+            assign rn16 = rn13 | times: rn13
+            assign rn161 = rn16 | minus: 1
+            assign right = rn16 | divided_by: rn161
+            assign nemi = p | times: rn | times: right
+            assign nemi = nemi | money
+            assign iemin = p | times: rn | times: right
+            assign pin = iemin | times: 6
+            assign intn = pin | minus: p
+            assign intn = intn | money
+          %}
+          {{ intn }}
+        </p>
+      {%- endif %}
+
+      {% comment %} HDFC - 9 Months - 16% {% endcomment %}
+      <p>9</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r19 = r13 | times: r13 | times: r13
+          assign r191 = r19 | minus: 1
+          assign right = r19 | divided_by: r191
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 9
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} HDFC - 12 Months - 16% {% endcomment %}
+      <p>12</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r1121 = r112 | minus: 1
+          assign right = r112 | divided_by: r1121
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 12
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} HDFC - 18 Months - 16% {% endcomment %}
+      <p>18</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r18 = r16 | times: r16 | times: r16
+          assign r181 = r18 | minus: 1
+          assign right = r18 | divided_by: r181
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 18
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} HDFC - 24 Months - 16% {% endcomment %}
+      <p>24</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r24 = r112 | times: r112
+          assign r241 = r24 | minus: 1
+          assign right = r24 | divided_by: r241
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 24
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+    </div>
+
+  {% when 'icici' %}
+    <div class="low-cost-emi-interest-grid">
+      <b>Tenure</b>
+      <b>Interest%</b>
+      <b>Installment</b>
+      <b>Interest</b>
+      {% comment %} ICICI - 3 Months - 15.99% {% endcomment %}
+
+      {% unless product.price > 1000000 %}
+        <p>3</p>
+        <p>15.99%</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 15.99 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r131 = r13 | minus: 1
+            assign right = r13 | divided_by: r131
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 3
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          {{ int }}
+        </p>
+      {%- endunless %}
+
+      {% if product.price > 1000000 %}
+        <p>3</p>
+        <p>Low Cost EMI</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 15.99 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r131 = r13 | minus: 1
+            assign right = r13 | divided_by: r131
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 3
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          <strike>{{ int }}</strike>
+          {% liquid
+            assign p = product.price
+            assign rn = 12.8975 | divided_by: 12 | divided_by: 100
+            assign rn1 = rn | plus: 1
+            assign rn13 = rn1 | times: rn1 | times: rn1
+            assign rn131 = rn13 | minus: 1
+            assign right = rn13 | divided_by: rn131
+            assign nemi = p | times: rn | times: right
+            assign nemi = nemi | money
+            assign iemin = p | times: rn | times: right
+            assign pin = iemin | times: 3
+            assign intn = pin | minus: p
+            assign intn = intn | money
+          %}
+          {{ intn }}
+        </p>
+      {%- endif %}
+
+      {% comment %} HDFC - 6 Months - 15.99% {% endcomment %}
+      {% unless product.price > 1000000 %}
+        <p>6</p>
+        <p>15.99%</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 15.99 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r16 = r13 | times: r13
+            assign r161 = r16 | minus: 1
+            assign right = r16 | divided_by: r161
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 6
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          {{ int }}
+        </p>
+      {%- endunless %}
+
+      {% if product.price > 1000000 %}
+        <p>6</p>
+        <p>Low Cost EMI</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 15.99 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r16 = r13 | times: r13
+            assign r161 = r16 | minus: 1
+            assign right = r16 | divided_by: r161
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 6
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          <strike>{{ int }}</strike>
+          {% liquid
+            assign p = product.price
+            assign rn = 12.9634 | divided_by: 12 | divided_by: 100
+            assign rn1 = rn | plus: 1
+            assign rn13 = rn1 | times: rn1 | times: rn1
+            assign rn16 = rn13 | times: rn13
+            assign rn161 = rn16 | minus: 1
+            assign right = rn16 | divided_by: rn161
+            assign nemi = p | times: rn | times: right
+            assign nemi = nemi | money
+            assign iemin = p | times: rn | times: right
+            assign pin = iemin | times: 6
+            assign intn = pin | minus: p
+            assign intn = intn | money
+          %}
+          {{ intn }}
+        </p>
+      {%- endif %}
+
+      {% comment %} ICIC - 9 Months - 15.99% {% endcomment %}
+      <p>9</p>
+      <p>15.99%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.99 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r19 = r13 | times: r13 | times: r13
+          assign r191 = r19 | minus: 1
+          assign right = r19 | divided_by: r191
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 9
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} ICIC - 12 Months - 15.99% {% endcomment %}
+      <p>12</p>
+      <p>15.99%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.99 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r1121 = r112 | minus: 1
+          assign right = r112 | divided_by: r1121
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 12
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} ICIC - 18 Months - 15.99% {% endcomment %}
+      <p>18</p>
+      <p>15.99%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.99 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r18 = r16 | times: r16 | times: r16
+          assign r181 = r18 | minus: 1
+          assign right = r18 | divided_by: r181
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 18
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} ICIC - 24 Months - 15.99 {% endcomment %}
+      <p>24</p>
+      <p>15.99%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.99 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r24 = r112 | times: r112
+          assign r241 = r24 | minus: 1
+          assign right = r24 | divided_by: r241
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 24
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+    </div>
+
+  {% when 'sbi' %}
+    <div class="low-cost-emi-interest-grid">
+      <b>Tenure</b>
+      <b>Interest%</b>
+      <b>Installment</b>
+      <b>Interest</b>
+      {% comment %} SBI - 3 Months - 16.5% {% endcomment %}
+
+      {% unless product.price > 1000000 %}
+        <p>3</p>
+        <p>16.5%</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 16.50 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r131 = r13 | minus: 1
+            assign right = r13 | divided_by: r131
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 3
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          {{ int }}
+        </p>
+      {%- endunless %}
+
+      {% if product.price > 1000000 %}
+        <p>3</p>
+        <p>Low Cost EMI</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 16.50 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r131 = r13 | minus: 1
+            assign right = r13 | divided_by: r131
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 3
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          <strike>{{ int }}</strike>
+          {% liquid
+            assign p = product.price
+            assign rn = 13.2797 | divided_by: 12 | divided_by: 100
+            assign rn1 = rn | plus: 1
+            assign rn13 = rn1 | times: rn1 | times: rn1
+            assign rn131 = rn13 | minus: 1
+            assign right = rn13 | divided_by: rn131
+            assign nemi = p | times: rn | times: right
+            assign nemi = nemi | money
+            assign iemin = p | times: rn | times: right
+            assign pin = iemin | times: 3
+            assign intn = pin | minus: p
+            assign intn = intn | money
+          %}
+          {{ intn }}
+        </p>
+      {%- endif %}
+
+      {% comment %} SBI - 6 Months - 15% {% endcomment %}
+      {% unless product.price > 1000000 %}
+        <p>6</p>
+        <p>15%</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 15.00 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r16 = r13 | times: r13
+            assign r161 = r16 | minus: 1
+            assign right = r16 | divided_by: r161
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 6
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          {{ int }}
+        </p>
+      {%- endunless %}
+
+      {% if product.price > 1000000 %}
+        <p>6</p>
+        <p>Low Cost EMI</p>
+        <p>
+          {% liquid
+            assign p = product.price
+            assign r = 15.00 | divided_by: 12 | divided_by: 100
+            assign r1 = r | plus: 1
+            assign r13 = r1 | times: r1 | times: r1
+            assign r16 = r13 | times: r13
+            assign r161 = r16 | minus: 1
+            assign right = r16 | divided_by: r161
+            assign emi = p | times: r | times: right
+            assign emi = emi | money
+          %}
+          {{ emi }}
+        </p>
+        <p>
+          {% liquid
+            assign iemi = p | times: r | times: right
+            assign pi = iemi | times: 6
+            assign int = pi | minus: p
+            assign int = int | money
+          %}
+          <strike>{{ int }}</strike>
+          {% liquid
+            assign p = product.price
+            assign rn = 12.1029 | divided_by: 12 | divided_by: 100
+            assign rn1 = rn | plus: 1
+            assign rn13 = rn1 | times: rn1 | times: rn1
+            assign rn16 = rn13 | times: rn13
+            assign rn161 = rn16 | minus: 1
+            assign right = rn16 | divided_by: rn161
+            assign nemi = p | times: rn | times: right
+            assign nemi = nemi | money
+            assign iemin = p | times: rn | times: right
+            assign pin = iemin | times: 6
+            assign intn = pin | minus: p
+            assign intn = intn | money
+          %}
+          {{ intn }}
+        </p>
+      {%- endif %}
+
+      <!-- SBI - 9 Months - 14% -->
+      <p>9</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r19 = r13 | times: r13 | times: r13
+          assign r191 = r19 | minus: 1
+          assign right = r19 | divided_by: r191
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 9
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- SBI - 12 Months - 14% -->
+      <p>12</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r1121 = r112 | minus: 1
+          assign right = r112 | divided_by: r1121
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 12
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} SBI - 18 Months - 16% {% endcomment %}
+      <p>18</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r18 = r16 | times: r16 | times: r16
+          assign r181 = r18 | minus: 1
+          assign right = r18 | divided_by: r181
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 18
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} SBI - 24 Months - 16% {% endcomment %}
+      <p>24</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r24 = r112 | times: r112
+          assign r241 = r24 | minus: 1
+          assign right = r24 | divided_by: r241
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 24
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+    </div>
+
+  {% when 'amex' %}
+    <div class="emi-interest-grid">
+      <b>Tenure</b>
+      <b>Interest%</b>
+      <b>Installment</b>
+      <b>Interest</b>
+      <p>3</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r131 = r13 | minus: 1
+          assign right = r13 | divided_by: r131
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 3
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+      {% comment %} AMEX - 6 Months - 14% {% endcomment %}
+      <p>6</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r161 = r16 | minus: 1
+          assign right = r16 | divided_by: r161
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 6
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} AMEX - 9 Months - 14% {% endcomment %}
+      <p>9</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r19 = r13 | times: r13 | times: r13
+          assign r191 = r19 | minus: 1
+          assign right = r19 | divided_by: r191
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 9
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} AMEX - 12 Months - 14% {% endcomment %}
+      <p>12</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r1121 = r112 | minus: 1
+          assign right = r112 | divided_by: r1121
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 12
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} AMEX - 18 Months - 15% {% endcomment %}
+      <p>18</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r18 = r16 | times: r16 | times: r16
+          assign r181 = r18 | minus: 1
+          assign right = r18 | divided_by: r181
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 18
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} AMEX - 24 Months - 15% {% endcomment %}
+      <p>24</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r24 = r112 | times: r112
+          assign r241 = r24 | minus: 1
+          assign right = r24 | divided_by: r241
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 24
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+    </div>
+
+  {% when 'bob' %}
+    <div class="emi-interest-grid">
+      <b>Tenure</b>
+      <b>Interest%</b>
+      <b>Installment</b>
+      <b>Interest</b>
+
+      {% comment %} BOB - 3 Months - 13% {% endcomment %}
+      <p>3</p>
+      <p>13%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 13.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r131 = r13 | minus: 1
+          assign right = r13 | divided_by: r131
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 3
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} BOB - 6 Months - 14% {% endcomment %}
+      <p>6</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r161 = r16 | minus: 1
+          assign right = r16 | divided_by: r161
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 6
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} BOB - 9 Months - 14% {% endcomment %}
+
+      <p>9</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r19 = r13 | times: r13 | times: r13
+          assign r191 = r19 | minus: 1
+          assign right = r19 | divided_by: r191
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 9
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} BOB - 12 Months - 15% {% endcomment %}
+      <p>12</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r1121 = r112 | minus: 1
+          assign right = r112 | divided_by: r1121
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 12
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} BOB - 18 Months - 15% {% endcomment %}
+      <p>18</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r18 = r16 | times: r16 | times: r16
+          assign r181 = r18 | minus: 1
+          assign right = r18 | divided_by: r181
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 18
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} BOB - 24 Months - 16% {% endcomment %}
+      <p>24</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r24 = r112 | times: r112
+          assign r241 = r24 | minus: 1
+          assign right = r24 | divided_by: r241
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 24
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+    </div>
+
+  {% when 'citi' %}
+    <div class="emi-interest-grid">
+      <b>Tenure</b>
+      <b>Interest%</b>
+      <b>Installment</b>
+      <b>Interest</b>
+
+      {% comment %} CITI - 3 Months - 14% {% endcomment %}
+      <p>3</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r131 = r13 | minus: 1
+          assign right = r13 | divided_by: r131
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 3
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} CITI - 6 Months - 14% {% endcomment %}
+      <p>6</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r161 = r16 | minus: 1
+          assign right = r16 | divided_by: r161
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 6
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} CITI - 9 Months - 16% {% endcomment %}
+      <p>9</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r19 = r13 | times: r13 | times: r13
+          assign r191 = r19 | minus: 1
+          assign right = r19 | divided_by: r191
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 9
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} CITI - 12 Months - 16% {% endcomment %}
+      <p>12</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r1121 = r112 | minus: 1
+          assign right = r112 | divided_by: r1121
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 12
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} CITI - 18 Months - 16% {% endcomment %}
+      <p>18</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r18 = r16 | times: r16 | times: r16
+          assign r181 = r18 | minus: 1
+          assign right = r18 | divided_by: r181
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 18
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} CITI - 24 Months - 16% {% endcomment %}
+      <p>24</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r24 = r112 | times: r112
+          assign r241 = r24 | minus: 1
+          assign right = r24 | divided_by: r241
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 24
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+    </div>
+
+  {% when 'hsbc' %}
+    <div class="emi-interest-grid">
+      <b>Tenure</b>
+      <b>Interest%</b>
+      <b>Installment</b>
+      <b>Interest</b>
+
+      {% comment %} HSBC - 3 Months - 12.50% {% endcomment %}
+      <p>3</p>
+      <p>12.50%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 12.50 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r131 = r13 | minus: 1
+          assign right = r13 | divided_by: r131
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 3
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} HSBC - 6 Months - 12.50% {% endcomment %}
+      <p>6</p>
+      <p>12.50%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 12.50 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r161 = r16 | minus: 1
+          assign right = r16 | divided_by: r161
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 6
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} HSBC - 9 Months - 13.50% {% endcomment %}
+      <p>9</p>
+      <p>13.50%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 13.50 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r19 = r13 | times: r13 | times: r13
+          assign r191 = r19 | minus: 1
+          assign right = r19 | divided_by: r191
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 9
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} HSBC - 12 Months - 13.50% {% endcomment %}
+      <p>12</p>
+      <p>13.50%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 13.50 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r1121 = r112 | minus: 1
+          assign right = r112 | divided_by: r1121
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 12
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      {% comment %} HSBC - 18 Months - 13.50% {% endcomment %}
+      <p>18</p>
+      <p>13.50%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 13.50 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r18 = r16 | times: r16 | times: r16
+          assign r181 = r18 | minus: 1
+          assign right = r18 | divided_by: r181
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 18
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+    </div>
+
+  {% when 'indusind' %}
+    <div class="emi-interest-grid">
+      <b>Tenure</b>
+      <b>Interest%</b>
+      <b>Installment</b>
+      <b>Interest</b>
+
+      <!-- INDUSIND - 3 Months - 14% -->
+      <p>3</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r131 = r13 | minus: 1
+          assign right = r13 | divided_by: r131
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 3
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- INDUSIND - 6 Months - 14% -->
+      <p>6</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r161 = r16 | minus: 1
+          assign right = r16 | divided_by: r161
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 6
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- INDUSIND - 9 Months - 13% -->
+      <p>9</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r19 = r13 | times: r13 | times: r13
+          assign r191 = r19 | minus: 1
+          assign right = r19 | divided_by: r191
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 9
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- INDUSIND - 12 Months - 12% -->
+      <p>12</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r1121 = r112 | minus: 1
+          assign right = r112 | divided_by: r1121
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 12
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- INDUSIND - 18 Months - 12% -->
+      <p>18</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r18 = r16 | times: r16 | times: r16
+          assign r181 = r18 | minus: 1
+          assign right = r18 | divided_by: r181
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 18
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- INDUSIND - 24 Months - 15% -->
+      <p>24</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r24 = r112 | times: r112
+          assign r241 = r24 | minus: 1
+          assign right = r24 | divided_by: r241
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 24
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+    </div>
+
+  {% when 'kotak' %}
+    <div class="emi-interest-grid">
+      <p>Tenure</p>
+      <p>Interest%</p>
+      <p>Installment</p>
+      <p>Interest</p>
+
+      <!-- KOTAK - 3 Months - 16% -->
+      <p>3</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r131 = r13 | minus: 1
+          assign right = r13 | divided_by: r131
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 3
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- KOTAK - 6 Months - 16% -->
+      <p>6</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r161 = r16 | minus: 1
+          assign right = r16 | divided_by: r161
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 6
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- KOTAK - 9 Months - 16% -->
+      <p>9</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r19 = r13 | times: r13 | times: r13
+          assign r191 = r19 | minus: 1
+          assign right = r19 | divided_by: r191
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 9
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- KOTAK - 12 Months - 16% -->
+      <p>12</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r1121 = r112 | minus: 1
+          assign right = r112 | divided_by: r1121
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 12
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- Kotak - 18 Months - 16% -->
+      <p>18</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r18 = r16 | times: r16 | times: r16
+          assign r181 = r18 | minus: 1
+          assign right = r18 | divided_by: r181
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 18
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- Kotak - 24 Months - 16% -->
+      <p>24</p>
+      <p>16%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 16.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r24 = r112 | times: r112
+          assign r241 = r24 | minus: 1
+          assign right = r24 | divided_by: r241
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 24
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+    </div>
+
+  {% when 'rbl' %}
+    <div class="emi-interest-grid">
+      <b>Tenure</b>
+      <b>Interest%</b>
+      <b>Installment</b>
+      <b>Interest</b>
+
+      <!-- RBL - 3 Months - 13% -->
+      <p>3</p>
+      <p>13%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 13.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r131 = r13 | minus: 1
+          assign right = r13 | divided_by: r131
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 3
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- RBL - 6 Months - 14% -->
+      <p>6</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r161 = r16 | minus: 1
+          assign right = r16 | divided_by: r161
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 6
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- RBL - 9 Months - 15% -->
+      <p>9</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r19 = r13 | times: r13 | times: r13
+          assign r191 = r19 | minus: 1
+          assign right = r19 | divided_by: r191
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 9
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- RBL - 12 Months - 15% -->
+      <p>12</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r1121 = r112 | minus: 1
+          assign right = r112 | divided_by: r1121
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 12
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- RBL - 18 Months - 15% -->
+      <p>18</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r18 = r16 | times: r16 | times: r16
+          assign r181 = r18 | minus: 1
+          assign right = r18 | divided_by: r181
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 18
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- RBL - 24 Months - 15% -->
+      <p>24</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r24 = r112 | times: r112
+          assign r241 = r24 | minus: 1
+          assign right = r24 | divided_by: r241
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 24
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+    </div>
+
+  {% when 'stanc' %}
+    <div class="emi-interest-grid">
+      <b>Tenure</b>
+      <b>Interest%</b>
+      <b>Installment</b>
+      <b>Interest</b>
+
+      <!-- STANC - 3 Months - 13% -->
+      <p>3</p>
+      <p>13%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 13.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r131 = r13 | minus: 1
+          assign right = r13 | divided_by: r131
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 3
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- STANC - 6 Months - 13% -->
+      <p>6</p>
+      <p>13%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 13.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r161 = r16 | minus: 1
+          assign right = r16 | divided_by: r161
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 6
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- STANC - 9 Months - 14% -->
+      <p>9</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r19 = r13 | times: r13 | times: r13
+          assign r191 = r19 | minus: 1
+          assign right = r19 | divided_by: r191
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 9
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- STANC - 12 Months - 14% -->
+      <p>12</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r1121 = r112 | minus: 1
+          assign right = r112 | divided_by: r1121
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 12
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+    </div>
+  {% when 'yes-bank' %}
+    <div class="emi-interest-grid">
+      <b>Tenure</b>
+      <b>Interest%</b>
+      <b>Installment</b>
+      <b>Interest</b>
+
+      <!-- YES - 3 Months - 13% -->
+
+      <p>3</p>
+      <p>13%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 13.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r131 = r13 | minus: 1
+          assign right = r13 | divided_by: r131
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 3
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- YES - 6 Months - 13% -->
+
+      <p>6</p>
+      <p>13%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 13.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r161 = r16 | minus: 1
+          assign right = r16 | divided_by: r161
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 6
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- YES - 9 Months - 14% -->
+      <p>9</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r19 = r13 | times: r13 | times: r13
+          assign r191 = r19 | minus: 1
+          assign right = r19 | divided_by: r191
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 9
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- YES - 12 Months - 14% -->
+      <p>12</p>
+      <p>14%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 14.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r1121 = r112 | minus: 1
+          assign right = r112 | divided_by: r1121
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 12
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- YES - 18 Months - 15% -->
+      <p>18</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r16 = r13 | times: r13
+          assign r18 = r16 | times: r16 | times: r16
+          assign r181 = r18 | minus: 1
+          assign right = r18 | divided_by: r181
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 18
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+
+      <!-- YES - 24 Months - 15% -->
+      <p>24</p>
+      <p>15%</p>
+      <p>
+        {% liquid
+          assign p = product.price
+          assign r = 15.00 | divided_by: 12 | divided_by: 100
+          assign r1 = r | plus: 1
+          assign r13 = r1 | times: r1 | times: r1
+          assign r112 = r13 | times: r13 | times: r13 | times: r13
+          assign r24 = r112 | times: r112
+          assign r241 = r24 | minus: 1
+          assign right = r24 | divided_by: r241
+          assign emi = p | times: r | times: right
+          assign emi = emi | money
+        %}
+        {{ emi }}
+      </p>
+      <p>
+        {% liquid
+          assign iemi = p | times: r | times: right
+          assign pi = iemi | times: 24
+          assign int = pi | minus: p
+          assign int = int | money
+        %}
+        {{ int }}
+      </p>
+    </div>
+{% endcase %}

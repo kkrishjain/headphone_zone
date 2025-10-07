@@ -1,0 +1,1306 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "badges": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "vendor": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "63ddac27-6381-4fa5-88af-c83da4f7291e": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% if product.metafields.hpz.badge_rank.value != blank %}\n\n<div class=\"product-info__badge-list\">\n<span class=\"best-rank\">#{{ product.metafields.hpz.badge_rank.value }} BEST SELLER\n</span>\n<p style=\"color: #777;font-size: 0.9rem;display:flex;align-items: center;\">in</p>\n<a href=\"{{ product.metafields.hpz.badge_rank_collection_link.value }}\" style=\"text-decoration:underline;color:#777;display:flex;align-items: center;\"><p style=\"font-size: 0.9rem;color:#777777;display:flex;align-items: center;\">{{ product.metafields.hpz.badge_rank_collection_title.value }}</p></a>\n\n\n</div>\n{% endif %}\n<style>\n.best-rank{\ndisplay: inline-block;\n    box-sizing: border-box;\n    color: #444;\n    background-color: #FFDF97;\n    padding: 6px 10px;\n    font-size:0.7rem;\n    position: relative;\n    height: 25px;\n    border-radius: 90px 90px 90px 90px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 1px;\ndisplay:flex;\nalign-items: center;\n}\n\n.product-info__badge-list {\ngap: var(--spacing-2);\n    flex-wrap: wrap;\n    display: flex;\n}\n\n.product-info__liquid {\nmargin-block-start: 0.5rem;\n    margin-block-end: 0.5rem;\n}\n\n</style>"
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "196267b9-a37b-42cc-bdc3-402d76e83d1f": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "579635fa-203e-4e32-abad-91ede0a255e3": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "none",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "product_variations_PPdrA6": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "{{ product.metafields.hpz.variant_option_name.value }}",
+            "option_value_metafield": "hpz.variants_value",
+            "products": "{{ product.metafields.hpz.variant_products.value }}",
+            "selector_style": "block"
+          }
+        },
+        "3c8720c5-4762-48f6-9daa-be6239f73340": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{{ product.metafields.hpz.offer_message }}\n\n{%- render 'freebie' -%}\n\n{{ product.metafields.hpz.offer_message_sale }}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "b253fc0f-99f2-4bff-a2e6-585277f6538e": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% render 'below-buy-button.liquid'  %}"
+          }
+        },
+        "26c544be-f0bd-45b6-b9e2-bae47c526358": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": false,
+            "products_count": 10,
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "badges",
+        "vendor",
+        "title",
+        "63ddac27-6381-4fa5-88af-c83da4f7291e",
+        "separator",
+        "196267b9-a37b-42cc-bdc3-402d76e83d1f",
+        "price",
+        "579635fa-203e-4e32-abad-91ede0a255e3",
+        "variant_picker",
+        "product_variations_PPdrA6",
+        "3c8720c5-4762-48f6-9daa-be6239f73340",
+        "buy_buttons",
+        "b253fc0f-99f2-4bff-a2e6-585277f6538e",
+        "26c544be-f0bd-45b6-b9e2-bae47c526358"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_fixed_add_to_cart": false,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "hpz_new_snapshot_KMaT88": {
+      "type": "hpz-new-snapshot",
+      "settings": {}
+    },
+    "6306d58e-94d6-4ff8-8d68-c88b8af2506e": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--16016939548860__6306d58e-94d6-4ff8-8d68-c88b8af2506e-1681803136997a3ec3-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Experience Audiophile-Grade Sound With Sony's Brand-New Flagship WalkMan Series",
+            "heading_tag": "h3"
+          }
+        },
+        "083a26bf-8f43-4523-a38b-1410fc6d7d30": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Sony is proud to introduce their all-new Digital Audio Player - the NW-ZX707, in their Walkman® series. It is a byproduct of the engineered evolution of portable sound. With the incredible sound quality of the NW-ZX707, which carries on the guiding principles of the Signature Walkman®, you can listen to your music wherever you are just as the artist intended.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16016939548860__6306d58e-94d6-4ff8-8d68-c88b8af2506e-1681803136997a3ec3-1",
+        "083a26bf-8f43-4523-a38b-1410fc6d7d30"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-Impact-Banner-Desktop.jpg",
+        "mobile_image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-Impact-Banner.jpg",
+        "mobile_text_position": "place-self-start-end text-end",
+        "desktop_text_position": "sm:place-self-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "adbbdf42-4b0b-4713-b3d8-f09c21b09df3": {
+      "type": "media-grid",
+      "blocks": {
+        "e13712b5-fe23-45eb-9a87-1e78c46c52e9": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Headphone-Zone-Sony-NW-ZX707-New-Video.mp4",
+            "external_video_url": "",
+            "show_video_controls": true,
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 3,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16093140320444__adbbdf42-4b0b-4713-b3d8-f09c21b09df3-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-New-Grid-02.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16093140320444__adbbdf42-4b0b-4713-b3d8-f09c21b09df3-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-New-Grid-01.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "e13712b5-fe23-45eb-9a87-1e78c46c52e9",
+        "template--16093140320444__adbbdf42-4b0b-4713-b3d8-f09c21b09df3-image-2",
+        "template--16093140320444__adbbdf42-4b0b-4713-b3d8-f09c21b09df3-image-3"
+      ],
+      "settings": {
+        "full_width": false,
+        "reduce_width": true,
+        "desktop_row_height": 240,
+        "mobile_row_height": 200,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "2fc44790-bffa-490e-b83f-ae985acd60c1": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "19a3316f-4330-457b-a773-bf8221dcde3a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-Feature-3.png",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Stream Your Favourite Music With WiFi Support",
+            "content": "<p>The Sony NW-ZX707 is Wi-Fi® compatible for direct download and streaming. Supported by Android™ and compatible with Wi-Fi®, the NW-ZX707 offers even more ways to listen to your music. Enjoy your favourite streaming and music apps on your Walkman® NW-ZX707.<br/></p>"
+          }
+        },
+        "a5b1af3e-a4cf-4f52-8a9b-e718a348b0cb": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-Feature-4.png",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Enjoy Hi-Res Audio Wirelessly",
+            "content": "<p>Enjoy Hi-Res Audio quality without wires thanks to LDAC, Sony's premium wireless codec. With 3x the bitrate of standard Bluetooth® technology, you can enjoy a superior listening experience for all your music. Connect wirelessly with Bluetooth, and you are ready to go with support for Bluetooth codecs like LDAC, aptX HD, aptX, AAC and SBC.<br/></p>"
+          }
+        },
+        "template--16016939548860__2fc44790-bffa-490e-b83f-ae985acd60c1-16818153117aa9ff13-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-Feature-001-min.png",
+            "icon": "none",
+            "icon_width": 24,
+            "title": "Cassette Tape UI",
+            "content": "<p>The NW-ZX707 features a cassette tape user interface and screensaver. The cassette tape visual that appears on your Walkman® display varies depending on the codec of the music.<br/></p>"
+          }
+        },
+        "template--16016939548860__2fc44790-bffa-490e-b83f-ae985acd60c1-16818153117aa9ff13-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-Feature-2.png",
+            "icon": "none",
+            "icon_width": 24,
+            "title": "Analogue Style Volume Control",
+            "content": "<p>The volume UI on the ZX700 series echoes classic analogue design, a nice little detail to further enhance your listening enjoyment.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "19a3316f-4330-457b-a773-bf8221dcde3a",
+        "a5b1af3e-a4cf-4f52-8a9b-e718a348b0cb",
+        "template--16016939548860__2fc44790-bffa-490e-b83f-ae985acd60c1-16818153117aa9ff13-1",
+        "template--16016939548860__2fc44790-bffa-490e-b83f-ae985acd60c1-16818153117aa9ff13-0"
+      ],
+      "custom_css": [
+        ".h1 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "fade",
+        "image_position": "start",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "#444444",
+        "heading_gradient": ""
+      }
+    },
+    "fe1fb7ce-1f3d-4120-bce5-ea61b62dddfe": {
+      "type": "video",
+      "blocks": {
+        "template--16031262376124__fe1fb7ce-1f3d-4120-bce5-ea61b62dddfe-1683872282bf8a5895-0": {
+          "type": "play",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--16031262376124__fe1fb7ce-1f3d-4120-bce5-ea61b62dddfe-1683872282bf8a5895-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https://www.youtube.com/watch?v=nvIL9xhhNwY",
+        "poster": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-New-Thumbnail.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 15
+      }
+    },
+    "b14d67a8-d921-46b0-8bce-693de6f592df": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "38f7c393-79e3-4d48-b04b-b123845a474b": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX-707-Arrow-06.jpg",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Milled Aluminium Frame",
+            "content": "<p>An aluminium-alloy frame provides a highly rigid case that's resistive to electrical noise and other interference for stable, high-quality sound. The sound has a stimulating experience that gets you moving.<br/></p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "template--16031262376124__b14d67a8-d921-46b0-8bce-693de6f592df-16838745349c119e03-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-ZOne-Large_coil_for_Balanced_Output_D.jpg",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Larger Coil For Balanced Output",
+            "content": "<p>A bigger 8mm coil is employed as the L-C filter to provide the digital amp with the best-balanced output signal possible. By incorporating flat conductive wire, Sony has achieved lower distortion and lower resistance, which helps create an improved sound resolution across all frequencies.<br/></p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "template--16031262376124__b14d67a8-d921-46b0-8bce-693de6f592df-16838745349c119e03-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-Arrow-05.jpg",
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "Oxygen-Free Copper Milled Block For Clearer Sound",
+            "content": "<p>An OFC (Oxygen-Free Copper) milled block covers the digital block helping both to strengthen digital ground and improve noise shielding from digital block elements such as the application processor and memory devices. The result is an accurate sound that appears to rise from silence.<br/></p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "38f7c393-79e3-4d48-b04b-b123845a474b",
+        "template--16031262376124__b14d67a8-d921-46b0-8bce-693de6f592df-16838745349c119e03-0",
+        "template--16031262376124__b14d67a8-d921-46b0-8bce-693de6f592df-16838745349c119e03-1"
+      ],
+      "custom_css": [
+        ".h1 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "button_background": "#444444",
+        "button_text_color": "#444444"
+      }
+    },
+    "65c8133d-de96-4e48-bf84-892d45c72b3d": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--16031262376124__65c8133d-de96-4e48-bf84-892d45c72b3d-16838741340ca733b0-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Staggering Battery Life For Uninterrupted Playback",
+            "heading_tag": "h3"
+          }
+        },
+        "template--16031262376124__65c8133d-de96-4e48-bf84-892d45c72b3d-16838741340ca733b0-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>With longer battery life, you can immerse yourself in more of your music, with up to 25 Hours of 44.1kHz FLAC playback, up to 23 Hours of 96kHz FLAC High-Resolution Audio playback, or up to 22 hours with music apps.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16031262376124__65c8133d-de96-4e48-bf84-892d45c72b3d-16838741340ca733b0-1",
+        "template--16031262376124__65c8133d-de96-4e48-bf84-892d45c72b3d-16838741340ca733b0-2"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX-707-Battery-Impact.jpg",
+        "mobile_image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX-707-Battery-Mobile-Banner.jpg",
+        "mobile_text_position": "place-self-end-center text-center",
+        "desktop_text_position": "sm:place-self-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 36
+      }
+    },
+    "b5f5994f-e555-464e-857a-cc76b765cc66": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "template--16031262376124__b5f5994f-e555-464e-857a-cc76b765cc66-16838745349c119e03-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-Smaster-Arrow-01.jpg",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "S-Master™ HX Digital Amp Technology",
+            "content": "<p>Sony has incorporated high-end components in the NW-ZX707 for an enriching listening experience. It features S-Master™ HX digital amp technology, independently developed for Walkman®, is compatible with the Native DSD format and supports Balanced and high power output. It reduces distortion and noise across a wide range of frequencies for rich and full-bodied sound.<br/></p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "template--16031262376124__b5f5994f-e555-464e-857a-cc76b765cc66-16838745349c119e03-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX-707-Arrow-02.jpg",
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "Large Solid High-Polymer Capacitor",
+            "content": "<p>Adopted as battery assist for the amplifier block, the newly developed large solid high polymer capacitor offers large capacitance and low resistance. Able to instantaneously supply large amounts of power, it can accurately output signals by preventing sudden falls in voltage. This design architecture contributes to clear, accurate bass response and soothing vocals.<br/></p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "8c80f720-94c5-453a-bbef-e5bf0aa2e5a1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-Arrow-03.jpg",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Features FT CAP3 For Transparent Sound",
+            "content": "<p>The Sony NW-ZX707 hosts an FT CAP3 high polymer capacitor custom-made for Sony and tuned by Sony engineers. All \"bypass\" capacitors in the audio block power supply use the FT CAP3 design. Drawing on know-how cultivated in high-end home audio development, they help to improve audio expression and create a smoother sound with a \"wider\" sound space, more transparency, and tighter bass response.<br/></p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16031262376124__b5f5994f-e555-464e-857a-cc76b765cc66-16838745349c119e03-0",
+        "template--16031262376124__b5f5994f-e555-464e-857a-cc76b765cc66-16838745349c119e03-1",
+        "8c80f720-94c5-453a-bbef-e5bf0aa2e5a1"
+      ],
+      "custom_css": [
+        ".h1 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "button_background": "#444444",
+        "button_text_color": "#444444"
+      }
+    },
+    "a3822dae-b217-4c03-bf6b-642882b30cfa": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--16031262376124__a3822dae-b217-4c03-bf6b-642882b30cfa-16838741340ca733b0-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Smooth And Responsive Touchscreen",
+            "heading_tag": "h3"
+          }
+        },
+        "template--16031262376124__a3822dae-b217-4c03-bf6b-642882b30cfa-16838741340ca733b0-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Enjoy the large 5.0\" (12.7cm) smooth & responsive touchscreen display that gives you more visibility and operability. You can also modify the built-in Walkman® Home Screen to meet your preferences. The touchscreen display makes it easier for you to navigate through your music library and adjust settings. It has all the information required, like battery status and much more.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16031262376124__a3822dae-b217-4c03-bf6b-642882b30cfa-16838741340ca733b0-1",
+        "template--16031262376124__a3822dae-b217-4c03-bf6b-642882b30cfa-16838741340ca733b0-2"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX-707-Design-Impact.jpg",
+        "mobile_image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX-707-Banner-02.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-end sm:text-end",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "15e60744-23ca-4628-ab7c-6a7c739d99f4": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "template--16031262376124__15e60744-23ca-4628-ab7c-6a7c739d99f4-1683888721da80ed1f-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-Features-04.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "DSD Remastering Engine For Bit Perfect Playback",
+            "content": "<p>Sony, with their NW-ZX707, has mastered unique sound processing technology to enable Hi-Res music playback. It features a DSD remastering engine that allows PCM (Pulse Code Modulation) audio to be resampled into an 11.2MHz, DSD (Direct Stream Digital) ultra-high-frequency 1-bit audio stream. There are now more ways to enjoy your music thanks to the single-bit stream provided by the DAC, which has a character that gives an analogue and organic flavour.<br/></p><p></p><p><br/></p><p></p><p><br/></p>"
+          }
+        },
+        "template--16031262376124__15e60744-23ca-4628-ab7c-6a7c739d99f4-1683888721da80ed1f-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-Feature-05.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "DSEE Ultimate For A Truly Rich Sound",
+            "content": "<p>The DSEE Ultimate™ (Digital Sound Enhancement Engine) upscales compressed digital audio files in real-time, using Edge-AI (Artificial Intelligence). The evolving algorithm now delivers additional benefits for CD-quality (16-bit 44.1/48kHz) lossless codec audio. Restoring acoustic subtleties and dynamic range provides a richer, more complete listening experience.<br/></p><p></p><p><br/></p>"
+          }
+        },
+        "03fc98e9-f598-49f3-85a0-e85e48ab7f7f": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-Feature-08.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Vinyl Processor",
+            "content": "<p>Give the warmth and character of vinyl back to your digital tracks. Enjoy subtle reproduction of the low-frequency resonance, tone-arm resistance and surface noise to deliver an authentic listening experience.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16031262376124__15e60744-23ca-4628-ab7c-6a7c739d99f4-1683888721da80ed1f-0",
+        "template--16031262376124__15e60744-23ca-4628-ab7c-6a7c739d99f4-1683888721da80ed1f-1",
+        "03fc98e9-f598-49f3-85a0-e85e48ab7f7f"
+      ],
+      "custom_css": [
+        ".h1 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "#444444",
+        "heading_gradient": ""
+      }
+    },
+    "09ca051a-7883-45c0-aba3-ab9aeb624bcd": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--16031262376124__09ca051a-7883-45c0-aba3-ab9aeb624bcd-1683880013777c7598-0": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Headphone-Zone-360-Audio-Logo.png",
+            "mobile_icon_width": 120,
+            "icon_width": 96,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "",
+            "content": "<p><strong>360 Reality Audio</strong><br/>360 Reality Audio is a new immersive music experience using Sony’s 360 Spatial Sound technology. </p>"
+          }
+        },
+        "template--16031262376124__09ca051a-7883-45c0-aba3-ab9aeb624bcd-1683880013777c7598-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Headphone-Zone-MQA-Logo.png",
+            "mobile_icon_width": 120,
+            "icon_width": 100,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "",
+            "content": "<p><strong>MQA</strong><br/>The Sony NW ZX-707 Walkman includes MQA technology, which enables you to play back MQA audio files.</p>"
+          }
+        },
+        "template--16031262376124__09ca051a-7883-45c0-aba3-ab9aeb624bcd-1683880013777c7598-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Headphone-ZOne-LDAC-Logo-PNG.png",
+            "mobile_icon_width": 120,
+            "icon_width": 100,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "",
+            "content": "<p><strong>Bluetooth V5.2</strong><br/>Enjoy Hi-Res Audio quality without wires thanks to LDAC, Sony's premium wireless codec. <br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16031262376124__09ca051a-7883-45c0-aba3-ab9aeb624bcd-1683880013777c7598-0",
+        "template--16031262376124__09ca051a-7883-45c0-aba3-ab9aeb624bcd-1683880013777c7598-1",
+        "template--16031262376124__09ca051a-7883-45c0-aba3-ab9aeb624bcd-1683880013777c7598-2"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#444444"
+      }
+    },
+    "11675a29-1a20-4017-b239-35a3a3d841ff": {
+      "type": "hot-spots",
+      "blocks": {
+        "d846ec91-8353-4dc6-a314-388de87bd26a": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 52,
+            "vertical_position": 49,
+            "horizontal_position_mobile": 8,
+            "vertical_position_mobile": 57,
+            "icon_width": 24,
+            "title": "3.5mm Port",
+            "content": "<p>The 3.5mm single-ended output is a standard audio connection that is compatible with a wide range of earphones and headphones. It is the standard port offered on most audio players.<br/></p>"
+          }
+        },
+        "template--16016939548860__11675a29-1a20-4017-b239-35a3a3d841ff-168181184140c3a3fa-0": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 57,
+            "vertical_position": 62,
+            "horizontal_position_mobile": 20,
+            "vertical_position_mobile": 70,
+            "icon_width": 24,
+            "title": "4.4mm Port",
+            "content": "<p>Balanced output uses a different ground for each channel, which helps to reduce noise and unwanted interferences. This can lead to a cleaner and more detailed sound. Balanced output can deliver more power than single-ended output, which can be beneficial for high-impedance headphones.<br/></p>"
+          }
+        },
+        "69624583-a1d0-4f55-9c34-f4da85ce88e3": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 65,
+            "vertical_position": 39,
+            "horizontal_position_mobile": 36,
+            "vertical_position_mobile": 52,
+            "icon_width": 32,
+            "title": "Tactile Button Controls",
+            "content": "<p>The Sony NW-ZX707 has a variety of tactile button controls. These buttons are located on the right and are labelled appropriately so that you can operate the player with ease.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "d846ec91-8353-4dc6-a314-388de87bd26a",
+        "template--16016939548860__11675a29-1a20-4017-b239-35a3a3d841ff-168181184140c3a3fa-0",
+        "69624583-a1d0-4f55-9c34-f4da85ce88e3"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX-707-Hotspot.jpg",
+        "mobile_image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX707-Hotspot-Mobile-Banner.jpg",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "#ffffff",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#444444",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#444444",
+        "hot_spot_content_opacity": 100,
+        "hot_spot_content_blur_radius": 1
+      }
+    },
+    "8cc4e7ce-a8d5-47c9-93a4-d73b58830f0f": {
+      "type": "press",
+      "blocks": {
+        "template--16017804034236__8cc4e7ce-a8d5-47c9-93a4-d73b58830f0f-1683626238c7b9ebc4-0": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 150,
+            "author": "<p class=\"press__author text-subdued\">RAGHAV SOMANI</p>\n\n<em style=\"font-family: var(--text-font-family);\n    color: #444;\n    font-size: 14px;\">Founder, Headphone Zone</em>",
+            "content": "The Sony NW-ZX707 allows you to bring your music with you wherever you go. It's compact design and long-lasting battery make it an ideal companion for rediscovering your favourite tunes.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "6e2c2ffc-c448-438d-94fc-edd3d0d34452": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/headphone-zone-guru-maharshi.png",
+            "logo_width": 150,
+            "author": "<p class=\"press__author text-subdued\">MAHARSHI TRIVEDI</p>\n\n<em style=\"font-family: var(--text-font-family);\n    color: #444;\n    font-size: 14px;\">Headphone Guru</em>",
+            "content": "Right from its design to its build and sound quality, the NW-ZX707 dazzles with divine effulgence. Its user interface is just incredible. Once you hold it in your hand and give it a listen, you will ask for nothing more.",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--16017804034236__8cc4e7ce-a8d5-47c9-93a4-d73b58830f0f-1683626238c7b9ebc4-0",
+        "6e2c2ffc-c448-438d-94fc-edd3d0d34452"
+      ],
+      "custom_css": [
+        ".h3 {font-family: \"Roboto\", sans-serif;}",
+        ".text-subdued {font-size: 14px; font-family: \"Roboto\", sans-serif; font-weight: 700; font-size: 14pxrem; letter-spacing: 2px; text-transform: uppercase; color: #444444; align-self: center;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_size": "medium",
+        "background": "#f1f1f1",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "91359a6c-9bc7-4b8a-bb9e-ba49a4a761a4": {
+      "type": "youtube-reviews",
+      "settings": {}
+    },
+    "b3f022d3-6a7b-4623-91dc-e8a5d2569ce0": {
+      "type": "media-with-text",
+      "blocks": {
+        "cd5ff6d8-350a-48a8-8e48-cdd564676235": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-NW-ZX-707-Box.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "picto-box",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Accessories To Get You Started",
+            "content": "<p>1. USB Type-C Cable(USB-A - USB-C) (1)<br/>2. Operating Instructions<br/>3. Reference Guide</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f1f1f1",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "cd5ff6d8-350a-48a8-8e48-cdd564676235"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "da63785d-8a54-4c5e-8646-246d73467a96": {
+      "type": "press",
+      "blocks": {
+        "cbe7e9c7-8ac3-4e37-ad9f-ff062b57c586": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Business-Standard-Media-Review-Logo-2020.svg",
+            "logo_width": 165,
+            "author": "",
+            "content": "The NW-ZX707 offers astonishing sound quality. With enhanced battery life, a larger 5-inch display, Wi-Fi compatibility for easy downloading and streaming functions, it is also portable and stylish.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "template--15998494605500__da63785d-8a54-4c5e-8646-246d73467a96-168076476763097c40-0": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/The-Indian-Express-Media-Review-Logo-2020.svg",
+            "logo_width": 165,
+            "author": "",
+            "content": "The Walkman comes with a DSD Remastering Engine to provide an enhanced listening experience and is aimed at audiophiles and hi-fi enthusiasts. It resamples the audio into an 11.2MHz DSD, giving listeners a refined experience.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "template--15998494605500__da63785d-8a54-4c5e-8646-246d73467a96-168076476763097c40-1": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/The-Times-of_India-Media-Reviews.svg",
+            "logo_width": 165,
+            "author": "",
+            "content": "To deliver hi-fi sound, the Walkman has a dual clock, film capacitor and fine sound register placed precisely within the unit. Further, the high-quality sound reflow solder that is made of gold promises to offer a wider sound space.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "60a96fc0-8483-42ac-be4f-b20d9b2e01ca": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/India-Today-Media-Review-Logo-2020.svg",
+            "logo_width": 165,
+            "author": "",
+            "content": "I can truly appreciate what the Walkman ZX707 brings to the table. I can only imagine the sheer joy this device would bring to a true-blue audiophile who lives and breathes top-notch audio quality.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "89adb2a9-0b90-458a-b367-57e1b3bd28b5": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Media-Reviews-_Moon-Audio.svg",
+            "logo_width": 170,
+            "author": "",
+            "content": "The Sony NW-ZX707 is an excellent upgrade over the previous generation NW-ZX507. Not only has the styling been changed to black with gold accents, but the screen is bigger and the sound is bigger.",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "cbe7e9c7-8ac3-4e37-ad9f-ff062b57c586",
+        "template--15998494605500__da63785d-8a54-4c5e-8646-246d73467a96-168076476763097c40-0",
+        "template--15998494605500__da63785d-8a54-4c5e-8646-246d73467a96-168076476763097c40-1",
+        "60a96fc0-8483-42ac-be4f-b20d9b2e01ca",
+        "89adb2a9-0b90-458a-b367-57e1b3bd28b5"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_size": "medium",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "da8415cd-1b26-4738-8b5b-48e3e9053fb1": {
+      "type": "headphone-zone-feature-chart",
+      "blocks": {
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-0": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Headphone Output",
+            "heading_2": "Battery Life - Continuous Playback Music (W.music App)",
+            "heading_3": "Battery Life - Continuous Playback Music (Other Music App)",
+            "heading_4": "Charging Time (Full Charge)",
+            "heading_5": "Power Output (Jeita 16Ω/mW)",
+            "heading_6": "Operating System",
+            "heading_7": "Memory Size",
+            "heading_8": "Battery Life - Bluetooth (Transmitter Mode)",
+            "heading_9": "Built-in Battery",
+            "heading_10": "Charging And Power Supply",
+            "heading_11": "Wi-Fi",
+            "heading_12": "Frequency Band",
+            "heading_13": "Music Play Mode",
+            "heading_14": "Sound Effects",
+            "heading_15": "Audio Playback",
+            "heading_16": "Display Resolution",
+            "heading_17": "Display Type",
+            "heading_18": "Terminals",
+            "heading_19": "Wireless Capabilities",
+            "heading_20": "Box Contents"
+          }
+        },
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>3.5mm (Single-Ended)<br>4.4mm (Balanced)</p>",
+            "value_2": "<p>MP3 (128kbps) / Stereo Mini-Jack: Approx. 25 Hour, MP3 (128kbps) / Balanced Standard-Jack: Approx. 24 Hour, FLAC (96kHz/24bit) / Stereo Mini-Jack: Approx. 23 Hour, FLAC (96kHz/24bit) / Balanced Standard-Jack: Approx. 23 Hour, FLAC (192kHz/24bit) / Stereo Mini-Jack: Approx. 21 Hour, FLAC (192kHz/24bit) / Balanced Standard-Jack: Approx. 21 Hour, DSD (2.8224MHz/1bit) / Stereo Mini-Jack: Approx. 21 Hour, DSD (2.8224MHz / 1bit) / Balanced Standard-Jack: Approx. 21 Hour\n</p>",
+            "value_3": "<p>MP3 (128kbps, Offline Mode) / Stereo Mini-Jack: 22 Hour, MP3 (128kbps, Offline Mode) / Balanced Standard-Jack:21 Hour\n</p>",
+            "value_4": "<p>Approx. 3.5 Hrs\n</p>",
+            "value_5": "<p>50mW+50mW (High Gain) (SE)<br>\n230mW+230mW (High Gain)\n\n\n</p>",
+            "value_6": "<p>Android 12\n\n</p>",
+            "value_7": "<p>64GB *Actual Available Memory 47GB\n\n\n</p>",
+            "value_8": "<p>MP3 (128kbps) / SBC-Connection Pref: Approx.22 Hrs\n\n\n</p>",
+            "value_9": "<p>Rechargeable Lithium-Ion Battery\n\n\n</p>",
+            "value_10": "<p>USB Power (From A Computer Via A USB)\n\n\n</p>",
+            "value_11": "<p>IEEE 802.11 A/B/G/N/Ac\n\n\n</p>",
+            "value_12": "<p>2.4/5 GHz\n\n\n\n</p>",
+            "value_13": "<p>Shuffle Playback, Repeat Off, Repeat 1 Song, Repeat All, All Range, Selected Range\n\n\n\n</p>",
+            "value_14": "<p>Direct Source (Direct),10 Band Equalizer, DSEE Ultimate, DC Phase Linearizer, Dynamic Normalizer, Vinyl Processor\n\n\n\n</p>",
+            "value_15": "<p>MP3: 32 - 320kbps (Supports VBR) / 32, 44.1, 48kHz, WMA: 32-320kbps (Supports Variable Bitrate(VBR)/44.1kHz (STEREO),32-48kbps / 44.1kHz (MONO), FLAC: 16, 24bit / 8-384kHz, WAV: 16, 24, 32bit (Float / Integer) / 8-384kHz, AAC: 16-320kbps / 8-48kHz, HE-AAC: 32-144kbps / 8-48kHz, Apple Lossless: 16, 24bit /8-384kHz, AIFF: 16, 24, 32bit / 8-384kHz, DSD: 1bit / 2.8224, 5.6448, 11.2896 MHz, APE: 8, 16, 24bit / 8-192kHz (Fast, Normal, High), MQA: Supported\n\n\n\n</p>",
+            "value_16": "<p>12.7 Cm (5.0-Inch),HD (1280 X 720 Pixels)\n\n\n</p>",
+            "value_17": "<p>TFT Colour Display With White LED-Backlight\n\n\n\n</p>",
+            "value_18": "<p>USB:Type-C (USB3.2 Gen1 Compliant), Headphone: Stereo Mini Jack, Balanced Standard-Jack, External Memory: MicroSD MicroSDHC MicroSDXC\n\n\n\n</p>",
+            "value_19": "<p>Communication System: Bluetooth Specification Version 5.0, NFC:No, Supported Bluetooth Profiles: A2DP, AVRCP, SPP, OPP, DID, Supported Codecs (Transmission): SBC, LDAC, AptX, AptX HD, AAC\n\n\n\n</p>",
+            "value_20": "<p>1. Sony NW-ZX707<br>\n2. USB Type-C Cable(USB-A - USB-C) (1)<br>\n3. Operating Instructions<br>\n4. Reference Guide\n\n\n</p>",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-0",
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "All You Need To Know About The Sony NW-ZX707",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "#f1f1f1",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "#444444",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "about_us_brand_pF3Mxk": {
+      "type": "about-us-brand",
+      "blocks": {
+        "image_JibzXT": {
+          "type": "image",
+          "source": "{{ product.metafields.hpz.about_brand_on_product_page.value }}",
+          "settings": {
+            "image": "{{ product.metafields.hpz.about_brand_on_product_page.value.image.value }}",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "{{ product.metafields.hpz.about_brand_on_product_page.value.logo.value }}",
+            "icon_width": 120,
+            "subheading": "",
+            "title": "{{ product.metafields.hpz.about_brand_on_product_page.value.heading.value }}",
+            "content": "{{ product.metafields.hpz.about_brand_on_product_page.value.about | metafield_tag }}",
+            "link_text": "{{ product.metafields.hpz.about_brand_on_product_page.value.button_text.value }}",
+            "link_url": "{{ product.metafields.hpz.about_brand_on_product_page.value.button_link.value }}",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "#444444",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_JibzXT"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 1.8rem;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "a2ac9cce-b4ec-4cab-9eb0-01bde7208af1": {
+      "type": "headphone-zone-feature-chart",
+      "blocks": {
+        "template--16093140320444__a2ac9cce-b4ec-4cab-9eb0-01bde7208af1-headings-1": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Headphone Outputs",
+            "heading_2": "Output Power",
+            "heading_3": "Battery Life",
+            "heading_4": "Internal Storage",
+            "heading_5": "Bluetooth Specification",
+            "heading_6": "Display Resolution",
+            "heading_7": "Our Verdict",
+            "heading_8": "Operating System",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--16093140320444__a2ac9cce-b4ec-4cab-9eb0-01bde7208af1-values-1": {
+          "type": "values",
+          "settings": {
+            "product": "sony-nw-zx707",
+            "value_1": "<p>3.5mm (Single-Ended)/<br>\n4.4mm (Balanced)</p>",
+            "value_2": "<p>50mW+50mW (High Gain) (SE)<br>\n230mW+230mW (High Gain) (Bal)</p>",
+            "value_3": "<p>Upto 25 Hours</p>",
+            "value_4": "<p>64GB <br>Actual Available Memory 47GB</p>",
+            "value_5": "<p>Version 5.0<br>SBC, LDAC, aptX, aptX HD, AAC</p>",
+            "value_6": "<p>12.7cm (5.0-Inch),HD (1280 X 720 Pixels)</p>",
+            "value_7": "<p>The Sony NW-ZX707 allows you to bring your music with you wherever you go. It's compact design and long-lasting battery make it an ideal companion for rediscovering your favourite tunes.</p>",
+            "value_8": "<p>Android 12</p>",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "template--16093140320444__a2ac9cce-b4ec-4cab-9eb0-01bde7208af1-values-2": {
+          "type": "values",
+          "settings": {
+            "product": "sony-nw-a306",
+            "value_1": "<p>3.5mm (Single-Ended)</p>",
+            "value_2": "<p>35mW+35mW</p>",
+            "value_3": "<p>Upto 36 Hours</p>",
+            "value_4": "<p>32 GB <br>Actual Available Memory 18 GB</p>",
+            "value_5": "<p>Version 5.0<br>SBC, LDAC, aptX, aptX HD, AAC</p>",
+            "value_6": "<p>9.1cm (3.6-Inch), HD (1280 X 720 Pixels)</p>",
+            "value_7": "<p>Few major brands like Sony offer digital audio players at such an affordable price point as the NW-A306. If you're looking to enhance your mobile listening experience without spending a fortune, the Sony NW-A306 is a solid choice.</p>",
+            "value_8": "<p>Android 12</p>",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16093140320444__a2ac9cce-b4ec-4cab-9eb0-01bde7208af1-headings-1",
+        "template--16093140320444__a2ac9cce-b4ec-4cab-9eb0-01bde7208af1-values-1",
+        "template--16093140320444__a2ac9cce-b4ec-4cab-9eb0-01bde7208af1-values-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "Viewing",
+        "show_product_swatch": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "#f9f9f9",
+        "button_text_color": "",
+        "chart_background": "#ffffff",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "0bd8fd08-fbd0-41c1-9ba6-0405e0d44515": {
+      "type": "headphonezone-faq",
+      "blocks": {
+        "c794b682-0e8a-431d-ac06-16a631b60b33": {
+          "type": "item",
+          "settings": {
+            "title": "What is the warranty period for the Sony NW-ZX707?",
+            "content": "<p>Sony NW-ZX707 comes with a 1 year warranty period. To claim warranty read more <a href='https://help.headphonezone.in/support/solutions/articles/6000198325-sony-warranty-claim-service-in-india' target='_blank'>here.</a></p>"
+          }
+        },
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-0": {
+          "type": "item",
+          "settings": {
+            "title": "What is the Sony NW-ZX707?",
+            "content": "<p>The Sony NW-ZX707 is a Digital Audio Player (DAP) that offers audiophile-grade sound quality. It is designed to provide a high-quality music listening experience, ensuring that you can enjoy your music just as the artist intended. The DAP incorporates advanced technologies and features to deliver exceptional sound quality.</p>"
+          }
+        },
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-1": {
+          "type": "item",
+          "settings": {
+            "title": "What is the cassette tape user interface and screensaver featured on the Sony NW-ZX707?",
+            "content": "<p>The Sony NW-ZX707 features a unique cassette tape user interface and screensaver. The visual representation of a cassette tape on the Walkman® display varies depending on the codec of the music you are playing. This nostalgic design element adds a touch of classic charm to the user interface.</p>"
+          }
+        },
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-2": {
+          "type": "item",
+          "settings": {
+            "title": "What Bluetooth capabilities does the Sony NW-ZX707 offer, and which wireless codecs are supported?",
+            "content": "<p>The Sony NW-ZX707 provides several Bluetooth capabilities, including support for LDAC, which is Sony's premium wireless codec. LDAC offers three times the bitrate of standard Bluetooth technology, ensuring a superior listening experience. The DAP also supports other Bluetooth codecs like aptX HD, aptX, AAC, and SBC, allowing for high-quality wireless audio streaming.</p>"
+          }
+        },
+        "b0f9de61-dc30-4287-b3e1-a6b45661fb3a": {
+          "type": "item",
+          "settings": {
+            "title": "How long is the battery life of the Sony NW-ZX707?",
+            "content": "<p>The Sony NW-ZX707 offers impressive battery life, ensuring uninterrupted playback. You can enjoy up to 25 hours of 44.1kHz FLAC playback, up to 23 hours of 96kHz FLAC High-Resolution Audio playback, or up to 22 hours when using music apps. The extended battery life allows for extended listening sessions without the need for frequent recharging.</p>"
+          }
+        },
+        "b1d83b4d-c0e8-499a-b350-29b89955c799": {
+          "type": "item",
+          "settings": {
+            "title": "What is the display architecture and size?",
+            "content": "<p>It has a TFT colour display with white LED-backlight and 5.0 inch (12.7 cm), HD (1280 x 720 pixels) display resolution.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "c794b682-0e8a-431d-ac06-16a631b60b33",
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-0",
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-1",
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-2",
+        "b0f9de61-dc30-4287-b3e1-a6b45661fb3a",
+        "b1d83b4d-c0e8-499a-b350-29b89955c799"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Have a question? Get in touch!",
+        "content": "<p>Check out the most common questions our customers ask. Still have questions? Talk to our Headphone Gurus.</p>",
+        "team_avatar": "shopify://shop_images/customer_support.png",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 11am-6pm.",
+        "answer_time": "Average answer time: 2-3 Hours",
+        "button_text": "TALK TO A GURU",
+        "button_url": "shopify://pages/talk-to-a-headphone-guru",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "manual_details_product_page_HmbMYH": {
+      "type": "Manual-details-product-page",
+      "settings": {}
+    },
+    "167525932377cb380e": {
+      "type": "apps",
+      "blocks": {
+        "08b03131-bf1b-4945-a40d-a881a32d292b": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "08b03131-bf1b-4945-a40d-a881a32d292b"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "recommendations_count": 10,
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "1678704511d0672e7b": {
+      "type": "apps",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hpz_new_snapshot_KMaT88",
+    "6306d58e-94d6-4ff8-8d68-c88b8af2506e",
+    "adbbdf42-4b0b-4713-b3d8-f09c21b09df3",
+    "2fc44790-bffa-490e-b83f-ae985acd60c1",
+    "fe1fb7ce-1f3d-4120-bce5-ea61b62dddfe",
+    "b14d67a8-d921-46b0-8bce-693de6f592df",
+    "65c8133d-de96-4e48-bf84-892d45c72b3d",
+    "b5f5994f-e555-464e-857a-cc76b765cc66",
+    "a3822dae-b217-4c03-bf6b-642882b30cfa",
+    "15e60744-23ca-4628-ab7c-6a7c739d99f4",
+    "09ca051a-7883-45c0-aba3-ab9aeb624bcd",
+    "11675a29-1a20-4017-b239-35a3a3d841ff",
+    "8cc4e7ce-a8d5-47c9-93a4-d73b58830f0f",
+    "91359a6c-9bc7-4b8a-bb9e-ba49a4a761a4",
+    "b3f022d3-6a7b-4623-91dc-e8a5d2569ce0",
+    "da63785d-8a54-4c5e-8646-246d73467a96",
+    "da8415cd-1b26-4738-8b5b-48e3e9053fb1",
+    "about_us_brand_pF3Mxk",
+    "a2ac9cce-b4ec-4cab-9eb0-01bde7208af1",
+    "0bd8fd08-fbd0-41c1-9ba6-0405e0d44515",
+    "manual_details_product_page_HmbMYH",
+    "167525932377cb380e",
+    "product-recommendations",
+    "1678704511d0672e7b"
+  ]
+}

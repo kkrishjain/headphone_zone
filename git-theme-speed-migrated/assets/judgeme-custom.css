@@ -1,0 +1,92 @@
+/* JudgeMe Review Styles - Optimized for Performance */
+.jdgm-medals-wrapper {
+  display: none !important;
+}
+
+.jdgm-rev__author,
+.jdgm-rev__icon:before {
+  color: #444444 !important;
+  font-family: roboto;
+  font-size: 1rem !important;
+  letter-spacing: .02rem;
+  font-weight: 600 !important;
+}
+
+.jdgm-rev__buyer-badge.jdgm-rev__buyer-badge {
+  background-color: #3c07ff !important;
+}
+
+.jdgm-rev__icon::after,
+.jdgm-rev__buyer-badge {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #444444 !important;
+}
+
+.jdgm-rev__thumb-btn {
+  color: #444444 !important;
+}
+
+a.jdgm-cf-bar.jdgm--filled {
+  background: #444;
+}
+
+b.jdgm-rev__cf-ans__title {
+  color: #444;
+}
+
+.jdgm-rev a {
+  word-break: break-word !important;
+}
+
+.jdgm-row-media,
+.jdgm-rev__icon,
+.jdgm-rev__icon::before,
+.jdgm-rev__icon::after {
+  display: none !important;
+}
+
+.jdgm-rev-widg__title {
+  font-size: 1.5rem;
+  font-family: "sora", sans-serif;
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  letter-spacing: var(--heading-letter-spacing);
+  text-transform: var(--heading-text-transform);
+  color: #444444 !important;
+}
+
+.jdgm-rev__location {
+  color: #6f6f6f !important;
+  font-size: .75rem;
+  font-weight: 400;
+  letter-spacing: .05rem;
+  text-transform: uppercase !important;
+}
+
+.jdgm-rev__title {
+  font-size: 1rem;
+  font-family: "sora", sans-serif;
+  text-transform: capitalize;
+}
+
+.jdgm-rev__body > p {
+  font-size: .9rem;
+}
+
+.jdgm-rev__pic-link[aria-label="Link to user picture 1"] img {
+  width: 100% !important;
+  height: 300px;
+  object-fit: cover;
+}
+
+.jdgm-rev__custom-form {
+  display: none !important;
+}
+
+.jdgm-prev-badge .jdgm-star:nth-child(2),
+.jdgm-prev-badge .jdgm-star:nth-child(3),
+.jdgm-prev-badge .jdgm-star:nth-child(4),
+.jdgm-prev-badge .jdgm-star:nth-child(5) {
+  display: none !important;
+}

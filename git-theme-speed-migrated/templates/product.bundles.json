@@ -1,0 +1,541 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "badges": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "vendor": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "3bd605cd-37a1-4554-b65e-295aeb746003": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% if product.metafields.hpz.badge_rank.value != blank %}\n\n<div class=\"product-info__badge-list\">\n<span class=\"best-rank\">#{{ product.metafields.hpz.badge_rank.value }} BEST SELLER\n</span>\n<p style=\"color: #777;font-size: 0.9rem;display:flex;align-items: center;\">in</p>\n<a href=\"{{ product.metafields.hpz.badge_rank_collection_link.value }}\" style=\"text-decoration:underline;color:#777;display:flex;align-items: center;\"><p style=\"font-size: 0.9rem;color:#777777;display:flex;align-items: center;\">{{ product.metafields.hpz.badge_rank_collection_title.value }}</p></a>\n\n\n</div>\n{% endif %}\n<style>\n.best-rank{\ndisplay: inline-block;\n    box-sizing: border-box;\n    color: #444;\n    background-color: #FFDF97;\n    padding: 6px 10px;\n    font-size:0.7rem;\n    position: relative;\n    height: 25px;\n    border-radius: 90px 90px 90px 90px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 1px;\ndisplay:flex;\nalign-items: center;\n}\n\n.product-info__badge-list {\ngap: var(--spacing-2);\n    flex-wrap: wrap;\n    display: flex;\n}\n\n.product-info__liquid {\nmargin-block-start: 0.5rem;\n    margin-block-end: 0.5rem;\n}\n}\n\n</style>"
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "38162909-1336-4abf-8ce5-b434e2a542f9": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "01ec707b-0c1e-4d3d-ac5d-8cb6fd7fc615": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "none",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "cfbc0273-9297-48d7-bb1b-b955fff0a6ba": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "{{ product.metafields.hpz.variant_option_name.value }}",
+            "option_value_metafield": "hpz.variants_value",
+            "products": "{{ product.metafields.hpz.variant_products.value }}",
+            "selector_style": "block"
+          }
+        },
+        "liquid_phMzeV": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{{ product.metafields.hpz.offer_message }}\n\n{%- render 'freebie' -%}\n\n{{ product.metafields.hpz.offer_message_sale }}"
+          }
+        },
+        "8b779d52-7d64-4f5a-b57f-8fc117a10500": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"offer-grid\" style=\"margin-bottom: 30px;margin-bottom: 20px;\">\n<img src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Aliza_discounted.svg?v=1676479987\">\n\n<div class=\"offer-text\"><div>FOCAL TRADE IN OFFER</div><p style=\"font=size:12px;\"> Trade In your old headphones for a flat ₹15,000 off on the Focal Bathys or Celestee.</p><div>\n<button aria-controls=\"UNIQUE_ID_GOES_HERE\" aria-expanded=\"false\"><p>Read More&nbsp;{%- render 'info_icon'-%} </p></button><x-drawer id=\"UNIQUE_ID_GOES_HERE\" class=\"drawer\" role=\"dialog\" aria-modal=\"true\"><h5>Focal Trade In Offer</h5>\n<b>Offer details and how to claim</b>\n<br><br>\n<ul>\n<li>Offer valid from 11th September 2023 till 30th September or till stocks last</li>\n<li>Trade In any headphones to us and get ₹15,000 off on Focal Bathys or Focal Celestee</li>\n<li>Apply Discount code <b>\"FOCAL-TRADE-IN-OFFER\"</b> to checkout</li>\n<li>We will arrange a pickup for your headphones at the same address you enter at checkout</li>\n<li>We will arrange a pickup for your headphones at the same address you enter at checkout</li>\n<li>Once we receive your headphones, we will ship your Focal order of the Celestee/Bathys</li>\n<li>Limited stocks</li></x-drawer>\n</div></div></div>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "b253fc0f-99f2-4bff-a2e6-585277f6538e": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% unless product.tags contains 'museum'  %}\n{% render 'below-buy-button.liquid'  %}\n{% endunless  %}"
+          }
+        },
+        "26c544be-f0bd-45b6-b9e2-bae47c526358": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": false,
+            "products_count": 10,
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "badges",
+        "vendor",
+        "title",
+        "3bd605cd-37a1-4554-b65e-295aeb746003",
+        "separator",
+        "38162909-1336-4abf-8ce5-b434e2a542f9",
+        "price",
+        "01ec707b-0c1e-4d3d-ac5d-8cb6fd7fc615",
+        "description",
+        "variant_picker",
+        "cfbc0273-9297-48d7-bb1b-b955fff0a6ba",
+        "liquid_phMzeV",
+        "8b779d52-7d64-4f5a-b57f-8fc117a10500",
+        "buy_buttons",
+        "b253fc0f-99f2-4bff-a2e6-585277f6538e",
+        "26c544be-f0bd-45b6-b9e2-bae47c526358"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "f276f700-8b25-4e1e-ac56-41cecc78a40b": {
+      "type": "headphone-zone-snapshot",
+      "disabled": true,
+      "custom_css": [
+        ".snapshot-grid {background-color: #ffffff !important;}"
+      ],
+      "settings": {}
+    },
+    "1678704511d0672e7b": {
+      "type": "apps",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_W6i9MT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jpDTpj": {
+          "type": "heading",
+          "source": "{{ product.metafields.hpz.impact_rich_text.value }}",
+          "settings": {
+            "text": "{{ product.metafields.hpz.impact_rich_text.value.header.value }}",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_wxfBbB": {
+          "type": "richtext",
+          "source": "{{ product.metafields.hpz.impact_rich_text.value }}",
+          "settings": {
+            "content": "<p>{{ product.metafields.hpz.impact_rich_text.value.multi_line | metafield_tag }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jpDTpj",
+        "richtext_wxfBbB"
+      ],
+      "custom_css": [
+        ".section-full {padding-top: 50px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_7dyV4g": {
+      "type": "multi-column",
+      "blocks": {
+        "item_AA8nhi": {
+          "type": "item",
+          "source": "{{ product.metafields.hpz.products_bundle_1.value }}",
+          "settings": {
+            "image": "{{ product.metafields.hpz.products_bundle_1.value.image.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.hpz.products_bundle_1.value.product_name.value }}",
+            "heading_tag": "h4",
+            "content": "<p>{{ product.metafields.hpz.products_bundle_1.value.product_content | metafield_tag }}</p>",
+            "link_url": "{{ product.metafields.hpz.products_bundle_1.value.link_url.value }}",
+            "link_text": "{{ product.metafields.hpz.products_bundle_1.value.link_title.value }}",
+            "link_style": "link"
+          }
+        },
+        "item_mMXfUE": {
+          "type": "item",
+          "source": "{{ product.metafields.hpz.products_bundle_2.value }}",
+          "settings": {
+            "image": "{{ product.metafields.hpz.products_bundle_2.value.image.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.hpz.products_bundle_2.value.product_name.value }}",
+            "heading_tag": "h4",
+            "content": "<p>{{ product.metafields.hpz.products_bundle_2.value.product_content | metafield_tag }}</p>",
+            "link_url": "{{ product.metafields.hpz.products_bundle_2.value.link_url.value }}",
+            "link_text": "{{ product.metafields.hpz.products_bundle_2.value.link_title.value }}",
+            "link_style": "link"
+          }
+        },
+        "item_9j7wah": {
+          "type": "item",
+          "source": "{{ product.metafields.hpz.products_bundle_3.value }}",
+          "settings": {
+            "image": "{{ product.metafields.hpz.products_bundle_3.value.image.value }}",
+            "column_size": "3",
+            "title": "{{ product.metafields.hpz.products_bundle_3.value.product_name.value }}",
+            "heading_tag": "h4",
+            "content": "<p>{{ product.metafields.hpz.products_bundle_3.value.product_content | metafield_tag }}</p>",
+            "link_url": "{{ product.metafields.hpz.products_bundle_3.value.link_url.value }}",
+            "link_text": "{{ product.metafields.hpz.products_bundle_3.value.link_title.value }}",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_AA8nhi",
+        "item_mMXfUE",
+        "item_9j7wah"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 2.25rem;}",
+        ".h4 {font-size: 1.5rem;}",
+        ".prose > :last-child,.prose > :last-child :last-child {margin-top: 5px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "large",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Products In Bundle",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_iYFftn": {
+      "type": "multi-column",
+      "blocks": {
+        "item_eF69Cc": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-FiiO-R7-30.jpg",
+            "column_size": "3",
+            "title": "FiiO - R7",
+            "heading_tag": "h4",
+            "content": "<p>The FiiO R7 is a versatile Digital Audio Player that integrates a transmitter, decoder, amp, preamp, and media playback functions into one unit. With multiple connections, expansion capabilities, and various operating modes, it offers a feature-rich experience on a vibrant portrait screen for media streaming.</p>",
+            "link_url": "shopify://products/fiio-r7",
+            "link_text": "Read More",
+            "link_style": "link"
+          }
+        },
+        "item_VtaCNU": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-FiiO-SP3-Desktop-Setup.jpg",
+            "column_size": "3",
+            "title": "FiiO - SP3",
+            "heading_tag": "h4",
+            "content": "<p>The FiiO SP3 is the brand's entry into powered speakers, featuring built-in amplifiers that eliminate the need for external power sources. With an integrated design, it becomes a desirable option for various audio applications and music listening, ensuring pristine audio reproduction.</p>",
+            "link_url": "shopify://products/fiio-sp3",
+            "link_text": "Read More",
+            "link_style": "link"
+          }
+        },
+        "item_yCUt6j": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-FiiO-RM3-01.jpg",
+            "column_size": "3",
+            "title": "FiiO - RM3",
+            "heading_tag": "h4",
+            "content": "<p>The FiiO RM3 remote for the R series includes buttons for power, menu, volume, track selection, and mode. With a 30-meter range, it provides convenient control for your device, supporting functions like volume control, play/pause, and track navigation on Android and Apple devices.</p>",
+            "link_url": "shopify://products/fiio-rm3",
+            "link_text": "Read More",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_eF69Cc",
+        "item_VtaCNU",
+        "item_yCUt6j"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".h2 {font-size: 2.25rem;}",
+        ".h4 {font-size: 1.5rem;}",
+        ".prose > :last-child,.prose > :last-child :last-child {margin-top: 5px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "gap": "large",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Products In Bundle",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "shop_the_look_xGttW9": {
+      "type": "shop-the-look",
+      "blocks": {
+        "product_e6J3rN": {
+          "type": "product",
+          "settings": {
+            "product": "fiio-r7",
+            "horizontal_position": 50,
+            "vertical_position": 82
+          }
+        },
+        "product_QBDFyp": {
+          "type": "product",
+          "settings": {
+            "product": "fiio-sp3",
+            "horizontal_position": 16,
+            "vertical_position": 62
+          }
+        },
+        "product_Jbw9rc": {
+          "type": "product",
+          "settings": {
+            "product": "fiio-rm3",
+            "horizontal_position": 70,
+            "vertical_position": 90
+          }
+        }
+      },
+      "block_order": [
+        "product_e6J3rN",
+        "product_QBDFyp",
+        "product_Jbw9rc"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 2.5rem;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "image": "shopify://shop_images/Headphone-Zone-FiiO-RM7_SP3_RM3-Desktop-Shop-the-Look.jpg",
+        "title": "Learn more about the product",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": "",
+        "product_card_mobile_background": "",
+        "product_card_mobile_text_color": "",
+        "background_dots": "#ffffff"
+      }
+    },
+    "impact_shop_the_look_2_XinH3P": {
+      "type": "impact-shop-the-look-2",
+      "blocks": {
+        "product_gdHPk9": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "horizontal_position": "",
+            "vertical_position": ""
+          }
+        },
+        "product_ac7D6B": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "horizontal_position": "",
+            "vertical_position": ""
+          }
+        },
+        "product_tnqzUJ": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "horizontal_position": "",
+            "vertical_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_gdHPk9",
+        "product_ac7D6B",
+        "product_tnqzUJ"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "title": "Shop the look",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": "",
+        "product_card_mobile_background": "",
+        "product_card_mobile_text_color": "",
+        "background_dots": "#ffffff"
+      }
+    },
+    "impact_shop_the_look_3_tY4GLm": {
+      "type": "impact-shop-the-look-3",
+      "blocks": {
+        "product_BpDkwj": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "horizontal_position": "",
+            "vertical_position": ""
+          }
+        },
+        "product_DF3ggE": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "horizontal_position": "",
+            "vertical_position": ""
+          }
+        },
+        "product_Ekpp6a": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "horizontal_position": "",
+            "vertical_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_BpDkwj",
+        "product_DF3ggE",
+        "product_Ekpp6a"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "title": "Shop the look",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": "",
+        "product_card_mobile_background": "",
+        "product_card_mobile_text_color": "",
+        "background_dots": "#ffffff"
+      }
+    },
+    "1713858770a33ed7f1": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_jWwrkX": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_jWwrkX"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f276f700-8b25-4e1e-ac56-41cecc78a40b",
+    "1678704511d0672e7b",
+    "rich_text_W6i9MT",
+    "multi_column_7dyV4g",
+    "multi_column_iYFftn",
+    "shop_the_look_xGttW9",
+    "impact_shop_the_look_2_XinH3P",
+    "impact_shop_the_look_3_tY4GLm",
+    "1713858770a33ed7f1"
+  ]
+}

@@ -1,0 +1,595 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "247eef1f-cd75-4a85-aa9c-10e19aac0c80": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15989844115644__247eef1f-cd75-4a85-aa9c-10e19aac0c80-1678091809f4b559a2-0": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--15989844115644__247eef1f-cd75-4a85-aa9c-10e19aac0c80-1678091809f4b559a2-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Customer Testimonials",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--15989844115644__247eef1f-cd75-4a85-aa9c-10e19aac0c80-1678091809f4b559a2-2": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15989844115644__247eef1f-cd75-4a85-aa9c-10e19aac0c80-1678091809f4b559a2-0",
+        "template--15989844115644__247eef1f-cd75-4a85-aa9c-10e19aac0c80-1678091809f4b559a2-1",
+        "template--15989844115644__247eef1f-cd75-4a85-aa9c-10e19aac0c80-1678091809f4b559a2-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "97be4468-108d-4b9b-a6dd-5340584922d7": {
+      "type": "promotional-blocks",
+      "blocks": {
+        "template--15989844115644__97be4468-108d-4b9b-a6dd-5340584922d7-1678434862004992c5-1": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "",
+            "content": "This is the best page to review and buy Headphones. Nice People also. Do a Headphone Connect in our place.",
+            "author": "Abhisek Majhi",
+            "background": "#f7d0d0",
+            "text_color": "#444444"
+          }
+        },
+        "4e513573-40ca-4035-a0fb-8d04d1e11582": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "",
+            "content": "It is the best website to purchase headphones & it's service is really mind blowing. Just go for it.",
+            "author": "Sayan Mondal",
+            "background": "#c0e7f9",
+            "text_color": "#444444"
+          }
+        },
+        "f5d853e1-81b2-4b3d-a60e-859c63a4c210": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "",
+            "content": "Great job, quick turn around time... attention to details. Keep it up and make more and more people happy....",
+            "author": "Sanket Sawant",
+            "background": "#d6cff9",
+            "text_color": "#444444"
+          }
+        },
+        "0936662e-cabe-4be9-98c7-8c118fc6d8c0": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "",
+            "content": "1. World class Headphones & IEM's under one roof. 2. Warm help & extended support to select the perfect headphone according to the customer's choice. 3. Good After Sales Service",
+            "author": "Durbuddhigibi Wb",
+            "background": "#fcefbb",
+            "text_color": "#444444"
+          }
+        }
+      },
+      "block_order": [
+        "template--15989844115644__97be4468-108d-4b9b-a6dd-5340584922d7-1678434862004992c5-1",
+        "4e513573-40ca-4035-a0fb-8d04d1e11582",
+        "f5d853e1-81b2-4b3d-a60e-859c63a4c210",
+        "0936662e-cabe-4be9-98c7-8c118fc6d8c0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "section_size": "small",
+        "stack_on_mobile": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "2f6ae1a7-59ec-4019-981d-1fbff9de88c1": {
+      "type": "promotional-blocks",
+      "blocks": {
+        "template--15989844115644__2f6ae1a7-59ec-4019-981d-1fbff9de88c1-1678439003dd0489c9-1": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "",
+            "content": "Genuine products, timely delivery and sound is pure bliss. The place in India to spend time and buy for audiophiles! Much love and hugs.",
+            "author": "Sajal Chakraborty",
+            "background": "#f9cdd9",
+            "text_color": "#444444"
+          }
+        },
+        "e5643d85-f34e-451e-9517-8a48c6aa13ed": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "",
+            "content": "gentle behaviour all the time and quick response here you can find earphones which are not present on any other sites it's a pleasure for me to join in hpz family",
+            "author": "Aditya Dhanraj",
+            "background": "#c3f4d7",
+            "text_color": "#444444"
+          }
+        },
+        "7a185669-74b3-4407-b85d-ee85e20ed531": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "",
+            "content": "It sells audio equipment, but I think Headphone Zone has some very good editorial content. Doff my hat to you, lasses and lads. Others could learn a thing or two...",
+            "author": "Nimish Dubey",
+            "background": "#f7d0d0",
+            "text_color": "#444444"
+          }
+        },
+        "0358a054-a06f-4c98-bf9c-20065537e105": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "",
+            "content": "Amazing range of headphones, they've taken efforts to get some of the biggest brands in the world to India, and are gems of people to interact with. I've never seen a company strive so hard to achieve customer care perfection. I'd recommend them heartily. Thank you Raghav and team!",
+            "author": "Sheldon",
+            "background": "#c0e7f9",
+            "text_color": "#444444"
+          }
+        },
+        "67665af8-5948-4b2c-87eb-2a23ddc5e06b": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "",
+            "content": "Amazing range of headphones, they've taken efforts to get some of the biggest brands in the world to India, and are gems of people to interact with. I've never seen a company strive so hard to achieve customer care perfection. I'd recommend them heartily. Thank you Raghav and team!",
+            "author": "Deepak Gopalakrishnan",
+            "background": "#d6cff9",
+            "text_color": "#444444"
+          }
+        }
+      },
+      "block_order": [
+        "template--15989844115644__2f6ae1a7-59ec-4019-981d-1fbff9de88c1-1678439003dd0489c9-1",
+        "e5643d85-f34e-451e-9517-8a48c6aa13ed",
+        "7a185669-74b3-4407-b85d-ee85e20ed531",
+        "0358a054-a06f-4c98-bf9c-20065537e105",
+        "67665af8-5948-4b2c-87eb-2a23ddc5e06b"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "section_size": "medium",
+        "stack_on_mobile": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "6f7f40c2-b69f-4260-9937-25f97a5f58a7": {
+      "type": "promotional-blocks",
+      "blocks": {
+        "template--15989844115644__6f7f40c2-b69f-4260-9937-25f97a5f58a7-1678439003dd0489c9-1": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "",
+            "content": "Headphone Zone is the only site where I trust on buying any audio gear cuz Packing, service, customer support are great.",
+            "author": "Pranav Kumar",
+            "background": "#fcefbb",
+            "text_color": "#444444"
+          }
+        },
+        "c1b4429f-68da-4ac1-807d-5d64218de4cf": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "",
+            "content": "Extremely customer-friendly. There is actually a technically and verbally proficient human being who responds to a customer support call.",
+            "author": "Visty Banaji",
+            "background": "#f9cdd9",
+            "text_color": "#444444"
+          }
+        }
+      },
+      "block_order": [
+        "template--15989844115644__6f7f40c2-b69f-4260-9937-25f97a5f58a7-1678439003dd0489c9-1",
+        "c1b4429f-68da-4ac1-807d-5d64218de4cf"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "section_size": "medium",
+        "stack_on_mobile": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "9bd85648-60de-43f6-9d03-4cff5c4eeaa9": {
+      "type": "promotional-blocks",
+      "blocks": {
+        "template--15989844115644__9bd85648-60de-43f6-9d03-4cff5c4eeaa9-1678439003dd0489c9-1": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Santosh Patel",
+            "content": "One stop destination for headphones, good experience with staff. Insane level of fun and quality. Thanks Headphonezone for the experience.",
+            "author": "via Google",
+            "background": "#c3f4d7",
+            "text_color": "#444444"
+          }
+        },
+        "000d9389-b971-49db-9eba-168ebfe12406": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Upendra Dwivedi",
+            "content": "Brilliant platform for an in-depth analysis. Website is useful in gaining technical understanding of sound and instruments.",
+            "author": "via Google",
+            "background": "#f7d0d0",
+            "text_color": "#444444"
+          }
+        },
+        "abd7afe5-970a-4aec-beee-0dda6a8e990b": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Ashish Disawal",
+            "content": "Headphone Zone has a wide variety of stuff for all levels of audiophiles. The packaging was good and the delivery was prompt.",
+            "author": "via Google",
+            "background": "#c0e7f9",
+            "text_color": "#444444"
+          }
+        },
+        "9e700f1a-e5bf-4e88-ad62-cd1df51b7b8f": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Agam Sheth",
+            "content": "One can biggest collection of all Audio equips here.. It's a heaven for music lovers :3",
+            "author": "via Google",
+            "background": "#d6cff9",
+            "text_color": "#444444"
+          }
+        },
+        "49757274-519c-4fd1-869e-8bbdde30ad55": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Anshu Jain",
+            "content": "Genuine products and recommendations at all price levels. Makes life much easier!",
+            "author": "via Google",
+            "background": "#fcefbb",
+            "text_color": "#444444"
+          }
+        },
+        "f0f536ef-9a9e-4db8-ba03-90653f9c0c59": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Vaibhav Rathi",
+            "content": "You can find the eargasmic things here, which wont be found anywhere else in India...",
+            "author": "via Google",
+            "background": "#f9cdd9",
+            "text_color": "#444444"
+          }
+        },
+        "fb74bd1d-35bd-4570-82f1-ff3eec9067d6": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Rohit Sahu",
+            "content": "Headphone Zone is awesome. Hats off to all the passionate people at Headphone Zone for answering to my repeated requests and queries quickly.",
+            "author": "via Google",
+            "background": "#c3f4d7",
+            "text_color": "#444444"
+          }
+        },
+        "226a2029-afcc-41ac-8e54-f4af570ae2a4": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Manjith Nair",
+            "content": "These guys are the best! I have never seen such customer satisfaction anywhere else.Kudos to the team and keep it up!",
+            "author": "via Google",
+            "background": "#f7d0d0",
+            "text_color": "#444444"
+          }
+        }
+      },
+      "block_order": [
+        "template--15989844115644__9bd85648-60de-43f6-9d03-4cff5c4eeaa9-1678439003dd0489c9-1",
+        "000d9389-b971-49db-9eba-168ebfe12406",
+        "abd7afe5-970a-4aec-beee-0dda6a8e990b",
+        "9e700f1a-e5bf-4e88-ad62-cd1df51b7b8f",
+        "49757274-519c-4fd1-869e-8bbdde30ad55",
+        "f0f536ef-9a9e-4db8-ba03-90653f9c0c59",
+        "fb74bd1d-35bd-4570-82f1-ff3eec9067d6",
+        "226a2029-afcc-41ac-8e54-f4af570ae2a4"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "section_size": "medium",
+        "stack_on_mobile": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "0e51d4bb-fcde-435f-a8e5-56e3ff5caaef": {
+      "type": "promotional-blocks",
+      "blocks": {
+        "template--15989844115644__0e51d4bb-fcde-435f-a8e5-56e3ff5caaef-1678439003dd0489c9-1": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Rahul Sharma",
+            "content": "Hats off Headphone Zone. Smart and helpful staff overall. Timely delivery with cute little Spotify playlist cards. Will keep shopping from you guys, keep it up!",
+            "author": "via Google",
+            "background": "#c0e7f9",
+            "text_color": "#444444"
+          }
+        },
+        "4b7365e8-3f53-44fc-8302-b41b4cd47102": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Suman Suthradar",
+            "content": "The one stop shop for Audiophiles. All the variety of Audio equipments can be found here and the Gurus will help you if you are confused.",
+            "author": "Suman Suthradar",
+            "background": "#d6cff9",
+            "text_color": "#444444"
+          }
+        },
+        "a8848d89-1eb8-470e-a780-750fbb11beaa": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Shivam Mulik",
+            "content": "Has been my go-to place to buy good headphones since 2018. The service is excellent and responsive. If you are looking to buy a pair, look no further.",
+            "author": "via Google",
+            "background": "#fcefbb",
+            "text_color": "#444444"
+          }
+        },
+        "553af970-6cfd-4305-b16e-d96dada839f6": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Ayan Banerjee",
+            "content": "The headphone gurus are always quick and efficient to resolve even the dumbest queries. Kudos to such a knowledgeable team.",
+            "author": "via Google",
+            "background": "#f9cdd9",
+            "text_color": "#444444"
+          }
+        },
+        "d62bb630-9402-45d5-bf0e-48549491bca7": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Dhawal Lingam",
+            "content": "Amazing service, packaging, prices, choices. If I ever want to buy anything related to audiophilia, my first choice is Headphone Zone.",
+            "author": "via Google",
+            "background": "#c3f4d7",
+            "text_color": "#444444"
+          }
+        },
+        "cbec7c6c-6fba-4059-bbf0-5d3933a1c257": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Amos Michael Eligius",
+            "content": "Loved the service. Loved the browsing and ordering experience. Their mails have funny GIFs and stuff. It's nice to see a company paying detailed attention.",
+            "author": "via Google",
+            "background": "#f7d0d0",
+            "text_color": "#444444"
+          }
+        }
+      },
+      "block_order": [
+        "template--15989844115644__0e51d4bb-fcde-435f-a8e5-56e3ff5caaef-1678439003dd0489c9-1",
+        "4b7365e8-3f53-44fc-8302-b41b4cd47102",
+        "a8848d89-1eb8-470e-a780-750fbb11beaa",
+        "553af970-6cfd-4305-b16e-d96dada839f6",
+        "d62bb630-9402-45d5-bf0e-48549491bca7",
+        "cbec7c6c-6fba-4059-bbf0-5d3933a1c257"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "section_size": "medium",
+        "stack_on_mobile": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "596bc87a-899a-4da6-9ec5-2aa01b1fcd35": {
+      "type": "promotional-blocks",
+      "blocks": {
+        "template--15989844115644__596bc87a-899a-4da6-9ec5-2aa01b1fcd35-1678439003dd0489c9-1": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Ashwin Mohan",
+            "content": "Searching for the best earphones? You enjoy music? Confused on what brand is the best for you? Ask the headphone gurus. One stop to get the best pair of bionic ear device.",
+            "author": "via Google",
+            "background": "#c0e7f9",
+            "text_color": "#444444"
+          }
+        },
+        "ce900461-ce87-489e-a3e2-999a81984ede": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Vivek Tanavde",
+            "content": "An excellent space to try out different headphones. The staff is very friendly, Raghav was very helpful. Will definitely visit again.",
+            "author": "via Google",
+            "background": "#d6cff9",
+            "text_color": "#444444"
+          }
+        },
+        "ed60d3b4-5d9a-4e38-bee4-da54ced4e7c8": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Vaibhav Rathi",
+            "content": "You can find the eargasmic things here, which won't be found anywhere else in India.",
+            "author": "via Google",
+            "background": "#fcefbb",
+            "text_color": "#444444"
+          }
+        },
+        "2963ae2e-c127-4409-b539-960366dae314": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Jyoti Panda",
+            "content": "With the way they advice you, it's evident they are not here to do only business. This place is my to-go for buying anything related to music. GREAT JOB!",
+            "author": "via Google",
+            "background": "#f9cdd9",
+            "text_color": "#444444"
+          }
+        },
+        "5194b03b-b62a-446f-b064-ab082aba3003": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "",
+            "content": "I'm so so satisfied with the team. Wish you a bright future and keep doing the same.",
+            "author": "Johnson Khaidem",
+            "background": "#c3f4d7",
+            "text_color": "#444444"
+          }
+        }
+      },
+      "block_order": [
+        "template--15989844115644__596bc87a-899a-4da6-9ec5-2aa01b1fcd35-1678439003dd0489c9-1",
+        "ce900461-ce87-489e-a3e2-999a81984ede",
+        "ed60d3b4-5d9a-4e38-bee4-da54ced4e7c8",
+        "2963ae2e-c127-4409-b539-960366dae314",
+        "5194b03b-b62a-446f-b064-ab082aba3003"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "section_size": "medium",
+        "stack_on_mobile": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "bca5199e-29f4-4e41-80e2-186285f3624c": {
+      "type": "promotional-blocks",
+      "blocks": {
+        "template--15989844115644__bca5199e-29f4-4e41-80e2-186285f3624c-1678439003dd0489c9-1": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Saurabh Singh",
+            "content": "I appreciate their escalation process. All in all, my faith is restored, and I do recommend people to go for Headphone Zone.",
+            "author": "via Google",
+            "background": "#f7d0d0",
+            "text_color": "#444444"
+          }
+        },
+        "cb70288e-e4fe-4bfc-bce1-b6d2a7c4fc97": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Sri Rama Krishna D",
+            "content": "The best place to buy audiophile gear in India, period. They respond very fast and the shipping speed is incredible.",
+            "author": "via Google",
+            "background": "#c0e7f9",
+            "text_color": "#444444"
+          }
+        },
+        "8723ddd1-e9b5-4cba-8e98-8a1bbf21b371": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Prajwal Pingali",
+            "content": "Happy with their escalation process and their speed! I don't think I've experienced such a prompt and positive customer care service in India before. Loving the new headset as well.",
+            "author": "via Google",
+            "background": "#d6cff9",
+            "text_color": "#444444"
+          }
+        },
+        "83cf51dc-c330-4f4f-9483-5654e646064e": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Kolpo Gogoi",
+            "content": "Customer service is the best I ever had. They have a great team for customer support.",
+            "author": "via Google",
+            "background": "#fcefbb",
+            "text_color": "#444444"
+          }
+        },
+        "a9020e1b-3dbe-47ea-be10-8a67a00a6185": {
+          "type": "quote",
+          "settings": {
+            "highlight": false,
+            "subheading": "Rajiv Kumar",
+            "content": "Best selection of audiophile level gear. Knowledgeable staff who are very responsive and helpful. Can't go wrong with Headphone Zone.",
+            "author": "via Google",
+            "background": "#f9cdd9",
+            "text_color": "#444444"
+          }
+        }
+      },
+      "block_order": [
+        "template--15989844115644__bca5199e-29f4-4e41-80e2-186285f3624c-1678439003dd0489c9-1",
+        "cb70288e-e4fe-4bfc-bce1-b6d2a7c4fc97",
+        "8723ddd1-e9b5-4cba-8e98-8a1bbf21b371",
+        "83cf51dc-c330-4f4f-9483-5654e646064e",
+        "a9020e1b-3dbe-47ea-be10-8a67a00a6185"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "section_size": "medium",
+        "stack_on_mobile": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "247eef1f-cd75-4a85-aa9c-10e19aac0c80",
+    "97be4468-108d-4b9b-a6dd-5340584922d7",
+    "2f6ae1a7-59ec-4019-981d-1fbff9de88c1",
+    "6f7f40c2-b69f-4260-9937-25f97a5f58a7",
+    "9bd85648-60de-43f6-9d03-4cff5c4eeaa9",
+    "0e51d4bb-fcde-435f-a8e5-56e3ff5caaef",
+    "596bc87a-899a-4da6-9ec5-2aa01b1fcd35",
+    "bca5199e-29f4-4e41-80e2-186285f3624c"
+  ]
+}

@@ -1,0 +1,54 @@
+{% if product.metafields.hpz.tab_for_graph != blank %}
+  <h3 style="text-align: center;font-size: 22PX;">FREQUENCY GRAPH</h3>
+  <img loading="lazy" src="{{product.metafields.hpz.tab_for_graph}}">
+  <h3 style="text-align: center;font-size: 22PX;">CHEAT SHEET</h3>
+  <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0153/8863/files/Frequency-Graph.jpg?v=1657013778">
+  <h3 style="text-align: center;font-size: 22PX;margin-bottom: 40px;">Regions of the frequency spectrum</h3>
+  <div class="freq-graph">
+    <strong>
+      SUB BASS<br>(20Hz - 80 Hz)</strong> <div>
+      The first section of the frequency spectrum is the sub-bass. Everything below 80Hz is sub-bass, so generally, you
+      need a subwoofer or a good pair of headphones (open-back headphones, for example) to hear this region. This region
+      comprises instruments like the Kick Drum and the Bass Guitar. You should be able to hear Sub-Bass if you’re
+      listening on monitors or headphones. But if you’re listening on a laptop or a phone, there’s no way you will hear
+      that.
+    </div>
+    <strong>MID BASS<br>(80 Hz - 300 kHz)</strong>
+    <div>
+      After the Sub-Bass region, we get into the region known as the Bass or Mid-Bass. This region consists of
+      everything between 80 and 300 hertz. In this area, we’ve got instruments like bass guitar and the low end of a
+      snare. Lots of the low-end vocals as well, because male vocals are going to have the fundamental below 200Hz in
+      most cases.
+    </div>
+    <strong>LOWER MIDRANGE<br>(300 Hz - 1000 kHz)</strong>
+    <div>
+      Next, if you go from 300 Hz up to 1000 kHz, this is known as the Lower Midrange, and this is a crucial region for
+      music because this is where you get a lot of buildup with guitars, vocals, and even the top-end of the bass guitar
+      especially. Lower Midrange is an area guilty of adding mud to a mix and clarity in this region lifts a track
+      exponentially.
+    </div>
+    <strong>UPPER MIDRANGE<br>(1 kHz - 6 kHz)</strong>
+    <div>
+      Human hearing focuses inherently on this frequency range. So it’s crucial to get this range right. This region
+      consists of the main focus of the track (e.g. vocals) and synths. Be aware that this is also where you can start
+      to get into harshness and aggressive tones.
+    </div>
+    <strong>TREBLE<br>(6 kHz - 10 kHz)</strong>
+    <div>
+      After the Upper Midrange, we’ve got the Treble region between 6kHz and 8 kHz, and this is where things start to
+      get harsh. This region is where we have brittleness from instruments like the Hi-Hats and Cymbals. This is also a
+      crucial range for clarity and aggression, especially for female vocals.
+    </div>
+    <strong>AIR <br>(10 kHz - 20 kHz)</strong>
+    <div>
+      At the end of the frequency spectrum, we get to the Air region or the Top End. This region consists of everything
+      above 10 kHz. This is where we have air and this is where we get a sense of shine and sparkle in our music.
+    </div>
+  </div>
+{% endif %}
+<style>
+  .freq-graph { display: grid; grid-template-columns: repeat(2, 1fr 2fr); align-content: start; gap: 3rem 1rem; text-align:left;}
+  .freq-graph strong { color: #444; text-transform: capitalize; font-weight: 600; font-size: 12px; letter-spacing: 0.9px; vertical-align: top;}
+  .freq-graph div { padding: 0 40px 0 0;}
+  @media (max-width: 768px) {.freq-graph {grid-template-columns: 1fr 2fr;}.freq-graph div {padding: 0;}}
+</style>

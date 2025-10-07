@@ -1,0 +1,558 @@
+{%- comment -%}
+
+----------------------------------------------------------------------------------------------------------------------
+EMI Section
+----------------------------------------------------------------------------------------------------------------------
+
+This section is used above the buy button on the product page.
+
+There are 2 Drawers in this file:
+* GST: There is a drawer for GST input in the file
+* EMI: Contains all EMI Plans for payment available on a product
+
+Reference files :
+- emi-content.liquid : for all content regarding EMI Payment
+
+{%- endcomment -%}
+
+{% if product.price > 100000 %}
+  {% assign p = product.price %}
+  {% assign r = 15.00 | divided_by: 12 | divided_by: 100 %}
+  {% assign r_one = r | plus: 1 %}
+  {% assign r_thirteen = r_one | times: r_one | times: r_one %}
+  {% assign r_hundered_and_tweleve = r_thirteen | times: r_thirteen | times: r_thirteen | times: r_thirteen %}
+  {% assign r_twenty_four = r_hundered_and_tweleve | times: r_hundered_and_tweleve %}
+  {% assign r_two_hundred_fourty_one = r_twenty_four | minus: 1 %}
+  {% assign right = r_twenty_four | divided_by: r_two_hundred_fourty_one %}
+  {% assign emi = p | times: r | times: right %}
+  {% assign emi = emi | money  %}
+  <button class="pdp-emi" aria-controls="emi" aria-expanded="false">
+    EMI from <b>{{ emi }}/month</b> {% render 'icon' with 'info' %}
+  </button>
+{% endif %}
+
+{% if product.available %}
+  {% unless product.vendor contains 'Headphone Connect' %}
+    {% assign gst_price = product.price | divided_by: 1.18 %}
+    {% assign final_gst_price = product.price | minus: gst_price %}
+    <button class="pdp-gst" aria-controls="gst" aria-expanded="false">
+      Includes GST of {{ final_gst_price | money }}
+      {% render 'icon' with 'info' %}
+    </button>
+  {% endunless %}
+{%- endif -%}
+
+<x-drawer id="gst" class="drawer">
+  <div>
+    <h6 class="h6">GET 18% GST INPUT</h6>
+    <br>
+    <p>
+      One of the reasons headphones and earphones in India are more expensive than overseas is 
+      because of the Goods & Services Tax in India.<br><br> Don't let the GST input go to waste 
+      especially if you can avail an offset.<br><br> All products sold on Headphone Zone carry 
+      a GST compliant invoice and all products sold include an 18% GST.<br><br> Simply enter 
+      your GST number at the time of checkout.
+    </p>
+  </div>
+</x-drawer>
+
+<x-drawer id="emi" class="drawer">
+
+  <div>
+    <h6 class="h6">Browse EMI Plans</h6>
+    <br>
+
+    {% if product.price > 1000000 %}
+    <strong>Low Cost EMI Options through Credit Cards</strong><br>
+    <br>
+    <div class="emi-accordion-box rounded bg-secondary text-custom" style="--text-color: 26 26 26;">
+
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>ICICI Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'icici' %}
+        </div>
+      </details>
+
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>HDFC Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'hdfc' %}
+        </div>
+      </details>
+
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>SBI Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'sbi' %}
+        </div>
+      </details>
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>Axis Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'axis' %}
+        </div>
+      </details>
+    </div>
+    <br>
+    <strong>Other EMI Options through Credit Cards</strong><br>
+
+    <br>
+    <div class="emi-accordion-box rounded bg-secondary text-custom" style="--text-color: 26 26 26;">
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>Citi Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'citi' %}
+        </div>
+      </details>
+
+
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>Kotak Mahindra Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'kotak' %}
+        </div>
+      </details>
+
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>RBL Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'rbl' %}
+        </div>
+      </details>
+
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>Standard Chartered Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'stanc' %}
+        </div>
+      </details>
+
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>INDUSIND Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'indusind' %}
+        </div>
+      </details>
+
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>HSBC Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'hsbc' %}
+        </div>
+      </details>
+
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>YES Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'yes-bank' %}
+        </div>
+      </details>
+
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>Bank of Baroda</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'bob' %}
+        </div>
+      </details>
+
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>American Express</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'amex' %}
+        </div>
+      </details>
+    </div>
+
+    {%- endif -%}
+    {% if product.price < 1000000 %} <div class="emi-accordion-box rounded bg-secondary text-custom"
+      style="--text-color: 26 26 26;">
+      {% if product.price > 150000 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>ICICI Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'icici' %}
+        </div>
+      </details>
+      {% endif %}
+      {% if product.price > 100000 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>HDFC Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'hdfc' %}
+        </div>
+      </details>
+      {% endif %}
+      {% if product.price > 250000 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>SBI Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'sbi' %}
+        </div>
+      </details>
+      {% endif %}
+      {% if product.price > 300000 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>Axis Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'axis' %}
+        </div>
+      </details>
+      {% endif %}
+      {% if product.price > 250000 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>Citi Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'citi' %}
+        </div>
+      </details>
+      {% endif %}
+      {% if product.price > 300000 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>Kotak Mahindra Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'kotak' %}
+        </div>
+      </details>
+      {% endif %}
+      {% if product.price > 150000 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>RBL Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'rbl' %}
+        </div>
+      </details>
+      {% endif %}
+      {% if product.price > 250000 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>Standard Chartered Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'stanc' %}
+        </div>
+      </details>
+      {% endif %}
+      {% if product.price > 200000 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>INDUSIND Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'indusind' %}
+        </div>
+      </details>
+      {% endif %}
+      {% if product.price > 200000 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>HSBC Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'hsbc' %}
+        </div>
+      </details>
+      {% endif %}
+      {% if product.price > 150000 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>YES Bank</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'yes-bank' %}
+        </div>
+      </details>
+      {% endif %}
+      {% if product.price > 250000 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>Bank of Baroda</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'bob' %}
+        </div>
+      </details>
+      {% endif %}
+      {% if product.price > 500000 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure"
+        style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>American Express</span>
+            <span class="circle-chevron group-hover:colors group-expanded:colors group-expanded:rotate">
+              {%- render 'icon' with 'chevron-bottom-small' -%}
+            </span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          {% render 'emi-content' with 'amex' %}
+        </div>
+      </details>
+      {% endif %}
+  </div>
+
+  {%- endif -%}
+
+  </div>
+</x-drawer>
+
+
+<style>
+  .emi-accordion-box {
+    padding: var(--spacing-1) var(--spacing-4);
+  }
+
+  .emi-accordion-box> :first-child {
+    border-block-start-width: 0;
+  }
+
+  .emi-accordion-box> :last-child {
+    border-block-end-width: 0;
+  }
+
+  .emi-gst {
+    font-size: 0.781rem;
+    line-height: 15px;
+    color: #444444;
+    display: block;
+    margin-top: 0px !important;
+    margin-bottom: 4px !important;
+    font-weight: 500;
+  }
+
+  .pdp-emi {
+    font-size: 16px;
+    line-height: 15px;
+    color: #777;
+    display: block;
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
+    font-weight: 400;
+  }
+
+  .pdp-gst {
+    font-size: 0.781rem;
+    line-height: 15px;
+    color: #777;
+    display: block;
+    margin-top: 0px !important;
+    margin-bottom: 4px !important;
+    font-weight: 400;
+  }
+
+  @media screen and (min-width: 700px) {
+    .accordion__content div table td {
+      padding: 0px !important;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .accordion__content {
+      font-size: 11px;
+      margin-block-end: 0px;
+      padding-inline-end: 0px;
+    }
+
+    .accordion__content div table td {
+      padding: var(--spacing-1);
+    }
+
+    .accordion__content div table {
+      font-size: 7.5px;
+    }
+  }
+
+  .accordion__toggle, .accordion__content, .emi-interest-grid { 
+    color: #444; 
+  }
+</style>

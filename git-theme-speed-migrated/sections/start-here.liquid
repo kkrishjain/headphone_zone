@@ -1,0 +1,184 @@
+<div class="container">
+  {% if section.settings.title %}
+    <div class="start-here-header h2">{{ section.settings.title }}</div>
+  {% endif %}
+  
+  <div class="start-here-section">
+    {% for block in section.blocks %}
+      <div>
+      <a href="{{ block.settings.category_url }}" data-ga-category="Start Here Section">
+        {% render 'start-here-icon' with block.settings.icon, color: '#f7f7f7' %}
+        <p class="start-here-category-text">{{ block.settings.category_text }}</p>
+      </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .start-here-header{
+    margin:auto;
+    text-align: center;
+    font-size: var(--text-h2);
+    line-height: 1.1;
+    padding: 2rem;
+    color:#444;
+  }
+  .start-here-section {
+    display: grid; 
+    grid-template-columns: repeat(7, 1fr); 
+    grid-column-gap: 8px; 
+    grid-row-gap:10px; 
+    width: 92%;
+    text-align: center;
+    margin: auto;
+  }
+  @media screen and (max-width: 740px) {
+    .start-here-section {
+      grid-template-columns: repeat(3, 1fr);
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+  .start-here-category-text{ 
+    font-family: var(--text-font-family); 
+    font-size: 9px;font-weight: 500; 
+    line-height: normal; 
+    letter-spacing: 1.5px; 
+    text-transform: uppercase; 
+    color: #444; 
+    text-align: center;
+  }
+  #SH-C-O:hover, #SH-CS-O:hover, #SH-DB-O:hover, 
+  #SH-PB-O:hover, #SH-SP-O:hover, #SH-ST-O:hover, 
+  #SH-G-O:hover, #SH-DAP-O:hover, #SH-PAD-O:hover, 
+  #SH-ET-O:hover, #SH-FH-O:hover, #SH-FIEM-O:hover, 
+  #SH-DAD-O:hover, #SH-BH-O:hover, #SH-IEM-O:hover, 
+  #SH-TWS-O:hover, #SH-WH-O:hover, #SH-WFH-O:hover {
+    opacity: 1;
+    transition: opacity .3s ease;
+  }
+</style>
+
+
+{% schema %}
+{
+  "name": "Start Here",
+  "class": "start-here",
+  "presets": [
+    { 
+      "name":"Start Here Icons",
+      "blocks": [
+        {
+          "type": "item",
+          "settings": {}
+        },
+        {
+          "type": "item",
+          "settings": {}
+        },
+        {
+          "type": "item",
+          "settings": {}
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Start Your Audiophile Journey Here"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Icon Background Color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "In-Ears-for-beginners",
+              "label": "In-Ears for beginners" 
+            },
+            {
+              "value": "Headphones-for-beginners",
+              "label": "Headphones for beginners" 
+            },
+            {
+              "value": "True-Wireless-Earbuds",
+              "label": "True Wireless Earbuds" 
+            },
+            {
+              "value": "Portable-Amps-and-DACs",
+              "label": "Portable Amps and DACs" 
+            },
+            {
+              "value": "Desktop-Amps-and-DACs",
+              "label": "Desktop Amps and DACs" 
+            },
+            {
+              "value": "Wireless-Headphones",
+              "label": "Wireless Headphones" 
+            },
+            {
+              "value": "Flagship-IEMS",
+              "label": "Flagship IEMS" 
+            },
+            {
+              "value": "Flagship-Headphones",
+              "label": "Flagship Headphones" 
+            },
+            {
+              "value": "Hi-Res-Audio-Players",
+              "label": "Hi-Res Audio Players" 
+            },
+            {
+              "value": "Cables-and-Adapters",
+              "label": "Cables and Adapters" 
+            },
+            {
+              "value": "Cases",
+              "label": "Cases" 
+            },
+            {
+              "value": "Eartips-and-Earpads",
+              "label": "Eartips and Earpads" 
+            },
+            {
+              "value": "Studio-and-Professional",
+              "label": "Studio and Professional" 
+            },
+            {
+              "value": "Speakers",
+              "label": "Speakers" 
+            }
+          ],
+          "default": "In-Ears-for-beginners"
+        },
+        {
+          "type": "html",
+          "id": "category_text",
+          "label": "Category Text",
+          "default": "In-Ears for <br>Beginners"
+        },
+        {
+          "type": "url",
+          "id": "category_url",
+          "label": "Link URL"
+        }
+      ]
+    }
+  ],
+}
+{% endschema %}

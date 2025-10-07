@@ -1,0 +1,301 @@
+
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+Product Video Wise COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used to create an product youtube reviews section on the product page.
+
+********************************************
+Supported JSON parameters
+********************************************
+
+* video-1: youtube ID
+
+********************************************
+Examples
+********************************************
+Default JSON youtube review
+{
+  "video-1":"Y9tWfIfewX8",
+  "video-2":"Y9tWfIfewX8",
+  "video-3":"Y9tWfIfewX8"
+}
+{%- endcomment -%}
+
+{% schema %}
+{
+  "name": "Video Widget",
+  "class": "headphone-zone-video-widget",
+  "presets": [{ "name":"Video Widgets"}]
+}
+{% endschema %}
+<div id="youtube-reviews" class="product-details__section" data-scroll-spy-section="">
+{% assign youtube = product.metafields.hpz.youtube_reviews.value %}
+
+{% if youtube != blank %}
+  <header class="section__header"  >
+    <div class="text-container">
+      <br>
+    </div>
+  </header>
+
+  <collection-list scrollable reveal-on-scroll class="list-collections list-collections--carousel became-visible" style="opacity: 1;">
+    <scrollable-content class="list-collections__scroller hide-scrollbar is-scrollable" id="{{ product.id }}-reviews">
+      <div class="list-collections__item-list video-reviews-mobile">
+        {% for count in (1..25) %}
+          {% assign number = 'video-' | append: count %}
+          {% assign video = youtube[number] %}
+          {% if video != blank %}
+            <div class="youtube-thumb list-collections__item" data-id="{{ video }}">            
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </scrollable-content>
+  </collection-list>
+{% endif %}
+    </div>
+{% stylesheet %}
+  .text-overlay-hc {
+    position: absolute;
+    color: #ffffff;
+    z-index: 1;
+    background-color: rgba(60, 7, 255, 0.5);
+  }
+  @media screen and (max-width: 740px) {
+  .video-reviews-mobile { grid-auto-columns: 75vw!important; padding:0!important;}}
+
+  .video-reviews-mobile { grid-gap: 30px!important; padding-left:10px;}
+  @media screen and (min-width: 741px) { .video-reviews-mobile { grid-auto-columns: 40vw!important;} }
+
+  .youtube-thumb { position: relative; padding-bottom: 56.23%; height: 0; overflow: hidden; max-width: 100%; background: #000;border-radius: 0.625rem!important;}
+  .youtube-thumb iframe,
+  .youtube-thumb object,.youtube-thumb embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 100; background: transparent;}
+
+  .youtube-thumb img {
+  	 bottom: 0;
+  	 display: block;
+  	 left: 0;
+  	 margin: auto 0px auto 0px!important;
+  	 max-width: 100%;
+  	 width: 100%;
+  	 position: absolute;
+  	 right: 0;
+  	 top: 0;
+  	 border: none;
+  	 height: auto;
+  	 cursor: pointer;
+  	 -webkit-transition: 0.4s all;
+  	 -moz-transition: 0.4s all;
+  	 transition: 0.4s all;
+  }
+  @media screen and (max-width: 740px) {.youtube-thumb img { margin: auto 0px auto 0px!important;}}
+ 
+   .youtube-thumb .play {
+  	 height: 72px;
+  	 width: 72px;
+  	 left: 50%;
+  	 top: 50%;
+  	 margin-left: -36px;
+  	 margin-top: -36px;
+  	 position: absolute;
+     background: url("https://cdn.shopify.com/s/files/1/0153/8863/files/YouTube_play_button_icon__2013_2017.svg?v=1678794686") no-repeat;
+  	 cursor: pointer;
+  }
+
+
+  .list-collections { display: block; position: relative;padding-bottom: 50px!important;}
+
+  .list-collections__item-list {
+    display: grid;
+    align-items: center;
+    grid-gap: 24px;
+    gap: 24px;
+  }
+
+  .list-collections__item {
+    --heading-color: 255, 255, 255;
+    --text-color: 255, 255, 255;
+
+    position: relative;
+    display: block;
+    text-align: center;
+    background: rgb(var(--secondary-background));
+    /* We fill with the secondary background */
+    border-radius: var(--block-border-radius-reduced);
+    overflow: hidden;
+    z-index: 0;
+    /* Creating new stacking context is needed on Safari to apply the border radius */
+  }
+
+  .list-collections__item:hover .link {
+    -webkit-text-decoration-color: rgb(var(--text-color));
+    text-decoration-color: rgb(var(--text-color));
+    /* Make sure that the underlined link is in active state on hover of the whole block */
+  }
+
+  .list-collections__item-image-wrapper { position: relative; height: 100%;}
+
+  .list-collections__item.has-overlay .list-collections__item-image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    background: rgba(var(--section-block-overlay, 0, 0, 0), var(--section-block-overlay-opacity, 0.2));
+    z-index: 1;
+  }
+
+  .list-collections__item-image {
+    min-height: 120px;
+    /* Ensure enough space for text */
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+  }
+
+  .list-collections__item-info {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media screen and (min-width: 741px) {
+    .list-collections__item-list {
+      grid-template-columns: repeat(auto-fit, calc(100% / 3 - var(--container-gutter) * 2 / 3));
+      grid-gap: var(--container-gutter);
+      justify-content: safe center;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {.list-collections__item-info { padding-left: var(--container-gutter); padding-right: var(--container-gutter);}}
+
+  /* Collage variation */
+
+  @media screen and (min-width: 741px) {
+    .list-collections--collage {--list-collections-collage-rows-height: 220px;}
+    .list-collections--collage .list-collections__item-list {grid-template-columns: repeat(var(--section-collage-column), 1fr); grid-auto-rows: var(--list-collections-collage-rows-height); grid-auto-flow: dense;}
+    .list-collections--collage .list-collections__item:only-child { width: 590px; margin-left: auto; margin-right: auto;}
+    .list-collections--collage .list-collections__item { height: 100%;}
+    .list-collections--collage .list-collections__item--highlight { grid-row: auto / span 2;}
+    .list-collections--collage .list-collections__item--shift { grid-column: 2;}
+  }
+
+  @media screen and (min-width: 1000px) {
+    .list-collections--collage { --list-collections-collage-rows-height: 250px;}
+    .list-collections--collage .list-collections__item-list {
+      margin-left: calc(var(--grid-column-width) + var(--grid-gap));
+      margin-right: calc(var(--grid-column-width) + var(--grid-gap));
+    }
+  }
+  @media screen and (min-width: 1200px) {.list-collections--collage {--list-collections-collage-rows-height: 300px;}}
+  @media screen and (min-width: 1400px) {.list-collections--collage {--list-collections-collage-rows-height: 350px;}}
+
+  /* Carousel (scroller) variation */
+
+  .list-collections__scroller { display: block; overflow: auto; scroll-snap-type: x mandatory;}
+
+  .list-collections--carousel .list-collections__item-list {
+    grid-auto-flow: column;
+    grid-auto-columns: 80vw;
+    grid-template-columns: none;
+    width: min-content;
+    min-width: 100%;
+    padding: 0 var(--container-gutter);
+  }
+
+  .list-collections--carousel .list-collections__item { scroll-snap-align: center; scroll-snap-stop: always;}
+
+  @media screen and (min-width: 741px) { .list-collections--carousel .list-collections__item-list { grid-auto-columns: 60vw;}}
+
+  @media screen and (min-width: 741px) and (max-width: 999px) {
+    /* Just on tablet, the designer wants to have the collections bigger on grid mode and use a carousel mode, so we have
+     to do a specific exception just for tablet size. This unfortunately cause code duplication :( */
+
+    .list-collections--grid .container {
+      display: block;
+      overflow: auto;
+      padding-left: 0;
+      padding-right: 0;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      /* For Firefox */
+    }
+
+    .list-collections--grid .container::-webkit-scrollbar { display: none;}
+    .list-collections--grid .list-collections__item-list { grid-auto-columns: 60vw; grid-template-columns: none; grid-auto-flow: column; width: min-content; min-width: 100%; padding: 0 var(--container-gutter);}
+    .list-collections--grid .list-collections__item { scroll-snap-align: center; scroll-snap-stop: always;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .list-collections__scroller {
+      /* overflow: hidden; Uncomment this line if you just want scroll to be done in JS with arrows */
+      scroll-snap-type: none;
+    }
+
+    .list-collections--carousel .list-collections__item-list { grid-auto-columns: 23vw; padding-left: var(--container-outer-margin); padding-right: var(--container-outer-margin);}
+    [dir="ltr"] .list-collections__scroller.is-scrollable .list-collections__item-list { padding-left: 40px;}
+    [dir="rtl"] .list-collections__scroller.is-scrollable .list-collections__item-list { padding-left: calc(var(--container-outer-margin) + 28px);}
+    .list-collections__scroller.is-scrollable .list-collections__item-list {/* 28px is half the width of arrows */}
+    [dir="ltr"] .list-collections__prev-next {right: var(--container-outer-width);}
+    [dir="rtl"] .list-collections__prev-next { left: var(--container-outer-width);}
+
+    .list-collections__prev-next {
+      display: none;
+      position: absolute;
+      top: calc(50% - 56px);
+      /* 56px is the height of a single button */
+      z-index: 1;
+    }
+
+    .list-collections__scroller.is-scrollable+.list-collections__prev-next {
+      display: block;
+    }
+
+    .list-collections__arrow:last-child {
+      border-top: none;
+    }
+  }
+{% endstylesheet %}
+
+<script>
+  document.addEventListener("DOMContentLoaded",
+    function () {
+    var div, i,
+      v = document.getElementsByClassName("youtube-thumb");
+      for (i = 0; i < v.length; i++) {
+        div = document.createElement("div");
+        div.setAttribute("data-id", v[i].dataset.id);
+        div.innerHTML = TechnothirstyThumb(v[i].dataset.id);
+        div.onclick = TechnothirstyIframe;
+        v[i].appendChild(div);
+      }
+    }
+  );
+
+  function TechnothirstyThumb(id) {
+    var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" loading="lazy" class="content-over-media__media zoom-image">',
+        play = '<div class="play"></div>';
+    return thumb.replace("ID", id) + play;
+  }
+
+  function TechnothirstyIframe() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.id + "?autoplay=1&modestbranding=1&mute=1&playsinline=1");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allowfullscreen", "1");
+    this.parentNode.replaceChild(iframe, this);
+  }
+</script>

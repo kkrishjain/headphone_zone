@@ -1,0 +1,27 @@
+{% comment %} PLEASE DON'T MAKE CHANGES IN THIS FILE IT'S AFFECT THE CODE IF YOU NEED ANY HELP PLEASE CONTACT TO FLITS TEAM support@getflits.com {% endcomment %}
+{% case flits_custom_component %}
+{%- when 'comp_pagination' -%}
+	 <div class="flits-pagination-div {{ class }}" {{ attr }}>
+       <button class="flits-button flits-pagination-btn flits-prev-btn" data-flits-btn="flits-prev-btn">
+         <svg focusable="false" width="17" height="14" class="icon icon--nav-arrow-left  icon--direction-aware " viewBox="0 0 17 14">
+           <path d="M17 7H2M8 1L2 7l6 6" stroke="currentColor" stroke-width="2" fill="none"></path>
+         </svg>
+       </button>
+			<ul class="flits-pagination pagination"></ul>
+		<button class="flits-button flits-pagination-btn flits-next-btn" data-flits-btn="flits-next-btn">
+		 <svg focusable="false" width="17" height="14" class="icon icon--nav-arrow-right  icon--direction-aware " viewBox="0 0 17 14">
+        <path d="M0 7h15M9 1l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none"></path>
+      </svg>	
+       </button>
+	</div>
+	<div class="flits-clearfix"></div>
+{%- when 'comp_socialLoginButton' -%}
+<!-- FLITS Social Login Custom  -->
+
+<a data-href="/apps/proxy_name/api/app_id/shop_id/login_type/auth/login?token=shop_token"
+   class="flits-social-login-btn"
+   id="flits-social-login-btn-template">
+  <span class="flits-social-login-btn-img"></span>
+  <span class="flits-social-login-btn-text"></span>
+</a>
+{% endcase %}

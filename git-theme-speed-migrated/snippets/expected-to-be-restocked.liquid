@@ -1,0 +1,28 @@
+<script>
+  {% capture varient_etr %}
+    {
+    {% for variant in product.variants %}
+      "{{ variant.id }}":"{{ variant.metafields.hpz.expected_to_be_restocked_variant }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    }
+  {% endcapture %}
+  
+  let varient_etr = {{varient_etr}};
+  let current_varient_etr = "{{product.selected_or_first_available_variant.id}}";
+  setTimeout(varientmessage, 3000)
+  function varientmessage(){
+    if(varient_etr[current_varient_etr]!==""){
+      const current_varient_etr_message = `Expected to be restocked by <b>${ varient_etr[current_varient_etr] }</b>`;
+      document.querySelector('.expected-to-restocked-varient').innerHTML = current_varient_etr_message;
+    }
+  }
+  document.addEventListener('variant:change', function (event) {
+    let changed_variant = event.detail.variant.id.toString();
+    let varient_etr_message = `Expected to be restocked by <b>${ varient_etr[changed_variant] }</b>`;
+    if(varient_etr[changed_variant]!==""){
+    document.querySelector('.expected-to-restocked-varient').innerHTML = varient_etr_message;
+    } else {
+      document.querySelector('.expected-to-restocked-varient').innerHTML = '';
+    }
+})
+</script>

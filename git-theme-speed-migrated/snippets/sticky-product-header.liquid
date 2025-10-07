@@ -1,0 +1,641 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+Product page code
+----------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+ <div id="product-details" class="product-details" data-scroll-spy-container="">
+  <div class="product-details__nav section-boxed" data-scroll-spy-overflow-container="">
+    <scroll-spy-nav>
+      <ul class="product-nav-list">
+        {% if product.metafields.hpz.impact_90_sec_video.value.video.value != blank %} <li class="product-nav-list__item"><a class="product-nav-list__link" id="i-video-sum" href="#impact-90">Video Summary</a></li>{% endif %}
+        <li class="product-nav-list__item"><a class="product-nav-list__link" id="i-features" href="#impact-features">Features</a></li>
+        <li class="product-nav-list__item"><a class="product-nav-list__link" id="i-specs" href="#impact-specs">Specs</a></li>
+        {% if product.metafields.hpz.impact_unboxing_grid.value.video.value != blank %}<li class="product-nav-list__item"><a class="product-nav-list__link" id="i-unbox" href="#impact-unboxing">Unboxing</a></li>{% endif %}
+        <li class="product-nav-list__item"><a class="product-nav-list__link" id="i-faq" href="#impact-faqs">FAQs</a></li>
+        <li class="product-nav-list__item"><a class="product-nav-list__link" id="ireviews" href="#judgeme_product_reviews">Customer Reviews</a></li>
+        {% if product.metafields.hpz.youtube_reviews.value != blank %}<li class="product-nav-list__item"><a class="product-nav-list__link" id="i-ytr" href="#youtube-reviews">YouTube Reviews</a></li>{% endif %}  
+        </ul>
+      </scroll-spy-nav>
+  </div>
+</div>
+ 
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+JS
+----------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+<script>
+
+  class StickyProductActions extends HTMLElement {
+  constructor() {
+    super();
+    this.preventStickyHeader();
+  }
+
+  preventStickyHeader() {
+    this.stickyHeader = this.stickyHeader || document.querySelector('sticky-header');
+    if (!this.stickyHeader) return;
+    this.stickyHeader.dispatchEvent(new Event('preventHeaderReveal'));
+  }
+
+  connectedCallback() {
+    this.productDetails = document.getElementById('product-details');
+    this.currentScrollTop = 0;
+    this.currentHeight = this.offsetHeight;
+
+    this.onScrollHandler = this.onScroll.bind(this);
+    window.addEventListener('scroll', this.onScrollHandler, false);
+  }
+
+  disconnectedCallback() {
+    window.removeEventListener('scroll', this.onScrollHandler);
+  }
+
+  onScroll() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > this.productDetails.offsetTop) {
+      requestAnimationFrame(this.reveal.bind(this));
+    } else {
+      requestAnimationFrame(this.hide.bind(this));
+    }
+    this.currentScrollTop = scrollTop;
+  }
+
+  hide() {
+    this.classList.remove('sticky-product-actions--visible');
+    document.body.classList.remove('sticky-product-actions-padding');
+  }
+
+  reveal() {
+    this.classList.add('sticky-product-actions--visible');
+    document.body.classList.add('sticky-product-actions-padding');
+    this.classList.remove('vishid');
+  }
+}
+customElements.define('sticky-product-actions', StickyProductActions);
+
+class ScrollSpyNav extends HTMLElement {
+  constructor() {
+    super();
+    this.smallScreen = false;
+    this.resizeObserver = new ResizeObserver(this.setSizing.bind(this)).observe(document.body);
+  }
+
+  setSizing() {
+    if (window.innerWidth > 750) {
+      this.stickyHeaderHeight = 170;
+      this.smallScreen = false;
+    } else {
+      this.stickyHeaderHeight = 90;
+      this.smallScreen = true;
+    }
+  }
+
+  connectedCallback() {
+    this.nav = this;
+    this.scrollSpyContainer = document.querySelector('[data-scroll-spy-container]');
+    this.currentScrollTop = 0;
+    this.currentHeight = this.offsetHeight;
+    this.smoothScrollNavLinks();
+    this.scrollSpySections = this.scrollSpyContainer.querySelectorAll('[data-scroll-spy-section]');
+    this.onScrollHandler = this.onScroll.bind(this);
+    window.addEventListener('scroll', this.onScrollHandler, false);
+  }
+
+  disconnectedCallback() {
+    window.removeEventListener('scroll', this.onScrollHandler);
+  }
+
+  onScroll() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    for (let i = 0; i < this.scrollSpySections.length; i++) {
+      const section = this.scrollSpySections[i];
+
+      if (!section || !section.getBoundingClientRect) {
+        return;
+      }
+
+      const boundingRect = section.getBoundingClientRect();
+      const topOfElement = boundingRect.top + window.scrollY - this.currentHeight - this.stickyHeaderHeight;
+      const activeLinks = this.nav.querySelectorAll('[data-scroll-spy-active]');
+
+      if (topOfElement <= scrollTop && this.currentSection !== section) {
+        this.currentSection = section;
+        const id = section.id;
+        activeLinks.forEach((activeLink) => {
+          delete activeLink.dataset.scrollSpyActive;
+        });
+
+        if (!id) {
+          return;
+        }
+
+        const activeItem = this.nav.querySelector(`a[href*=${id}]`);
+        if (activeItem) {
+          activeItem.dataset.scrollSpyActive = 'true';
+          this.nav.closest('[data-scroll-spy-overflow-container]').scrollTo({
+            top: 0,
+            left: activeItem.offsetLeft - 20,
+            behavior: 'smooth'
+          });
+        }
+      } else if (i === 0 && this.currentSection !== null && scrollTop < topOfElement) {
+        // If this is the first section, and scroll is above it, set
+        // current section to nothing, and reset the active nav links.
+        this.currentSection = null;
+        activeLinks.forEach((activeLink) => {
+          delete activeLink.dataset.scrollSpyActive;
+        });
+      }
+    }
+
+    this.currentScrollTop = scrollTop;
+  }
+
+  smoothScrollNavLinks() {
+    const navLinks = this.querySelectorAll('a');
+    for (let link in navLinks) {
+      if (navLinks.hasOwnProperty(link)) {
+        navLinks[link].addEventListener('click', (event) => {
+          event.preventDefault();
+          const section = this.scrollSpyContainer.querySelector(navLinks[link].hash);
+          const boundingRect = section.getBoundingClientRect();
+          const topOfElement = boundingRect.top  + window.scrollY - this.stickyHeaderHeight;
+          window.scroll({ top: topOfElement, behavior: "smooth" });
+        });
+      }
+    }
+  }
+}
+
+customElements.define('scroll-spy-nav', ScrollSpyNav);
+
+  class StickyHeader extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.header = document.getElementsByClassName('section-header')[0];
+    this.headerBounds = {};
+    this.currentScrollTop = 0;
+    this.preventReveal = false;
+    this.predictiveSearch = this.querySelector('predictive-search');
+
+    this.onScrollHandler = this.onScroll.bind(this);
+    this.hideHeaderOnScrollUp = () => {
+      this.preventReveal = true;
+    }
+
+    this.addEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
+    window.addEventListener('scroll', this.onScrollHandler, false);
+
+    this.createObserver();
+  }
+
+  disconnectedCallback() {
+    this.removeEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
+    window.removeEventListener('scroll', this.onScrollHandler);
+  }
+
+  createObserver() {
+    let observer = new IntersectionObserver((entries, observer) => {
+      this.headerBounds = entries[0].intersectionRect;
+      observer.disconnect();
+    });
+
+    observer.observe(this.header);
+  }
+
+  onScroll() {
+    if (this.preventReveal) {
+      return;
+    }
+
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
+
+    if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+      if (this.preventHide) return;
+      requestAnimationFrame(this.hide.bind(this));
+    } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+      if (!this.preventReveal) {
+        requestAnimationFrame(this.reveal.bind(this));
+      } else {
+        window.clearTimeout(this.isScrolling);
+
+        this.isScrolling = setTimeout(() => {
+          this.preventReveal = false;
+        }, 66);
+
+        requestAnimationFrame(this.hide.bind(this));
+      }
+    } else if (scrollTop <= this.headerBounds.top) {
+      requestAnimationFrame(this.reset.bind(this));
+    }
+
+    this.currentScrollTop = scrollTop;
+  }
+
+  hide() {
+    this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
+    document.body.classList.remove('sticky-header-margins');
+    this.closeMenuDisclosure();
+    this.closeSearchModal();
+  }
+
+  reveal() {
+    this.header.classList.add('shopify-section-header-sticky', 'animate');
+    document.body.classList.add('sticky-header-margins');
+    this.header.classList.remove('shopify-section-header-hidden');
+  }
+
+  reset() {
+    this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
+    document.body.classList.remove('sticky-header-margins');
+  }
+
+    closeMenuDisclosure() {
+      this.disclosures = this.disclosures || this.header.querySelectorAll('header-menu');
+      this.disclosures.forEach(disclosure => disclosure.close());
+    }
+
+    closeSearchModal() {
+      this.searchModal = this.searchModal || this.header.querySelector('details-modal');
+      this.searchModal.close(false);
+    }
+  }
+
+  customElements.define('sticky-header', StickyHeader);
+
+    {% if product.metafields.hpz.impact_90_sec_video.value.video.value != blank %}
+      document.getElementById("i-video-sum").onclick = function () { 
+        location.href = "#impact-90";
+      }; 
+      //    document.getElementById("i-video-sum-h").onclick = function () { 
+      //     location.href = "#impact-90"; 
+      // }; 
+    {% endif %}
+
+
+    document.getElementById("i-features").onclick = function () { 
+        location.href = "#impact-features"; 
+    }; 
+    //    document.getElementById("i-features-h").onclick = function () { 
+    //     location.href = "#impact-features"; 
+    // }; 
+
+    document.getElementById("i-specs").onclick = function () { 
+        location.href = "#impact-specs"; 
+    }; 
+    //    document.getElementById("i-specs-h").onclick = function () { 
+    //     location.href = "#impact-specs"; 
+    // }; 
+
+  {% if product.metafields.hpz.impact_unboxing_grid.value.video.value != blank %}
+    document.getElementById("i-unbox").onclick = function () { 
+        location.href = "#impact-unboxing"; 
+    }; 
+    //    document.getElementById("i-unbox-h").onclick = function () { 
+    //     location.href = "#impact-unboxing"; 
+    // }; 
+  {% endif %}
+
+    document.getElementById("i-faq").onclick = function () { 
+        location.href = "#impact-faqs"; 
+    }; 
+    //    document.getElementById("i-faq-h").onclick = function () { 
+    //     location.href = "#impact-faqs"; 
+    // }; 
+  
+    document.getElementById("ireviews").onclick = function () { 
+        location.href = "#judgeme_product_reviews"; 
+    }; 
+    //    document.getElementById("ireviewsh").onclick = function () { 
+    //     location.href = "#judgeme_product_reviews"; 
+    // }; 
+    document.getElementById("i-ytr").onclick = function () { 
+        location.href = "#youtube-reviews"; 
+    }; 
+    //    document.getElementById("i-ytr-h").onclick = function () { 
+    //     location.href = "#youtube-reviews"; 
+    // }; 
+
+</script>
+
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+CSS
+----------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+<style>
+/** Sticky Product Bar **/
+.vishid {
+  visibility:hidden;
+}
+
+  .product-details__nav {
+    background-color:#fff;
+    margin-bottom: 60px;
+
+  }
+
+.sticky-product-actions__container {
+  max-width: var(--restricted-width);
+  margin: 0 auto;
+}
+
+.sticky-product-actions__main {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: transform 150ms ease-out;
+  transform: translateY(100%);
+  background: rgb(var(--brand-cream));
+  z-index: 2;
+  border-top: 1px solid rgba(var(--brand-gray));
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.sticky-product-actions--visible .sticky-product-actions__main {
+  transform: translateY(0);
+}
+
+.sticky-product-actions__header {
+  flex: 1 1 14rem;
+  min-width: 0;
+  display: none;
+}
+
+.sticky-product-actions__vendor {
+  display: none;
+  font-weight: var(--font-tofino-weight-book);
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  margin: 0;
+  color: rgb(var(--color-base-text));
+}
+
+.sticky-product-actions__title {
+  min-width: 0;
+  font-weight: var(--font-tofino-weight-semibold);
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  margin: 0;
+  color: rgb(var(--color-base-text));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sticky-product-actions__price {
+  flex: 0 0 8rem;
+}
+
+.sticky-product-actions__price .price-item {
+  font-weight: var(--font-tofino-weight-regular);
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+
+.sticky-product-actions__price s.price-item {
+  font-size: 1.5rem;
+}
+
+.sticky-product-actions__actions {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.sticky-product-actions__actions > * {
+  flex: 1 0 45%;
+}
+
+.sticky-product-actions__actions .button,
+.sticky-product-actions__actions .shopify-payment-button__button {
+  line-height: 0;
+  min-height: 5rem;
+  font-size: 1.8rem;
+  letter-spacing: normal;
+  white-space: nowrap;
+}
+
+.sticky-product-actions__actions .button--rent {
+  color: rgb(var(--brand-reflex-blue));
+  background-color: #fff;
+  border: 1px solid rgb(var(--brand-reflex-blue)); 
+}
+
+.sticky-product-actions__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 2;
+  transition: transform 150ms ease-out;
+  transform: translateY(-100%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .sticky-product-actions__nav{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .sticky-product-actions__nav::-webkit-scrollbar { 
+    display: none;
+  }
+}
+
+.sticky-product-actions--visible .sticky-product-actions__nav {
+  transform: translateY(0);
+}
+
+.sticky-product-actions-padding {
+  padding-bottom: 9rem;
+}
+
+
+@media screen and (min-width: 750px) {
+  .sticky-product-actions {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 15rem;
+    background: rgb(var(--brand-cream));
+    z-index: 2;
+    transition: transform 150ms ease-out;
+    transform: translateY(-100%);
+    border-top: none;
+    border-bottom: 1px solid rgba(var(--brand-gray));
+  }
+
+  .sticky-product-actions--visible {
+    transform: translateY(0);
+  }
+
+  .sticky-product-actions__main {
+    padding: 2rem 4rem 1rem;
+    position: static;
+    transform: translateY(0);
+    border: none;
+  }
+
+  .sticky-product-actions--visible .sticky-product-actions__main {
+    display: flex;
+  }
+
+  .sticky-product-actions__nav {
+    position: static;
+    padding: 1.5rem 4rem 1.5rem;
+    border: none;
+  }
+
+  .sticky-product-actions--visible .sticky-product-actions__nav {
+    transform: translateY(0);
+  }
+
+  .sticky-product-actions__header {
+    display: block;
+    flex: 1 1 30rem;
+  }
+
+  .sticky-product-actions__actions {
+    flex: 0 0 56rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+
+  .sticky-product-actions--visible .sticky-product-actions__vendor {
+    display: block;
+  }
+
+  .sticky-product-actions__title {
+    font-weight: var(--font-tofino-weight-regular);
+    font-size: 2.4rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sticky-product-actions__price .price-item {
+    font-weight: var(--font-tofino-weight-regular);
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .sticky-product-actions-padding {
+    padding-bottom: 0;
+  }
+
+
+}
+
+/** Product Nav List **/
+
+.product-nav-bar {
+  margin-right: -2rem;
+}
+
+.product-nav-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.product-nav-list__item {
+  list-style: none;
+}
+  .product-nav-list__item:last-child { 
+  border-right: none;
+}
+
+.product-nav-list__link {
+    display: block;
+    padding: 1.5rem 2rem;
+    line-height: 1;
+    white-space: nowrap;
+    transition: opacity 0.1s ease-in-out;
+    font-family: var(--text-font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #444;
+}
+}
+
+.product-nav-list:hover .product-nav-list__link[data-scroll-spy-active="true"] {
+  opacity: 1!important;
+}
+
+.product-nav-list__link[data-scroll-spy-active="true"] {
+  color:#3c07ff;
+}
+
+.product-nav-list:hover .product-nav-list__link[data-scroll-spy-active="true"]:hover {
+  opacity: 1;
+}
+
+.product-nav-list__link:hover {
+  color:#3c07ff;
+}
+
+.product-nav-bar__button {
+  white-space: nowrap;
+}
+
+.product-nav-bar__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+  .product-nav-bar {
+    margin-right: 0;
+  }
+
+  .product-nav-list {
+    padding-right: 0;
+  }
+
+  .product-nav-list__link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+.section-boxed .product-nav-list 
+  {
+    display:none;
+  }
+.sticky-product-actions__nav {
+   padding: 0;
+}
+  .product-nav-list__link {
+    padding: 1.2rem 0.5rem;
+    font-size:12px;
+  }
+}
+</style>

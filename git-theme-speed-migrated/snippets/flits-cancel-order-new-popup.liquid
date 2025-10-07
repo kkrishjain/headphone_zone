@@ -1,0 +1,175 @@
+<style>
+  .iframeCancelBtn {
+    color: #3b08ff !important;
+    background: #ffffff !important;
+    border-color: #3b08ff !important;
+    border: 1px solid !important;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 14px;
+    letter-spacing: 2px!important;
+    line-height: 1.9;
+    font-weight: 700;
+    font-family: 'Roboto' !important;
+    text-align: center;
+  }
+  .iframeCancelBtn:hover {
+    color: #ffffff !important;
+    background: #3b08ff !important;
+    border-color: #3b08ff !important;
+  }
+  .track_order_popup {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    z-index: 999;
+    display: none;
+    transition: 0.5s all;
+    overflow-y: auto;
+  }
+  .track_order_popup::-webkit-scrollbar {
+    display: none;
+  }
+  .track_order_popup_in {
+    position: absolute;
+    top: 2%;
+    left: 29%;
+    /* background: #eee; */
+    border-radius: 7px;
+    width: 45%;
+    /* height: 50%; */
+  }
+  .track_close_btn {
+    position: absolute;
+    right: 2%;
+    top: 1%;
+    font-size: 30px !important;
+    background: transparent;
+    border: none;
+  }
+  .track_close_btn:hover {
+    cursor: pointer;
+  }
+  .track_bg_filter {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+    backdrop-filter: brightness(0.7);
+    transition: 0.5s all;
+  }
+  .flits_loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3b08ff;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    animation: spin 1.5s linear infinite;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  @media screen and (max-width: 768px) {
+    .track_order_popup_in {
+      /* top: 18% !important; */
+      left: 3% !important;
+      width: 93% !important;
+    }
+  }
+</style>
+{% unless tag contains 'request' and order.cancelled_at == null %}
+  {% unless order.tags contains 'no-cancel' or order.tags contains 'nocancel' or order.tags contains 'Pre-Order' or order.tags contains 'pre-order'%}
+    <button type="button" data-order-id="{{order.id}}" data-order-name="{{order.name | url_param_escape}}" data-customer-name="{{order.customer.name| url_param_escape}}" data-total="{{order.total_price | money_without_currency | url_param_escape }}" data-customer-phone="{{order.customer.phone}}" data-email="{{order.customer.email}}" class="iframeCancelBtn">Cancel Order</button>
+  {% endunless %}
+{% endunless %}
+<span class="flits_loader"></span>
+
+<script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js' defer="defer"></script>
+
+<script>
+  Flits(document).on('click', '.iframeCancelBtn', function(){
+    var thisBtn = Flits(this);
+    var orderId = thisBtn.data('order-id');
+    var orderName = thisBtn.data('order-name');
+    var customerName = thisBtn.data('customer-name');
+    var total = thisBtn.data('total');
+    var customerPhone = thisBtn.data('customer-phone');
+    var email = thisBtn.data('email');
+    var products = "{% for item in order.line_items %}{{ item.title | url_param_escape }}{% unless forloop.last %}%2C%20{% endunless %}{% endfor %}";
+    var paymentGateway = "{% for paymentGatewayName in order.transactions %}{{paymentGatewayName.gateway | url_param_escape}}{% unless forloop.last %}%2C%20{% endunless %}{% endfor %}";
+    var flits_loader = Flits(".flits_loader");
+
+    var iframeContainer = Flits('#iframeContainer');
+    if(!iframeContainer.length){
+      var iframeContainer = Flits('<div>', { id: 'iframeContainer', style: 'display:none;' });
+  
+      var trackBgFilter = Flits('<span>', { class: 'track_bg_filter' });
+      iframeContainer.append(trackBgFilter);
+  
+      var trackOrderPopup = Flits('<div>', { class: 'track_order_popup' });
+      iframeContainer.append(trackOrderPopup);
+  
+      var trackOrderPopupIn = Flits('<div>', { class: 'track_order_popup_in' });
+      trackOrderPopup.append(trackOrderPopupIn);
+  
+      var closeButton = Flits('<button>', { class: 'track_close_btn', type: 'button' }).html('&times;');
+      closeButton.on('click', function() {
+        Flits('body').css('overflow', 'initial');
+        iframeContainer.remove();
+        // iframeContainer.hide();
+        trackOrderPopupIn.find('.clickpost_append').empty();
+        document.location.reload();
+      });
+      trackOrderPopupIn.append(closeButton);
+  
+      var clickpostAppend = Flits('<div>', { class: 'clickpost_append' });
+      trackOrderPopupIn.append(clickpostAppend);
+    }else{
+        // iframeContainer.find('.clickpost_append').empty();
+    }
+
+    var iframeSrc = `https://form.jotform.com/241352386138053?orderId=${orderId}&orderName=${orderName}&customerName=${customerName}&total=${total}&products=${products}&paymentGateway=${paymentGateway}&customerPhone=${customerPhone}&email=${email}`;
+
+    var iframe = Flits('<iframe>', {
+      id: "JotFormIFrame-241352386138053",
+      title: "COD Cancellations",
+      onload: function() { window.parent.scrollTo(0, 0); },
+      allowtransparency: "true",
+      allow: "fullscreen",
+      src: iframeSrc,
+      style: "min-width:100%;max-width:100%;height:500px;border:none;",
+      scrolling: "yes"
+    });
+
+    if(!iframe[0]){
+      clickpostAppend.append(iframe);
+    }else{
+      clickpostAppend.append(iframe[0]);
+    }
+
+    Flits('body').append(iframeContainer);
+    Flits('body').css('overflow', 'hidden');
+    Flits(".flits_loader").css("display","block");
+    setTimeout(function() {
+      Flits(".flits_loader").css("display","none");
+    }, 900);
+    flits_loader.show();
+    iframeContainer.show();
+    trackBgFilter.show();
+    trackOrderPopup.show();
+  });
+</script>

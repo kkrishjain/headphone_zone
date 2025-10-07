@@ -1,0 +1,93 @@
+{%- comment -%}
+  ----------------------------------------------------------------------------------------------------------------------
+  Product Snapshot Component
+  ----------------------------------------------------------------------------------------------------------------------
+
+  This component is used to create snapshots icons on the product page.
+
+  ********************************************
+  Supported JSON parameters
+  ********************************************
+  {n} is for the position of the snapshot and supports upto 12 icons
+
+  * s{n} : To define if the snapshot is clickable or not. Supported Values: "yes" or "no"
+  * s{n}-iconType: Suported Values : "country" and "feature"
+  * s{n}-icon : Value associated with each icon type
+  * s{n}-text : text that will appears along side the icon.
+
+  Reference files :
+  - snapshot-country.liquid : for all the country icons
+  - snapshot-feature.liquid : for all the feature icons
+  - snapshot-popover.liquid : for all the popover content
+
+  ********************************************
+  Examples
+  ********************************************
+
+  {
+      "s1": "yes",
+      "s1-iconType": "country",
+      "s1-icon": "",
+      "s1-text": "",
+  }
+{%- endcomment -%}
+
+{% assign snapshot = product.metafields.hpz.snapshot_json.value %}
+{% assign new_snapshot = product.metafields.hpz.snapshots_new_json.value %}
+{%- if snapshot != blank and new_snapshot == blank -%}
+  <div class="container">
+    <br>
+    <div class="snapshot-grid">
+      {% for count in (1..12) %}
+        {% assign snap_info = 's' | append: count %}
+        {% assign snap_icon = 's' | append: count | append: '-icon' %}
+        {% assign snap_type = 's' | append: count | append: '-iconType' %}
+        {% assign snap_text = 's' | append: count | append: '-text' %}
+        {% assign info = snapshot[snap_info] %}
+        {% assign icon = snapshot[snap_icon] %}
+        {% assign type = snapshot[snap_type] %}
+        {% assign text = snapshot[snap_text] %}
+        {% if info != blank and info != '' %}
+          <div class="snapshot">
+            {% if info == 'yes' %}
+              <button aria-controls="{{icon}}" aria-expanded="false">
+                <a class="snapshot_button">
+                  {% if type == 'country' %}
+                    {% render 'snapshot-country' with icon %}
+                  {% else %}
+                    {% render 'snapshot-feature' with icon %}
+                  {% endif %}
+                  <p class="snapshot_info">
+                    {{ text }} {%- render 'icon' with 'info' -%}
+                  </p>
+                </a>
+              </button>
+              <x-drawer id="{{ icon }}" class="drawer">
+                <div>{% render 'snapshot-popover' with icon %}</div>
+              </x-drawer>
+            {% else %}
+              {% if type == 'country' %}
+                {% render 'snapshot-country' with icon %}
+              {% else %}
+                {% render 'snapshot-feature' with icon %}
+              {% endif %}
+              <p class="snapshot_info">{{ text }}</p>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "old Snapshots",
+  "settings": [],
+  "presets": [
+    {
+    "name": "old Snapshots"
+    }
+  ]
+}
+{% endschema %}

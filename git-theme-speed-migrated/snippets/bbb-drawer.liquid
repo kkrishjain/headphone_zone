@@ -1,0 +1,190 @@
+{%- case bbb-drawer -%}
+{% when 'unboxed-learn-more' %}
+    <x-drawer id="unboxed-learn-more" class="drawer">
+      <div>
+        <h5 class="h5">What does Unboxed mean?</h5>
+        Unboxed units are as good as new products with the product's packaging being unavailable. These products give you the same satisfaction of new products - but at down-to-earth prices. Usually, the product's packaging may have gotten damaged in transit. Customers use a product once or twice and then return it with opened up packaging.
+      </div>
+    </x-drawer>
+  
+  {% when 'guru' %}
+    <x-drawer id="guru" class="drawer">
+      <div>
+        <h5 class="h5">Talk to a Headphone Guru</h5>
+        {% render 'jotforms' with 'talk-to-a-guru' %}
+      </div>
+    </x-drawer>
+
+  {% when 'experience-now' %}
+    <x-drawer id="experience-now" class="drawer">
+      <div>
+        <h5 class="h5">Visit our Experience Studio</h5>
+        {% render 'jotforms' with 'experience-now' %}
+      </div>
+    </x-drawer>
+
+  {% when 'write-to-us' %}
+    <x-drawer id="write-to-us" class="drawer">
+      <div>
+        <h5 class="h5">Write to Us</h5>
+        {% render 'jotforms' with 'write-to-us' %}
+      </div>
+    </x-drawer>
+
+  {% when 'working-hours' %}
+    <x-drawer id="working-hours" class="drawer">
+      <div>
+        <h5 class="h5">Our Working Hours</h5>
+        <br>
+        <p> We are available to call you back Monday to Saturday, 10:30 AM to 6:30 PM. During this time, you should expect us to call you back in a few hours. Outside this time, expect a callback on the next day.</p>
+      </div>
+    </x-drawer>
+
+  {% when 'call-back-request' %}
+    <x-drawer id="call-back-request" class="drawer">
+      <div>
+        <h5 class="h5">Request a Callback</h5>
+        {% render 'jotforms' with 'call-back-request' %}
+      </div>
+    </x-drawer>
+
+  {% when 'delay-sale-timeline' %}
+    <x-drawer id="delay-sale-timeline" class="drawer">
+      <div>
+        <h6 class="h6">Delay in Shipping</h6>
+        <p> We normally ship out all our orders within 24 hours. But, we've had an overwhelming success to the Festival of Sound sale. Because of that, there will be a slight delay in the dispatch of your order. Thank you so much for your patience and understanding.</p>
+      </div>
+    </x-drawer>
+
+  {% when '7drg' %}
+    <x-drawer id="7drg" class="drawer">
+      <div>
+        <h6 class="h6">7 Day Replacement Guarantee</h6>
+        <p> In case you receive the {{ product.title }} with a <strong>manufacturing defect</strong>, please raise a return request within 7 days of delivery.
+          {%- if product.title contains 'T-Shirt' -%}
+            <p><strong>Headphone Zone merchandise</strong> cannot be returned if there are any sizing issues. Please refer to the size chart to order the correct size.</p>
+          {%- endif -%}
+          <p>However, if you receive an<strong> incorrect / damaged / different product or one with missing accessories,</strong> please raise a return request <strong>within 24 hours of delivery. </strong> In case you receive a product with a <strong>missing, incorrect, or faulty accessory</strong>, you will be given a <strong>replacement accessory instead of the entire product. </strong>
+          </p>
+          <p>Please make sure that the product is in the <strong>original packaging </strong> with all the accessories  it came with.<strong> We'll also need an unboxing video and images of the parcel to investigate about the discrepancy.</strong> You may be asked to <strong>share images of the product </strong>and the packaging received for us to <strong>determine the damage or defect prior to approving the return request. </strong> The free  replacement will be shipped only once the original order is returned.<br></p>
+          <p><strong>A replacement will be issued only if:</strong></p>
+          <p>
+            - It is found to be defective <br>
+            - It is determined that the product was not damaged while in your possession <br>
+            - The product is not different from what was shipped to you <br>
+            - The product is returned in original condition (with brand’s/manufacturer's box, MRP tag intact, user manual, warranty card and all the accessories therein)
+          </p>
+          <a class="button" href="https://www.headphonezone.in/blogs/policy/returns" target="_blank">READ MORE</a>
+        </p>
+      </div>
+    </x-drawer>
+
+  {% when 'pre-order' %}
+    <x-drawer id="pre-order" class="drawer">
+      <div>
+        <h6 class="h6">7 Pre-Order</h6>
+        <p> 1. What is a Pre-Order product?<br>
+          A Pre-order product is a product that we especially order for you from the brand. Once you place an order with us, we will order it from the brand for you.<br><br>
+          2. How do I know when the product will be delivered?<br> 
+          There is a rough timeline on the product availability and once it has been confirmed with the brand, we will inform you.<br><br>
+          3. Do you order the product from the brand as soon as I place the order?<br>
+          We do not immediately order the product but add it in the upcoming order.<br><br>
+          4. Will you be giving me updates? <br>
+          Once we have ordered the product and have a confirmed timeline, we will give you an update. <br><br>
+          5. I’d like to make changes to/cancel my order?<br>
+          You can only cancel/make changes to your order until we place the order with the brand. Since the product is
+          specifically being ordered for you, we will be unable to cancel/make changes once we order the product from
+          the brand.
+        </p>
+      </div>
+    </x-drawer>
+
+  {% when '7dee' %}
+    <x-drawer id="7dee" class="drawer">
+      <div>
+        <p> The {{ product.title }} is eligible for <strong>Easy Exchange within 7 days of delivery.</strong> Your exchange request will be <strong>accepted only once</strong>. We want to make sure that you end up with a
+          product that you 100% love.
+        </p>
+        <p>
+          <strong>An exchange will be allowed only if</strong> the product is returned in original condition (with
+          brand’s/manufacturer's box, MRP tag intact, user manual, warranty card and all the accessories therein)<br>
+          <br>
+          You will receive <strong>full Store Credit in your Headphone Zone account</strong>
+          so that you may choose another product from our website which would be more suited to your needs. Refunds will
+          NOT be possible under our 7 Day Easy Exchange Policy.
+        </p>
+        <a class="button" href="https://www.headphonezone.in/blogs/policy/returns" target="_blank">READ MORE</a>
+      </div>
+    </x-drawer>
+  {% when 'warranty' %}
+    <x-drawer id="warranty" class="drawer">
+      {%- if product.metafields.hpz.warranty_period.value -%}
+        <div>
+          <h6 class="h6">Warranty & Services</h6>
+          {% render 'warranty-text' %}
+        </div>
+      {%- endif -%}
+    </x-drawer>
+  {% when 'pre-owned-shipping' %}
+    <x-drawer id="pre-owned-shipping" class="drawer">
+      <div>
+        <p>
+          Pre-owned products are listed by our customers who wish to trade up to their next gear. We do not pick up
+          their product and keep at our warehouse.<br>
+          <br>
+          Instead we co-ordinate the sale from pickup to delivery ensuring seller convenience and buyer protection.
+          Delivery can take 5-7 days because of the following process that we follow:<br>
+          <ul>
+            <li>- Contact the Seller that his/her product has sold. This can take 1 day in case the seller is busy</li><br>
+            <li>- Check seller's availability to arrange a pickup of the product. Accordingly generate the pickup.</li><br>
+            <li>- Handling time for packing and pickup delays may take another 1-3 days</li><br>
+            <li> - We have partnered with Blue Dart for express deliveries, however, based on the seller and your location, deliveries can usually take anywhere between 1-3 days.</li>
+          </ul>
+        </p>
+      </div>
+    </x-drawer>
+  {% when 'pre-owned-timeline' %}
+    <x-drawer id="pre-owned-timeline" class="drawer">
+      <div>
+        <p>Once you receive your pre loved purchase, you get 48 hours to inspect and let us know if it's not as per the specs and images in the listing.<br><br>If the product you received is not functional, we will pick it up and send it back to the seller and you can choose to get a full refund or store credit.
+        </p>
+      </div>
+    </x-drawer>
+  {% when 'pre-order-timeline' %}
+    <x-drawer id="pre-order-timeline" class="drawer">
+      <div>
+        <p>
+          1. What is a Pre-Order product?<br>
+          A Pre-order product is a product that we especially order for you from the brand. Once you place an order with us, we will order it from the brand for you.<br><br>
+          2. How do I know when the product will be delivered?<br>
+          There is a rough timeline on the product availability and once it has been confirmed with the brand, we will inform you.<br><br>
+          3. Do you order the product from the brand as soon as I place the order?<br>
+          We do not immediately order the product but add it in the upcoming order.<br><br>
+          4. Will you be giving me updates? <br>
+          Once we have ordered the product and have a confirmed timeline, we will give you an update. <br><br>
+          5. I’d like to make changes to/cancel my order?<br> 
+          You can only cancel/make changes to your order until we place the order with the brand. Since the product is specifically being ordered for you, we will be unable to cancel/make changes once we order the product from the brand.
+        </p>
+      </div>
+    </x-drawer>
+
+  {% when 'clubaudiophile' %}
+    <x-drawer id="clubaudiophile" class="drawer">
+      <div>
+        <h6 class="h6">Club Audiophile</h6>
+        <p>Join Club Audiophile to begin your pursuit of great sound. Earn points and save on every purchase.<br><br>
+          <a href="https://www.headphonezone.in/pages/rewards" class="button" target="_blank">READ MORE</a>
+        </p>
+      </div>
+    </x-drawer>
+
+  {% when 'shipping' %}
+    <x-drawer id="shipping" class="drawer">
+      <div>
+        <h6 class="h6">What does "ships within 24/48 hours" mean?</h6>
+        <p> In a nutshell, ships within 24/48 hours basically means that your product will be shipped out or dispatched from our warehouse within 24/48 hours after placing the order. It also indicates that the products are readily available at our warehouse and once we receive your order, we dispatch it out at the earliest either on the same day or the next working day depending on when you’ve placed your order.</p><br>
+        <h6 class="h6">What it does not mean:</h6>
+        <p> A lot of our customers assume that it means their order will get delivered to them within 24/48 hours, but that’s not what it means. For an order to reach you, it can take anywhere up to 3-4 business days, depending on which part of India you are placing an order from. <br><br> For an accurate timeline, you can enter your pin code on the product page and check for an estimated date of arrival.</p>
+      </div>
+    </x-drawer>
+{% endcase %}

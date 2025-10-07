@@ -1,0 +1,1236 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "badges": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "vendor": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "63ddac27-6381-4fa5-88af-c83da4f7291e": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% if product.metafields.hpz.badge_rank.value != blank %}\n\n<div class=\"product-info__badge-list\">\n<span class=\"best-rank\">#{{ product.metafields.hpz.badge_rank.value }} BEST SELLER\n</span>\n<p style=\"color: #777;font-size: 0.9rem;display:flex;align-items: center;\">in</p>\n<a href=\"{{ product.metafields.hpz.badge_rank_collection_link.value }}\" style=\"text-decoration:underline;color:#777;display:flex;align-items: center;\"><p style=\"font-size: 0.9rem;color:#777777;display:flex;align-items: center;\">{{ product.metafields.hpz.badge_rank_collection_title.value }}</p></a>\n\n\n</div>\n{% endif %}\n<style>\n.best-rank{\ndisplay: inline-block;\n    box-sizing: border-box;\n    color: #444;\n    background-color: #FFDF97;\n    padding: 6px 10px;\n    font-size:0.7rem;\n    position: relative;\n    height: 25px;\n    border-radius: 90px 90px 90px 90px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 1px;\ndisplay:flex;\nalign-items: center;\n}\n\n.product-info__badge-list {\ngap: var(--spacing-2);\n    flex-wrap: wrap;\n    display: flex;\n}\n\n.product-info__liquid {\nmargin-block-start: 0.5rem;\n    margin-block-end: 0.5rem;\n}\n\n</style>"
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "2e8967b0-45c0-4a59-a571-52664f87850e": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "579635fa-203e-4e32-abad-91ede0a255e3": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "none",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "product_variations_9EjeG8": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "{{ product.metafields.hpz.variant_option_name.value }}",
+            "option_value_metafield": "hpz.variants_value",
+            "products": "{{ product.metafields.hpz.variant_products.value }}",
+            "selector_style": "block"
+          }
+        },
+        "3c8720c5-4762-48f6-9daa-be6239f73340": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{{ product.metafields.hpz.offer_message }}\n\n{%- render 'freebie' -%}\n\n{{ product.metafields.hpz.offer_message_sale }}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "b253fc0f-99f2-4bff-a2e6-585277f6538e": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% render 'below-buy-button.liquid'  %}"
+          }
+        },
+        "26c544be-f0bd-45b6-b9e2-bae47c526358": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": false,
+            "products_count": 10,
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "badges",
+        "vendor",
+        "title",
+        "63ddac27-6381-4fa5-88af-c83da4f7291e",
+        "separator",
+        "2e8967b0-45c0-4a59-a571-52664f87850e",
+        "price",
+        "579635fa-203e-4e32-abad-91ede0a255e3",
+        "variant_picker",
+        "product_variations_9EjeG8",
+        "3c8720c5-4762-48f6-9daa-be6239f73340",
+        "buy_buttons",
+        "b253fc0f-99f2-4bff-a2e6-585277f6538e",
+        "26c544be-f0bd-45b6-b9e2-bae47c526358"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_fixed_add_to_cart": false,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "hpz_new_snapshot_qgMc93": {
+      "type": "hpz-new-snapshot",
+      "settings": {}
+    },
+    "f276f700-8b25-4e1e-ac56-41cecc78a40b": {
+      "type": "headphone-zone-snapshot",
+      "disabled": true,
+      "custom_css": [
+        ".snapshot-grid {background-color: #ffffff !important;}"
+      ],
+      "settings": {}
+    },
+    "b77b1ff2-7c77-45fd-9421-01713a364a6a": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--16035525198012__b77b1ff2-7c77-45fd-9421-01713a364a6a-1684482217c4069605-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-V-MODA-Laser-Engraving-2020.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Free Custom Laser Engraving",
+            "content": "<p><em>Make your headphones truly your own. Be it a logo, your name or even a piece of artwork you've created, the state‑of‑the‑art laser engraving turns the shields on your V-MODA headphones into something others will envy.<br/><br/>*Once you've placed an order, please send your logo here.</em></p>",
+            "link_text": "Read More",
+            "link_url": "https://www.headphonezone.in/pages/v-moda-customisation",
+            "background": "#f1f1f1",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "#3c07ff",
+            "button_text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--16035525198012__b77b1ff2-7c77-45fd-9421-01713a364a6a-1684482217c4069605-0"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "4e59221e-9e9d-4647-aa7e-fa50fb65307b": {
+      "type": "rich-text",
+      "blocks": {
+        "732a946b-314e-4ac0-ae01-9c64ee66dd31": {
+          "type": "heading",
+          "settings": {
+            "text": "A Brainchild Of DJS and Musicians Alike",
+            "heading_tag": "h3",
+            "text_color": "#444444",
+            "gradient": ""
+          }
+        },
+        "template--16073351037116__4e59221e-9e9d-4647-aa7e-fa50fb65307b-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>V-MODA has collaborated with musicians and DJs around the world to create a headphone with a refined and vibrant bass, lifelike vocals and crisp highs in an immersive 3D soundstage. With these headphones, you can experience pure audio without the artificial processing of battery-powered headsets.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "732a946b-314e-4ac0-ae01-9c64ee66dd31",
+        "template--16073351037116__4e59221e-9e9d-4647-aa7e-fa50fb65307b-richtext-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "6306d58e-94d6-4ff8-8d68-c88b8af2506e": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Headphone-Zone-V-Moda-Crossfade-LP2-Banner-02.jpg",
+        "mobile_image": "shopify://shop_images/Headphone-Zone-V-Moda-Crossfade-LP2-Banner-Mobile-02.jpg",
+        "mobile_text_position": "place-self-start-end text-end",
+        "desktop_text_position": "sm:place-self-end sm:text-end",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "4aae3ff7-15f5-465e-8f11-8a9327cd1580": {
+      "type": "media-grid",
+      "blocks": {
+        "64c7e62d-6588-4870-98b7-9c388e7b970d": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/headphone-zone-v-moda-crossfade-LP2-unboxing.mov",
+            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "show_video_controls": false,
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 3,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16035525198012__4aae3ff7-15f5-465e-8f11-8a9327cd1580-1687247648e441540a-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-VModa-Crossfade-LP2-Media-Grid-04.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16035525198012__4aae3ff7-15f5-465e-8f11-8a9327cd1580-1687247648e441540a-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-VModa-Crossfade-LP2-Media-Grid-02.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "64c7e62d-6588-4870-98b7-9c388e7b970d",
+        "template--16035525198012__4aae3ff7-15f5-465e-8f11-8a9327cd1580-1687247648e441540a-0",
+        "template--16035525198012__4aae3ff7-15f5-465e-8f11-8a9327cd1580-1687247648e441540a-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 240,
+        "mobile_row_height": 200,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "2fc44790-bffa-490e-b83f-ae985acd60c1": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "template--16016939548860__2fc44790-bffa-490e-b83f-ae985acd60c1-16818153117aa9ff13-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-V-Moda-Crossfade-LP2-Feature-02.jpg",
+            "icon": "none",
+            "icon_width": 24,
+            "title": "Features a 50mm Dual-Diaphragm Drivers",
+            "content": "<p>V-MODA Crossfade LP2 features 50mm dual-diaphragm drivers and superior materials. Enjoy audio bliss like never before with the powerful 50mm drivers in the V-Moda Crossfade LP2. Take in a world of flawless audio and unparalleled clarity. These 50mm drivers produce rich, vibrant mids, clear highs, and deep, punchy bass to ensure every note is reproduced with astonishing precision and details.</p>"
+          }
+        },
+        "a5b1af3e-a4cf-4f52-8a9b-e718a348b0cb": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-V-Moda-Crossfade-LP2-Feature-01.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Optimum Comfort & Noise Isolation",
+            "content": "<p>More than 4 years of R&D have resulted in the ergonomic headband and hexagon-shaped earcups that do away with fatigue. The foam ear cushions take the shape of your ears for added comfort and noise isolation. Analogue sound isolation cuts out all outside noise while letting you enjoy your music without worrying about (a lot of) sound leakage.</p>"
+          }
+        },
+        "19a3316f-4330-457b-a773-bf8221dcde3a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-V-Moda-Crossfade-LP2-Features-03.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Aircraft-Grade Metal Shields",
+            "content": "<p>Be it a range of temperatures, salt spray, humidity or UV exposure, the Crossfade LP2 will never let you down. It is built with a steel frame and interchangeable aircraft-grade metal shields. The SteelFlex headband is so flexible that it can bend flat. The V-MODA Crossfade LP2 is tested according to Military-Level Quality MIL-STD-810G Test Standards.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16016939548860__2fc44790-bffa-490e-b83f-ae985acd60c1-16818153117aa9ff13-1",
+        "a5b1af3e-a4cf-4f52-8a9b-e718a348b0cb",
+        "19a3316f-4330-457b-a773-bf8221dcde3a"
+      ],
+      "custom_css": [
+        ".h1 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "fade",
+        "image_position": "start",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "#444444",
+        "heading_gradient": ""
+      }
+    },
+    "75ae5572-b6d5-4804-93a6-5206cddbd15c": {
+      "type": "hot-spots",
+      "blocks": {
+        "template--16035525198012__75ae5572-b6d5-4804-93a6-5206cddbd15c-1684408352e7753ffc-0": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 40,
+            "vertical_position": 70,
+            "horizontal_position_mobile": 43,
+            "vertical_position_mobile": 77,
+            "icon_width": 32,
+            "title": "Interchangeable Metal Shields",
+            "content": "<p>The Crossfade LP2 features an interchangeable metal ear cup shield. This allows you to customise your headphones with the extra gunmetal shield kit provided if you ever wish to.</p>"
+          }
+        },
+        "template--16035525198012__75ae5572-b6d5-4804-93a6-5206cddbd15c-1684408352e7753ffc-1": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 62,
+            "vertical_position": 14,
+            "horizontal_position_mobile": 62,
+            "vertical_position_mobile": 50,
+            "icon_width": 32,
+            "title": "Ergonomic SteelFlex headband",
+            "content": "<p>The SteelFlex headband is so flexible that it can bend flat, which offers optimum comfort and relieves extra pressure built up on your head.</p>"
+          }
+        },
+        "template--16035525198012__75ae5572-b6d5-4804-93a6-5206cddbd15c-1684408352e7753ffc-2": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 28,
+            "vertical_position": 32,
+            "horizontal_position_mobile": 26,
+            "vertical_position_mobile": 55,
+            "icon_width": 32,
+            "title": "Soft Cushion Earpads",
+            "content": "<p>Soft cushion earpads provide a comfortable experience for extended listening sessions. Made with plush materials like memory foam, these earpads gently conform to the shape of your ears.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16035525198012__75ae5572-b6d5-4804-93a6-5206cddbd15c-1684408352e7753ffc-0",
+        "template--16035525198012__75ae5572-b6d5-4804-93a6-5206cddbd15c-1684408352e7753ffc-1",
+        "template--16035525198012__75ae5572-b6d5-4804-93a6-5206cddbd15c-1684408352e7753ffc-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "image": "shopify://shop_images/Headphone-Zone-V-Moda-Crossfade-LP2-Hotspot-02.jpg",
+        "mobile_image": "shopify://shop_images/Headphone-Zone-Crossfade-LP2-Hotspot-Mobile-02.jpg",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#000000",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 90,
+        "hot_spot_content_blur_radius": 3
+      }
+    },
+    "f12d93fd-ce1a-409e-9e2d-52037e45ba02": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16035525198012__f12d93fd-ce1a-409e-9e2d-52037e45ba02-1684415548172bdb11-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-V-Moda-Crossfade-LP2-Pro-Bros-01.jpg",
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16035525198012__f12d93fd-ce1a-409e-9e2d-52037e45ba02-1684415548172bdb11-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-V-Moda-Crossfade-LP2-DJ-Shireen-01.jpg",
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16035525198012__f12d93fd-ce1a-409e-9e2d-52037e45ba02-1684415548172bdb11-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-V-Moda-Crossfade-LP2-DJ-Paroma-01.jpg",
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "063f5e9d-7f74-4d79-b4af-e5259341751b": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-V-Moda-Crossfade-LP2-DJ-Barkha-01.jpg",
+            "column_size": "4",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--16035525198012__f12d93fd-ce1a-409e-9e2d-52037e45ba02-1684415548172bdb11-0",
+        "template--16035525198012__f12d93fd-ce1a-409e-9e2d-52037e45ba02-1684415548172bdb11-1",
+        "template--16035525198012__f12d93fd-ce1a-409e-9e2d-52037e45ba02-1684415548172bdb11-2",
+        "063f5e9d-7f74-4d79-b4af-e5259341751b"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "small",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Trusted by More Than 200 DJS & Grammy-Winning Musicians",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#444444"
+      }
+    },
+    "8cc4e7ce-a8d5-47c9-93a4-d73b58830f0f": {
+      "type": "press",
+      "blocks": {
+        "template--16017804034236__8cc4e7ce-a8d5-47c9-93a4-d73b58830f0f-1683626238c7b9ebc4-0": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 150,
+            "author": "<p class=\"press__author text-subdued\">RAGHAV SOMANI</p>\n\n<em style=\"font-family: var(--text-font-family);\n    color: #444;\n    font-size: 14px;\">Founder, Headphone Zone</em>",
+            "content": "The LP2s are a prime example of unparalleled durability and uncompromising style. With their high-performance drivers and customizable shields, these headphones redefine what it means to experience music. These are a must-have for aspiring DJs.",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--16017804034236__8cc4e7ce-a8d5-47c9-93a4-d73b58830f0f-1683626238c7b9ebc4-0"
+      ],
+      "custom_css": [
+        ".h3 {font-family: \"Roboto\", sans-serif;}",
+        ".text-subdued {font-size: 14px; font-family: \"Roboto\", sans-serif; font-weight: 700; font-size: 14pxrem; letter-spacing: 2px; text-transform: uppercase; color: #444444; align-self: center;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_size": "medium",
+        "background": "#f1f1f1",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "11675a29-1a20-4017-b239-35a3a3d841ff": {
+      "type": "hot-spots",
+      "blocks": {
+        "d846ec91-8353-4dc6-a314-388de87bd26a": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 52,
+            "vertical_position": 26,
+            "horizontal_position_mobile": 58,
+            "vertical_position_mobile": 35,
+            "icon_width": 24,
+            "title": "Exoskeleton carry case",
+            "content": "<p>Pack up and protect your headphones in the protective form-fitting Exoskeleton carry case included, with the unique V-Strap system keeping all your accessories organised alongside your headphones.</p>"
+          }
+        },
+        "template--16016939548860__11675a29-1a20-4017-b239-35a3a3d841ff-168181184140c3a3fa-0": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 44,
+            "vertical_position": 80,
+            "horizontal_position_mobile": 39,
+            "vertical_position_mobile": 64,
+            "icon_width": 24,
+            "title": "Gold-Plated 6.35mm Adapter",
+            "content": "<p>This adapter allows you to use the included 3.5mm terminated cable to the DAC & Amp with 6.35mm output.</p>"
+          }
+        },
+        "69624583-a1d0-4f55-9c34-f4da85ce88e3": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 47,
+            "vertical_position": 68,
+            "horizontal_position_mobile": 56,
+            "vertical_position_mobile": 75,
+            "icon_width": 32,
+            "title": "One-Button SpeakEasy™ Microphone Cable",
+            "content": "<p>The Crossfade LP2 comes with the SpeakEasy™ 1-Button Mic Cable for easy communication. This allows you to get a crystal-clear calling experience on the go.</p>"
+          }
+        },
+        "b5916a3c-5522-4a0c-bdf9-53439d4d8c84": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 55,
+            "vertical_position": 66,
+            "horizontal_position_mobile": 61,
+            "vertical_position_mobile": 63,
+            "icon_width": 32,
+            "title": "Reinforced Audio Only Cable",
+            "content": "<p>The audio-only cable lets you experience high-quality listening, going straight to your instrument for pure analogue sound.</p>"
+          }
+        },
+        "7a9a7979-812a-41e6-8c2c-5b8fb7495510": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 38,
+            "vertical_position": 76,
+            "horizontal_position_mobile": 28,
+            "vertical_position_mobile": 73,
+            "icon_width": 32,
+            "title": "Carabiner Clip",
+            "content": "<p>The carabiner clip allows you to keep your cables organised or attach your headphones to your backpack when you are on the move.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "d846ec91-8353-4dc6-a314-388de87bd26a",
+        "template--16016939548860__11675a29-1a20-4017-b239-35a3a3d841ff-168181184140c3a3fa-0",
+        "69624583-a1d0-4f55-9c34-f4da85ce88e3",
+        "b5916a3c-5522-4a0c-bdf9-53439d4d8c84",
+        "7a9a7979-812a-41e6-8c2c-5b8fb7495510"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "image": "shopify://shop_images/Headphone-Zone-V-MODA-Crossfade-LP2-Box-Hotspot-01.jpg",
+        "mobile_image": "shopify://shop_images/Headphone-Zone-V-MODA-Crossfade-LP2-Box-Hotspot-Mobile-01.jpg",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "#ffffff",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#444444",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#444444",
+        "hot_spot_content_opacity": 100,
+        "hot_spot_content_blur_radius": 1
+      }
+    },
+    "91359a6c-9bc7-4b8a-bb9e-ba49a4a761a4": {
+      "type": "youtube-reviews",
+      "settings": {}
+    },
+    "da63785d-8a54-4c5e-8646-246d73467a96": {
+      "type": "press",
+      "blocks": {
+        "cbe7e9c7-8ac3-4e37-ad9f-ff062b57c586": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Slash-Gear-Media-Review-Logo-2020.svg",
+            "logo_width": 165,
+            "author": "",
+            "content": "These are the finest set of over-ear headphones I’ve tested at this point for the price point, and are currently my go-to pair for everyday listening as well as listening out in the wild.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "template--15998494605500__da63785d-8a54-4c5e-8646-246d73467a96-168076476763097c40-0": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Sound-Guys-Media-Review-Logo-2020.svg",
+            "logo_width": 165,
+            "author": "",
+            "content": "LP2s are comfortable, built like a tank, with more bass, and the sound is generally best suited to electronic music. If you invest in these, chances are they’ll keep you happy for really long.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "template--15998494605500__da63785d-8a54-4c5e-8646-246d73467a96-168076476763097c40-1": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/CNET-Media-Review-Logo-2020.svg",
+            "logo_width": 165,
+            "author": "",
+            "content": "V-MODA refines the sound of its original LP DJ headphones with a refresh that offers customized ear plates, dual 50mm drivers, and a tough backbone enforced under strict military testing.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "quote_mcC3Xf": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/The-Headphone-List-Media-Review-Logo-2020.svg",
+            "logo_width": 165,
+            "author": "",
+            "content": "The Crossfade has everything I look for in a portable headphone except the big one – sound quality. With much more bass body and rumble than the Beats Solo and much less clarity.",
+            "show_rating": true,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "cbe7e9c7-8ac3-4e37-ad9f-ff062b57c586",
+        "template--15998494605500__da63785d-8a54-4c5e-8646-246d73467a96-168076476763097c40-0",
+        "template--15998494605500__da63785d-8a54-4c5e-8646-246d73467a96-168076476763097c40-1",
+        "quote_mcC3Xf"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_size": "medium",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "da8415cd-1b26-4738-8b5b-48e3e9053fb1": {
+      "type": "headphone-zone-feature-chart",
+      "blocks": {
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-0": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Drivers",
+            "heading_2": "Impedance",
+            "heading_3": "Connector",
+            "heading_4": "Microphone & Remote",
+            "heading_5": "Plug Type",
+            "heading_6": "Sensitivity",
+            "heading_7": "Microphone Sensitivity",
+            "heading_8": "Frequency Response",
+            "heading_9": "Compatibility",
+            "heading_10": "Cable Length",
+            "heading_11": "Grill",
+            "heading_12": "Wearing Style",
+            "heading_13": "Weight",
+            "heading_14": "Box Contents",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>50mm Dual Dynamic Driver</p>",
+            "value_2": "<p>32 Ohms\n</p>",
+            "value_3": "<p>3.5mm L-Shaped Jack\n</p>",
+            "value_4": "<p>Yes (1-Button)\n\n\n</p>",
+            "value_5": "<p>3.5mm (Single-Ended)<br>\n6.3mm (Single-Ended)\n</p>",
+            "value_6": "<p>105dB @ 1kHz 1mW\n</p>",
+            "value_7": "<p>-42dB @ 1 KHz\n</p>",
+            "value_8": "<p>5 Hz - 30,000 Hz\n</p>",
+            "value_9": "<p>Universal\n</p>",
+            "value_10": "<p>SpeakEasy 132cm (52\")<br>\nAudio Only 200cm (79”)\n</p>",
+            "value_11": "<p>Closed Back\n</p>",
+            "value_12": "<p>Over-Ear</p>",
+            "value_13": "<p>260g</p>",
+            "value_14": "<p>1. V-MODA Crossfade LP2 Headphones<br>\n2. Gunmetal Shield Kit With Extra Screws & Screwdriver<br>\n3. Exoskeleton Carry Case<br>\n4. Carabiner Clip<br>\n5. Aramid Fiber-Reinforced SpeakEasy™1-Button Microphone Cable<br>\n6. Reinforced Audio Only Cable<br>\n7. Gold Plated 1/4\" Pro Adapter<br>\n8. Cleaning Cloth\n</p>",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-0",
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "<img src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-V-MODA-Crossfade_LP2-grapha.png?v=1732263205\">",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 6,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "#f1f1f1",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "#444444",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "37c57503-e38d-4849-a9d2-b0b255a872e6": {
+      "type": "headphone-zone-warranty",
+      "disabled": true,
+      "settings": {
+        "period": "",
+        "url": "",
+        "exceptions": ""
+      }
+    },
+    "about_us_brand_ppPhcB": {
+      "type": "about-us-brand",
+      "blocks": {
+        "image_qwWxxm": {
+          "type": "image",
+          "source": "{{ product.metafields.hpz.about_brand_on_product_page.value }}",
+          "settings": {
+            "image": "{{ product.metafields.hpz.about_brand_on_product_page.value.image.value }}",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "{{ product.metafields.hpz.about_brand_on_product_page.value.logo.value }}",
+            "icon_width": 120,
+            "subheading": "",
+            "title": "{{ product.metafields.hpz.about_brand_on_product_page.value.heading.value }}",
+            "content": "{{ product.metafields.hpz.about_brand_on_product_page.value.about | metafield_tag }}",
+            "link_text": "{{ product.metafields.hpz.about_brand_on_product_page.value.button_text.value }}",
+            "link_url": "{{ product.metafields.hpz.about_brand_on_product_page.value.button_link.value }}",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "#444444",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_qwWxxm"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 1.8rem;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "impact_comparisons_PYwLTY": {
+      "type": "impact-comparisons",
+      "blocks": {
+        "headings_74P8EL": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "{{ product.metafields.hpz.comparison_metaobject.value.heading_1.value }}",
+            "heading_2": "{{ product.metafields.hpz.comparison_metaobject.value.heading_2.value }}",
+            "heading_3": "{{ product.metafields.hpz.comparison_metaobject.value.heading_3.value }}",
+            "heading_4": "{{ product.metafields.hpz.comparison_metaobject.value.heading_4.value }}",
+            "heading_5": "{{ product.metafields.hpz.comparison_metaobject.value.heading_5.value }}",
+            "heading_6": "{{ product.metafields.hpz.comparison_metaobject.value.heading_6.value }}",
+            "heading_7": "{{ product.metafields.hpz.comparison_metaobject.value.heading_7.value }}",
+            "heading_8": "{{ product.metafields.hpz.comparison_metaobject.value.heading_8.value }}",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "values_CGy6Hi": {
+          "type": "values",
+          "source": "{{ product.metafields.hpz.comparison_metaobject.value }}",
+          "settings": {
+            "product": "{{ product.metafields.hpz.comparison_metaobject.value.product_1.value }}",
+            "value_1": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_1.value }}</p>",
+            "value_2": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_2.value }}</p>",
+            "value_3": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_3.value }}</p>",
+            "value_4": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_4.value }}</p>",
+            "value_5": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_5.value }}</p>",
+            "value_6": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_6.value }}</p>",
+            "value_7": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_7.value }}</p>",
+            "value_8": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_8.value }}</p>",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "#f9f9f9",
+            "view_button_text_color": "#444444"
+          }
+        },
+        "values_X9yxwD": {
+          "type": "values",
+          "source": "{{ product.metafields.hpz.comparison_metaobject.value }}",
+          "settings": {
+            "product": "{{ product.metafields.hpz.comparison_metaobject.value.product_2.value }}",
+            "value_1": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_1.value }}</p>",
+            "value_2": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_2.value }}</p>",
+            "value_3": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_3.value }}</p>",
+            "value_4": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_4.value }}</p>",
+            "value_5": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_5.value }}</p>",
+            "value_6": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_6.value }}</p>",
+            "value_7": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_7.value }}</p>",
+            "value_8": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_8.value }}</p>",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "#f9f9f9",
+            "view_button_text_color": "#444444"
+          }
+        },
+        "values_aBL4Fb": {
+          "type": "values",
+          "source": "{{ product.metafields.hpz.comparison_metaobject.value }}",
+          "settings": {
+            "product": "{{ product.metafields.hpz.comparison_metaobject.value.product_3.value }}",
+            "value_1": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_1.value }}</p>",
+            "value_2": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_2.value }}</p>",
+            "value_3": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_3.value }}</p>",
+            "value_4": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_4.value }}</p>",
+            "value_5": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_5.value }}</p>",
+            "value_6": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_6.value }}</p>",
+            "value_7": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_7.value }}</p>",
+            "value_8": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_8.value }}</p>",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "#f9f9f9",
+            "view_button_text_color": "#444444"
+          }
+        }
+      },
+      "block_order": [
+        "headings_74P8EL",
+        "values_CGy6Hi",
+        "values_X9yxwD",
+        "values_aBL4Fb"
+      ],
+      "custom_css": [
+        ".text-subdued {font-size: 16px !important; line-height: 30px !important;}",
+        "@media screen and (max-width: 700px) {.text-subdued {font-size: 14px !important; line-height: 25px !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "Viewing",
+        "show_product_swatch": false,
+        "background": "#f9f9f9",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "#ffffff",
+        "chart_text_color": "#444444",
+        "chart_true_false_color": ""
+      }
+    },
+    "0bd8fd08-fbd0-41c1-9ba6-0405e0d44515": {
+      "type": "headphonezone-faq",
+      "blocks": {
+        "item_fjgRme": {
+          "type": "item",
+          "settings": {
+            "title": "What is the warranty period on the V-MODA Crossfade LP2 and how do I claim warranty?",
+            "content": "<p>The warranty period on V-MODA Crossfade LP2 is for 2 years. To read more information <a href='https://www.headphonezone.in/pages/v-moda-warranty-claim-and-service'target='_blank'>click here.</a></p>"
+          }
+        },
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-0": {
+          "type": "item",
+          "settings": {
+            "title": "What is the impedance that V-Moda Crossfade LP2 comes with?",
+            "content": "<p>V-MODA Crossfade LP2 come with an impedance of 32 Ohms.</p>"
+          }
+        },
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-1": {
+          "type": "item",
+          "settings": {
+            "title": "Are the cables detachable?",
+            "content": "<p>Yes, they are.</p>"
+          }
+        },
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-2": {
+          "type": "item",
+          "settings": {
+            "title": "What is the difference between V-Moda Crossfade LP2, Audio Technica ATH- M50x and Beyerdynamic DT 770 PRO?",
+            "content": "<p>The DT 770 Pro will have a flatter response, as accurate to the source as possible. The M50x will have relatively better bass response, the M50x doubles up as casual listening headphone too whereas the LP2 will be bass heavy!</p>"
+          }
+        },
+        "b0f9de61-dc30-4287-b3e1-a6b45661fb3a": {
+          "type": "item",
+          "settings": {
+            "title": "Will the V-Moda Crossfade LP2 require an AMP?",
+            "content": "<p>Although your smartphone and laptop will be able to drive it. If you just want that extra bass to bleed and hence soothe your ears like a bass addict, get an Amp.</p>"
+          }
+        },
+        "c794b682-0e8a-431d-ac06-16a631b60b33": {
+          "type": "item",
+          "settings": {
+            "title": "How many cables will I get?",
+            "content": "<p>It comes with 2 cables. Durable reinforced 1-Button microphone cable and Durable reinforced extended audio cable. Built like a tank!</p>"
+          }
+        },
+        "b1d83b4d-c0e8-499a-b350-29b89955c799": {
+          "type": "item",
+          "settings": {
+            "title": "Does V-Moda Crossfade LP2 come with 6.3mm adapter?",
+            "content": "<p>Yes, it does. Such convenience, much wow.</p>"
+          }
+        },
+        "a1c5a284-59d1-4ff2-89e3-6fcd22d3ef9d": {
+          "type": "item",
+          "settings": {
+            "title": "Can I use V-Moda Crossfade LP2 for casual listening?",
+            "content": "<p>Sure, mate! Why not? DJs use it. You can too.</p>"
+          }
+        },
+        "5addce85-81c7-46fa-aeea-6ce3bc3a4ba6": {
+          "type": "item",
+          "settings": {
+            "title": "Are the earpads replaceable? Where can I get a pair?",
+            "content": "<p>Yes, we got them replacement cushions. They are <a href=\"//www.headphonezone.in/products/v-moda-xl-memory-cushions\" target=\"_blank\">here.</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_fjgRme",
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-0",
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-1",
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-2",
+        "b0f9de61-dc30-4287-b3e1-a6b45661fb3a",
+        "c794b682-0e8a-431d-ac06-16a631b60b33",
+        "b1d83b4d-c0e8-499a-b350-29b89955c799",
+        "a1c5a284-59d1-4ff2-89e3-6fcd22d3ef9d",
+        "5addce85-81c7-46fa-aeea-6ce3bc3a4ba6"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Have a question? Get in touch!",
+        "content": "<p>Check out the most common questions our customers ask. Still have questions? Talk to our Headphone Gurus.</p>",
+        "team_avatar": "shopify://shop_images/customer_support.png",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 11am-6pm.",
+        "answer_time": "Average answer time: 2-3 Hours",
+        "button_text": "TALK TO A GURU",
+        "button_url": "shopify://pages/talk-to-a-headphone-guru",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "manual_details_product_page_fwJE4R": {
+      "type": "Manual-details-product-page",
+      "settings": {}
+    },
+    "00afaa75-cf6d-4bf1-b962-d696372e67aa": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 6,
+        "products": [
+          "v-moda-over-ear-headphone-shield-kit",
+          "v-moda-xl-memory-cushions",
+          "v-moda-boom-pro-mic",
+          "headphone-zone-helix-headphone-stand",
+          "dekoni-audio-headphone-wipes",
+          "dekoni-audio-foam-attenuation-kit"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Recommended Accessories",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "167525932377cb380e": {
+      "type": "apps",
+      "blocks": {
+        "08b03131-bf1b-4945-a40d-a881a32d292b": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "08b03131-bf1b-4945-a40d-a881a32d292b"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "recommendations_count": 10,
+        "products": [
+          "audio-technica-ath-m50x",
+          "beyerdynamic-dt-770-pro",
+          "beyerdynamic-dt-990-pro",
+          "v-moda-crossfade-m-100-master",
+          "v-moda-m200"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "1678704511d0672e7b": {
+      "type": "apps",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hpz_new_snapshot_qgMc93",
+    "f276f700-8b25-4e1e-ac56-41cecc78a40b",
+    "b77b1ff2-7c77-45fd-9421-01713a364a6a",
+    "4e59221e-9e9d-4647-aa7e-fa50fb65307b",
+    "6306d58e-94d6-4ff8-8d68-c88b8af2506e",
+    "4aae3ff7-15f5-465e-8f11-8a9327cd1580",
+    "2fc44790-bffa-490e-b83f-ae985acd60c1",
+    "75ae5572-b6d5-4804-93a6-5206cddbd15c",
+    "f12d93fd-ce1a-409e-9e2d-52037e45ba02",
+    "8cc4e7ce-a8d5-47c9-93a4-d73b58830f0f",
+    "11675a29-1a20-4017-b239-35a3a3d841ff",
+    "91359a6c-9bc7-4b8a-bb9e-ba49a4a761a4",
+    "da63785d-8a54-4c5e-8646-246d73467a96",
+    "da8415cd-1b26-4738-8b5b-48e3e9053fb1",
+    "37c57503-e38d-4849-a9d2-b0b255a872e6",
+    "about_us_brand_ppPhcB",
+    "impact_comparisons_PYwLTY",
+    "0bd8fd08-fbd0-41c1-9ba6-0405e0d44515",
+    "manual_details_product_page_fwJE4R",
+    "00afaa75-cf6d-4bf1-b962-d696372e67aa",
+    "167525932377cb380e",
+    "product-recommendations",
+    "1678704511d0672e7b"
+  ]
+}

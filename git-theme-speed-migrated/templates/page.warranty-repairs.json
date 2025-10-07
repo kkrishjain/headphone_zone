@@ -1,0 +1,409 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "5436d29c-494e-4ebb-be68-ea5575fdabb6": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<img src=https://cdn.shopify.com/s/files/1/0153/8863/files/Warranty2_help_center.svg?v=1685699263\" style=\"width:200px;margin:auto;\">\n<h2 class=\"h2\">Warranty & Repairs</h2>\n\n\n<style>\n\nh2 {\nfont-size:3rem;\ntext-align:center;\nfont-family: \"sora\", sans-serif;\n    font-weight: var(--heading-font-weight);\n    font-style: var(--heading-font-style);\n    letter-spacing: var(--heading-letter-spacing);\n    text-transform: var(--heading-text-transform);\n    overflow-wrap: anywhere;\n}\n\n\n}\n\n\n\n@media screen and (max-width: 700px) {\n  h2 {\n    font-size:2rem!important;\n\n  }\n}\n\n\n\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1d9fd624-d694-40ac-8517-945bbf1867c5": {
+      "type": "faq",
+      "blocks": {
+        "template--16043296653500__1d9fd624-d694-40ac-8517-945bbf1867c5-1685701873d14de749-0": {
+          "type": "item",
+          "settings": {
+            "title": "Brands Service Center Details",
+            "content": "<p><a href=\"https://help.headphonezone.in/support/solutions/articles/6000259760-altiat-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000259760-altiat-warranty-claim-service-in-india\"><strong>Altiat,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198233-audio-technica-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198233-audio-technica-warranty-claim-service-in-india\"><strong>Audio-Technica,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000212712-audioquest-warranty-service-center-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000212712-audioquest-warranty-service-center-in-india\"><strong>AudioQuest, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000198248-beyerdynamic-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198248-beyerdynamic-warranty-claim-service-in-india\"><strong>Beyerdynamic,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198251-bowers-wilkins-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198251-bowers-wilkins-warranty-claim-service-in-india\"><strong>Bowers & Wilkins,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000222399-devialet-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000222399-devialet-warranty-claim-service-in-india\"><strong>Devialet,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000252131-epos-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000252131-epos-warranty-claim-service-in-india\"><strong>EPOS,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000243991-headgear-audio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000243991-headgear-audio-warranty-claim-service-in-india\"><strong>Headgear Audio,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198303-hifiman-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198303-hifiman-warranty-claim-service-in-india\"><strong>HiFiMAN, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000198306-jabra-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198306-jabra-warranty-claim-service-in-india\"><strong>Jabra, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000212717-klipsch-warranty-service-center-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000212717-klipsch-warranty-service-center-in-india\"><strong>Klipsch, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000204301-koss-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000204301-koss-warranty-claim-service-in-india\"><strong>Koss,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198341-marshall-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198341-marshall-warranty-claim-service-in-india\"><strong>Marshall,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000245752-rme-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000245752-rme-warranty-claim-service-in-india\"><strong>RME,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000264329-roon-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000264329-roon-warranty-claim-service-in-india\"><strong>Roon,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198322-sennheiser-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198322-sennheiser-warranty-claim-service-in-india\"><strong>Sennheiser,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000212718-shokz-warranty-service-center-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000212718-shokz-warranty-service-center-in-india\"><strong>Shokz, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000198323-shure-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198323-shure-warranty-claim-service-in-india\"><strong>Shure, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000254570-sonos-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000254570-sonos-warranty-claim-service-in-india\"><strong>Sonos,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198325-sony-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198325-sony-warranty-claim-service-in-india\"><strong>Sony, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000198326-soundmagic-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198326-soundmagic-warranty-claim-service-in-india\"><strong>SoundMAGIC</strong></a></p>"
+          }
+        },
+        "template--16043296653500__1d9fd624-d694-40ac-8517-945bbf1867c5-1685701873d14de749-1": {
+          "type": "item",
+          "settings": {
+            "title": "Submit a Warranty Claim Request",
+            "content": "<p><a href=\"https://help.headphonezone.in/support/solutions/articles/6000253198-1custom-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000253198-1custom-warranty-claim-service-in-india\"><strong>1Custom,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000257469-64-audio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000257469-64-audio-warranty-claim-service-in-india\"><strong>64 Audio, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000267111-7hz-warranty-claim-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000267111-7hz-warranty-claim-in-india\"><strong>7HZ</strong></a>, <a href=\"https://help.headphonezone.in/support/solutions/articles/6000247798-abyss-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000247798-abyss-warranty-claim-service-in-india\"><strong>Abyss,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000197807-astell-kern-warranty-service-center-in-india\" title=\"https://help.headphonezone.in/support/solutions/articles/6000197807-astell-kern-warranty-service-center-in-india\"><strong>Astell&Kern, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000198227-audeze-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198227-audeze-warranty-claim-service-in-india\"><strong>Audeze, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000236898-blon-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000236898-blon-warranty-claim-service-in-india\"><strong>BLON,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000256850-burson-audio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000256850-burson-audio-warranty-claim-service-in-india\"><strong>Burson Audio,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198289-campfire-audio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198289-campfire-audio-warranty-claim-service-in-india\"><strong>Campfire Audio, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000198291-cayin-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198291-cayin-warranty-claim-service-in-india\"><strong>Cayin, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000267109-cca-warranty-claim-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000267109-cca-warranty-claim-in-india\"><strong>CCA</strong></a>,<a href=\"https://help.headphonezone.in/support/solutions/articles/6000198291-cayin-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198291-cayin-warranty-claim-service-in-india\"><strong> </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000218032-chi-fi-warranty-claim-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000218032-chi-fi-warranty-claim-in-india\"><strong>Chi-Fi,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198292-chord-electronics-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198292-chord-electronics-warranty-claim-service-in-india\"><strong>Chord Electronics,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198294-comply-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198294-comply-warranty-claim-service-in-india\"><strong>Comply, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000236631-dan-clark-audio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000236631-dan-clark-audio-warranty-claim-service-in-india\"><strong>Dan Clark Audio,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000234301-ddhifi-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000234301-ddhifi-warranty-claim-service-in-india\"><strong>ddHiFi, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000249835-denafrips-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000249835-denafrips-warranty-claim-service-in-india\"><strong>DENAFRIPS,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000240051-earmen-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000240051-earmen-warranty-claim-service-in-india\"><strong>EarMen,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000266239-effect-audio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000266239-effect-audio-warranty-claim-service-in-india\"><strong>Effect Audio,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000234418-etymotic-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000234418-etymotic-warranty-claim-service-in-india\"><strong>Etymotic,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000248098-fiio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000248098-fiio-warranty-claim-service-in-india\"><strong>FiiO,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000252307-final-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000252307-final-warranty-claim-service-in-india\"><strong>Final,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198342-focal-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198342-focal-warranty-claim-service-in-india\"><strong>Focal, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000204289-grado-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000204289-grado-warranty-claim-service-in-india\"><strong>Grado, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000248634-gustard-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000248634-gustard-warranty-claim-service-in-india\"><strong>GUSTARD,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000244876-headphone-zone-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000244876-headphone-zone-warranty-claim-service-in-india\"><strong>Headphone Zone,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000237342-hedd-audio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000237342-hedd-audio-warranty-claim-service-in-india\"><strong>HEDD Audio,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000212857-hiby-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000212857-hiby-warranty-claim-service-in-india\"><strong>HiBy,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000253181-hidizs-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000253181-hidizs-warranty-claim-service-in-india\"><strong>Hidizs,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000221772-ibasso-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000221772-ibasso-warranty-claim-service-in-india\"><strong>iBasso,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198305-ifi-audio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198305-ifi-audio-warranty-claim-service-in-india\"><strong>iFi Audio, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000247857-ikko-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000247857-ikko-warranty-claim-service-in-india\"><strong>IKKO,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198310-jh-audio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198310-jh-audio-warranty-claim-service-in-india\"><strong>JH Audio,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000224439-jvc-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000224439-jvc-warranty-claim-service-in-india\"><strong>JVC,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000251054-kz-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000251054-kz-warranty-claim-service-in-india\"><strong>KZ,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000267110-letshuoer-warranty-claim-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000267110-letshuoer-warranty-claim-in-india\"><strong>LETSHUOER</strong></a>, <a href=\"https://help.headphonezone.in/support/solutions/articles/6000232634-lypertek-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000232634-lypertek-warranty-claim-service-in-india\"><strong>LYPERTEK,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000212722-mee-audio-warranty-service-center-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000212722-mee-audio-warranty-service-center-in-india\"><strong>MEE Audio,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198314-meze-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198314-meze-warranty-claim-service-in-india\"><strong>Meze, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000251056-moondrop-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000251056-moondrop-warranty-claim-service-in-india\"><strong>Moondrop,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198315-noble-audio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198315-noble-audio-warranty-claim-service-in-india\"><strong>Noble Audio, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000257155-monoprice-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000257155-monoprice-warranty-claim-service-in-india\"><strong>Monoprice,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000234411-obravo-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000234411-obravo-warranty-claim-service-in-india\"><strong>oBravo,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000261723-oriveti-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000261723-oriveti-warranty-claim-service-in-india\"><strong>ORIVETI,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000253719-raal-requisite-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000253719-raal-requisite-warranty-claim-service-in-india\"><strong>RAAL-requisite</strong></a>, <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198321-schiit-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198321-schiit-warranty-claim-service-in-india\"><strong>Schiit, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000202503-shanling-audio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000202503-shanling-audio-warranty-claim-service-in-india\"><strong>Shanling,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000250052-s-m-s-l-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000250052-s-m-s-l-warranty-claim-service-in-india\"><strong>SMSL,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198329-stax-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198329-stax-warranty-claim-service-in-india\"><strong>STAX,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000267113-tangzu-warranty-claim-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000267113-tangzu-warranty-claim-in-india\"><strong>TANGZU</strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000253719-raal-requisite-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000253719-raal-requisite-warranty-claim-service-in-india\"><strong>,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000251058-thieaudio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000251058-thieaudio-warranty-claim-service-in-india\"><strong>ThieAudio,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000240502-topping-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000240502-topping-warranty-claim-service-in-india\"><strong>TOPPING, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000267108-tripowin-warranty-claim-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000267108-tripowin-warranty-claim-in-india\"><strong>Tripowin</strong></a>, <a href=\"https://help.headphonezone.in/support/solutions/articles/6000263184-truthear-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000263184-truthear-warranty-claim-service-in-india\"><strong>Truthear,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000250655-venture-electronics-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000250655-venture-electronics-warranty-claim-service-in-india\"><strong>Venture Electronics,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000235733-violectric-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000235733-violectric-warranty-claim-service-in-india\"><strong>Violectric</strong></a>, <a href=\"https://help.headphonezone.in/support/solutions/articles/6000236896-vision-ears-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000236896-vision-ears-warranty-claim-service-in-india\"><strong>Vision Ears</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198333-v-moda-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000198333-v-moda-warranty-claim-service-in-india\"><strong>V-MODA, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000259536-westone-audio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000259536-westone-audio-warranty-claim-service-in-india\"><strong>Westone Audio,</strong></a> <a href=\"https://help.headphonezone.in/support/solutions/articles/6000212859-woo-audio-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000212859-woo-audio-warranty-claim-service-in-india\"><strong>Woo Audio, </strong></a><a href=\"https://help.headphonezone.in/support/solutions/articles/6000250882-xduoo-warranty-claim-service-in-india\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000250882-xduoo-warranty-claim-service-in-india\"><strong>xDuoo</strong></a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16043296653500__1d9fd624-d694-40ac-8517-945bbf1867c5-1685701873d14de749-0",
+        "template--16043296653500__1d9fd624-d694-40ac-8517-945bbf1867c5-1685701873d14de749-1"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Claim Warranty",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d": {
+      "type": "faq",
+      "blocks": {
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-0": {
+          "type": "item",
+          "settings": {
+            "title": "How do I claim warranty?",
+            "content": "<p><strong>Before sending a claim request make sure you have the following:</strong></p><ul><li>The product's purchase <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000199289-i-don-t-have-an-invoice-what-do-i-do-\" target=\"_blank\">invoice</a></li><li>It falls within the <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198211-when-does-my-warranty-period-start-\" target=\"_blank\">warranty period</a></li><li>The defect found is a <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000199291-what-is-a-manufacturing-defect-\" target=\"_blank\">manufacturing defect<br/><br/></a>As each brand has a different procedure for claiming warranty, check out the <a href=\"https://help.headphonezone.in/support/solutions/folders/6000233185\" target=\"_blank\">warranty page</a> for the further procedure.<br/><br/><strong>For brands whose service partner is not Headphone Zone:</strong></li><li>On the <a href=\"https://help.headphonezone.in/support/solutions/folders/6000233912\" target=\"_blank\">brand warranty page</a>, we have provided the contact details of your brand's service partner. </li><li>Contact the service partner with your Headphone Zone invoice to claim warranty</li><li>In case you are having difficulty in getting a resolution, you can contact us and we will escalate the matter<br/><br/><strong>For brands whose service partner is Headphone Zone:</strong></li><li>Fill the warranty claim form on the <a href=\"https://www.headphonezone.in/pages/warranty\" target=\"_blank\">brand warranty page</a> in as much detail as possible</li><li>Once your claim has been approved, you will get a Warranty Case ID (WCID)</li><li><a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198237--do-you-all-pick-up-the-product-\" target=\"_blank\">Courier</a> your product with the WCID on your parcel</li><li>Wait for 9 to 12 days as we <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000199293-how-do-you-inspect-a-product-\" target=\"_blank\">inspect it</a></li><li>We find the manufacturing defect</li><li>If possible, we <a href=\"https://help.headphonezone.in/support/solutions/articles/6000198223-will-you-be-repairing-my-defective-headphones-\" target=\"_blank\">repair</a> the product</li><li>We send you your repaired unit / replacement :)</li></ul>"
+          }
+        },
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-1": {
+          "type": "item",
+          "settings": {
+            "title": "What does warranty cover?",
+            "content": "<p>Warranty on products sold on Headphone Zone only cover <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000199291-what-is-a-manufacturing-defect-\" target=\"_blank\">manufacturing defects</a>.</p><h5><strong>What's Eligible?</strong></h5><h6>Manufacturing Defects</h6><ul><li>No Sound Output</li><li>Noise while Charging</li><li>Buttons Not Working</li><li>Not charging</li><li>Doesn't turn on</li><li>Any other manufacturing defect</li></ul><p><br/></p><h5><strong>What's Not Eligible?</strong></h5><h6>Physical Damages</h6><ul><li>Wear and tear from usage</li><li>Cosmetic flaws</li><li>Wire/cord tearing</li><li>Damages to accessories</li><li>Any other accidental damage</li><li>Natural disasters or animal related damages</li></ul><p></p><p>For a more detailed list, you can visit your product's brand warranty page where Headphone Zone is the warranty partner <a href=\"https://help.headphonezone.in/support/solutions/folders/6000233912\" target=\"_blank\">here</a> and where other companies are the service partners <a href=\"https://help.headphonezone.in/support/solutions/folders/6000233185\" target=\"_blank\">here</a>.</p>"
+          }
+        },
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-2": {
+          "type": "item",
+          "settings": {
+            "title": "Do I get warranty for products purchased on Headphone Zone?",
+            "content": "<p>We are the authorized retailers for all the brands that we sell. All products sold by us come with a warranty and the warranty period differs from brand to brand. </p><p>To check the warranty details of a brand where Headphone Zone is a service partner, click <a href=\"https://help.headphonezone.in/support/solutions/folders/6000233912\" target=\"_blank\">here</a>. For brands that are serviced by other partners, click <a href=\"https://help.headphonezone.in/support/solutions/folders/6000233185\" target=\"_blank\">here</a>. Therein among the list of all brands, you can locate your brand and find the warranty details.</p><p><br/>You can also check the warranty details on the particular product page.</p><p></p><p><em>Please note: </em></p><ol><li><em>Warranty covers manufacturing defects only</em></li><li><em>You need to maintain a copy of your invoice for date reference to claim warranty.</em></li><li><em>On presenting the copy of your invoice, you should have no problem claiming your warranty.</em></li></ol>"
+          }
+        },
+        "61c0e858-7c4b-4ac6-849b-ba98738e80f2": {
+          "type": "item",
+          "settings": {
+            "title": "I don't have an Invoice. What do I do ?",
+            "content": "<p>If you do not have an invoice for a product bought from Headphone Zone, simply download it from my account section on our website.</p><p><br/>All you need to do is Login to your account and click on the My orders Tab. You will be able to see a download invoice button below the respective order. Just click on the button and you will be able to download the PDF copy of your invoice.  </p><p>In case you have not bought the product from us, kindly contact the retailer from whom you purchased the product asking them for an invoice copy.</p><p><em>Please Note: The Invoice copy is absolutely necessary to refer to the date of purchase and claim warranty.</em></p>"
+          }
+        },
+        "76485940-1315-4037-b3bb-b3169d95b6a4": {
+          "type": "item",
+          "settings": {
+            "title": "What is a manufacturing defect?",
+            "content": "<p>A manufacturing defect is a technical flaw that arises during the warranty period and stops a device from being fully functional.</p><p><strong>Some examples of manufacturing defects that affect earphones and headphones include:</strong></p><ul><li>One side of the headphone is giving no output</li><li>Wireless device is unable to charge</li><li>Sound imbalance</li><li>Mic is not working</li></ul><p><br/>All manufacturing defects are covered under warranty.</p>"
+          }
+        },
+        "3f2114a9-28fc-4194-b538-8fdc76ee61ab": {
+          "type": "item",
+          "settings": {
+            "title": "When does my warranty period start?",
+            "content": "<p>The warranty period starts from the date mentioned on the invoice of purchase. This is why the <strong>invoice copy</strong> is imperative for you to claim warranty.</p><p>The warranty period differs from brand to brand, therefore do calculate the end of your warranty accordingly. E.g. For a brand that gives 1 year warranty, if you bought your product on 16th January 2017, your warranty will end on 16th January 2018. Hence, even if you find a <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000199291-what-is-a-manufacturing-defect-\" target=\"_blank\">defect</a> in your product on 14th January 2018, you can still <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198229-how-do-i-claim-warranty-\" target=\"_blank\">raise a warranty claim</a> as long as it is before your warranty period ends. </p>"
+          }
+        },
+        "0910b452-90a2-4a2c-86ff-e26535ea68b3": {
+          "type": "item",
+          "settings": {
+            "title": "On what basis is my warranty request approved?",
+            "content": "<p>Your warranty request is approved on the following basis-</p><ol><li>If the product is within the warranty period</li><li>If you have a copy of your invoice to refer to the date of purchase</li><li>If the product has a manufacturing defect</li><li>If the product is not physically damaged</li></ol>"
+          }
+        },
+        "89d11cc0-c3a2-4c0f-b91b-a2eebb4ec204": {
+          "type": "item",
+          "settings": {
+            "title": "Will you be repairing my defective headphones?",
+            "content": "<p>Different brands have different warranty procedures. Some brands choose to repair the product if possible while other brands strictly replace the product with a brand new or an unboxed product. </p><p>Most of the times, we do not have the spare parts available or the technical ability to repair a defective unit. In such a case, we simply replace the product with a working unit. </p><p>If the issue is quite straightforward and easily fixable, we will let you know and go ahead and fix it.</p><p>In case of an obscure defect, we will contact you and need you to elaborate on the problem to better understand it. Thereafter, we will send it for re-inspection.</p><p><br/>We may also send the product directly to the brand to ensure the matter is being taken care of in the best possible way.<br/></p><p>Throughout this process, we will make sure that we send you a status update at every step. <br/></p><p><em>To understand the warranty policy of a particular brand, you can go </em><a href=\"https://help.headphonezone.in/support/solutions/folders/6000233912\" target=\"_blank\"><em>here</em></a><em> for brands serviced by Headphone Zone and </em><a href=\"https://help.headphonezone.in/support/solutions/folders/6000233185\" target=\"_blank\"><em>here</em></a><em> for brands serviced by others. You can also find the warranty details of a brand on its product page.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-0",
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-1",
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-2",
+        "61c0e858-7c4b-4ac6-849b-ba98738e80f2",
+        "76485940-1315-4037-b3bb-b3169d95b6a4",
+        "3f2114a9-28fc-4194-b538-8fdc76ee61ab",
+        "0910b452-90a2-4a2c-86ff-e26535ea68b3",
+        "89d11cc0-c3a2-4c0f-b91b-a2eebb4ec204"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Warranty Claim Eligibility ",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "fec55e75-1a38-486c-bf08-237238652a26": {
+      "type": "faq",
+      "blocks": {
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-0": {
+          "type": "item",
+          "settings": {
+            "title": "How long do you take to approve a Warranty Claim Request?",
+            "content": "<p>It takes about 24 hours for us to approve a <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198229-how-do-i-claim-warranty-\" target=\"_blank\">warranty claim request</a>.<br/><br/>On approval, you will receive an elaborate confirmation email from us explaining the process that will be carried forward. In the email, you will be given a unique Warranty Case ID (WCID) number which you will need to mention anytime you want to communicate with us regarding this procedure.</p><p><br/>Also, make sure that you clearly mention the WCID number on the package when you courier it back to us.</p>"
+          }
+        },
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-1": {
+          "type": "item",
+          "settings": {
+            "title": "How long will it take for the entire warranty claim process ?",
+            "content": "<p>The entire warranty claim process can take about 2 weeks time if it goes smoothly. Usually, most of the time taken during the warranty claim process is due to the defective product and the replacement unit being in transit. <br/><br/> <strong>To break it down:</strong></p><ul><li>Once you <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198229-how-do-i-claim-warranty-\" target=\"_blank\" title=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198229-how-do-i-claim-warranty-\">fill out your warranty claim form</a>, it takes us about 24 hours to approve the same. If we need further clarification, the process might be delayed. </li><li>Post that, you will be required to courier your defective product to our warehouse in Chennai. The time your product is in transit will depend on where you stay as well as the courier company you have used. Do remember to share with us the tracking details once you send it.</li><li>Once we receive the product, our <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000199293-how-do-you-inspect-a-product-\" target=\"_blank\">inspection team</a> will need about 9 to 12 days to check for the defect. You are requested to give as many details of the defect as possible as this will make the inspection process smoother.</li><li>After they give their verdict, if your product is defective, a replacement/repaired unit will be packed and sent to the address you wrote when filling out the form.</li><li>Our <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198237--do-you-all-pick-up-the-product-\" target=\"_blank\">courier partners</a> will take about 2-4 business days to deliver the replacement/ repaired unit to you. We will share with you the tracking details once it is dispatched.</li></ul>"
+          }
+        },
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-2": {
+          "type": "item",
+          "settings": {
+            "title": "Do you pick up the defective product?",
+            "content": "<p>No, as per the warranty policy we follow, the customer is required to courier the defective product. In warranty cases, the customer bears the cost for shipping the defective unit to us while we bear the cost for shipping the replacement unit.</p><p><br/>You do not need to ship the product with an expensive courier, just makes sure that it is trustworthy and cost-effective. Also, don't forget to share with us the tracking details once you have sent it.</p>"
+          }
+        },
+        "b513c8ea-6796-45b0-9de5-9c1a5301ea13": {
+          "type": "item",
+          "settings": {
+            "title": "I don’t have all the accessories or packaging that I originally received. Can I claim warranty?",
+            "content": "<p>Don't worry if you don't have all the accessories or the packaging that you originally received. <strong>Warranty still got you covered</strong>!</p><p><br/>All we need you to do is, send in whatever accessories are available and mention the Warranty Case ID (WCID) number on the parcel. </p>"
+          }
+        },
+        "0647d574-506b-4eaa-9a88-6ed06e11230a": {
+          "type": "item",
+          "settings": {
+            "title": "I stay in Chennai, can I go drop off the product at your warehouse?",
+            "content": "<p>Yes you can! Our warehouse is open from <strong>Monday to Saturday (10am to 6pm)</strong>. Just let us know when you’re headed there and don't forget to mention your <strong>Warranty Case ID (WCID) </strong>on the parcel while handing it over.</p><p><em>Please Note: Even if you're dropping the parcel off yourself, you will not get an immediate replacement. It will take us 7 business days to carry out the inspection after which we will send you a status update via email.</em></p><p><br/><strong>Warehouse Address:<br/></strong>Headphone Zone 63/18 Dev Apts 2nd Floor,<br/>1st Main Road, Gandhinagar,<br/>Adyar. Chennai - 600020<br/>Contact No: 7506646988</p>"
+          }
+        },
+        "66dbe99b-8dd9-4f7f-a2fa-85b35a15d659": {
+          "type": "item",
+          "settings": {
+            "title": "What if I’ve not mentioned the Warranty Case ID (WCID) on the package while sending it?",
+            "content": "<p>We ask you to mention the Warranty Case ID (WCID) so that it is easy to trace your parcel and avoid unnecessary delays or confusion. Everyday our warehouse receives hundreds of parcels and identifying one without the WCID is difficult. </p><p>Also, if you send us the tracking details of your parcel (along with mentioning your WCID on it), our inspection team will be ready to receive it. </p><p>If you've forgotten to mention your WCID, please let us know in advance so that we can inform the warehouse to search for your parcel with your tracking ID and avoid any delay. </p>"
+          }
+        },
+        "92a0c239-4741-416d-92e0-1e9b6007d563": {
+          "type": "item",
+          "settings": {
+            "title": "I won't be able to send the defective product right away. What do I do ?",
+            "content": "<p>It's okay if you can't send the defective product right away. Just submit a request and let us know.</p><p><br/>After your warranty request is <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000199302-on-what-basis-is-my-warranty-request-approved-\">approved</a> by us, you will receive your unique Warranty Case ID (WCID) via email.</p><p>Once you receive your WCID, it is upon you to decide when to send your product to us. We will accept the product whenever you send it across as long as it still is in the <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198211-when-does-my-warranty-period-start-\">warranty period</a>.</p><p><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-0",
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-1",
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-2",
+        "b513c8ea-6796-45b0-9de5-9c1a5301ea13",
+        "0647d574-506b-4eaa-9a88-6ed06e11230a",
+        "66dbe99b-8dd9-4f7f-a2fa-85b35a15d659",
+        "92a0c239-4741-416d-92e0-1e9b6007d563"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Claim Process ",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "d10d4f5e-f418-4ff2-8ab6-2185e6b599cc": {
+      "type": "faq",
+      "blocks": {
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-0": {
+          "type": "item",
+          "settings": {
+            "title": "I've sent a product for warranty replacement. When will I get the inspection status?",
+            "content": "<p>It takes about 9 to 12 business days for us to properly inspect your product once it has reached our warehouse. Thereafter, we will give you a status update on the outcome of the process. </p>"
+          }
+        },
+        "182fa2b1-565f-4b58-afa0-39f0d2a46b1f": {
+          "type": "item",
+          "settings": {
+            "title": "How do you inspect a product ?",
+            "content": "<p><strong>In case the product has a manufacturing defect or is dead on arrival:</strong></p><p>Under this situation, our inspection team will check for the defects you have specifically mentioned while raising the return request. Please be specific about what the issue is (mic not working, sound imbalance, connectivity issues, dead on arrival, etc). The more you elaborate, the smoother the inspection process will be.</p><p>At least two source devices are used when testing a product to ensure that there is actually a manufacturing defect and not a compatibility issue.</p><p><br/>For products with replaceable parts, the team checks for defective ones and only that part is replaced (whenever possible). If the entire product is defective, then it is replaced with a brand new product.<br/><br/><strong>Some examples of how the inspection is done:<br/></strong></p><ul><li><em>Issues with mic: </em>If you feel that there is an issue with your earphone's mic, our team will make calls with the earphone to test the mic.</li><li><em>Detachable cables: </em>To check if there is a problem with the detachable cable, the headphone/earphone is tested with the defective cable as well as another working one.</li><li><em>Connectivity issues: </em>The headset is connected to different devices link a laptop, phone, iPhone, etc. to check for connectivity issues. </li></ul><p><br/><strong>In case the product is not meeting your expectations:</strong></p><p>For products returned if the product does not meet your expectation or if you ordered it by mistake, our inspection team will check the following only:</p><ul><li>Whether the product is working and has no physical damages</li><li>All accessories that were originally sent along with the product are intact</li><li>The packaging is intact</li></ul>"
+          }
+        },
+        "0db2c25a-4526-40bf-a393-454ce545f28d": {
+          "type": "item",
+          "settings": {
+            "title": "What if no defect is found while inspecting the product for which I've claimed warranty?",
+            "content": "<p>If our inspection team is unable to confirm the defect you mentioned when filling the warranty claim form, we will send the same unit back to you.</p><p>However, before doing so, we will get in touch with you to elaborately understand the problem. With a better understanding of the defect, we will proceed with the re-inspection process if required. A re-inspection status update will be sent to you at the earliest.</p>"
+          }
+        },
+        "cb0eed50-a58c-4d46-9cf5-e65fe96844b2": {
+          "type": "item",
+          "settings": {
+            "title": "Can I request for a Re-inspection under Warranty Claim?",
+            "content": "<p>Yes, you can. Please elaborate about your problem so that it is easier for us to discover the defect (The more details, the better).</p><p>Eg. If you say that you are facing issues with the mic, don't forget to tell us the devices you have used your in-ear with. We will try connecting it with multiple devices to find the <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000199291-what-is-a-manufacturing-defect-\" target=\"_blank\">manufacturing defect</a>.</p><p><br/></p>"
+          }
+        },
+        "831869cb-cd38-40fa-b0e5-61e43ca12925": {
+          "type": "item",
+          "settings": {
+            "title": "Can you send the replacement as soon as I ship the product to you?",
+            "content": "<p>Without inspecting the product we won’t be able to issue a replacement to you. Replacements will be issued only if the defect mentioned has been detected.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-0",
+        "182fa2b1-565f-4b58-afa0-39f0d2a46b1f",
+        "0db2c25a-4526-40bf-a393-454ce545f28d",
+        "cb0eed50-a58c-4d46-9cf5-e65fe96844b2",
+        "831869cb-cd38-40fa-b0e5-61e43ca12925"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Warranty Inspection",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "b5039a4a-ee80-4f16-81e3-06e2a2d1e69d": {
+      "type": "faq",
+      "blocks": {
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-0": {
+          "type": "item",
+          "settings": {
+            "title": "Can I get store credit or refund?",
+            "content": "<p>A defective product returned under the warranty claim policy, will be replaced with a working, unboxed or a brand new product.</p><p>If your product is in warranty, you are entitled to as many replacements as required within the period. </p><p>We understand it can be frustrating to go through so many replacements but we do not give store credit or refund under this policy.</p><p><br/><em>Please note: We have the same warranty procedure for all the brands that we sell which has been authorized by all our partner brands.</em></p>"
+          }
+        },
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-1": {
+          "type": "item",
+          "settings": {
+            "title": "How long will it take for me to get my replacement?",
+            "content": "<p>If everything goes smoothly, it ought to take 7-10 days for you to get your replacement. Usually, most of the time taken during the warranty claim process is due to the defective product and the replacement unit being in transit. </p><p><strong>To break it down:</strong></p><ul><li>Once you <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198229-how-do-i-claim-warranty-\" target=\"_blank\">fill out your warranty claim form</a>, it takes us about 24 hours to approve the same. If we need further clarification, the process might be delayed.  </li><li>Post that, you will be required to courier your defective product to our warehouse in Chennai. The time your product is in transit will depend on where you stay as well as the courier company you have used. Do remember to share with us the tracking details once you send it.</li><li>Once we receive the product, our <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000199293-how-do-you-inspect-a-product-\" target=\"_blank\">inspection team</a> will need at least 9 to 12 days to check for the defect. You are requested to give as many details of the defect as possible as this will make the inspection process smoother.</li><li>After they give their verdict, if your product is defective, a replacement unit will be packed and sent to the address you wrote when filling out the form.</li><li>Our <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198237--do-you-all-pick-up-the-product-\" target=\"_blank\">courier partners</a> will take about 2-4 business days to deliver the replacement/ repaired unit to you. We will share with you the tracking details once it is dispatched.</li></ul>"
+          }
+        },
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-2": {
+          "type": "item",
+          "settings": {
+            "title": "I have claimed warranty twice or thrice already, can I get a refund instead of a replacement?",
+            "content": "<p>Unfortunately, under a warranty claim process, you are only entitled to replacements.</p><p>You can get as many replacements as required within the warranty period.</p><p>Many times, various issues may arise during the warranty claim process. We’re not in a position to predict how long a product will last and whether a particular issue might arise with the replacement unit issued.</p><p></p><p>We can understand the frustration, but we can only support with timely replacements.</p>"
+          }
+        },
+        "72c3507d-2db4-4464-b42c-069ef7377c48": {
+          "type": "item",
+          "settings": {
+            "title": "What if the model I’m claiming warranty for has been discontinued or isn’t available with Headphone Zone to provide a replacement?",
+            "content": "<p>If the model for which you are claiming warranty isn't available or has been discontinued, there are 3 resolutions we can offer:</p><ol><li>You will receive another colour variant of the same product</li><li>You will get the replacement model of the discontinued product</li><li>You will receive another product of the same value as that of the defective model</li></ol><p><br/>Before sending out a replacement product, we will take your opinion for the same. </p><p>In any case, Headphone Zone's liability for a warranty replacement will only cover the value paid by you at the time of purchasing the product the first time.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-0",
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-1",
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-2",
+        "72c3507d-2db4-4464-b42c-069ef7377c48"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Warranty Resolutions",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5436d29c-494e-4ebb-be68-ea5575fdabb6",
+    "1d9fd624-d694-40ac-8517-945bbf1867c5",
+    "5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d",
+    "fec55e75-1a38-486c-bf08-237238652a26",
+    "d10d4f5e-f418-4ff2-8ab6-2185e6b599cc",
+    "b5039a4a-ee80-4f16-81e3-06e2a2d1e69d"
+  ]
+}

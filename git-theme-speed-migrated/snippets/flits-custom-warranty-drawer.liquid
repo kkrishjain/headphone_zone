@@ -1,0 +1,56 @@
+{%- comment -%} Content for Warranty starts here {%- endcomment -%}
+
+<navigation-drawer mobile-opening="bottom" class="navigation-drawer drawer pop-drawer" id="warranty{{ itemID | strip }}" open-from="right">
+  <div class="panel-list__wrapper">
+    <div class="panel">
+      <div class="panel__wrapper">
+        <div class="panel__scroller v-stack gap-1">
+          <button is="close-button" aria-label="{{ 'general.accessibility.close' | t | escape }}">
+            <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19" class="icon icon-close pop-icon" viewBox="0 0 24 24">
+              <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
+            </svg>
+          </button>
+          {%- if product.metafields.hpz.warranty_period.value -%}
+            <h1>Warranty & Services</h1>
+
+            <p>
+              Don't sweat it, this<strong>
+                {{ product.title }} comes with a {{ product.metafields.hpz.warranty_period }} warranty
+                {% case product.metafields.hpz.warranty_exception %}
+                  {% when 'x on the driver and a 1 year on the rest of the parts' %}
+                    on the driver and a 1 year on the rest of the parts
+                  {% when 'x on the DAC and 6 months on the battery' %}
+                    on the DAC and 6 months on the battery
+                  {% when 'on the Amp/DAC and 6 months on the battery' %}
+                    on the Amp/DAC and 6 months on the battery
+                  {% when 'x on the driver and a 2 year on the rest of the parts' %}
+                    on the driver and a 2 year on the rest of the parts
+                {% endcase %}
+              </strong>
+              from {{ product.vendor }} that covers manufacturing defects.
+              {% case product.metafields.hpz.warranty_exception %}
+                {% when 'You get 1 year manufacturer warranty straight out of the box and can avail an additional 2 year warranty by registering the product' %}
+                  You get 1 year manufacturer warranty straight out of the box and can avail an additional 2 year
+                  warranty by registering the product.
+                {% when 'You get 1 year manufacturer warranty straight out of the box and can avail an additional 1 year warranty by registering the product on the app' %}
+                  You get 1 year manufacturer warranty straight out of the box and can avail an additional 1 year
+                  warranty by registering the product on the app.
+                {% when 'You get 2 years manufacturer warranty straight out of the box and can avail an additional 2 year warranty by registering the product' %}
+                  You get 2 years manufacturer warranty straight out of the box and can avail an additional 2 year
+                  warranty by registering the product.
+                {% when 'You get 2 years manufacturer warranty straight out of the box and can avail an additional 1 year warranty by registering the product' %}
+                  You get 2 years manufacturer warranty straight out of the box and can avail an additional 1 year
+                  warranty by registering the product.
+              {% endcase %}
+              All products featured on Headphone Zone are backed by an original manufacturer's warranty.<br>
+              <br>
+              <a href="{{ product.metafields.hpz.warranty_link }}" target="_blank">Read more</a> about
+              {{ product.vendor }}'s warranty in India.
+            </p>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</navigation-drawer>
+{%- comment -%} Content for Warranty ends here {%- endcomment -%}

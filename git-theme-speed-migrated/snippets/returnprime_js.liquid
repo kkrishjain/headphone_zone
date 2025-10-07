@@ -1,0 +1,113 @@
+{% if request.path contains 'return_prime' %}
+  <style>
+    .rp_error_block {
+      max-width: 700px;
+      margin: 24px auto;
+      background: #f5e5e7;
+      padding: 28px;
+      border-radius: 10px;
+    }
+    .rp_error_block p {
+      margin: 0;
+      font-size: 23px;
+      text-align: center;
+    }
+  </style>
+  <script>
+    function checkForDeliveryStatus(obj) {
+      if(obj.order[0].shipment_status !== "delivered") {
+        var returnprimeDiv = document.querySelector(".returnprime__app");        
+        let divWrapper = document.createElement('div');
+        divWrapper.classList.add("rp_error_block");
+        let nonEligibleheading = document.createElement('p');
+        nonEligibleheading.append('The order is not delivered yet, Please try again after delivery.');
+        divWrapper.appendChild(nonEligibleheading);
+        if(document.getElementsByClassName('rp_error_block').length === 0) {
+          returnprimeDiv.appendChild(divWrapper);
+        }
+        
+         setTimeout(() => {
+          document.querySelector('.order_list').remove();
+          document.querySelector('.returnprime__app .customer .sidenav').remove();
+         },5)
+
+      }
+
+    }
+    
+
+    if(window.location.pathname.includes('return_prime')) {
+      document.addEventListener("returnprime_orderlist_page", (e) => { 
+        checkForDeliveryStatus(e.detail);
+      });
+
+    }
+      
+  </script>
+   {% endif %}
+
+
+
+   {% if request.path contains 'return_prime' %}
+  <script>
+    // Function to add event listener to next button for account number validation
+    function validateAccountNumber() {
+      const accNumber = document.getElementById('acc_number');
+      const confAccNumber = document.getElementById('conf_acc_number');
+      const nextBtn = document.querySelector(".next__btn");
+
+      if (accNumber && confAccNumber && nextBtn) {
+        nextBtn.addEventListener('click', handleNextButtonClick);
+      }
+    }
+
+    function handleNextButtonClick(event) {
+      const accNumber = document.getElementById('acc_number').value;
+      const confAccNumber = document.getElementById('conf_acc_number').value;
+      const indianBankAccRegex = /^[0-9]{9,18}$/; // Regex for Indian bank account numbers (9 to 18 digits)
+
+      if (!indianBankAccRegex.test(accNumber)) {
+        event.preventDefault();
+        event.stopPropagation();
+        return alert("Please enter a valid bank account number.");
+      }
+      
+      if (accNumber !== confAccNumber) {
+        event.preventDefault();
+        event.stopPropagation();
+        return alert("Account numbers do not match. Please correct before proceeding.");
+      }
+
+   
+    }
+
+    // Function to observe and wait for account number fields to appear in the DOM
+    function observeAccountNumberFields() {
+      const observer = new MutationObserver(() => {
+        const accNumberField = document.getElementById('acc_number');
+
+        if (accNumberField) {
+          validateAccountNumber(); 
+          observer.disconnect();   
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+    }
+
+
+    function setupListeners(detail) {
+      observeAccountNumberFields();
+    }
+
+    if (window.location.pathname.includes('return_prime')) {
+      document.addEventListener('returnprime_return_page', (e) => setupListeners(e.detail));
+
+      // Re-setup listeners when the back button is clicked
+      document.addEventListener('click', function (e) {
+        if (e.target.classList.contains('back__btn')) {
+          setupListeners(e.detail);
+        }
+      });
+    }
+  </script>
+{% endif %}

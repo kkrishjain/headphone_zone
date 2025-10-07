@@ -1,0 +1,300 @@
+{%- comment -%}
+  ----------------------------------------------------------------------------------------------------------------------
+  Below Buy button Section
+  ----------------------------------------------------------------------------------------------------------------------
+
+  This section contains a pincode checker, returns and warrany section and a bunch of accordions.
+  The accordion in the file are for:
+  * Deals : Unboxed, Refurbished and Demo Unit Deals
+  * Loyalty Points: Loyalty Points and information on club audiophile.
+  * Payment offers: Payment offers like EMI and card payments
+
+  Reference files :
+  - emi-content.liquid : for all content regarding Payment offers
+  - bbb-payment-offers.liquid: for Payment offer
+  - bbb-icon.liquid: for icons realated to shipping, delivery, warranty, etc
+{%- endcomment -%}
+{{ 'below-btn-style.css' | asset_url | stylesheet_tag }} 
+{% render 'expected-to-be-restocked' %}
+
+{% if product.metafields.hpz.talk_to_a_guru == true %}
+  {% unless product.metafields.hpz.available_at_experience_studio == true %}
+  <button class="guru-button tw-group  tw-text-fg-primary hover:tw-text-fg-highlight-primary tw-no-underline tw-pb-2xs hover:tw-border-transparent tw-border-b-2" aria-controls="guru" aria-expanded="false" >
+    Confused? Talk to a Headphone Guru
+  </button>
+  {% render 'bbb-drawer' with 'guru' %}
+  {%- endunless -%}
+{%- endif -%}
+
+{% if product.metafields.hpz.available_at_experience_studio == true %}
+<div class="guru-experience-grid">
+  <div class="icon-split-guru-exp cursorpointer"  aria-controls="guru" aria-expanded="false">
+    <div>{% render 'icon' with 'call-button' %}</div>
+    <div class="guru-exp-text">Confused? Talk to a Headphone Guru</div>
+  </div>
+  <div class="icon-split-guru-exp cursorpointer"  aria-controls="experience-now" aria-expanded="false">
+    <div>{% render 'icon' with 'location-button' %}</div>
+    <div class="guru-exp-text">Or Try it Out At Our Experience Studio</div>
+  </div>
+</div>
+  {% render 'bbb-drawer' with 'guru' %}
+  {% render 'bbb-drawer' with 'experience-now' %}
+{%- endif -%}
+
+<div data-id="{{ product.id }}" class="wn_ecomm_embed_pdp_{{ product.id }} wn_ecomm_snippet pdp"></div>
+
+{%- comment -%}New code starts here{%- endcomment -%}
+{% unless product.vendor contains 'Headphone Zone Experiences'
+  or product.vendor contains 'Headphone Connect'
+  or product.vendor contains 'Home Audition'
+%}
+  {% if product.available %}
+    <div class="main-div-bbb">
+      {% unless product.tags contains 'special-enquiry' or product.handle contains 'gift-card' %}
+        {% unless product.metafields.hpz.delivery_in_weeks != blank
+          or product.metafields.hpz.delivery_specific_timeline_ != blank
+          or product.metafields.hpz.delivery_in_text != blank
+        %}
+          <div>
+            <div class="delivery-main-block">
+              <div class="delivery-main-block-pinsplit">
+                <div class="bbb-delivery-heading">DELIVERY</div>
+                <div class="input-wrapper cod-pin">
+                  <input type="text" id="pincodeInput" value="" placeholder="400001" maxlength="6">
+                  <button id="pinSubmit" class="pincode-button">CHANGE</button>
+                </div>
+              </div>
+              <div class="delivery-main-block-iconsplit">
+                <div>{% render 'icon' with 'bbb-shipping' %}</div>
+                <div class="ships-in-text">
+                  {% assign day = "now" | date: "%A" %}
+                  {% assign timeline = product.metafields.hpz.timeline %}
+                  {% assign pp_timeline = shop.metaobjects.product_page_timeline['product-page-timeline'] %}
+                  {% if timeline != blank %}
+                    Dispatches in
+                    <span class="cursorpointer" aria-controls="shipping" aria-expanded="false">
+                      <b>
+                        {% if timeline == 24 and product.price <= 5000000 %}  
+                          {% case day %}
+                            {% when "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" %}
+                              {{ pp_timeline.monday_friday_timeline_24_and_price_50k }}
+                            {% when "Saturday", "Sunday" %}
+                              {{ pp_timeline.saturday_sunday_timeline_24 }}
+                          {% endcase %}
+                        {% elsif timeline == 24 and product.price >= 5000000 %}
+                          {% case day %}
+                            {% when "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" %}
+                              {{ pp_timeline.monday_friday_timeline_24_and_price_a50k }}
+                            {% when "Saturday", "Sunday" %}
+                              {{ pp_timeline.saturday_sunday_timeline_24 }}
+                          {% endcase %}
+                        {% elsif timeline == 48 and product.price <= 5000000 %}
+                          {% case day %}
+                            {% when "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" %}
+                              {{ pp_timeline.monday_friday_timeline_48_and_price_50k }}
+                            {% when "Saturday", "Sunday" %}
+                              {{ pp.saturday_sunday_timeline_48 }}
+                            {% endcase %}
+                        {% elsif timeline == 48 and product.price >= 5000000 %}
+                          {% case day %}
+                            {% when "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" %}
+                              {{ pp_timeline.monday_friday_timeline_48_and_price_a50k }}
+                            {% when "Saturday", "Sunday" %}
+                              {{ pp_timeline.saturday_sunday_timeline_48 }}
+                            {% endcase %}
+                        {% elsif timeline == 72 %} {{ pp_timeline.timeline_72  }}
+                        {% elsif timeline == 100 %}{{ pp_timeline.timeline_100 }}
+                        {% elsif timeline == 120 %}{{ pp_timeline.timeline_120 }}
+                        {% elsif timeline == 240 %}{{ pp_timeline.timeline_240 }}
+                        {% elsif timeline == 336 %}{{ pp_timeline.timeline_336 }}
+                        {% endif -%}
+                      </b>
+                    </span>
+                    {% render 'icon' with 'info', color: '#777' %}
+                    {% render 'bbb-drawer' with 'shipping' %}
+                  {%- endif -%}
+                </div>
+                <div>
+                  {% render 'icon' with 'bbb-delivery' %}
+                  {% render 'pincode_checker' %}
+                </div>
+                <div id="pincode-result">
+                  <div>
+                    <p class="day-text" style="font-weight: 500; font-size: 14px;line-height: 16px; color: #777;">Delivery By:</p>
+                    <p class="cod-text"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {%- endunless -%}
+
+        {% if product.metafields.hpz.delivery_in_weeks != blank
+          or product.metafields.hpz.delivery_specific_timeline_ != blank
+          or product.metafields.hpz.delivery_in_text != blank
+        %}
+          {% assign late_delivery_time = product.metafields.hpz.delivery_in_weeks.value %}
+          {% assign late_delivery_specific_time = product.metafields.hpz.delivery_in_text.value %}
+          <div>
+            <div class="delivery-main-block">
+              <div class="delivery-main-block-pinsplit">
+                <div class="bbb-delivery-heading">DELIVERY</div>
+              </div>
+              <div class="delivery-main-block-iconsplit">
+                <div aria-controls="pre-order-timeline" class="cursorpointer">
+                  {% render 'icon' with 'bbb-delivery' %}
+                </div>
+                <div aria-controls="pre-order-timeline" class="ships-in-text cursorpointer" aria-expanded="false">
+                  {% unless late_delivery_specific_time != blank %} Pre-Order for Delivery in {% endunless -%}
+                  {% if late_delivery_specific_time != blank %} {% unless product.handle contains 'meze-alba' %}Shipping Starts by {% endunless -%} {% if product.handle contains 'meze-alba' %}Deliveries Expected by {% endif -%}{% endif -%}
+                  <br>
+                  <b>
+                    {% if late_delivery_time != blank -%}
+                      {{- late_delivery_time | replace: '-', ' to ' }} week
+                      {%- unless late_delivery_time contains '1' %}s{% endunless -%}
+                    {%- endif %}
+                    {% if late_delivery_specific_time != blank %} {{ late_delivery_specific_time }} {% endif %}
+                  </b>
+                  {% unless late_delivery_specific_time != blank %} {% render 'icon' with 'info', color: '#777' %} {% endunless %}
+                </div>
+
+                {% render 'bbb-drawer' with 'pre-order-timeline' %}
+                <div>{% render 'icon' with 'bbb-delivery' %}</div>
+                <div class="ships-in-text">Free Shipping</div>
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+
+        {% unless product.title contains 'Headphone Stand' or product.handle contains 'gift-card' %}
+          <div>
+            <div class="returnswarranty-main-block">
+              <div>
+                <div class="bbb-returnswarranty-heading">
+                  <a href="https://www.headphonezone.in/pages/returns" target="_blank">RETURNS & WARRANTY</a>
+                </div>
+              </div>
+              <div class="returnswarranty-main-block-iconsplit ">
+                {% unless product.type contains 'Earpads' or product.type contains 'Earphone Tips' or product.title contains 'Earhooks' or product.title contains 'Headphone Stand' or product.handle contains 'venture-electronics-supernova' %}
+                  <div class="cursorpointer" aria-controls="7drg" aria-expanded="false">
+                    {% render 'icon' with 'bbb-7drg' %}
+                  </div>
+                  <div class="returnswarranty-main-block-texts cursorpointer" aria-controls="7drg" aria-expanded="false">
+                    7 Day Replacement Guarantee {% render 'icon' with 'info', color: '#777' %}
+                  </div>
+                  {% render 'bbb-drawer' with '7drg' %}
+                {% endunless %}
+                {% if product.type contains 'Earpads' or product.type contains 'Earphone Tips' or product.title contains 'Earhooks' or product.title contains 'Headphone Stand' or product.handle contains 'venture-electronics-supernova' %}
+                  <div>{% render 'icon' with 'bbb-7drg' %}</div>
+                  <div class="returnswarranty-main-block-texts">Non-Returnable Unless Defective</div>
+                  <div>{% render 'icon' with 'bbb-warranty' %}</div>
+                  <div class="returnswarranty-main-block-texts">No Warranty Available</div>
+                {% endif %}
+                {% unless product.tags contains 'noreturn' %}
+                  <div aria-controls="7dee" aria-expanded="false" class="cursorpointer">
+                    {% render 'icon' with 'bbb-7dee' %}
+                  </div>
+                  <div class="returnswarranty-main-block-texts cursorpointer" aria-controls="7dee" aria-expanded="false">
+                    7 Day Easy Exchange {% render 'icon' with 'info', color: '#777' %}
+                  </div>
+                  {% render 'bbb-drawer' with '7dee' %}
+                {%- endunless -%}
+                {% if product.metafields.hpz.warranty_period.value != blank %}
+                  <div aria-controls="warranty" aria-expanded="false" class="cursorpointer">
+                    {% render 'icon' with 'bbb-warranty' %}
+                  </div>
+                  <div class="returnswarranty-main-block-texts" aria-controls="warranty" aria-expanded="false" class="cursorpointer">
+                    {{ product.metafields.hpz.warranty_period }} Warranty {% render 'icon' with 'info', color: '#777' %}
+                  </div>
+                  {% render 'bbb-drawer' with 'warranty' %}
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        {%- endunless -%}
+      {% endunless %}
+    </div>
+  {% endif %}
+{% endunless %}
+
+{%- comment -%}New code ends here{%- endcomment -%}
+
+{% assign unboxed = product.metafields.hpz.unboxed.value %}
+{% assign unboxed_price_difference = product.price | minus: unboxed.price %}
+{% assign demo_unit = product.metafields.hpz.demo_unit.value %}
+{% assign demo_unit_price_difference = product.price | minus: demo_unit.price %}
+{% assign refurbished = product.metafields.hpz.refurbished.value %}
+{% if unboxed.available or demo_unit.available or refurbished.available %}
+  <div>
+    <span class="accordion-headings">Save with Deals</span>
+  </div>
+  <div>
+    <div class="bbb-unpre-grid">
+      {% if product.metafields.hpz.unboxed != blank and unboxed.available and unboxed_price_difference > 0 %}
+        <div>
+          <a href="/products/{{ unboxed.handle }}" target="_blank" title="{{ unboxed.title }}" rel="noopener noreferrer">
+            {% render 'icon' with 'bbb-unboxed' %}
+          </a>
+        </div>
+        <div>
+          <span class="accordion-save-deals-span">Save up to {{ unboxed_price_difference | money }}</span>
+          <p class="accordion-save-deals-p">
+            <a href="/products/{{ unboxed.handle }}" target="_blank" title="{{ unboxed.title }}" rel="noopener noreferrer">
+              Buy Unboxed
+            </a>
+          </p>
+        </div>
+      {% elsif product.metafields.hpz.demo_unit != blank and demo_unit.available and demo_unit_price_difference > 0 %}
+        <div>
+          <a href="/products/{{ demo_unit.handle }}" target="_blank" title="{{ demo_unit.title }}" rel="noopener noreferrer">
+            {% render 'icon' with 'bbb-unboxed' %}
+          </a>
+        </div>
+        <div>
+          <span class="accordion-save-deals-span"> Save {{ demo_unit_price_difference | money }} </span>
+          <p class="accordion-save-deals-p">
+            <a href="/products/{{ demo_unit.handle }}" target="_blank" title="{{ demo_unit.title }}" rel="noopener noreferrer">
+              Buy Demo Unit
+            </a>
+          </p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+
+{% unless product.tags contains 'Experiences' %}
+  {% unless product.handle contains 'headphone-zones-gift-card' %}
+      {% unless product.tags contains 'no-loyalty-points' %}
+        <div id="club-audiophile"></div>
+
+        <div>
+          <div class="bbb-club-grid">
+            <div>
+              <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/headphone-zone-club-audiophile_41ada3b7-6ea7-4479-a878-98e5bdb3aaad.svg?v=1642505547" loading="lazy">
+            </div>
+            <div>
+              <div>
+                <span>
+                  <button aria-controls="clubaudiophile" aria-expanded="false" class="clubaudiophile-button tw-group  tw-text-fg-primary hover:tw-text-fg-highlight-primary tw-no-underline tw-pb-2xs hover:tw-border-transparent ">
+                    Club Audiophile Members Earn
+                  </button>
+                </span>
+                <p>
+                  <button aria-controls="clubaudiophile" aria-expanded="false" class="clubaudiophile-button tw-group  tw-text-fg-primary hover:tw-text-fg-highlight-primary tw-no-underline tw-pb-2xs hover:tw-border-transparent ">
+                    Loyalty Points
+                    {% render 'icon' with 'info' %}
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <style>
+
+        </style>
+        {% render 'bbb-drawer' with 'clubaudiophile' %}
+      {%- endunless -%}
+    {%- endunless -%}
+{%- endunless -%}

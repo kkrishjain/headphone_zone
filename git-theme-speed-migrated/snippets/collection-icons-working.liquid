@@ -1,0 +1,27 @@
+{% liquid
+  assign pid = product.id 
+  assign collection_icon = product.metafields.hpz.collection_icon_json.value 
+%}
+
+<div class="icon-wrapper">
+  <ul class="hide-mobile">
+    {% for count in (1..6) %}
+      {% liquid
+        assign icon = 'icon-' | append: count  
+        assign tooltip = 'icon-' | append: count | append: '-tooltip' 
+      %}
+      {% if collection_icon[icon] != blank %}
+        <li data-tooltip="{{ collection_icon[tooltip] }}">
+          <button aria-controls="{{ collection_icon[icon] }}-{{ pid }}" aria-expanded="false">
+            {% render 'collection-icons' with collection_icon[icon] %}
+          </button>
+          <x-drawer id="{{ collection_icon[icon] }}-{{ pid }}" class="drawer">
+            <div>
+        {% render 'collection-icons-content', icon_handle: collection_icon[icon] %}
+            </div>
+          </x-drawer>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

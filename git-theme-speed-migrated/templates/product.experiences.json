@@ -1,0 +1,555 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "01d8fcfc-bd2c-4baa-ae0d-d245f10de494": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n.product-info__liquid {\nmargin-block-start: 0.5rem;\n    margin-block-end: 0.5rem;\n}\n\n\n\n\n</style>"
+          }
+        },
+        "100bf138-add1-405e-b1ac-3826a30f283c": {
+          "type": "separator",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "92c3f846-9d52-472d-8896-4f47805c3928": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{{ product.metafields.hpz.experience_details }}\n<style>\n\n.experience-details-grid {\n  display: grid;\n  grid-template-columns: 10% 60%;\n  background-color: #f7f7f7;\n  grid-gap: 0.4rem;\n  padding-left: 20px;\n  padding-bottom: 10px;\n  padding-top: 10px;\nbackground-color:#f1f1f1;\n\n}    \n\n.experience-details-grid div {\n align-self: center;\n}\n    \n @media screen and (max-width: 740px) {\n  .experience-details-grid {\n    display: grid;\n    grid-template-columns: 20% 80%;\n  }\n}\n\n\n.experience-details-grid span {\n  \n    font-size: 1rem;\n    font-weight: 700;\n    letter-spacing: 1.1;\n    font-family: 'Roboto',sans-serif;\n    font-weight: var(--heading-font-weight);\n    font-style: var(--heading-font-style);\n    letter-spacing: var(--heading-letter-spacing);\n    text-transform: capitalize;\n    overflow-wrap: anywhere;\n    line-height: 1.1;\n\n  \n}\n       \n.experience-details-grid p {  \n  font-size: 1rem;\n  font-weight: 500;\n  \n}\n    \n.experience-details-grid img {  \n    width: 30px;   \n}    \n</style>"
+          }
+        },
+         "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "Adapter,AMPLIFIER CONNECTION,Cable,Cable Length,Cable Termination,Cable Type,CHOOSE YOUR CABLE,Color,Configuration,Connection,Connectivity,Connector,Connector (connected to Headphone or Amp),Connectors,Device,FiiO - BTR15 (Color),FiiO - K11 (Color),FiiO - KA13 (Color),FiiO - KA17 (Color),FiiO X Jade Audio - KA11 (Color),Headphone Zone X Tangzu - Wan'er S.G (Plug Type),Impedance,KZ - EDX Pro (Color),KZ - ZEX (Color),KZ - ZSN PRO 2 (Color),KZ - ZSN Pro X (Color),Length,Length and Termination,Material,Option,Options,Output,Plug,Plug Type,Quantity,Shanling - UA2 Plus (Color),Shanling - UA4 (Color),Size,Storage,Tangzu - Waner S.G Studio Edition (Color),Termination,Tip Style,Title,Type,Type ,Variant,Variants,Variants ,Variation,Version,VIVO Cable,Wood Finish",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "b253fc0f-99f2-4bff-a2e6-585277f6538e": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% render 'below-buy-button.liquid'  %}"
+          }
+        },
+        "26c544be-f0bd-45b6-b9e2-bae47c526358": {
+          "type": "associated_products",
+          "disabled": true,
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": false,
+            "products_count": 10,
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "badges",
+        "01d8fcfc-bd2c-4baa-ae0d-d245f10de494",
+        "100bf138-add1-405e-b1ac-3826a30f283c",
+        "price",
+        "rating",
+        "payment_terms",
+        "separator",
+        "description",
+        "92c3f846-9d52-472d-8896-4f47805c3928",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "b253fc0f-99f2-4bff-a2e6-585277f6538e",
+        "26c544be-f0bd-45b6-b9e2-bae47c526358"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": false,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "f80cf58c-f6e9-42bd-8cfd-8e8ddbd93a01": {
+      "type": "media-with-text",
+      "blocks": {
+        "6b368e84-4848-4eb4-b28a-7907d50cbb58": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Listening session .mp4",
+            "external_video_url": "",
+            "autoplay": true,
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "About Headphone Zone Listening Sessions",
+            "content": "<p>Music isn't ever meant to be experienced alone. <strong>It is so much more powerful when shared. </strong>We’ve had the chance to listen to our music on some of the best sounding headphones in the world and we wanted to <strong>share what that feels like with you. </strong>Think of your favourite artist, and a song you’ve heard hundreds of times before. We promise to deliver those <strong>riffs, percussions, bass lines and solos </strong>that were always there, but were never heard.<br/><br/>Headphone Zone's Guided Listening Sessions are carefully <strong>curated by  music geeks and hosted by audiophiles</strong>, that bring together India's most passionate and discerning music listeners with one simple aim - to <strong>Rediscover music</strong>.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "6b368e84-4848-4eb4-b28a-7907d50cbb58"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 741px) {.media-with-text__media > * {height: 300px; }}"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "9086143b-1eb7-4d9f-ba18-1b99572972a0": {
+      "type": "tabs",
+      "blocks": {
+        "template--15958179283132__9086143b-1eb7-4d9f-ba18-1b99572972a0-16771359819424400e-0": {
+          "type": "tab",
+          "settings": {
+            "title": "{{ product.metafields.hpz.product_tab_1_title.value }}",
+            "content": "{{ product.metafields.hpz.product_tab_1_content.value }}\n\n<br> <br>\n<div class=\"grid\">\n<div>\n<a id=\"location\" style=\"text-decoration:none;\">\n<h3 style=\"font-size: 24px!important;\" class=\"product-page-header\">Here's where the listening session happen at</h3></a>\n<p class=\"product-page-body\">We're right in the most glamourous part of Mumbai full of studios and acting agencies. Yup, you guessed right, we're in Andheri West - the Bollywood of Mumbai.<br><br><a href=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.3510663775196!2d72.82664721473868!3d19.136104087053486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6acd5b4b0985%3A0x544235ebb4017fbd!2sHeadphone%20Zone!5e0!3m2!1sen!2sin!4v1615211070636!5m2!1sen!2sin\" >Find us on the Map</p></a>\n</div>\n<div >\n<div class=\"map-responsive\"> <iframe loading=\"lazy\" style=\"border: 0;\" height=\"450\" width=\"600\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.3510663775196!2d72.82664721473868!3d19.136104087053486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6acd5b4b0985%3A0x544235ebb4017fbd!2sHeadphone%20Zone!5e0!3m2!1sen!2sin!4v1615211070636!5m2!1sen!2sin\" allowfullscreen=\"\"></iframe></div></div>\n</div>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15958179283132__9086143b-1eb7-4d9f-ba18-1b99572972a0-16771359819424400e-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "large",
+        "subheading": "",
+        "title": "",
+        "first_tab_open": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "f5a26dfd-90ae-4318-b30e-93cf95f82735": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--16030935187644__f5a26dfd-90ae-4318-b30e-93cf95f82735-16874348087d0b2e7d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/book-an-audio-tour-gif.gif",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Experience the World's Finest Headphones",
+            "content": "<p>Experience the entire listening session on the world's finest collection of Headphones, Amplifiers and DAC's featuring gear from brands such as<strong> Audeze, Astell&Kern, Burson Audio, Cayin, Chord Electronics, Dan Clark Audio, EarMen, Focal, Final Audio, Gustard, Hifiman, Meze Audio, Sennheiser, STAX, Woo Audio.</strong></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030935187644__f5a26dfd-90ae-4318-b30e-93cf95f82735-16874348087d0b2e7d-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "6cb19e14-60fb-45f9-bf4e-4d287908bf65": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--16030935187644__6cb19e14-60fb-45f9-bf4e-4d287908bf65-168743199266730d94-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Raghav_s-Favourite-Headphone-BANNER-2.jpg",
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Meet your host: Raghav Somani",
+            "content": "<p>Raghav founded Headphone Zone in 2011, straight out of university, looking to create a change in the way Headphones were sold in India. Raghav is a passionate musician, and a Political Philosophy buff, self-proclaimed idli-sambar connoisseur, and a Guinness world record holder for his collection of Airline Baggage Tags. In equal parts an A.R. Rahman buff, and a Classic Rock geek, his playlists borrow from his childhood memories growing up in Chennai</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16030935187644__6cb19e14-60fb-45f9-bf4e-4d287908bf65-168743199266730d94-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "2bc574d1-0c26-4eab-976f-fe107a4b293a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16030935187644__2bc574d1-0c26-4eab-976f-fe107a4b293a-1687437198e3879f89-1": {
+          "type": "heading",
+          "settings": {
+            "text": "100% of Proceeds go to Charity.",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--16030935187644__2bc574d1-0c26-4eab-976f-fe107a4b293a-1687437198e3879f89-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We're going to be listening to music like you've never heard before. But spare a thought for those who can't hear at all. All proceeds from this event go to support the Silent Olympiad, a beautiful sport and cultural event for children with hearing and speech impairment.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16030935187644__2bc574d1-0c26-4eab-976f-fe107a4b293a-1687437198e3879f89-1",
+        "template--16030935187644__2bc574d1-0c26-4eab-976f-fe107a4b293a-1687437198e3879f89-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "0f374954-76ca-425e-9668-56f29d8af393": {
+      "type": "media-grid",
+      "blocks": {
+        "template--16030935187644__0f374954-76ca-425e-9668-56f29d8af393-1687437080ef2c86f5-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2023-06-22_at_5.56.20_PM_1.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16030935187644__0f374954-76ca-425e-9668-56f29d8af393-1687437080ef2c86f5-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2023-06-22_at_5.56.21_PM_2.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16030935187644__0f374954-76ca-425e-9668-56f29d8af393-1687437080ef2c86f5-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2023-06-22_at_5.56.23_PM_1.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16030935187644__0f374954-76ca-425e-9668-56f29d8af393-1687437080ef2c86f5-0",
+        "template--16030935187644__0f374954-76ca-425e-9668-56f29d8af393-1687437080ef2c86f5-1",
+        "template--16030935187644__0f374954-76ca-425e-9668-56f29d8af393-1687437080ef2c86f5-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "bcd6722e-ed2d-41ad-85e9-23c0ef95098f": {
+      "type": "faq",
+      "blocks": {
+        "template--15988441645244__bcd6722e-ed2d-41ad-85e9-23c0ef95098f-167782670427de49ab-0": {
+          "type": "item",
+          "settings": {
+            "title": "Do I need to get my set-up along?",
+            "content": "<p>Not really, but you're welcome to get any audio gear you have along. We'll be already providing our audio gear for you to experience.</p>"
+          }
+        },
+        "template--15988441645244__bcd6722e-ed2d-41ad-85e9-23c0ef95098f-167782670427de49ab-1": {
+          "type": "item",
+          "settings": {
+            "title": "What sort of gear will I get to listen to?",
+            "content": "<p>We have gear from the finest brand in the world like Audeze, Chord, Campfire Audio, HiFiMAN, STAX and more!</p>"
+          }
+        },
+        "template--15988441645244__bcd6722e-ed2d-41ad-85e9-23c0ef95098f-167782670427de49ab-2": {
+          "type": "item",
+          "settings": {
+            "title": "I'm an absolute newbie. Will I be able to understand what's going on?",
+            "content": "<p>This event has been created keeping people like you in mind. If you don't understand anything, just ask! Who doesn't love an interactive session?</p>"
+          }
+        },
+        "61aef5f8-2858-4ec3-bda8-e78e396ac921": {
+          "type": "item",
+          "settings": {
+            "title": "How different is this from Headphone Connect?",
+            "content": "<p>Headphone Connect is an audiophile meet-up event. While we do have listening sessions there, you won't get the guided explanations you'd receive in this masterclass.</p>"
+          }
+        },
+        "d18031a9-47b1-401d-bdba-f2024afcdf04": {
+          "type": "item",
+          "settings": {
+            "title": "Is there a dress code for the event?",
+            "content": "<p>Yes, don't forget your mask! Also, you can pick up an Audiophile T-shirt <a href=\"https://www.headphonezone.in/collections/the-indian-audiophile-forum-merchandise\" target=\"_blank\" title=\"Headphone Zone Merchandise\">here</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15988441645244__bcd6722e-ed2d-41ad-85e9-23c0ef95098f-167782670427de49ab-0",
+        "template--15988441645244__bcd6722e-ed2d-41ad-85e9-23c0ef95098f-167782670427de49ab-1",
+        "template--15988441645244__bcd6722e-ed2d-41ad-85e9-23c0ef95098f-167782670427de49ab-2",
+        "61aef5f8-2858-4ec3-bda8-e78e396ac921",
+        "d18031a9-47b1-401d-bdba-f2024afcdf04"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "af36edca-74b0-4866-a3da-7c9573a22899": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "headphone-zone-experiences",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 36,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Upcoming Listening Sessions",
+        "content": "",
+        "link_url": "shopify://collections/headphone-zone-experiences",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "167525932377cb380e": {
+      "type": "apps",
+      "blocks": {
+        "08b03131-bf1b-4945-a40d-a881a32d292b": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "08b03131-bf1b-4945-a40d-a881a32d292b"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "recommendations_count": 6,
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f80cf58c-f6e9-42bd-8cfd-8e8ddbd93a01",
+    "9086143b-1eb7-4d9f-ba18-1b99572972a0",
+    "f5a26dfd-90ae-4318-b30e-93cf95f82735",
+    "6cb19e14-60fb-45f9-bf4e-4d287908bf65",
+    "2bc574d1-0c26-4eab-976f-fe107a4b293a",
+    "0f374954-76ca-425e-9668-56f29d8af393",
+    "bcd6722e-ed2d-41ad-85e9-23c0ef95098f",
+    "af36edca-74b0-4866-a3da-7c9573a22899",
+    "167525932377cb380e",
+    "product-recommendations"
+  ]
+}
