@@ -47,11 +47,7 @@ Supported variables
   {%- assign card_class = card_class | append: 'product-card--show-secondary-media' -%}
 {%- endif -%}
 
-
-
-<product-card handle="{{ product.handle | escape }}" {% if reveal and settings.stagger_products_apparition %}reveal-js{% endif %} {% render 'surface', class: card_class, background: card_background, text_color: card_text_color %} 
-  >
-  
+<product-card handle="{{ product.handle | escape }}" {% if reveal and settings.stagger_products_apparition %}reveal-js{% endif %} {% render 'surface', class: card_class, background: card_background, text_color: card_text_color %}>
   {%- comment -%}
   --------------------------------------------------------------------------------------------------------------------
   PRODUCT BADGES
@@ -59,7 +55,7 @@ Supported variables
   {%- endcomment -%}
 
   {%- if show_badges and product.media.size > 0 -%}
-    {%- render 'product-badges', product: product,  collection: collection, context: 'card', class: 'product-card__badge-list' -%}
+    {%- render 'product-badges', product: product, context: 'card', class: 'product-card__badge-list' -%}
   {%- endif -%}
 
   {%- comment -%}
@@ -88,11 +84,11 @@ Supported variables
         -%}
 
         {%- capture main_image_classes -%}product-card__image product-card__image--primary {% if settings.product_image_aspect_ratio contains 'crop' %}object-fill-safe{% endif %} aspect-{{ settings.product_image_aspect_ratio | split: '_' | first }}{%- endcapture -%}
-        {{- product.featured_media | image_url: width: 500 | image_tag: loading: main_media_loading_strategy, sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
+        {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: main_media_loading_strategy, sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
 
         {%- if show_secondary_image and product.media.size > 1 -%}
           {%- assign next_media = product.media[product.featured_media.position] | default: product.media[1] -%}
-          {{- next_media | image_url: width: 500 | image_tag: class: 'product-card__image product-card__image--secondary object-fill', loading: 'lazy', fetchpriority: 'low', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800' -}}
+          {{- next_media | image_url: width: next_media.width | image_tag: class: 'product-card__image product-card__image--secondary object-fill', loading: 'lazy', fetchpriority: 'low', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800' -}}
         {%- endif -%}
       </a>
 
@@ -141,8 +137,8 @@ Supported variables
   PRODUCT INFO
   --------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
-   
-  <div class="product-card__info {% if text_alignment == 'center' %}product-card__info--center{% endif %} {%- if product.handle contains 'headphone-connect' -%}headphone-connect-padding{% endif %}">
+
+  <div class="product-card__info {% if text_alignment == 'center' %}product-card__info--center{% endif %}">
     {%- if show_vendor and product.vendor != blank -%}
       {%- if show_rating and text_alignment != 'center' -%}
         <div class="rating-with-text w-full">
@@ -159,7 +155,7 @@ Supported variables
     <div class="v-stack gap-0.5 w-full {% if text_alignment == 'center' %}justify-items-center{% endif %}">
       {%- if show_rating and show_vendor == false or product.vendor == blank -%}
         <div class="rating-with-text">
-         <span class="product-card__title"><a href="{{ product.url }}" class="bold" data-instant>{{ product.title }}</a></span>
+          <span class="product-card__title"><a href="{{ product.url }}" class="bold" data-instant>{{ product.title }}</a></span>
 
           {%- if text_alignment != 'center' -%}
             {%- capture rating_class -%}{% if mobile_reduced %}hidden sm:flex{% endif %}{%- endcapture -%}
@@ -167,212 +163,16 @@ Supported variables
           {%- endif -%}
         </div>
       {%- else -%}
-      {% unless product.handle contains 'headphone-connect' %}  
-        {% if request.page_type == 'product' %}
-  {%- if product.metafields.hpz.bundle_subtitle != blank -%}
- <div><h6 class="bundles-subtitle">{{ product.metafields.hpz.bundle_subtitle  }}</h6></div>
-   {%- endif -%}
-   {%- endif -%}
-      <span class="product-card__title">
-          <a href="{{ product.url }}" class="bold" data-instant>{{ product.title }}</a>
-        </span>
-        {% endunless %}
-        <span class="{% if product.tags contains 'bundles' %}bundle-subtitle {% 
-elsif product.tags contains 'focal-trade-in' %}focal-trade-in-subtitle {% 
-elsif product.handle contains 'headphone-connect' %}headphone-connect-subtitle {% 
-endif %}subtitle center">
-
-          
-          {%- if product.tags contains 'freebie-adapter-ibasso' -%}
-            Free Venture Electronics - 4.4mm Female - 2.5TRRS Male with this purchase
-          {%- comment -%}
-          {% elsif product.tags contains 'free-engraving' %}
-            Free Custom Laser Engraving with this purchase
-         {%- endcomment -%}
-
-          
-          {%- elsif product.tags contains 'freebie-adapter' -%}
-            Free Venture Electronics Adpater with this purchase 
-          {%- elsif product.tags contains 'Free-cable-meze-mono' -%}
-            Free Meze Mono 3.5mm-4.4mm Silver-Plated PCUHD Cable with this purchase
-          {%- elsif product.tags contains 'Free-silver-cable-meze' -%}
-            Free Meze MMCX to 4.4mm Balanced Silver Plated Upgrade Cable with this purchase
-          {%- elsif product.tags contains 'freebie-fiio-ka13' -%}
-            Free FiiO KA13 with this purchase
-          {%- elsif product.tags contains 'Free-Carrying-Case-Charcoal-V2' -%}
-            Free Dekoni Audio Universal Headphone Carrying Case Charcoal V2 with this purchase
-          {%- elsif product.tags contains 'free-slim-stand' -%}
-            Free Headphone Zone SLIM Headphone Stand with this purchase
-          {%- elsif product.tags contains 'Free-HiFiMAN-Travel-Case' -%}
-            Free HiFiMAN Headphone Travel Case with this purchase 
-          {%- elsif product.tags contains 'free-zombur-mmcx-cable' -%}
-            Free Tripowin Zombur Upgrade Cable with this purchase 
-          {%- elsif product.tags contains 'free-qutest-stand' -%}
-            Free Chord Qutest System Stand with this purchase 
-          
-          {%- elsif product.tags contains 'free-helix-stand' -%}
-            Free Headphone Zone Helix Headphone Stand with this purchase
-          {%- elsif product.tags contains 'Free-hpz-tan-case' -%}
-            Free Headphone Zone X ddHiFi Tan IEM / Earphone Case with this purchase
-          {%- elsif product.tags contains 'Free-Dreadnought-Stand-HiFiMAN-Case' -%}
-            Free Headphone Zone Stand + HiFiMAN Travel Case with this purchase
-          {%- elsif product.tags contains 'free-LT-LT1' -%}
-            Free FiiO LT-LT1 with this purchase 
-          {%- elsif product.tags contains 'free-granvia-cable' -%}
-            Free Tripowin GranVia HD600 Series with this purchase
-          {%- elsif product.tags contains 'freebie-adapter-4.4-2.5' -%}
-            Free Venture Electronics Adapter Cable with this purchase
-          {%- elsif product.tags contains 'freebie-granvia-4-4mm' -%}
-            Free Tripowin GranVia 4.4mm Balanced Cable with this purchase
-          {%- elsif product.tags contains 'focal-trade-in' -%}
-            Trade in ANY headphones for a flat ₹15,000 discount
-          {% else %}
-            {{- product.metafields.descriptors.subtitle -}}
-            
-          {%- endif -%}
-        </span>
-     {%- if product.tags contains 'free-performance-stand' -%}
-  <span class="{% if product.tags contains 'freebie-included' %}freebie-subtitle-color {% endif %}subtitle center">Free Burson Audio Cool Stand with this purchase</span>
-{%- endif -%}
-
-      {%- if product.handle contains 'sennheiser-ie-900' -%}
- <span style="color:#ff4343; font-size:13px!important;" class="subtitle center">Get Rs. 2,000 off with code IE900_2000</span>
- {%- endif -%}
-
-       {%- if product.handle contains 'sennheiser-ie-600' -%}
- <span style="color:#ff4343; font-size:13px!important;" class="subtitle center">Get Rs. 1,000 off with code IE600_1000</span>
- {%- endif -%}
-
-      {%- if product.handle contains 'sennheiser-hd-600' -%}
- <span style="color:#ff4343; font-size:13px!important;" class="subtitle center">Get Rs. 2,000 off with code HD600_2000</span>
- {%- endif -%}
-
-      {%- if product.handle contains 'sennheiser-hd-660s2' -%}
- <span style="color:#ff4343; font-size:13px!important;" class="subtitle center">Get Rs. 2,000 off with code HD660S2_2000</span>
- {%- endif -%}
-
-      {%- if product.handle contains 'sennheiser-hd-800-s' -%}
- <span style="color:#ff4343; font-size:13px!important;" class="subtitle center">Get Rs. 2,500 off with code HD800s_2500</span>
- {%- endif -%}
-
-      {%- if product.handle contains 'sennheiser-hd-820' -%}
- <span style="color:#ff4343; font-size:13px!important;" class="subtitle center">Get Rs. 2,500 off with code HD820_2500</span>
- {%- endif -%}
-
-       {%- if product.handle contains 'sennheiser-hd-650' -%}
- <span style="color:#ff4343; font-size:13px!important;" class="subtitle center">Get Rs. 2,000 off with code HD650_2000</span>
- {%- endif -%}
- 
-
-        
-        {%- if product.tags contains 'free-Headphone-Zone-x-KZ-FreeFall-Case' -%}
-   <span class="{% if product.tags contains 'freebie-included' %}freebie-subtitle-color {% endif %}subtitle center">Free Headphone Zone x KZ FreeFall Case with this purchase</span>
-{%- endif -%}
-        
-      {%- endif -%}
-      {% unless product.tags contains 'no-price' %}
-        {%- render 'price-list', product: product, text_alignment: text_alignment -%}
-        {% if product.metafields.hpz.previous_selling_price != blank %}
-          <price-list style="display:block!important;" {% if form_id %} role="region" aria-live="polite" {% endif %} class="price-list {% if size == 'lg' %}price-list--lg{% endif %} {% if text_alignment == 'center' %}justify-center{% endif %}" {{ block.shopify_attributes }}>
-            {% if product.tags contains 'price-drop' %}
-              <div style="display:block!important;">
-                <span>Dropped Price: </span>
-                <span class="price price--highlight price--large price-text">
-                  {{- product.selected_or_first_available_variant.price | money -}}
-                </span>
-              </div>
-            {% endif %}
-            {% if product.tags contains 'FOSS' %}
-              <div style="display:block!important;font-weight:bold;">
-                <span>Sale Price: </span>
-                <span style="font-size:14px!important; color:#ff4343">
-                  {{- product.selected_or_first_available_variant.price | money -}}
-                </span>
-              </div>
-            {% endif %}
-            {% if product.tags contains 'Senn' %}
-              {% unless product.handle contains 'cayin-ru7'
-                or product.handle contains 'fiio-btr7'
-                or product.handle contains 'fiio-k7'
-                or product.handle contains 'fiio-ka1'
-                or product.handle contains 'fiio-m11-plus-ess'
-                or product.handle contains 'final-e1000'
-                or product.handle contains 'final-e3000'
-                or product.handle contains 'hifiman-arya-organic'
-                or product.handle contains 'astell-kern-ak-xb10'
-              %}
-                <div style="display:block!important;font-weight:bold;">
-                  <span>Sale Price: </span>
-                  <span style="font-size:14px!important;">
-                    {{- product.selected_or_first_available_variant.price | money -}}
-                  </span>
-                </div>
-              {% endunless %}
-            {% endif %}
-            {% assign proper_price = product.selected_or_first_available_variant.price | divided_by: 100.0 %}
-            {% assign proper_mrp = product.compare_at_price_max | divided_by: 100.0 %}
-            {% unless product.metafields.hpz.previous_selling_price == proper_price
-              or product.metafields.hpz.previous_selling_price == proper_mrp
-            %}
-              {% assign previous_selling_price = product.metafields.hpz.previous_selling_price | times: 100.0 %}
-              <span class="price price--compare" style="font-size: 14px; opacity: 0.6;">
-                <span>
-                  Usual Price:
-                  <span style="font-weight:600;">{{ previous_selling_price | money }}</span>
-                </span>
-              </span>
-            {% endunless %}
-            <span data-product-price-compare-list-selling>
-              <span class="price price--compare price-compare-text">
-                <span style="font-weight:500; text-decoration:line-through; font-size: 14px; opacity: 0.6;">
-                  {{- product.selected_or_first_available_variant.compare_at_price | money -}}
-                </span>
-              </span>
-            </span>
-          </price-list>
-        {% endif %}
-      {% endunless %}
-
-      {%- if product.metafields.hpz.collection_icon_json != blank -%}
-        {%- render 'collection-icons-working', product: product -%}
+        <span class="product-card__title"><a href="{{ product.url }}" class="bold" data-instant>{{ product.title }}</a></span>
       {%- endif -%}
 
-      <div class="card-grid-rating-compare">
-      <div style="{{ jm_style }}" class="jdgm-widget jdgm-preview-badge collection-review" data-id="{{ product.id }}" data-template="manual-installation" data-auto-install="false">
-        {{ product.metafields.judgeme.badge }}
-      </div>
-  <div class="compare-right">
-    {%- if product.tags contains 'show-comparison' %}
-      {% render 'add-to-compare' with 'loop' as add-to-compare, product: product %}
-    {%- endif -%}
-  </div>
-</div>
-      
-      {%- if page.handle contains 'clearance' or collection.handle contains 'clearance' -%}
-        {% if product.first_available_variant.inventory_quantity > 0
-          and product.first_available_variant.inventory_quantity < 5
-        %}
-          <div class="items-left">Only {{ product.first_available_variant.inventory_quantity }} left in stock</div>
-        {% endif %}
-      {% endif %}
+      {%- render 'price-list', product: product, text_alignment: text_alignment -%}
     </div>
 
     {%- if show_rating and mobile_reduced or text_alignment == 'center' -%}
       {%- capture rating_class -%}{% unless text_alignment == 'center' %}sm:hidden{% endunless %}{%- endcapture -%}
       {%- render 'product-rating', product: product, class: rating_class, display_mode: settings.product_rating_mode -%}
     {%- endif -%}
-
-    {% if product.metafields.hpz.expected_to_restocked or product.metafields.hpz.coming_soon_by or product.metafields.hpz.launch_date %}
-      <p class="expected-to-be-restocked-by">
-        {% if product.metafields.hpz.expected_to_restocked %}
-          TO BE RESTOCKED BY <b>{{ product.metafields.hpz.expected_to_restocked.value }}</b>
-        {% elsif product.metafields.hpz.coming_soon_by %}
-          Coming soon by <b>{{ product.metafields.hpz.coming_soon_by.value }}</b>
-        {% elsif product.metafields.hpz.launch_date %}
-          Launching on <b>{{ product.metafields.hpz.launch_date.value }}</b>
-        {% endif %}
-      </p>
-    {% endif %}
 
     {%- if settings.product_color_display != 'hide' and show_swatches != false -%}
       {%- assign color_label_list = 'general.label.color' | t | replace: ', ', ',' | downcase | split: ',' -%}

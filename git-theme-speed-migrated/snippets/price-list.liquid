@@ -40,16 +40,14 @@ Supported variables
   endcase
 -%}
 
-{% unless product.metafields.hpz.previous_selling_price != blank -%}
-<price-list  class="price-list {% if size == 'lg' %}{%- unless product.vendor contains 'Headphone Connect' -%} price-list--lg{%- endunless -%}{% endif %} {% if text_alignment == 'center' %}justify-center{% endif %}" >
+<price-list class="price-list {% if size == 'lg' %}price-list--lg{% endif %} {% if text_alignment == 'center' %}justify-center{% endif %}">
   {%- if variant != blank -%}
     {%- comment -%}
     --------------------------------------------------------------------------------------------------------------------
     VARIANT CASE (used on product page, quick view...)
     --------------------------------------------------------------------------------------------------------------------
     {%- endcomment -%}
-    {%- if product.vendor contains 'lala' -%} {%- unless product.handle contains 'chennai' -%} Early Bird Price:  {%- endunless -%}{%- endif -%}
-    <sale-price class="{% if variant.compare_at_price > variant.price %}{{ on_sale_price_classes }}{% else %}{{ regular_price_classes }}{% endif %}" {% if product.tags contains 'bundle' or product.vendor contains 'Headphone Connect' %} style="margin:0px!important;"{% endif %}>
+    <sale-price class="{% if variant.compare_at_price > variant.price %}{{ on_sale_price_classes }}{% else %}{{ regular_price_classes }}{% endif %}">
       <span class="sr-only">{{ 'product.price.sale_price' | t }}</span>
 
       {%- if settings.currency_code_enabled -%}
@@ -58,17 +56,18 @@ Supported variables
         {{- variant.price | money -}}
       {%- endif -%}
     </sale-price>
-    {%- if product.vendor contains 'lala' -%} {%- unless product.handle contains 'chennai' -%} Regular Price: {%- endunless -%}{%- endif -%}
-    <compare-at-price {% unless variant.compare_at_price > variant.price %}hidden{% endunless %} class="{{ compare_at_price_classes }}">
-      <span class="sr-only">{{ 'product.price.regular_price' | t }}</span>
 
-      {%- if settings.currency_code_enabled -%}
-        {{- variant.compare_at_price | money_with_currency -}}
-      {%- else -%}
-        {%- unless product.title contains 'Pre-Owned' or product.vendor contains 'Headphone Connect' -%}<span>MRP: </span>{%- endunless -%}
-        {{- variant.compare_at_price | money -}}
-      {%- endif -%}
-    </compare-at-price>
+    {%- if variant.compare_at_price > variant.price -%}
+      <compare-at-price class="{{ compare_at_price_classes }}">
+        <span class="sr-only">{{ 'product.price.regular_price' | t }}</span>
+
+        {%- if settings.currency_code_enabled -%}
+          {{- variant.compare_at_price | money_with_currency -}}
+        {%- else -%}
+          {{- variant.compare_at_price | money -}}
+        {%- endif -%}
+      </compare-at-price>
+    {%- endif -%}
   {%- elsif line_item != blank -%}
     {%- comment -%}
     --------------------------------------------------------------------------------------------------------------------
@@ -192,16 +191,9 @@ Supported variables
     {%- assign unit_price_item = variant | default: line_item | default: product.selected_or_first_available_variant -%}
 
     {%- if unit_price_item.unit_price -%}
-      <unit-price {% unless unit_price_item.unit_price %}hidden{% endunless %} class="{{ unit_price_classes }}">
-        {%- assign unit_price_measurement = unit_price_item.unit_price_measurement -%}
-
-        {%- if unit_price_measurement.reference_value != 1 -%}
-          {%- assign reference_value = unit_price_measurement.reference_value -%}
-        {%- endif -%}
-
-        ({{ unit_price_item.unit_price | money }}/{{ reference_value }}{{ unit_price_measurement.reference_unit }})
+      <unit-price class="{{ unit_price_classes }}">
+        ({{- unit_price_item.unit_price | unit_price_with_measurement: unit_price_item.unit_price_measurement -}})
       </unit-price>
     {%- endif -%}
   {%- endunless -%}
 </price-list>
-{% endunless -%}

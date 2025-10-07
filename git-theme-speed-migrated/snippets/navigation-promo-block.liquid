@@ -55,7 +55,7 @@
 <style>
   #navigation-promo-{{ promo_id }} {
     --navigation-promo-grid: {{ promo_grid }};
-    --mega-menu-promo-grid-image-max-width: 500px;
+    --mega-menu-promo-grid-image-max-width: {% if block.settings.stretch_promo %}{% if is_promo_collage %}230px{% else %}400px{% endif %}{% else %}{% if is_promo_collage %}192px{% else %}300px{% endif %}{% endif %};
     --mega-menu-promo-grid-image-min-width: 172px;
     --promo-heading-font-size: {% if is_promo_carousel %}var(--text-h3){% else %}var(--text-h5){% endif %};
     --content-over-media-row-gap: {% if is_promo_grid %}var(--spacing-3){% elsif is_promo_carousel %}{% if is_promo_stretch %}var(--spacing-5){% else %}var(--spacing-4){% endif %}{% endif %};
@@ -83,15 +83,6 @@
     {%- else -%}
       inset-block-end: var(--content-over-media-column-gap);
     {%- endif -%}
-  }
-
-  #navigation-promo-{{ promo_id }} .content-over-media {
-    max-width: 500px;
-  }
-
-  #navigation-promo-{{ promo_id }} .content-over-media img {
-    max-width: 500px;
-    width: auto;
   }
 
   @media screen and (min-width:700px) {
@@ -128,7 +119,7 @@
         --mega-menu-promo-grid-image-min-width: 220px;
 
         {% if is_promo_carousel %}
-          max-width: 500px;
+          max-width: {% if is_promo_stretch %}440px{% else %}360px{% endif %};
         {% endif %}
 
         {% if is_promo_stretch %}
@@ -165,7 +156,7 @@
 
     @media screen and (min-width: 1400px) {
       #navigation-promo-{{ promo_id }} {
-        --mega-menu-promo-grid-image-max-width: 500px;
+        --mega-menu-promo-grid-image-max-width: {% if is_promo_stretch %}440px{% else %}360px{% endif %};
 
         {% if mega_menu_col >= 5 and is_promo_grid %}
           --promo-heading-font-size: {% if mega_menu_col == 5 %}var(--text-h5){% elsif mega_menu_col >= 6 %}var(--text-h6){% endif %};
@@ -193,11 +184,11 @@
     {%- if mega_menu_block.settings[image_setting] != blank -%}
       {%- capture image_sizes -%}
         {%- if is_promo_grid -%}
-          (max-width: 699px) 172px, (max-width: 1149px) 192px,{% if is_navigation_drawer %}500px{% else %}500px{% endif %}
+          (max-width: 699px) 172px, (max-width: 1149px) 192px,{% if is_navigation_drawer %}220px{% else %}minmax(220px, 440px){% endif %}
         {%- elsif is_promo_collage -%}
-          {%- if forloop.first -%}500px{% else %}500px{%- endif -%}
+          {%- if forloop.first -%}{% if is_promo_stretch %}minmax(350px, 880px){% else %}minmax(350px, 650px){% endif %}{% else %}{% if is_promo_stretch %}minmax(192px, 440px){% else %}minmax(192px, 350px){% endif %}{%- endif -%}
         {%- else -%}
-          (max-width: 699px) 100vw, (max-width: 1150px) 316px, {% if is_navigation_drawer %}500px{% else %}500px{% endif %}
+          (max-width: 699px) 100vw, (max-width: 1150px) 316px, {% if is_navigation_drawer %}360px{% else %}{% if is_promo_stretch %}440px{% else %}360px{% endif %}{% endif %}
         {%- endif -%}
       {%- endcapture -%}
 
@@ -205,7 +196,7 @@
          class="content-over-media {% unless is_promo_stretch %}rounded-sm{% endunless %} group {% if is_promo_carousel and forloop.first == false %}reveal-invisible{% endif %}"
          style="--text-color: {{ mega_menu_block.settings[image_text_color_setting].rgb }}; grid-area: {% if is_promo_carousel %}1 / -1{% elsif is_promo_collage %}promo-{{ i }}{% endif %};">
 
-        {{- mega_menu_block.settings[image_setting] | image_url: width: 500 | image_tag: loading: 'lazy', sizes: image_sizes, widths: '200,300,400,500,600,800,1000', class: "zoom-image", width: 500, height: 500 -}}
+        {{- mega_menu_block.settings[image_setting] | image_url: width: image.width | image_tag: loading: 'lazy', sizes: image_sizes, widths: '200,300,400,500,600,800,1000', class: "zoom-image" -}}
 
         {%- if mega_menu_block.settings[image_heading_setting] != blank -%}
           <div class="place-self-end-start text-custom">

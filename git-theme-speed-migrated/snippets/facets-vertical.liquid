@@ -20,11 +20,6 @@ Supported variables
 {%- capture context -%}{% if update_on_change %}sidebar{% else %}drawer{% endif %}{%- endcapture -%}
 {%- capture id_prefix -%}facets-{{ context }}-{{ section.id }}{%- endcapture -%}
 
-{%- assign plus_enable_custom_filters = false %}
-{% if metafield_filters and collection.metafields.hpz.custom_filters_enable.value %}
-  {%- assign plus_enable_custom_filters = true %}
-{% endif %}
-
 <form id="facet-form" is="facet-form" section-id="{{ section.id }}" {% if update_on_change %}update-on-change{% endif %} method="GET" action="{{ request.path }}" class="facets-vertical">
   {%- comment -%}We always reset to the first page so that when criteria change, the page is restored to the first one{%- endcomment -%}
   <input type="hidden" name="page" value="">
@@ -59,7 +54,7 @@ Supported variables
     {%- endcapture -%}
 
     {%- assign sort_by_label = 'collection.faceting.sort_by' | t -%}
-    {%- render 'accordion', title: sort_by_label, content: accordion_content, open: true, id: 'accordion-sort-by' -%}
+    {%- render 'accordion', title: sort_by_label, content: accordion_content, open: open_accordion, id: 'accordion-sort-by', class: 'md:hidden' -%}
   {%- elsif results.sort_by != blank -%}
     <input type="hidden" name="sort_by" value="{{ results.sort_by }}">
   {%- endif -%}
@@ -68,13 +63,6 @@ Supported variables
 
   {%- if show_filters -%}
     {%- for filter in results.filters -%}
-      {% if filter.param_name contains 'hpz' and plus_enable_custom_filters == false %}
-        {% continue %}
-      {% elsif plus_enable_custom_filters %}
-        {% unless collection.metafields.hpz.custom_filters_list.value contains filter.param_name %}
-          {% continue %}
-        {% endunless %}
-      {% endif %}
       {%- if filter.type == 'boolean' or filter.param_name == 'filter.v.availability' -%}
         <div class="accordion">
           <div class="accordion__toggle">
@@ -126,75 +114,13 @@ Supported variables
         {%- endcapture -%}
 
         {%- if section.settings.open_first_filter_group and iterated_filters_count == 0 -%}
-          {%- assign true = true -%}
+          {%- assign open_accordion = true -%}
         {%- else -%}
-          {%- assign true = false -%}
+          {%- assign open_accordion = false -%}
         {%- endif -%}
 
         {%- assign accordion_id = 'accordion-' | append: filter.param_name | handle -%}
-
-        {%- unless filter.param_name contains 'hpz' -%}
-          {%- render 'accordion', title: filter.label, content: accordion_content, open: true, id: accordion_id -%}
-        {%- endunless -%}
-        {%- if filter.param_name contains 'hpz' -%}
-          {%- render 'accordion', title: filter.label, content: accordion_content, open: true, id: accordion_id -%}
-        {%- endif -%}
-        {%- if filter.param_name contains 'hpz-brand' and collection.metafields.hpz.collection_type == 'Brand' -%}
-        {%- render 'accordion', title: filter.label, content: accordion_content, open: true, id: accordion_id -%}
-        {%- endif -%}
-        
-        {%- if product.tags contains 'nprs' -%}
-          <div class="accordion">
-            <div class="accordion__toggle">
-              <label for="sale" class="bold">On Sale</label>
-              <input id="sale" type="checkbox" class="switch" name="On Sale" value="1" {% if filter.active_values.size > 0 %}checked{% endif %}>
-            </div>
-          </div>
-        {%- endif -%}
-        
-        {%- if filter.param_name contains 'hpz-players' and collection.metafields.hpz.collection_type == 'High-Resolution Digital Audio Players'-%}
-          {%- render 'accordion', title: filter.label, content: accordion_content, open: true, id: accordion_id -%}
-        {%- endif -%}
-
-        {%- if filter.param_name contains 'hpz-flgshp-iems' and collection.metafields.hpz.collection_type == 'Flagship Audiophile IEMs'-%}
-          {%- render 'accordion', title: filter.label, content: accordion_content, open: true, id: accordion_id-%}
-        {%- endif -%}
-
-        {%- if filter.param_name contains 'hpz-comparisons' and collection.metafields.hpz.collection_type == 'Beginner Audiophile Headphones'-%}
-          {%- render 'accordion', title: filter.label, content: accordion_content, open: true, id: accordion_id-%}
-        {%- endif -%}
-
-        {%- if filter.param_name contains 'hpz-flgshp-headphns' and collection.metafields.hpz.collection_type == 'Flagship Audiophile Headphones'-%}
-          {%- render 'accordion', title: filter.label, content: accordion_content, open: true, id: accordion_id-%}
-        {%- endif -%}
-
-        {%- if filter.param_name contains 'hpz-studio' and collection.metafields.hpz.collection_type == 'Studio & Professional Headphones'-%}
-          {%- render 'accordion', title: filter.label, content: accordion_content, open: true, id: accordion_id-%}
-        {%- endif -%}
-
-        {%- if filter.param_name contains 'hpz-tws' and collection.metafields.hpz.collection_type == 'True Wireless Earbuds'-%}
-          {%- render 'accordion', title: filter.label, content: accordion_content, open: true, id: accordion_id-%}
-        {%- endif -%}
-
-        {%- if filter.param_name contains 'hpz-desktop-amps' and collection.metafields.hpz.collection_type == 'Beginner Desktop Amps & DACs'-%}
-          {%- render 'accordion', title: filter.label, content: accordion_content, open: true, id: accordion_id-%}
-        {%- endif -%}
-
-        {%- if filter.param_name contains 'hpz-wireless-h' and collection.metafields.hpz.collection_type == 'Wireless Headphones'-%}
-          {%- render 'accordion', title: filter.label, content: accordion_content, open: true, id: accordion_id-%}
-        {%- endif -%}
-
-        {%- if filter.param_name contains 'hpz-amps' and collection.metafields.hpz.collection_type == 'Beginner Portable Amps + DACs'-%}
-          {%- render 'accordion', title: filter.label, content: accordion_content, open: true, id: accordion_id-%}
-        {%- endif -%}
-
-        {%- if filter.param_name contains 'hpz-earpads-eartips' and collection.metafields.hpz.collection_type == 'Eartips & Earpads'-%}
-          {%- render 'accordion', title: filter.label, content: accordion_content, open: true, id: accordion_id-%}
-        {%- endif -%}
-
-        {%- if filter.param_name contains 'hpz-cases' and collection.metafields.hpz.collection_type == 'Cases' -%}
-          {%- render 'accordion', title: filter.label, content: accordion_content, open: true, id: accordion_id-%}
-        {%- endif -%}
+        {%- render 'accordion', title: filter.label, content: accordion_content, open: open_accordion, id: accordion_id -%}
 
         {%- assign iterated_filters_count = iterated_filters_count | plus: 1 -%}
       {%- endif -%}

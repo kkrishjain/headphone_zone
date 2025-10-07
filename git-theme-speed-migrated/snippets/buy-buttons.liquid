@@ -42,72 +42,11 @@ Supported variables
     {%- if product.template_suffix contains 'pre-order' -%}
       {%- capture button_content -%}{{ 'product.general.pre_order_button' | t }}{%- endcapture -%}
     {%- else -%}
-      {%- capture button_content -%}
-        {%- if product.handle contains 'headphone-connect' -%} 
-          GET YOUR ACCESS PASS
-        {%- elsif product.vendor contains 'Experiences' -%}
-          SIGN UP NOW  
-        {%- elsif product.tags contains 'home-audition' -%}
-          TRY IT NOW
-        {%- elsif product.template_suffix == 'club-audiophile-moonshine' -%} 
-          GET YOUR ACCESS PASS
-        {%- elsif product.tags contains 'Pre-Order' -%}
-          PRE-ORDER
-        {%- else -%}
-          {{ 'product.general.add_to_cart_button' | t }}
-        {%- endif -%}
-      {%- endcapture -%}
+      {%- capture button_content -%}{{ 'product.general.add_to_cart_button' | t }}{%- endcapture -%}
     {%- endif -%}
   {%- else -%}
-    {%- if product.tags contains 'lala' -%}
-      {%- capture button_content -%}GOING ON SALE SOON{%- endcapture -%}
-      {%- assign button_disabled = true -%}
-    {%- else -%}
-      {%- if product.handle contains 'lala' -%}
-        {%- capture button_content -%}COMING SOON{%- endcapture -%}
-        {%- assign button_disabled = true -%}
-      {%- else -%}
-        {%- if product.tags contains 'Coming-soon' -%}
-          {%- capture button_content -%}COMING SOON{%- endcapture -%}
-          {%- assign button_disabled = true -%}
-          <script>
-            document.addEventListener('variant:change', function(event) {
-              let variant = event.detail.variant;
-              let product = event.detail.product;
-              let form = event.target;
-              {document.querySelector(".button div").innerHTML="COMING SOON";}
-            });
-          </script>
-
-        {%- else -%}
-          {%- if product.tags contains 'museum' -%}
-            {%- capture button_content -%}GONE FOREVER 👻{%- endcapture -%}
-            {%- assign button_disabled = true -%}
-
-          {%- else -%}
-            {%- capture button_content -%}{{ 'product.general.sold_out_button' | t }}{%- endcapture -%}
-            {%- assign button_disabled = true -%}
-          {%- endif -%}
-        {%- endif -%}
-      {%- endif -%}
-    {%- endif -%}
-    {% if product.metafields.hpz.expected_to_restocked != blank %}
-      <p style="text-align: center; font-size: 14px; margin-bottom: 30px; margin-top: 20px;letter-spacing:2px;text-transform:uppercase;font-weight:bold;">
-        Expected to be restocked by <b style="color:#ED473F;">{{ product.metafields.hpz.expected_to_restocked.value }}</b>
-      </p>
-    {%- endif -%}
-
-    {% if product.metafields.hpz.launch_date != blank %}
-      <p style="text-align: center; font-size: 14px; margin-bottom: 30px; margin-top: 20px;letter-spacing:2px;text-transform:uppercase;font-weight:bold;">
-        Launching on <b style="color:#ED473F;">{{ product.metafields.hpz.launch_date.value }}</b>
-      </p>
-    {%- endif -%}
-    
-    {% if product.metafields.hpz.coming_soon_by != blank %}
-      <p style="text-align: center; font-size: 14px; margin-bottom: 30px; margin-top: 20px;letter-spacing:2px;text-transform:uppercase;font-weight:bold;">
-        Coming soon by <b style="color:#ED473F;">{{ product.metafields.hpz.coming_soon_by.value }}</b>
-      </p>
-    {%- endif -%}
+    {%- capture button_content -%}{{ 'product.general.sold_out_button' | t }}{%- endcapture -%}
+    {%- assign button_disabled = true -%}
   {%- endif -%}
 
   <div class="v-stack gap-4">
@@ -162,13 +101,3 @@ Supported variables
     </buy-buttons>
   </div>
 {%- endform -%}
-{% if product.tags contains 'museum' %}
-  <div class="new-offer-grid">
-    <div class="new-offer-text">
-      <div>
-        This product is permanently discontinued by the manufacturer and continues to live on in
-        <a href="https://www.headphonezone.in/collections/headphone-zone-museum" target="_blank" style="color:#3c07ff;">Headphone Zone's Museum</a>.<br><br> Unfortunately, even if we desire to, we won't be able to resurrect this product. The Museum is where we pay our respects to end-of-life, old, archived, but not forgotten products. This page was made with a lot of love and  will live on for posterity. What to say, we're sentimental people. 😔
-      </div>
-    </div>
-  </div>
-{%- endif -%}
