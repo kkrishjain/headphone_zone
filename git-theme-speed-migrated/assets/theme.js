@@ -1206,7 +1206,7 @@ var CartCount = class extends HTMLElement {
     this.itemCount = (await fetchCart)["item_count"];
   }
   get itemCount() {
-    return parseInt(this.innerText);
+    return parseInt(this.textContent);
   }
   set itemCount(count) {
     if (this.itemCount === count) {
@@ -1214,14 +1214,14 @@ var CartCount = class extends HTMLElement {
     }
     if (count === 0) {
       animate3(this, { opacity: 0 }, { duration: 0.1 });
-      this.innerText = count;
+      this.textContent = count;
     } else if (this.itemCount === 0) {
       animate3(this, { opacity: 1 }, { duration: 0.1 });
-      this.innerText = count;
+      this.textContent = count;
     } else {
       (async () => {
         await animate3(this.shadowRoot.firstElementChild, { transform: ["translateY(-50%)"], opacity: 0 }, { duration: 0.25, easing: [1, 0, 0, 1] }).finished;
-        this.innerText = count;
+        this.textContent = count;
         animate3(this.shadowRoot.firstElementChild, { transform: ["translateY(50%)", "translateY(0)"], opacity: 1 }, { duration: 0.25, easing: [1, 0, 0, 1] });
       })();
     }
@@ -1229,6 +1229,102 @@ var CartCount = class extends HTMLElement {
 };
 if (!window.customElements.get("cart-count")) {
   window.customElements.define("cart-count", CartCount);
+}
+
+// js/common/cart/cart-discount.js
+var AbstractCartDiscount = class extends HTMLElement {
+  async getDiscountCodes() {
+    return (await fetchCart)["discount_codes"].filter((discount) => discount.applicable).map((discount) => discount.code.toLowerCase());
+  }
+  async toggleDiscount(event) {
+    let target = event.currentTarget;
+    target.setAttribute("aria-busy", "true");
+    let discountCodes = await this.getDiscountCodes();
+    if (target.hasAttribute("discount-code")) {
+      discountCodes = discountCodes.filter((discount2) => discount2 !== target.getAttribute("discount-code").toLowerCase());
+    }
+    let discount = (discountCodes.length > 0 ? discountCodes.join(",") + "," : "") + (event.target.value || "");
+    const response = await fetch(`${Shopify.routes.root}cart/update.js`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ discount })
+    });
+    target.setAttribute("aria-busy", "false");
+    if (!response.ok) {
+      this.dispatchEvent(new CustomEvent("cart:discount:error", { bubbles: true }));
+      return;
+    }
+    const responseJson = await response.json();
+    if (responseJson.discount_codes.some((obj) => obj.applicable === false)) {
+      this.dispatchEvent(new CustomEvent("cart:discount:error", { bubbles: true }));
+      return;
+    } else {
+      this.dispatchEvent(new CustomEvent("cart:refresh", { bubbles: true }));
+    }
+    if (window.themeVariables.settings.pageType == "cart") {
+      window.location.reload();
+    }
+  }
+};
+var _abortController2, _CartDiscountBanner_instances, onCartDiscountError_fn;
+var CartDiscountBanner = class extends HTMLElement {
+  constructor() {
+    super(...arguments);
+    __privateAdd(this, _CartDiscountBanner_instances);
+    __privateAdd(this, _abortController2);
+  }
+  connectedCallback() {
+    __privateSet(this, _abortController2, new AbortController());
+    document.addEventListener("cart:discount:error", __privateMethod(this, _CartDiscountBanner_instances, onCartDiscountError_fn).bind(this), { signal: __privateGet(this, _abortController2).signal });
+  }
+  disconnectedCallback() {
+    __privateGet(this, _abortController2).abort();
+  }
+};
+_abortController2 = new WeakMap();
+_CartDiscountBanner_instances = new WeakSet();
+onCartDiscountError_fn = function() {
+  this.hidden = false;
+};
+var CartDiscountField = class extends AbstractCartDiscount {
+  #abortController;
+  static get observedAttributes() {
+    return ["aria-busy"];
+  }
+  constructor() {
+    super();
+    this.addEventListener("change", this.toggleDiscount.bind(this));
+  }
+  connectedCallback() {
+    this.#abortController = new AbortController();
+    document.addEventListener("cart:discount:error", () => {
+      this.classList.add("cart-discount-field--error");
+    }, { signal: this.#abortController.signal });
+  }
+  disconnectedCallback() {
+    this.#abortController.abort();
+  }
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === "aria-busy" && oldValue !== newValue) {
+      const eventName = newValue === "true" ? "cart:discount:loading:start" : "cart:discount:loading:end";
+      document.documentElement.dispatchEvent(new CustomEvent(eventName, { bubbles: true }));
+    }
+  }
+};
+var CartDiscountRemoveButton = class extends AbstractCartDiscount {
+  constructor() {
+    super();
+    this.addEventListener("click", this.toggleDiscount.bind(this));
+  }
+};
+if (!window.customElements.get("cart-discount-field")) {
+  window.customElements.define("cart-discount-field", CartDiscountField);
+}
+if (!window.customElements.get("cart-discount-remove-button")) {
+  window.customElements.define("cart-discount-remove-button", CartDiscountRemoveButton);
+}
+if (!window.customElements.get("cart-discount-banner")) {
+  window.customElements.define("cart-discount-banner", CartDiscountBanner);
 }
 
 // js/common/cart/cart-drawer.js
@@ -1325,7 +1421,7 @@ var DialogElement = class _DialogElement extends HTMLElement {
     return this._focusTrap = this._focusTrap || new FocusTrap.createFocusTrap(this, {
       onDeactivate: this.hide.bind(this),
       allowOutsideClick: this._allowOutsideClick.bind(this),
-      initialFocus: window.matchMedia("screen and (pointer: fine)").matches ? this.initialFocus : false,
+      initialFocus: window.matchMedia("screen and (pointer: fine)").matches ? this.initialFocus : void 0,
       fallbackFocus: this,
       tabbableOptions: {
         getShadowRoot: true
@@ -2249,6 +2345,9 @@ var FacetSortBy = class extends HTMLElement {
     url.searchParams.set("sort_by", event.detail.value);
     url.searchParams.set("section_id", sectionId);
     url.searchParams.delete("page");
+    if (window.themeVariables.settings.pageType === "search") {
+      url.searchParams.set("type", "product");
+    }
     this.dispatchEvent(new CustomEvent("facet:update", {
       bubbles: true,
       detail: {
@@ -2659,8 +2758,16 @@ var ProductCard = class extends HTMLElement {
     if (!target.hasAttribute("data-variant-media")) {
       return;
     }
-    const newMedia = JSON.parse(target.getAttribute("data-variant-media")), primaryMediaElement = this.querySelector(".product-card__image--primary"), newPrimaryMediaElement = this._createImageElement(newMedia, primaryMediaElement.className, primaryMediaElement.sizes);
+    const newMedia = JSON.parse(target.getAttribute("data-variant-media")), primaryMediaElement = this.querySelector(".product-card__image--primary"), secondaryMediaElement = this.querySelector(".product-card__image--secondary"), newPrimaryMediaElement = this._createImageElement(newMedia, primaryMediaElement.className, primaryMediaElement.sizes);
+    let newSecondaryMediaElement = null;
+    if (secondaryMediaElement && target.hasAttribute("data-variant-secondary-media")) {
+      let newSecondaryMedia = JSON.parse(target.getAttribute("data-variant-secondary-media"));
+      newSecondaryMediaElement = this._createImageElement(newSecondaryMedia, secondaryMediaElement.className, secondaryMediaElement.sizes);
+    }
     if (primaryMediaElement.src !== newPrimaryMediaElement.src) {
+      if (secondaryMediaElement && newSecondaryMediaElement) {
+        secondaryMediaElement.replaceWith(newSecondaryMediaElement);
+      }
       await primaryMediaElement.animate({ opacity: [1, 0] }, { duration: 150, easing: "ease-in", fill: "forwards" }).finished;
       await new Promise((resolve) => newPrimaryMediaElement.complete ? resolve() : newPrimaryMediaElement.onload = () => resolve());
       primaryMediaElement.replaceWith(newPrimaryMediaElement);
@@ -3070,25 +3177,25 @@ if (!window.customElements.get("product-quick-add")) {
 }
 
 // js/common/product/product-rerender.js
-var _abortController2, _ProductRerender_instances, onRerender_fn;
+var _abortController3, _ProductRerender_instances, onRerender_fn;
 var ProductRerender = class extends HTMLElement {
   constructor() {
     super(...arguments);
     __privateAdd(this, _ProductRerender_instances);
-    __privateAdd(this, _abortController2);
+    __privateAdd(this, _abortController3);
   }
   connectedCallback() {
-    __privateSet(this, _abortController2, new AbortController());
+    __privateSet(this, _abortController3, new AbortController());
     if (!this.id || !this.hasAttribute("observe-form")) {
       console.warn('The <product-rerender> requires an ID to identify the element to re-render, and an "observe-form" attribute referencing to the form to monitor.');
     }
-    document.forms[this.getAttribute("observe-form")].addEventListener("product:rerender", __privateMethod(this, _ProductRerender_instances, onRerender_fn).bind(this), { signal: __privateGet(this, _abortController2).signal });
+    document.forms[this.getAttribute("observe-form")].addEventListener("product:rerender", __privateMethod(this, _ProductRerender_instances, onRerender_fn).bind(this), { signal: __privateGet(this, _abortController3).signal });
   }
   disconnectedCallback() {
-    __privateGet(this, _abortController2).abort();
+    __privateGet(this, _abortController3).abort();
   }
 };
-_abortController2 = new WeakMap();
+_abortController3 = new WeakMap();
 _ProductRerender_instances = new WeakSet();
 onRerender_fn = function(event) {
   const matchingElement = deepQuerySelector(event.detail.htmlFragment, `#${this.id}`);
@@ -3445,6 +3552,7 @@ var VideoMedia = class extends BaseMedia {
     super.connectedCallback();
     if (!this.hasAttribute("autoplay")) {
       this.addEventListener("click", this.play, { once: true, signal: this._abortController.signal });
+      this.nextElementSibling?.querySelector(".video-play-button")?.addEventListener("click", this.play.bind(this), { once: true, signal: this._abortController.signal });
     }
     if (this.hasAttribute("show-play-button") && !this.shadowRoot) {
       this.attachShadow({ mode: "open" }).appendChild(document.createRange().createContextualFragment(`
@@ -3648,27 +3756,27 @@ if (!window.customElements.get("accordion-disclosure")) {
 
 // js/common/navigation/tabs.js
 import { animate as animate8 } from "vendor";
+var _Tabs_instances, setupComponent_fn, onSlotChange_fn;
 var Tabs = class extends HTMLElement {
-  static get observedAttributes() {
-    return ["selected-index"];
-  }
   constructor() {
     super();
+    __privateAdd(this, _Tabs_instances);
     if (!this.shadowRoot) {
       this.attachShadow({ mode: "open" }).appendChild(this.querySelector("template").content.cloneNode(true));
     }
     if (Shopify.designMode) {
       this.addEventListener("shopify:block:select", (event) => this.selectedIndex = this.buttons.indexOf(event.target));
     }
+    this.shadowRoot.addEventListener("slotchange", __privateMethod(this, _Tabs_instances, onSlotChange_fn).bind(this));
     this.addEventListener("keydown", this._handleKeyboard);
+  }
+  static get observedAttributes() {
+    return ["selected-index"];
   }
   connectedCallback() {
     this._abortController = new AbortController();
-    this.buttons = Array.from(this.shadowRoot.querySelector('slot[name="title"]').assignedNodes(), (item) => item.matches("button") && item || item.querySelector("button"));
-    this.panels = Array.from(this.shadowRoot.querySelector('slot[name="content"]').assignedNodes());
-    this.buttons.forEach((button, index) => button.addEventListener("click", () => this.selectedIndex = index, { signal: this._abortController.signal }));
+    __privateMethod(this, _Tabs_instances, setupComponent_fn).call(this);
     this.selectedIndex = this.selectedIndex;
-    this._setupAccessibility();
   }
   disconnectedCallback() {
     this._abortController.abort();
@@ -3685,19 +3793,21 @@ var Tabs = class extends HTMLElement {
     this.style.setProperty("--item-count", this.buttons.length.toString());
   }
   attributeChangedCallback(name, oldValue, newValue) {
-    this.buttons.forEach((button, index) => button.setAttribute("aria-selected", index === parseInt(newValue) ? "true" : "false"));
+    this.buttons?.forEach((button, index) => button.setAttribute("aria-selected", index === parseInt(newValue) ? "true" : "false"));
     if (name === "selected-index" && oldValue !== null && oldValue !== newValue) {
-      this._transition(this.panels[parseInt(oldValue)], this.panels[parseInt(newValue)]);
+      let fromPanel = !this.hasAttribute("external-panels") ? this.panels[parseInt(oldValue)] : document.getElementById(this.buttons[parseInt(oldValue)].getAttribute("controlled-panel"));
+      let toPanel = !this.hasAttribute("external-panels") ? this.panels[parseInt(newValue)] : document.getElementById(this.buttons[parseInt(newValue)].getAttribute("controlled-panel"));
+      this._transition(fromPanel, toPanel);
     }
   }
   _setupAccessibility() {
     const componentID = crypto.randomUUID ? crypto.randomUUID() : Math.floor(Math.random() * 1e4);
-    this.buttons.forEach((button, index) => {
+    this.buttons?.forEach((button, index) => {
       button.setAttribute("role", "tab");
       button.setAttribute("aria-controls", `tab-panel-${componentID}-${index}`);
       button.id = `tab-${componentID}-${index}`;
     });
-    this.panels.forEach((panel, index) => {
+    this.panels?.forEach((panel, index) => {
       panel.setAttribute("role", "tabpanel");
       panel.setAttribute("aria-labelledby", `tab-${componentID}-${index}`);
       panel.id = `tab-panel-${componentID}-${index}`;
@@ -3729,6 +3839,22 @@ var Tabs = class extends HTMLElement {
     toPanel.hidden = false;
     await animate8(toPanel, { opacity: [0, 1] }, { duration: this.animationDuration }).finished;
   }
+};
+_Tabs_instances = new WeakSet();
+setupComponent_fn = function() {
+  this.buttons = Array.from(this.shadowRoot.querySelector('slot[name="title"]').assignedNodes(), (item) => item.matches("button") && item || item.querySelector("button"));
+  this.panels = this.shadowRoot.querySelector('slot[name="content"]') ? Array.from(this.shadowRoot.querySelector('slot[name="content"]').assignedNodes()) : null;
+  this.buttons.forEach((button, index) => button.addEventListener("click", () => this.selectedIndex = index, { signal: this._abortController.signal }));
+  if (this.hasAttribute("external-panels")) {
+    Array.from(this.buttons).forEach((button, index) => {
+      button.setAttribute("aria-selected", (this.selectedIndex === index).toString());
+      document.getElementById(button.getAttribute("controlled-panel")).hidden = !(this.selectedIndex === index);
+    });
+  }
+  this._setupAccessibility();
+};
+onSlotChange_fn = function() {
+  __privateMethod(this, _Tabs_instances, setupComponent_fn).call(this);
 };
 if (!window.customElements.get("x-tabs")) {
   window.customElements.define("x-tabs", Tabs);
@@ -3902,15 +4028,21 @@ if (!window.customElements.get("announcement-bar")) {
 
 // js/sections/before-after-image.js
 var SplitCursor = class extends HTMLElement {
+  _abortController;
   connectedCallback() {
     this._parentSection = this.closest(".shopify-section");
     this._dragging = false;
     this._offsetX = this._currentX = 0;
-    this._parentSection.addEventListener("pointerdown", this._onPointerDown.bind(this));
-    this._parentSection.addEventListener("pointermove", this._onPointerMove.bind(this));
-    this._parentSection.addEventListener("pointerup", this._onPointerUp.bind(this));
+    this._abortController = new AbortController();
+    this._parentSection.addEventListener("pointerdown", this._onPointerDown.bind(this), { signal: this._abortController.signal });
+    this._parentSection.addEventListener("pointermove", this._onPointerMove.bind(this), { signal: this._abortController.signal });
+    this._parentSection.addEventListener("pointerup", this._onPointerUp.bind(this), { signal: this._abortController.signal });
+    this.addEventListener("keydown", this._onKeyboardNavigation, { signal: this._abortController.signal });
     this._recalculateOffset();
-    window.addEventListener("resize", this._recalculateOffset.bind(this));
+    window.addEventListener("resize", this._recalculateOffset.bind(this), { signal: this._abortController.signal });
+  }
+  disconnectedCallback() {
+    this._abortController?.abort();
   }
   get minOffset() {
     return -this.offsetLeft - (document.dir === "rtl" ? this.clientWidth : 0);
@@ -3937,6 +4069,22 @@ var SplitCursor = class extends HTMLElement {
   }
   _recalculateOffset() {
     this._parentSection.style.setProperty("--clip-path-offset", `${Math.min(Math.max(this.minOffset, this._currentX.toFixed(1)), this.maxOffset)}px`);
+  }
+  _onKeyboardNavigation(event) {
+    if (!event.target.classList.contains("before-after__cursor") || !this.hasAttribute("vertical") && event.code !== "ArrowLeft" && event.code !== "ArrowRight" || this.hasAttribute("vertical") && event.code !== "ArrowUp" && event.code !== "ArrowDown") {
+      return;
+    }
+    event.preventDefault();
+    let currentPosition = parseInt(this._parentSection.style.getPropertyValue("--clip-path-offset"));
+    let newPosition;
+    if (this.hasAttribute("vertical")) {
+      newPosition = event.code === "ArrowUp" ? currentPosition - 1 : currentPosition + 1;
+    } else {
+      newPosition = event.code === "ArrowLeft" ? currentPosition - 1 : currentPosition + 1;
+    }
+    this._currentX = Math.min(Math.max(newPosition, this.minOffset), this.maxOffset);
+    this._offsetX = this._currentX;
+    this._parentSection.style.setProperty("--clip-path-offset", `${this._currentX.toFixed(1)}px`);
   }
 };
 if (!window.customElements.get("split-cursor")) {
@@ -4402,14 +4550,14 @@ var FeatureChart = class extends HTMLElement {
     this.featureChartTable.style.height = "auto";
   }
   async _hideRows() {
-    let fromHeight = this.featureChartTable.clientHeight, toHeight = 0;
-    this.featureChartRows.slice(0, parseInt(this.getAttribute("max-rows"))).forEach((row) => {
+    let fromHeight = this.featureChartTable.clientHeight, toHeight = 0, maxRows = parseInt(this.getAttribute("max-rows")) + 1;
+    this.featureChartRows.slice(0, maxRows).forEach((row) => {
       toHeight += row.clientHeight;
     });
     this.viewButtonElement.querySelector(".feature-chart__toggle-text").innerText = this.viewButtonElement.getAttribute("data-view-more");
     this.classList.remove("is-expanded");
     await motionAnimate3(this.featureChartTable, { height: [`${fromHeight}px`, `${toHeight}px`] }).finished;
-    this.featureChartRows.slice(parseInt(this.getAttribute("max-rows"))).forEach((row) => row.hidden = true);
+    this.featureChartRows.slice(maxRows).forEach((row) => row.hidden = true);
     this.featureChartTable.style.height = "auto";
   }
 };
@@ -4573,6 +4721,27 @@ var ImpactText = class extends HTMLElement {
 };
 if (!window.customElements.get("impact-text")) {
   window.customElements.define("impact-text", ImpactText);
+}
+
+// js/sections/main-search.js
+var SearchResultPanel = class extends HTMLElement {
+  async connectedCallback() {
+    if (!this.hasAttribute("load-from-url")) {
+      return;
+    }
+    const textResponse = await (await fetch(encodeURI(`${this.getAttribute("load-from-url")}&section_id=${extractSectionId(this)}`))).text();
+    const temporaryContent = new DOMParser().parseFromString(textResponse, "text/html");
+    const searchResultsPanel = temporaryContent.querySelector(`#${this.getAttribute("id")}`);
+    if (searchResultsPanel) {
+      this.replaceChildren(...searchResultsPanel.children);
+    } else {
+      document.querySelector(`[controlled-panel="${this.id}"]`).remove();
+      this.remove();
+    }
+  }
+};
+if (!window.customElements.get("search-result-panel")) {
+  window.customElements.define("search-result-panel", SearchResultPanel);
 }
 
 // js/sections/media-grid.js
@@ -5154,6 +5323,9 @@ export {
   AnnouncementBar,
   BuyButtons,
   CartCount,
+  CartDiscountBanner,
+  CartDiscountField,
+  CartDiscountRemoveButton,
   CartDrawer,
   CartNote,
   CartNotificationDrawer,
@@ -5230,6 +5402,7 @@ export {
   ScrollShadow,
   ScrollingText,
   SearchDrawer,
+  SearchResultPanel,
   SectionHeader,
   ShareButton,
   ShippingEstimator,
