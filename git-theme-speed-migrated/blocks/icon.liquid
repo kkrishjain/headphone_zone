@@ -13,7 +13,7 @@
 {%- if icon != blank -%}
   {%- assign position = block.settings.position -%}
 
-  <div class="justify-items-{{ position }}" {{ block.shopify_attributes }}>
+  <div class="v-stack justify-items-{{ position }}" {{ block.shopify_attributes }}>
     {%- if block.settings.background_style == 'none' -%}
       <div {% render 'surface', text_color: block.settings.color %}>
         {{- icon -}}
@@ -364,13 +364,14 @@
     {
       "type": "color",
       "id": "background",
-      "label": "Background"
+      "label": "Background",
+      "visible_if": "{{ block.settings.background_style != 'none' }}"
     },
     {
       "type": "color",
       "id": "color",
       "label": "Color",
-      "info": "Ignored for custom icon."
+      "visible_if": "{{ block.settings.custom_icon == blank }}"
     }
   ],
   "presets": [
