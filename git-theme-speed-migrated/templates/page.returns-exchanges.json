@@ -1,0 +1,433 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "5436d29c-494e-4ebb-be68-ea5575fdabb6": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Returns_help_center.svg?v=1685627926\" style=\"width:200px;margin:auto;\">\n<h2 class=\"h2\">Returns & Exchanges</h2>\n\n\n<style>\n\n\n\nh2 {\nfont-size:3rem;\ntext-align:center;\nfont-family: \"sora\", sans-serif;\n    font-weight: var(--heading-font-weight);\n    font-style: var(--heading-font-style);\n    letter-spacing: var(--heading-letter-spacing);\n    text-transform: var(--heading-text-transform);\n    overflow-wrap: anywhere;\n}\n\n\n}\n\n\n\n@media screen and (max-width: 700px) {\n  h2 {\n    font-size:2rem!important;\n\n  }\n}\n\n\n\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d": {
+      "type": "faq",
+      "blocks": {
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-0": {
+          "type": "item",
+          "settings": {
+            "title": "What is your return policy?",
+            "content": "<p>Your trust in Headphone Zone is our utmost priority.</p><p>ALL products on Headphone Zone are eligible for a <strong>free replacement within 7 days of delivery </strong>in the unlikely scenario you receive a product with a<strong> manufacturing defect</strong>.</p><p>However, if you receive an <strong>incorrect/damaged/different product </strong>or one with missing accessories, please raise a return request <strong>within 24 hours of delivery. We'll also need an unboxing video and images of the parcel to investigate about the discrepancy.</strong></p><p>SELECT products on Headphone Zone are eligible for <strong>Exchange within 7 days of delivery </strong>in case <strong>you are unhappy</strong> with the product. If you see  on the product page, it is eligible for exchange. You will receive full Store Credit in your Headphone Zone account so that you may choose another product from our website which would be more suited to your needs. Refunds will NOT be possible under our Exchange policy.</p><p><a href=\"https://www.headphonezone.in/blogs/policy/returns\">Read more here</a></p>"
+          }
+        },
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-1": {
+          "type": "item",
+          "settings": {
+            "title": "Raise a Return Request Here",
+            "content": "<p>Okay, so now that you've figured out whether your order is eligible for a return, all you have to do is click on the button below:</p><p><br/><a href=\"https://www.headphonezone.in/apps/return_prime\" target=\"_blank\"><strong>Raise a Return Here</strong></a></p><p>In case if you would like to read the policy again, here is the link<strong> - </strong><a href=\"https://headphonezone.freshdesk.com/a/solutions/articles/6000197802\" target=\"_blank\"><strong>What is our return policy?</strong></a></p>"
+          }
+        },
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-2": {
+          "type": "item",
+          "settings": {
+            "title": "What is the meaning of 7 Day Easy Exchange?",
+            "content": "<p>SELECT products are eligible for return under our 7 Day Easy Exchange.<br/></p><p><strong>If a product is shown as \"7 Day Easy Exchange\" then it is eligible for exchange under certain conditions. </strong></p><p>7 Day Easy Exchange products on Headphone Zone are eligible for Easy Exchange within 7 days of delivery. If you see \"7 Day Easy Exchange\" on the product page, it is eligible for exchange,<strong> but that is accepted only once</strong>. We want to make sure that you end up with a product that you 100% love. </p><p>An exchange will be allowed only if the product is returned in original condition (with brand’s/manufacturer's box, MRP tag intact, user manual, warranty card, and all the accessories therein)</p><p>You will receive full Store Credit in your Headphone Zone account so that you may choose another product from our website which would be more suited to your needs. <strong>Refunds will NOT be possible under our 7 Day Easy Exchange policy.</strong></p><p>Please note, this exchange option is available only once, the second time if you purchase a product from our website using the store credit, you won’t be able to return it unless it has a manufacturing defect.</p><p></p><p><strong>Ineligible Products:</strong></p><p>- Customised products like custom V-MODA shields, custom IEMs, or custom cables</p><p>- Accessories like Comply ear tips, SpinFit ear tips, Headphone ear pads, and Smartwrap earphone accessories. These are not accepted for hygiene reasons.</p><p>- Pre-owned products</p><p>- Headphone Zone Merchandise</p><p></p><p><strong>Ineligible orders:</strong></p><p>- If you have ordered the product by mistake and not cancelled the order before dispatch</p><p>- Orders where the Club Audiophile discount is equivalent to the order's total value, are not eligible for exchange</p>"
+          }
+        },
+        "61c0e858-7c4b-4ac6-849b-ba98738e80f2": {
+          "type": "item",
+          "settings": {
+            "title": "What is the meaning of 7 Days Replacement Guarantee?",
+            "content": "<p>ALL products are eligible for return under our <strong>7 Day Replacement Guarantee.</strong></p><p>In case you receive a product with a <strong>manufacturing defect,</strong> please raise a return request within 7 days of delivery.</p><p>However, if you receive an<strong> incorrect/damaged/different product or one with missing accessories</strong>, please raise a return request within <strong>24 hours of delivery</strong>. In case you receive a product with a <strong>missing, incorrect, or faulty accessory</strong>, you will be given a <strong>replacement accessory instead of the entire product</strong>.</p><p><br/>Please make sure that the product is in the original packaging with all the accessories it came with. <strong>We'll also need an unboxing video and images of the parcel to investigate the discrepancy</strong>. You may be asked to share images of the product and the packaging received for us to determine the damage or defect prior to approving the return request. The free replacement will be shipped only once the original order is returned.</p><p>Please make sure that the product is in the <strong>original packaging</strong> with all the accessories it came with. <strong>We'll also need an unboxing video and images of the parcel to investigate the discrepancy. This will allow us to determine the damage or defect prior to approving the return request.</strong></p><p><br/>The free replacement will be shipped only once the original order is returned.</p><p><br/><strong>A replacement will be issued only if:</strong></p><p>- It is found to be defective </p><p>- It is determined that the product was not damaged while in your possession</p><p>- The product is not different from what was shipped to you</p><p>- The product is returned in original condition (with brand’s/manufacturer's box, MRP tag intact, user manual, warranty card, and all the accessories therein)</p><p><br/><strong>Ineligible products:</strong></p><p>- Products that have a defect after 7 days. Please <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198229-how-do-i-claim-warranty-\">raise a warranty claim</a> or service request in this case with the authorized service partner</p><p>- If you receive an incorrect/damaged/different product and bring it to our notice beyond 24 hours of delivery</p><p>- Products that have been mishandled and therefore damaged</p><p>- If you have ordered the product by mistake and not canceled the order before dispatch</p><p>- Customised products like custom V-MODA shields, custom IEMs, or custom cables</p><p>- Accessories like Comply ear tips, SpinFit ear tips, Headphone ear pads, and Smartwrap earphone accessories. These are not accepted for hygiene reasons.</p><p>- Pre-owned products</p>"
+          }
+        },
+        "76485940-1315-4037-b3bb-b3169d95b6a4": {
+          "type": "item",
+          "settings": {
+            "title": "What is the return process?",
+            "content": "<p>We try our best to have the entire return process be sorted out for you as quickly as possible. In all, from the time you first raise a return request to the time that you receive a replacement, it usually takes 7-10 days. Here's a quick break up of the process and how much time each step of the process takes.</p><p><strong>Raising the return request:</strong> Once you've raised a return request, you should hear back from us by the next working day. We may have a few questions and clarifications that we may need before we go ahead and approve your return request.</p><p><strong>After approval</strong>: Once your return request has been approved, we will arrange a pickup for your product and you will receive a tracking ID in the approval email. <br/></p><p><strong>Pick-up:</strong> If you live in a metro city, you can expect the pickup to happen within 2 working days. Outside a metro city, you can expect the pickup to happen within 3-4 working days. It's usually the same amount of time it took for the product to be delivered to you.</p><p><strong>Inspection:</strong> Once the product has reached us, we will need 2-3 complete working days to have the product inspected and we will update you with the outcome of the inspection thereafter.</p><p><strong>After inspection: </strong>Based on the inspection status and the return type your return request was approved for, you will receive an email closing your return case, with us either issuing store credit, replacement or a refund.</p>"
+          }
+        },
+        "3f2114a9-28fc-4194-b538-8fdc76ee61ab": {
+          "type": "item",
+          "settings": {
+            "title": "What is eligible for return?",
+            "content": "<p>ALL products are eligible for return under our <a href=\"https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fhelp.headphonezone.in%2Fsupport%2Fsolutions%2Farticles%2F6000230099-what-is-the-meaning-of-7-days-replacement-\">7 Day Replacement Guarantee</a>.</p><p>In case you receive a product with a <strong>manufacturing defect,</strong> please raise a return request within 7 days of delivery.</p><p>However, if you receive an<strong> incorrect / damaged / different product or one with missing accessories</strong>, please raise a return request <strong>within 24 hours of delivery.</strong></p><p>In case you receive a product with a <strong>missing, incorrect, or faulty accessory</strong>, you will be given a <strong>replacement accessory instead of the entire product.</strong><br/></p><p>Please make sure that the product is in the <strong>original packaging </strong>with all the accessories it came with. You may be asked to <strong>share images of the product</strong> and the packaging received for us to <strong>determine the damage</strong> or defect prior to approving the return request.<br/></p><p>The free replacement will be shipped only once the original order has returned.</p><p><br/><strong>A replacement will be issued only if:</strong></p><p>- It is found to be defective </p><p>- It is determined that the product was not damaged while in your possession</p><p>- The product received from you is not different from the one sent out to you</p><p>- The product is returned in condition you have received it in (with brand’s/manufacturer's box, MRP tag intact, user manual, warranty card and all the accessories therein)</p><p><strong>Ineligible products:</strong></p><p>- Products that have a defect after 7 days. Please <a href=\"https://help.headphonezone.in/support/solutions/6000138074\">raise a warranty claim</a> or service request in this case with the authorised service partner</p><p>- If you receive an incorrect / damaged / different product and bring it to our notice beyond 24 hours of delivery</p><p>- Products that have been mishandled and therefore damaged</p><p>- If you have ordered the product by mistake and not cancelled the order before dispatch</p><p>- Customised products like custom V-MODA shields, custom IEMs, or custom cables</p><p>- Accessories like Comply ear tips, SpinFit ear tips, Headphone ear pads and Smartwrap earphone accessories. These are not accepted for hygiene reasons.</p><p>- Pre-owned products</p>"
+          }
+        },
+        "0910b452-90a2-4a2c-86ff-e26535ea68b3": {
+          "type": "item",
+          "settings": {
+            "title": "What is a manufacturing defect?",
+            "content": "<p>A manufacturing defect is a technical flaw that stops a device from being fully functional.<br/><br/>Some examples of manufacturing defects that affect earphones and headphones include:<br/><br/>One side of the headphone is giving no output<br/>Wireless device is unable to charge<br/>Sound imbalance<br/>Mic is not working<br/><br/>All manufacturing defects are covered under warranty and under our return policy.</p>"
+          }
+        },
+        "89d11cc0-c3a2-4c0f-b91b-a2eebb4ec204": {
+          "type": "item",
+          "settings": {
+            "title": "What if I have returned the wrong product?",
+            "content": "<p>Headphone Zone will not be liable for the products that have been returned by mistake. If an extra or incorrect product has been returned by mistake, Headphone Zone will not be accountable for misplacement or replacement of the extra/incorrect product returned and will not be responsible for delivering the extra/incorrect product back to the customer.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-0",
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-1",
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-2",
+        "61c0e858-7c4b-4ac6-849b-ba98738e80f2",
+        "76485940-1315-4037-b3bb-b3169d95b6a4",
+        "3f2114a9-28fc-4194-b538-8fdc76ee61ab",
+        "0910b452-90a2-4a2c-86ff-e26535ea68b3",
+        "89d11cc0-c3a2-4c0f-b91b-a2eebb4ec204"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Return Policy",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "fec55e75-1a38-486c-bf08-237238652a26": {
+      "type": "faq",
+      "blocks": {
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-0": {
+          "type": "item",
+          "settings": {
+            "title": "What do I need to keep ready for the pick up?",
+            "content": "<p>Once your return request is approved by us, we will arrange a pick up for the product that you wish to return and the pick up should happen within 2 to 3 working days, post-approval. We use the fastest and the most efficient courier company to pick up units from our customers to expedite the process as much as we can. </p><p>All you need to do is pack the earphones in the cardboard box with the <strong>original packaging and all accessories</strong> that were received by you. You can use the same brown box in which the product was originally delivered to you. Kindly ensure that there is <strong>nothing stuck</strong> on the cardboard box and also remove the old ship label to avoid any address confusion. Be sure that the box is well-taped and properly sealed. Refer to the approval email that you must have received for the hassle-free pickup </p><p>Let us know if the pick-up is not done in the mentioned timeline and we will have that pick-up rescheduled for you.</p>"
+          }
+        },
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-1": {
+          "type": "item",
+          "settings": {
+            "title": "When will the courier person come for pickup?",
+            "content": "<p>We use the fastest and the most efficient courier company, Blue Dart to pick up units from our customers to expedite the process as much as we can. <br/></p><p>There is no way for us to give an exact time as to when will the courier boy come to pick up the product, they generally come between <strong>2pm-7pm</strong> to pick up the product. Also, the courier company does not share the contact details of the courier boy who will be coming to pick up the product. </p><p>However, if you are in a hurry or if no one will be available at the mentioned time, you can go and drop the parcel at the nearest Bluedart/ Delhivery office. Refer to the approval email for the way the unit needs to be packed before handing it over to the courier team. <br/></p>"
+          }
+        },
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-2": {
+          "type": "item",
+          "settings": {
+            "title": "Can I drop off my product at your nearest store/office?",
+            "content": "<p>Our warehouse is located in Adyar, Chennai where our inspection team is available. All the <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000199252-how-do-you-inspect-a-product-\" target=\"_blank\">inspections</a> are conducted by them.</p><p>If you live near by, you or someone on your behalf can go and drop the parcel there. Simply ensure that you mention your RMA number on the box while you drop off the parcel. The inspection team won't be able to provide you the <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198677-how-long-does-the-inspection-process-take-\" target=\"_blank\">inspection status on the spot</a>. We will get in touch with you once our inspection team provides us with an update.</p><p>Our head office is located in Mumbai where we operate from. However we do not conduct any inspections here.</p>"
+          }
+        },
+        "b513c8ea-6796-45b0-9de5-9c1a5301ea13": {
+          "type": "item",
+          "settings": {
+            "title": "Can I get the pick up person's contact details?",
+            "content": "<p>Our courier partners have multiple courier boys assigned for different tasks and therefore it is difficult for them to identify which courier boy will be coming to pick up your unit. Hence, our courier partners <strong>do not share</strong> the number of the courier boys to avoid confusion.<br/><br/>If the courier boy is not able to locate your address, they will give you a call and you can guide them to locate the address.</p><p><br/>If any necessary instructions like \"Please collect the parcel from my neighbor\" needs to be communicated, then just submit a request and we will have that done for you.</p>"
+          }
+        },
+        "0647d574-506b-4eaa-9a88-6ed06e11230a": {
+          "type": "item",
+          "settings": {
+            "title": "What if my product hasn’t been picked up within 7 days from date of delivery?",
+            "content": "<p>Do not worry if the pick up hasn't happened yet. </p><p>If your pickup is pending for the past 7 days, it doesn't affect your chances of replacement or refund as long as <strong>your request was raised within 7 days from the date of delivery</strong>. At times due to some technical issues faced by the courier companies, the pickups are delayed.</p><p>In such a situation, we would request you to drop the parcel at the nearest Bluedart office and inform us about it. </p>"
+          }
+        },
+        "66dbe99b-8dd9-4f7f-a2fa-85b35a15d659": {
+          "type": "item",
+          "settings": {
+            "title": "What if Pick up from my location is not possible?",
+            "content": "<p>There are few pin codes and locations that are not serviceable by our courier partners for pick up. In such a case, we would request you to share an alternate address with a different pin code so that we can schedule a pick up for you from that address. </p><p>Or, we'd suggest that you courier us the product and we will reimburse the courier charges for up to Rs 350.</p><p>If you would like to go for the latter option, drop in an inquiry and we will share the address where you need to courier the product to.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-0",
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-1",
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-2",
+        "b513c8ea-6796-45b0-9de5-9c1a5301ea13",
+        "0647d574-506b-4eaa-9a88-6ed06e11230a",
+        "66dbe99b-8dd9-4f7f-a2fa-85b35a15d659"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Pick-Up",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "d10d4f5e-f418-4ff2-8ab6-2185e6b599cc": {
+      "type": "faq",
+      "blocks": {
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-0": {
+          "type": "item",
+          "settings": {
+            "title": "What if no defect is found while inspecting the product I returned?",
+            "content": "<p>If our inspection team does not find the defect as mentioned at the time of raising the request, <strong>we will send the same unit back to you under our </strong><a href=\"https://help.headphonezone.in/support/solutions/articles/6000230099-what-is-the-meaning-of-7-days-replacement-&hl=en&sa=D&source=meet\" title=\"https://help.headphonezone.in/support/solutions/articles/6000230099-what-is-the-meaning-of-7-days-replacement-&hl=en&sa=D&source=meet\"><strong>7 Day Replacement Guarantee Policy</strong></a><strong>. </strong></p><p>However, before doing so, we will get in touch with you to elaborately understand the problem. With a better understanding of the defect, we will proceed with the re-inspection process if required. A re-inspection status update will be sent to you at the earliest. </p><p>An inspection will be run to check if the product is truly defective or simply has a compatibility issue. </p><p>In the case of the product working fine and it falls under our 7 Day Easy Exchange policy, we can offer you  full store credit so you may buy something else from our website which would suit your needs better.</p>"
+          }
+        },
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-1": {
+          "type": "item",
+          "settings": {
+            "title": "How long does the Return Inspection process take?",
+            "content": "<p>After the product has reached our warehouse, you will receive a confirmation email about the delivery. Post that It takes<strong> 2-3 working days</strong> for the inspection process to be carried out. After inspection, we shall notify you about our findings and the available options.</p><p> <strong>Why does it take 2-3 working days for us to carry out the inspection process?</strong></p><p>As we deal with multiple brands and products every day, it takes us a considerable amount of time to inspect each case for a specific defect. Wireless products take more time to inspect as compared to wired products. We spend a lot of time on each product to meticulously inspect it and give you a conclusive inspection status.</p>"
+          }
+        },
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-2": {
+          "type": "item",
+          "settings": {
+            "title": "Can I request for a Re-inspection of my Returned item?",
+            "content": "<p>Yes, you can. Do elaborate about your problem so that it is easier for us to replicate the defect (The more details, the better).<br/>Eg. If you say that you are facing connectivity issues, don't forget to tell us the devices you have used your wireless in-ear with. We will try connecting it with multiple devices to find out whether it has a compatibility issue or manufacturing defect.</p><p>In certain cases where the defect can be obscure, we will send the product to the brand for re-inspection. Each and every brand knows their product the best and they will be able to provide the best resolution. </p>"
+          }
+        },
+        "182fa2b1-565f-4b58-afa0-39f0d2a46b1f": {
+          "type": "item",
+          "settings": {
+            "title": "How do you inspect a product ?",
+            "content": "<p><strong>In case the product has a manufacturing defect or is dead on arrival:</strong></p><p>Under this situation, our inspection team will check for the defects you have specifically mentioned while raising the return request. Please be specific about what the issue is (mic not working, sound imbalance, connectivity issues, dead on arrival, etc). The more you elaborate, the smoother the inspection process will be.</p><p>At least two source devices are used when testing a product to ensure that there is actually a manufacturing defect and not a compatibility issue.</p><p><br/>For products with replaceable parts, the team checks for defective ones and only that part is replaced (whenever possible). If the entire product is defective, then it is replaced with a brand new product.</p><p><strong>Some examples of how the inspection is done:</strong></p><ul><li><em>Issues with mic: </em>If you feel that there is an issue with your earphone's mic, our team will make calls with the earphone to test the mic.</li><li><em>Detachable cables: </em>To check if there is a problem with the detachable cable, the headphone/earphone is tested with the defective cable as well as another working one.</li><li><em>Connectivity issues: </em>The headset is connected to different devices link a laptop, phone, iPhone, etc. to check for connectivity issues. </li></ul><p><br/><strong>In case the product is not meeting your expectations:</strong></p><p>For products returned if the product does not meet your expectation or if you ordered it by mistake, our inspection team will check the following only:</p><ul><li>Whether the product is working and has no physical damages</li><li>All accessories that were originally sent along with the product are intact</li><li>The packaging is intact</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-0",
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-1",
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-2",
+        "182fa2b1-565f-4b58-afa0-39f0d2a46b1f"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Inspection",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "b5039a4a-ee80-4f16-81e3-06e2a2d1e69d": {
+      "type": "faq",
+      "blocks": {
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-0": {
+          "type": "item",
+          "settings": {
+            "title": "Will the entire product be replaced, or the defective part?",
+            "content": "<p>In most cases, you will get a brand-new sealed unit for a product that's dead on arrival. But if you have bought an unboxed or demo unit, you will receive an unboxed/demo unit as a replacement. In case a replacement of the product or its color variant is unavailable, you will be given store credit.</p><p>However, in the case of products where only one part is defective, we will replace the same (whenever possible). Eg. If the cable alone is faulty, that alone will be replaced.<br/></p><p>Sometimes the spares or replaceable parts have to be procured from the brand and that can take a little longer depending on the product and brand. A more realistic timeline will be given to you after getting an update from the brand, though we will try to expedite the process.</p>"
+          }
+        },
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-1": {
+          "type": "item",
+          "settings": {
+            "title": "How will the replacement unit be sent to me?",
+            "content": "<p>Once we receive the inspection status and if the product is found to be defective, we will create a replacement order for you. You will receive an order confirmation and shipping confirmation email, just like you received for your initial order. </p><p>We use BlueDart, our super-fast courier partner, to send the replacement unit. In exceptional cases like your pin code not being serviceable by BlueDart, we will use an alternate courier to send the replacement. </p><p><br/></p>"
+          }
+        },
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-2": {
+          "type": "item",
+          "settings": {
+            "title": "Instead of a replacement, can I get a store credit?",
+            "content": "<p>Yes, <strong>you can get store credit</strong>.</p><p>We absolutely understand if you want to buy a different product altogether instead of getting a replacement.</p>"
+          }
+        },
+        "72c3507d-2db4-4464-b42c-069ef7377c48": {
+          "type": "item",
+          "settings": {
+            "title": "What if the product to be replaced is not available in stock?",
+            "content": "<p>If there is no replacement product readily available in stock, we have the following options for you:</p><ul><li>We can ask the brand for a replacement unit (which may take some time)</li><li>If there is another colour variant of the same product available, you can choose the same as replacement</li><li>You can also opt for <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198518-instead-of-a-replacement-can-i-get-a-store-credit-instead-\" target=\"_blank\">store credit</a> and buy another product</li></ul>"
+          }
+        },
+        "790618c2-e934-4ead-bb36-5daea9b4fcff": {
+          "type": "item",
+          "settings": {
+            "title": "Who takes responsibility for replacement?",
+            "content": "<p>Headphone Zone takes full responsibility for a <a href=\"https://headphonezone.freshdesk.com/a/solutions/categories/6000138073\">dead on arrival</a> product or any defect that might arise within <strong>7 days from the date of delivery</strong>.<br/><br/>We know that getting a defective product can be frustrating which is why we make sure we provide you with a replacement at the earliest.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-0",
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-1",
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-2",
+        "72c3507d-2db4-4464-b42c-069ef7377c48",
+        "790618c2-e934-4ead-bb36-5daea9b4fcff"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Replacement",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "78cfc619-0078-49f4-bc0a-75364ed28603": {
+      "type": "faq",
+      "blocks": {
+        "template--16042753261756__78cfc619-0078-49f4-bc0a-75364ed28603-1685624204aed315c7-0": {
+          "type": "item",
+          "settings": {
+            "title": "If I get a defective product, will I get a refund or replacement?",
+            "content": "<p>We do know that getting a defective product can be disappointing and thus, we take full responsibility to make sure that our policies are as easy and convenient as possible. If your product is defective, you can choose from either of the three resolutions:</p><ul><li>Replacement</li><li>Store Credit</li><li>Refund</li></ul>"
+          }
+        },
+        "template--16042753261756__78cfc619-0078-49f4-bc0a-75364ed28603-1685624204aed315c7-1": {
+          "type": "item",
+          "settings": {
+            "title": "Will Headphone Zone help me choose what to buy with my store credit?",
+            "content": "<p>Of course!<br/>Simply submit a ticket below with 'Need Help Buying a Headphone' and the details of what you are looking for. We will get back to you with the best options. </p>"
+          }
+        },
+        "template--16042753261756__78cfc619-0078-49f4-bc0a-75364ed28603-1685624204aed315c7-2": {
+          "type": "item",
+          "settings": {
+            "title": "What if I want a refund instead of store credit?",
+            "content": "<p><strong>Under 7 Day Easy Exchange, we do NOT offer refunds</strong>. </p><p>We offer store credit to our customers who are not satisfied with their purchase so that they can pick something else from our website which would suit their needs better. <strong>Store credit offered under returns is valid forever! It never expires.</strong> You may pick any product you like and redeem the store credit from your Headphone Zone account at checkout. </p><p>However, in the case a manufacturing defect has been found in the unit sent to you, we may offer a refund.</p>"
+          }
+        },
+        "ab50e968-0770-4c93-9311-b4137809ef62": {
+          "type": "item",
+          "settings": {
+            "title": "How will the refund be given?",
+            "content": "<p>Refunds are always done in the original mode of payment. </p><p>For online paid orders, a refund will be given via our payment gateway to the card from which the payment was made (in case of payments done online). For payments done via Cash on Delivery, we will ask for your bank account details and the payment will be made via NEFT. And for the order placed using store credits, the refunds will be done in the form of store credit only. </p><p>Before raising a request, you can check if you are eligible for a refund <a href=\"https://help.headphonezone.in/en/support/solutions/articles/6000241435-when-are-refunds-possible-\">here </a></p>"
+          }
+        },
+        "6a1c2c92-d12f-4f36-8923-1b3099ffe597": {
+          "type": "item",
+          "settings": {
+            "title": "How long before my store credit expires?",
+            "content": "<p>Guess what? Your store credit has <strong>no expiry date</strong>.</p><p>Feel free to take as long as you like to choose the best pair of cans for you!</p>"
+          }
+        },
+        "5e1c93f9-5ba6-46d4-878e-1f37ec9daa77": {
+          "type": "item",
+          "settings": {
+            "title": "When are refunds possible?",
+            "content": "<p><strong>You are eligible for a refund in specific cases if:</strong></p><ul><li>You cancelled your order before it was shipped out</li><li>The returned product has a manufacturing defect</li><li>The returned product is in a completely sealed and unopened condition without any packaging damages or blemished</li><li>You were sent a different product from what you ordered</li></ul><p></p><p><strong>You are NOT eligible for a refund in the following cases if:</strong></p><ul><li>You've returned a product under our 7 Day Easy Exchange Policy</li><li>You or the person you've gifted the product does not like the product</li><li>You or the recipient of the product has mishandled the product</li><li>You pre-ordered a product that was specifically procured for you</li><li>A wrong product was returned than what was shipped to you</li><li>You are claiming warranty or service for your product</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042753261756__78cfc619-0078-49f4-bc0a-75364ed28603-1685624204aed315c7-0",
+        "template--16042753261756__78cfc619-0078-49f4-bc0a-75364ed28603-1685624204aed315c7-1",
+        "template--16042753261756__78cfc619-0078-49f4-bc0a-75364ed28603-1685624204aed315c7-2",
+        "ab50e968-0770-4c93-9311-b4137809ef62",
+        "6a1c2c92-d12f-4f36-8923-1b3099ffe597",
+        "5e1c93f9-5ba6-46d4-878e-1f37ec9daa77"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Refunds & Store Credit",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5436d29c-494e-4ebb-be68-ea5575fdabb6",
+    "5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d",
+    "fec55e75-1a38-486c-bf08-237238652a26",
+    "d10d4f5e-f418-4ff2-8ab6-2185e6b599cc",
+    "b5039a4a-ee80-4f16-81e3-06e2a2d1e69d",
+    "78cfc619-0078-49f4-bc0a-75364ed28603"
+  ]
+}

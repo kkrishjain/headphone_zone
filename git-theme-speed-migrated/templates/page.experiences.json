@@ -1,0 +1,62 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "cb7c58c4-5466-40c7-8a77-7d56f664aa7c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15992159764668__cb7c58c4-5466-40c7-8a77-7d56f664aa7c-16783465282569ce89-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Upcoming Listening Sessions & Workshops",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15992159764668__cb7c58c4-5466-40c7-8a77-7d56f664aa7c-16783465282569ce89-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "2b9d1790-6983-4fed-be14-9bb7b01af2ef": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"experience-grid\">\n    \n    <div>\n\n        <a href=\"https://www.headphonezone.in/products/audiophile-101-with-raghav-somani\" target=\"_blank\">\n            <img src=\"https://www.headphonezone.in/cdn/shop/files/Audiophile-101-1080-1080_700x_3e4e739c-f661-4dda-a94d-bf228b982b06.jpg?v=1687428450&width=600\"></a>\n        <h3>Audiophile 101 with Raghav Somani\n\n        </h3>\n        <p>A Guided Listening Session</p>\n\n        <div class=\"experience-details\">\n\n            <div>\n                <strong>DATE:</strong>\n            </div>\n\n            <div>\n                <p>TBA\n\n                </p>\n            </div>\n\n\n            <div><strong>TIME:</strong></div>\n\n            <div>\n                <p>TBA\n\n                </p>\n            </div>\n            <div><strong>VENUE:</strong></div>\n            <div>\n                <p> TBA <span style=\"font-size: 12px;\"></span></p>\n            </div>\n\n\n\n        </div>\n        <a href=\"https://www.headphonezone.in/products/audiophile-101-with-raghav-somani\" target=\"_blank\"\n            class=\"button button--primary\">COMING SOON</a>\n\n\n\n    </div>\n\n\n\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<style>\n    .experience-grid {\n        display: grid;\n        grid-template-columns: repeat(3, 1fr);\n        gap: 5%;\n        margin-bottom: 40px;\n\n    }\n\n\n    h3 {\n        font-family: \"sora\", sans-serif;\n        font-weight: var(--heading-font-weight);\n        font-style: var(--heading-font-style);\n        letter-spacing: var(--heading-letter-spacing);\n        text-transform: var(--heading-text-transform);\n        font-size: 2rem;\n        line-height: 1.1;\n        padding-top: 20px;\n        padding-bottom: 20px;\n    }\n\n\n    .experience-details {\n        display: grid;\n        grid-template-columns: 15% 60%;\n        background-color: #f1f1f1;\n        grid-gap: 0.4rem;\n        padding-left: 10px;\n        padding-bottom: 10px;\n        padding-top: 10px;\n        margin-bottom: 20px;\n        margin-top: 20px;\n    }\n\n\n    @media screen and (max-width: 812px) {\n        .experience-grid {\n            grid-template-columns: 1fr;\n            gap: 1%;\n        }\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cb7c58c4-5466-40c7-8a77-7d56f664aa7c",
+    "2b9d1790-6983-4fed-be14-9bb7b01af2ef"
+  ]
+}

@@ -1,0 +1,515 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "5436d29c-494e-4ebb-be68-ea5575fdabb6": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Payment2_help_center.svg?v=1685687191\" style=\"width:200px;margin:auto;\">\n<h2 class=\"h2\">Orders & Payments\n\n</h2>\n\n<style>\n\nh2 {\nfont-size:3rem;\ntext-align:center;\nfont-family: \"sora\", sans-serif;\n    font-weight: var(--heading-font-weight);\n    font-style: var(--heading-font-style);\n    letter-spacing: var(--heading-letter-spacing);\n    text-transform: var(--heading-text-transform);\n    overflow-wrap: anywhere;\n}\n\n\n}\n\n\n\n@media screen and (max-width: 700px) {\n  h2 {\n    font-size:2rem!important;\n\n  }\n}\n\n\n\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d": {
+      "type": "faq",
+      "blocks": {
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-0": {
+          "type": "item",
+          "settings": {
+            "title": "How to place an order?",
+            "content": "<p>It’s as easy as ABC! We have a very simplified checkout process just like any other e-commerce website.<br/><br/><strong>Step 1</strong> - Add the product to your cart<br/><br/><strong>Step 2</strong> - Proceed to secure checkout<br/><br/><strong>Step 3</strong> - Enter your contact and delivery information<br/><br/><strong>Step 4</strong> - Select your <strong>payment method</strong> and pay.<br/><br/>In case you face any issues while checkout, please feel free to reach out to us.</p>"
+          }
+        },
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-1": {
+          "type": "item",
+          "settings": {
+            "title": "Can I leave items in my shopping cart for future purchase?",
+            "content": "<p>Our website uses cookies to make your browsing experience as smooth as possible. These cookies also help us keep your cart alive! But you cannot reserve items by simply adding items to your cart. By the time you reach checkout, it’s possible that the <strong>items in your cart would no longer be in stock, or at the same price as it was when you added it</strong>. Prices are always volatile to market demand and competitor’s prices.</p><p><br/></p><p>So yes, you can leave items in your cart to buy later, but ideally, don’t wait too long or you may miss the deal, or worse, lose out on the product if it goes out of stock.</p>"
+          }
+        },
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-2": {
+          "type": "item",
+          "settings": {
+            "title": "The product's price has changed. Can I pay the old price?",
+            "content": "<p>Prices on e-commerce websites are highly volatile so it's possible that the price would’ve changed from the time you last checked. All products are discounted to the best price possible but we can’t really control how frequently the price would fluctuate.</p>"
+          }
+        },
+        "61c0e858-7c4b-4ac6-849b-ba98738e80f2": {
+          "type": "item",
+          "settings": {
+            "title": "Can I get a discount since it's my first time buying from you?",
+            "content": "<p>Customers always come up to us and ask, \"what is the best price you can give me?\" or \"do you have any special seasonal offers or exclusive coupons?\", through phone calls and e-mails, and sometimes even both!<br/><br/><strong>But here's the deal - we actually do NOT do deals.</strong><br/><br/>The answer is simple.<br/><br/>Although the e-commerce space has become perfect for bargain and deal hunters, we believe that if we did run sales and specials, it wouldn't be fair to customers who look to buy products year round. It makes one anticipate the next big sale. And suddenly, both of us are on a stalemate, waiting for it to happen.<br/><br/>What about special coupons? It's the same reason. <br/><br/>We don't want any of our customers feeling like they've been cheated just because they didn't get the exclusive coupon code that their friend may have got their hands on.<br/><br/>Also, Headphone Zone is an eCommerce store that strives to give products at prices that are strongly competitive. We work very hard to give you the fairest deal on every single product that we sell on our website. The offered price that you see is the final and best price for that product. <br/><br/>Our aim is to give you the greatest music listening experience you can get. And if that's what you seek, then price is almost never a hindrance. <br/><br/>Despite all this, we hope that you'd like to form a relationship with us. Because all we really want is for you to rediscover your favorite music with the right gear. So, we have started a Club Audiophile program just for you! You can earn points on every purchase and redeem them and get discounts on your next purchase. You can get more information about the Club Audiophile Program from the link below.<br/><br/><a href=\"https://www.headphonezone.in/pages/rewards\" target=\"_blank\" title=\"https://www.headphonezone.in/pages/rewards\">https://www.headphonezone.in/pages/rewards</a><br/><br/>And we're always happy to help! So, if you'd like to get the perfect gear for you within your budget, feel free to get in touch with us and we'd love to help you figure it out!<br/></p>"
+          }
+        },
+        "76485940-1315-4037-b3bb-b3169d95b6a4": {
+          "type": "item",
+          "settings": {
+            "title": "Can I get a discount since I'm a loyal customer of yours?",
+            "content": "<p>Your loyalty to us is treasured, and we definitely appreciate that you choose us, time and again, for all your music listening needs. While we don’t do discounts but we do have a loyalty program open to all our customers!<br/><br/>For every one rupee spent on your purchase at Headphone Zone, one point is awarded to you if you have signed up for the program. You can then redeem your points from your next purchase. Besides placing orders, you can also earn points by creating an account, following our Instagram, signing up to our newsletter or leaving a product review.<br/><br/>You can sign up and learn more here: <a href=\"https://www.headphonezone.in/pages/rewards\" target=\"_blank\" title=\"https://www.headphonezone.in/pages/rewards\">https://www.headphonezone.in/pages/rewards</a><br/><br/>Wait… there’s more!<br/><br/>We at Headphone Zone have, with a lot of passion, put together a fabulous collection of personal audio products and we truly believe that it has allowed all of us to connect more intimately with our music. But, most music listeners in India have yet to discover the joy of listening to music the way it was meant to be heard. ◔̯◔ <br/><br/>This is where you, a hobbyist music listener or audiophile, come in. Your passion, knowledge and unique perspective on music and headphones is invaluable to expanding India’s audiophile community. <br/><br/>We’d love for you to join us on our mission to introduce India to the world’s finest headphones. Join our Affiliate program and earn enough in commissions to pay for your next headphones from Headphone Zone!</p>"
+          }
+        },
+        "3f2114a9-28fc-4194-b538-8fdc76ee61ab": {
+          "type": "item",
+          "settings": {
+            "title": "How do I edit my customer profile details?",
+            "content": "<p>In order to edit your profile, you’d first need to <strong>login into your account</strong> with your registered email id and password. <br/><br/>Once done, click on the <strong>‘My Profile’</strong> <strong>tab</strong> and then <strong>click on the ‘Edit’ button.</strong><br/> <br/><strong>You can now edit your profile details (name, email id, contact number)</strong> and <strong>click on save</strong> to ensure that your profile has been updated and you’re good to go!</p>"
+          }
+        },
+        "0910b452-90a2-4a2c-86ff-e26535ea68b3": {
+          "type": "item",
+          "settings": {
+            "title": "How to change my password?",
+            "content": "<p>Once you create your Headphone Zone Account, you can always change your password using the following steps :<br/><br/>1. Go to 'My Account' Page<br/><br/>2. Click on the last option which is - CHANGE PASSWORD<br/><br/>3. You just need to enter your New Password and confirm it.<br/><br/>That's it! Your password will be updated :)</p>"
+          }
+        },
+        "89d11cc0-c3a2-4c0f-b91b-a2eebb4ec204": {
+          "type": "item",
+          "settings": {
+            "title": "How can I check my recently viewed products?",
+            "content": "<p>Struggling to find that product which you were checking sometime back? Don't worry! We've got your back! <br/><br/>You just need to login into your Headphone Zone Account and follow the below steps : <br/><br/>1. Go to 'My Account Page'<br/><br/>2. Click on the second last option - RECENTLY VIEWED PRODUCTS<br/><br/>3. You'll be able to find all the products that you've recently viewed on our website.</p>"
+          }
+        },
+        "1abd9417-2cdf-4931-844e-afa63a349136": {
+          "type": "item",
+          "settings": {
+            "title": "Where can I download a copy of my invoice for my orders?",
+            "content": "<p>An invoice is a mandatory document when you will have to claim a warranty of your product. <br/><br/>So, in case if you require the invoice copy, you can simply <strong>download it from the My Account</strong> section. <br/><br/><strong>Log in to your Headphone Zone account &gt; Go to My Orders &gt; Click on 'Download Invoice' below your respective order details.</strong><br/><br/>And there you go! you will have a PDF copy of the invoice with you.</p>"
+          }
+        },
+        "f3a07244-484f-4147-b988-ec51fc6c8e8f": {
+          "type": "item",
+          "settings": {
+            "title": "Where can I find my order history?",
+            "content": "<p>Want to know your order history? We have it saved for you. <br/><br/>Just a few clicks and boom! you have all the details of the orders you have placed with us.<br/><br/><strong>Login to your account &gt; My Orders &gt; All your order history will show up there.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-0",
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-1",
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-2",
+        "61c0e858-7c4b-4ac6-849b-ba98738e80f2",
+        "76485940-1315-4037-b3bb-b3169d95b6a4",
+        "3f2114a9-28fc-4194-b538-8fdc76ee61ab",
+        "0910b452-90a2-4a2c-86ff-e26535ea68b3",
+        "89d11cc0-c3a2-4c0f-b91b-a2eebb4ec204",
+        "1abd9417-2cdf-4931-844e-afa63a349136",
+        "f3a07244-484f-4147-b988-ec51fc6c8e8f"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "General Orders & Payments Questions",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "fec55e75-1a38-486c-bf08-237238652a26": {
+      "type": "faq",
+      "blocks": {
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-0": {
+          "type": "item",
+          "settings": {
+            "title": "How do I cancel my order?",
+            "content": "<p>We admit that it is upsetting to see an order cancelled :(<br/><br/>Before you’d like to cancel your order, please note that the order can be cancelled within 24 hours of placing the order or before dispatch whichever is earlier. If you’ve received a Shipping Confirmation email from us already, then it’s a bit late to cancel the order.<br/><br/><strong>If you haven’t then here’s how you can proceed with your cancellation request:</strong><br/><br/><strong>Step 1:</strong> Login or Create your account (You'll find it on the top of our Homepage).<br/><br/><strong>Step 2:</strong> Go to 'MY ORDERS' in your account section. <br/><br/><strong>Step 3:</strong> Click on 'CANCEL ORDER' below your order details for an immediate Order Cancellation.<br/><br/><strong>Step 4:</strong> Select the reason why you would like to cancel your order.<br/><br/><strong>Step 5:</strong> Once you click on 'Cancel Order', you should get an Order Cancellation email. Thereafter, we'll mope for a little bit for having lost you.<br/><br/><strong>Step 6:</strong> If you have paid online, we’ll reverse the transaction through our payment gateway. A refund typically takes about 3-7 working days to reflect in your account. <br/><br/><strong>There are many reasons why one would want to cancel an order placed on our website, but we have a solution for each reason:</strong><br/>1. \"Want to choose another product instead\" - We would be happy to help you choose another product. If you have paid online already, we can provide store credit for the same for you to buy another product.<br/><br/>2. \"I won't be available when delivery happens\" - No problemo! We can keep your order on hold or have the shipping address changed to wherever you will be available (any city in India)<br/><br/>3. \"I found a better price\" - We try our best to provide our customers with the best prices. In the event that you found a lower price, please do raise a ticket, and we'll try our best to match the price.</p>"
+          }
+        },
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-1": {
+          "type": "item",
+          "settings": {
+            "title": "Can I change my order?",
+            "content": "<p>Any kind of minor or major changes are possible to your order as long as it hasn’t been dispatched from our warehouse.  Any kind of changes are <strong>extremely difficult</strong> once the order has been dispatched. <br/><br/><em>Address Changes:</em><br/><strong>1. Complete change of address - Different city, different state:</strong><br/>It will be impossible to do any kind of changes quickly to your address post dispatch if you want to change the address completely. For example, if you’ve originally asked for the item to be delivered in Mumbai and the address change is that of another city like Delhi or Bangalore. In such a situation we would first have to check if the other pincode is serviceable by the same courier company and the delay in redirecting the parcel can’t be estimated accurately. A better solution would be to put the parcel on hold and request for delivery on a later date in case you’ll be available at the original address within a few days. Or if you can be patient, then we’ll redirect the parcel and have it delivered if the new address is serviceable by the courier company.<br/><br/><strong>2. Minor address change - Within the same city:</strong><br/>If you’re wanting to change the address to another address within the same city or want to add a missing landmark/area location that is currently missing from your shipping address, it should be possible but with a delay of a day or two. This can happen if you want your product delivered to your office instead of your home & vice versa or you've forgotten to mention your complete address.<br/><br/><em>Order Item Changes:</em><br/>If you would like a different color variant of the same price or you would like to replace the items in your order with items of equal value, these changes can only happen if your order hasn’t been shipped out yet. If you would like to add items to your order and its already shipped, you can just place another order and we’ll have it shipped out to you.</p>"
+          }
+        },
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-2": {
+          "type": "item",
+          "settings": {
+            "title": "When can I cancel my order?",
+            "content": "<p>Whaaat, you want to cancel your order? Nooooooo!!<br/><br/>We’re sad to see you go…<br/><br/>If you would like to cancel your order, please make sure your order is not shipped yet. If you’ve <strong>already received our Shipping Confirmation email then its probably too late to cancel the order</strong>. You can cancel your order within <strong>24 hours of placing it or before dispatch</strong>, whichever comes earlier.<br/><br/>Here's <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000197797-how-do-i-cancel-my-order-\" target=\"_blank\" title=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000197797-how-do-i-cancel-my-order-\">how you can cancel your order</a> if your order hasn't been shipped out yet.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-0",
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-1",
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-2"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Change & Cancel",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "d10d4f5e-f418-4ff2-8ab6-2185e6b599cc": {
+      "type": "faq",
+      "blocks": {
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-0": {
+          "type": "item",
+          "settings": {
+            "title": "How do I check the status of my order?",
+            "content": "<p>At every step of your transaction you will receive an email with relevant information regarding the order you have placed. Make sure that you’ve entered the correct email ID when you’re transacting. As soon as you place an order you will receive an Order Confirmation email with your order number. <br/><br/>Once we fulfill (dispatch) the order, you will receive a tracking ID for it in a Shipping Confirmation email. You can use this tracking ID to track your order at any point of time.<br/><br/><a href=\"https://track.headphonezone.in/\" target=\"_blank\" title=\"https://track.headphonezone.in/\">TRACK YOUR ORDER NOW</a><br/><br/>If you haven’t received the tracking details, then your order hasn’t been dispatched yet. Once the order is in transit, you will receive an email update in case there are any delivery exceptions, to let you know of any delays or hiccups and missed delivery attempts. </p>"
+          }
+        },
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-1": {
+          "type": "item",
+          "settings": {
+            "title": "How do I track my order?",
+            "content": "<p>As soon as we fulfill (dispatch) your order you will receive a tracking ID for it in a Shipping Confirmation email. You can use this tracking ID to track your order at any point of time.<br/><br/><a href=\"https://track.headphonezone.in/\" target=\"_blank\" title=\"https://track.headphonezone.in/\">TRACK YOUR ORDER NOW</a><br/><br/>If you haven’t received your tracking ID yet, don’t panic! It just means your order hasn’t been shipped out yet, or we’re yet to update the tracking number. <br/><br/><br/><br/>Your tracking ID will not be trackable for a few hours, but don’t worry, you should start receiving tracking updates via email and SMS up till delivery.</p>"
+          }
+        },
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-2": {
+          "type": "item",
+          "settings": {
+            "title": "Why can't I track my order?",
+            "content": "<p>If you are not able to track your order, just relax.<br/><br/>Our logistic partners take up to 12 hours to update the shipment status. So if you've just received your tracking details and are not able to <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000197809-how-do-i-track-my-order-\" target=\"_blank\" title=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000197809-how-do-i-track-my-order-\">track your order/shipment</a>, please try again in sometime. If there is no tracking status even post 12 hrs then do submit a request and we shall investigate the issue.<br/><br/>The tracking ID is shared with you once the order is ready for dispatch, if for whatever reason the courier partner hasn’t picked up the orders, then the tracking ID status won’t get updated till the next business day that it might get picked up on.<br/><br/>Sometimes the courier partners are facing technical issues, which might result in a delay in updating of the status. In such cases we shall confirm the dispatch of your order from our warehouse and have the matter escalated with our courier partners.</p>"
+          }
+        },
+        "182fa2b1-565f-4b58-afa0-39f0d2a46b1f": {
+          "type": "item",
+          "settings": {
+            "title": "My order status show 'delivered' but I haven't received my order?",
+            "content": "<p>If your courier is showing 'order delivered' but you haven't yet received anything, don't worry. It seems that you have received a false status update from the courier company. Just get in touch with us and we shall contact the courier company to understand why this happened and get back to you letting you know when you can expect delivery.<br/><br/>We will do whatever it takes to get your order to you. :)<br/><br/>This typically does not happen as we use India’s best logistic partners to ensure hassle-free and quick delivery to all our customers.<br/></p>"
+          }
+        },
+        "831869cb-cd38-40fa-b0e5-61e43ca12925": {
+          "type": "item",
+          "settings": {
+            "title": "Why is my order late?",
+            "content": "<p>Headphone Zone has partnered with India’s best logistic partners to ensure quick and hassle free delivery to all our customers.<br/><br/>Nevertheless, if in an unfortunate scenario your order is late, just get in touch with us and we shall contact the courier company to understand the reason for delay and thereafter will let you know.<br/><br/>Here's some of the reasons that typically cause a delay in the delivery -<br/><br/>1. There is a delay in delivery by the courier company due to network issues or unavoidable circumstances, i.e. floods, riots.<br/><br/>2. The provided address is not easily locatable by the courier company or necessary landmarks are missing.<br/><br/>3. The delivery was attempted, but no one was available to receive the order.<br/><br/>4. The wrong address was provided while placing the order.<br/><br/>To track your order at every step as it reaches you, just <a href=\"https://track.headphonezone.in/\" target=\"_blank\" title=\"https://track.headphonezone.in/\">click here</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-0",
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-1",
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-2",
+        "182fa2b1-565f-4b58-afa0-39f0d2a46b1f",
+        "831869cb-cd38-40fa-b0e5-61e43ca12925"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Order Status",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "b5039a4a-ee80-4f16-81e3-06e2a2d1e69d": {
+      "type": "faq",
+      "blocks": {
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-0": {
+          "type": "item",
+          "settings": {
+            "title": "Does Headphone Zone save any information when I shop with my card?",
+            "content": "<p>Nope, we don’t save any of your payment information. Our checkout process is 100% secure, and the only information we store is the information we need in order to get you your headphones.<br/><br/>Your address and contact details are automatically saved into our system and a customer account is created for you at the time of placing an order.<br/><br/>But, when you continue to the payment method and choose to pay via card or net banking, you are redirected to our secure payment gateway to complete your checkout. </p>"
+          }
+        },
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-1": {
+          "type": "item",
+          "settings": {
+            "title": "My money was deducted from my account but order wasn't confirmed/transaction failed. What should I do?",
+            "content": "<p>Oops! This usually happens on a slow connection, if the payment servers freeze, or if you accidentally close the payment page before it auto redirects to our website. In case the order doesn’t go through (i.e - you don’t receive an order confirmation email) but you’ve still received a message from your bank or wallet provider stating that the amount has been debited, don’t worry! <br/></p><p><br/></p><p><strong>The best course of action to take is to contact the bank or the wallet service provider. You can also get in touch with us and share the below details:</strong></p><p><br/></p><ul><li>Amount that got debited.</li><li>The email id you would’ve used to place the order.</li><li>Approximate time at which the amount was debited.</li></ul><p><br/></p><p>We will have to check the status on our payment gateway. The payment status can either be captured, pending, failed, or bounced.</p><p><br/></p><ul><li>In case the payment status at our end is captured, we will create an order for you, for which we’ll need the details for the product you want to order, shipping and contact details . </li><li>If it’s pending, we’ll have to wait for sometime for the gateway to confirm the payment.</li><li>If it’s failed or bounced, your bank should reverse the payment to your account within 3-7 days. </li></ul><p><br/></p><p>If you’re using a wallet like Paytm, check your account balance. It’s possible that the amount was debited from the bank account but is stuck in the wallet. In that case, please reattempt the payment again. If your bank confirms that the transaction went through, then please contact us.</p>"
+          }
+        },
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-2": {
+          "type": "item",
+          "settings": {
+            "title": "Can I make payment using Wallets?",
+            "content": "<p>Yes, we accept wallet payments via Paytm, Airtel Money, Freecharge, PayZapp, Ola Money, Oxigen, and Yes Pay.</p>"
+          }
+        },
+        "72c3507d-2db4-4464-b42c-069ef7377c48": {
+          "type": "item",
+          "settings": {
+            "title": "Will I get cashback on an order I place at Headphone Zone",
+            "content": "<p>Nope. Unfortunately we do not offer any cashbacks on orders placed. </p>"
+          }
+        },
+        "4e177bee-8f4c-41d6-b609-fa8fcb7597d9": {
+          "type": "item",
+          "settings": {
+            "title": "Can I use EMI to make a purchase?",
+            "content": "<p>Yes, we offer EMI as a payment facility, allowing you to pay for your orders above Rs.2500 in easy, monthly installments provided you have a credit card from any of the following banks. </p><p><br/></p><p><strong>Axis Bank</strong></p><p><strong>Bank of Baroda</strong></p><p><strong>Citi Bank</strong></p><p><strong>HSBC Bank</strong></p><p><strong>ICICI Bank</strong></p><p><strong>INDUSIND Bank</strong></p><p><strong>Kotak Mahindra Bank</strong></p><p><strong>RBL Bank</strong></p><p><strong>Standard Chartered Bank</strong></p><p><strong>YES Bank</strong><br/><strong>SBI Bank</strong></p><p><br/></p><ul><li>The terms and conditions and rates offered to vary from each Bank, and the type of Credit Card being used. </li><li>EMI purchases need to made on a single credit card and cannot be split across multiple cards. </li><li>EMI is not available on payments through Debit Cards. </li><li>No processing or convenience fees are charged on any EMI transactions.</li></ul><p><br/></p><p><strong>Note:</strong> Your card issuing bank or payment partner has the discretion to either approve or reject an order placed using the EMI payment option on the basis of your eligibility for a loan. If your bank or payment partner rejects your request, the order will be canceled. You can approach your bank or payment partner to understand why the EMI was not approved. In such cases, you can place a new order using a different payment method</p><p><strong><br/></strong></p><p><strong>EMI Repayment</strong></p><ul><li>As soon as you complete your order on Headphone Zone, you will see the full amount charged on your credit card.</li><li>After 3-7 days, your bank will convert this into an EMI.</li><li>From your next billing cycle, you will be charged the EMI amount and your credit limit will be reduced by the outstanding amount. For example, if you have made a 3-month EMI purchase of Rs. 25,000 and your credit limit is Rs. 1,00,000 then your bank will block your credit limit by Rs. 25,000 and thus your available credit limit after the purchase will only be Rs. 75,000. As and when you pay your EMI every month, your credit limit will be released accordingly.</li></ul><p><strong> </strong></p><p>You can see more details at the time of making payment, once you've selected your bank and entered your credit card details while completing the payment process. </p><p><strong><br/></strong></p><p><strong>Interest Rates</strong></p><p><br/></p><p>The <strong>interest rate</strong> charges vary from bank to bank. You can just check the details of the interest rates offered by your bank using the steps below:</p><p><br/></p><ol><li>Click on the EMI button just below the section where the price is displayed. The EMI button should look like this -</li><li>Now, select the bank using which you would like to avail of the EMI option.</li><li>Once you select the bank, you will be able to see the interest rate details on the right side of the pop-up.</li></ol><p><br/></p><p>These are annualized interest rates charged on a monthly reducing balance, which means that the principal amount is reduced with every EMI and the interest is calculated on the outstanding balance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-0",
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-1",
+        "template--16042753261756__b5039a4a-ee80-4f16-81e3-06e2a2d1e69d-1685624204aed315c7-2",
+        "72c3507d-2db4-4464-b42c-069ef7377c48",
+        "4e177bee-8f4c-41d6-b609-fa8fcb7597d9"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Payments - Online",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "78cfc619-0078-49f4-bc0a-75364ed28603": {
+      "type": "faq",
+      "blocks": {
+        "template--16042753261756__78cfc619-0078-49f4-bc0a-75364ed28603-1685624204aed315c7-0": {
+          "type": "item",
+          "settings": {
+            "title": "Is Cash On Delivery (COD) available at my pincode?",
+            "content": "<p>You can check COD availability for your pin code on the cart page before checking out. However, COD facility is limited to certain amounts for every pincode. Usually, if the amount exceeds Rs. 35,000/-, Cash On Delivery may not be available, even though you may see \"COD Available\" on entering your pincode. Please contact us if your order value exceeds this amount.<br/><br/>If COD is not available for your pincode you may either make an online payment through Debit card, Credit card or Net Banking using our secure payment gateway. You also have the option of making a deposit in our bank account, details of which are available on the payment page.<br/></p>"
+          }
+        },
+        "56a99ec6-eba3-4716-9b33-f024bf04272d": {
+          "type": "item",
+          "settings": {
+            "title": "What if Cash on Delivery (COD) is not available on my pincode?",
+            "content": "<p>You can either provide an alternate address with a different pincode or make a payment online.<br/><br/>Alternatively, you can make the payment online or if you don’t have a card, then your option would be to deposit the cash in our bank account.<br/><br/>The bank account details are available on the payment page, just choose the bank deposit option and place the order. Once it’s done, we will check with our bank to confirm the deposit. Once the deposit has been confirmed, the product will be dispatched.</p>"
+          }
+        },
+        "2abafc4b-103f-472a-9076-ed5fd6126c88": {
+          "type": "item",
+          "settings": {
+            "title": "Can I make payment through Card on Delivery?",
+            "content": "<p>Nope. Unfortunately, courier companies do not always have a card machine available with the delivery person at locations at most locations.<br/><br/>Currently, we only offer Cash on Delivery and online payments using Debit or Credit Card. o common questions your customers may have about your products, shipping policies..</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042753261756__78cfc619-0078-49f4-bc0a-75364ed28603-1685624204aed315c7-0",
+        "56a99ec6-eba3-4716-9b33-f024bf04272d",
+        "2abafc4b-103f-472a-9076-ed5fd6126c88"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Payments - Cash on Delivery ",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "1d9fd624-d694-40ac-8517-945bbf1867c5": {
+      "type": "faq",
+      "blocks": {
+        "template--16043296653500__1d9fd624-d694-40ac-8517-945bbf1867c5-1685701873d14de749-0": {
+          "type": "item",
+          "settings": {
+            "title": "Are the products genuine?",
+            "content": "<p>The product you purchase from Headphone Zone is 100% genuine. Since we procure the products directly from the brand, there’s no scope for this to be fake.<br/><br/>There are certain brands which have a barcode or a serial number on the product packaging, especially for high value premium products which allow the user to register the product on their website. Unfortunately, this option is not available for all brands.</p>"
+          }
+        },
+        "template--16043296653500__1d9fd624-d694-40ac-8517-945bbf1867c5-1685701873d14de749-1": {
+          "type": "item",
+          "settings": {
+            "title": "How do I check the authenticity of a product?",
+            "content": "<p>The best way to check the authenticity of a product is to authenticate the product using its barcode number on the manufacturer’s website. You can also register the product using the serial number. If the product doesn’t have any distinguishing number, you should carefully examine the product packaging or product itself for any obvious tells.<br/><br/>Finally, a fake product never sounds as good as the original version would. So even if it may end up looking original, you’ll know that it’s fake by how it sounds. Plastic mold and headphone designs are easy to duplicate, but the engineering, thorough research and development done by international brands to develop the world's best acoustics is invaluable. <br/><br/>An alarming number of headphones sold in India are either fake, smuggled or refurbished. Learn how Headphone Zone protects you. Here’s how you can <a href=\"https://www.headphonezone.in/pages/beware-of-fake-and-counterfeit-headphones\" target=\"_blank\" title=\"https://www.headphonezone.in/pages/beware-of-fake-and-counterfeit-headphones\">beware of fakes</a>.<br/></p>"
+          }
+        },
+        "14072aa0-c1c7-49d4-8369-bc3436e2465b": {
+          "type": "item",
+          "settings": {
+            "title": "There is no barcode on the product I ordered. Is it fake?",
+            "content": "<p>Not necessarily. Not all headphones come with a unique serial number or barcode.<br/><br/><em>An alarming number of headphones sold in India are either fake, smuggled or refurbished. Learn how Headphone Zone protects you. Here’s how you can </em><a href=\"https://www.headphonezone.in/pages/beware-of-fake-and-counterfeit-headphones\" target=\"_blank\" title=\"https://www.headphonezone.in/pages/beware-of-fake-and-counterfeit-headphones\"><em>beware of fakes</em></a><em>.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16043296653500__1d9fd624-d694-40ac-8517-945bbf1867c5-1685701873d14de749-0",
+        "template--16043296653500__1d9fd624-d694-40ac-8517-945bbf1867c5-1685701873d14de749-1",
+        "14072aa0-c1c7-49d4-8369-bc3436e2465b"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Authenticity",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "b34311d7-3cb0-47c8-b83b-62406f898670": {
+      "type": "faq",
+      "blocks": {
+        "template--16043374870716__b34311d7-3cb0-47c8-b83b-62406f898670-16857107399de0c9f0-0": {
+          "type": "item",
+          "settings": {
+            "title": "How do I pay for my product using store credit?",
+            "content": "<p>It's really easy using store credit. <br/><br/>After clicking 'Place Order' on the cart page, you will be directed to the 'Customer Information' page. Just fill in the discount coupon code sent to you via email in the field given (on the right) and click 'Apply.'<br/><br/>If you have <a href=\"https://help.headphonezone.in/support/solutions/articles/6000202825-can-i-use-2-gift-cards-to-purchase-a-single-product-\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000202825-can-i-use-2-gift-cards-to-purchase-a-single-product-\">two or more store credit coupons</a> that you would like to use or <a href=\"https://help.headphonezone.in/support/solutions/articles/6000202827-what-if-the-price-of-the-product-i-want-to-purchase-is-lesser-than-the-store-credit-\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000202827-what-if-the-price-of-the-product-i-want-to-purchase-is-lesser-than-the-store-credit-\">if the product you'd like to purchase costs lesser than the coupon value</a>, simply contact us below and we will help you out!</p>"
+          }
+        },
+        "template--16043374870716__b34311d7-3cb0-47c8-b83b-62406f898670-16857107399de0c9f0-2": {
+          "type": "item",
+          "settings": {
+            "title": "Can I use 2 Gift Cards to purchase a single product?",
+            "content": "<p>Yes, you sure can.<br/><br/>All you need to do is let us know and we will club both the gift cards together and issue you a new one of the total value.</p>"
+          }
+        },
+        "template--16043374870716__b34311d7-3cb0-47c8-b83b-62406f898670-16857107399de0c9f0-1": {
+          "type": "item",
+          "settings": {
+            "title": "What if the price of the product I want to purchase is lesser than the store credit?",
+            "content": "<p>Not a problem at all!<br/><br/>You can use your store credit to purchase a product of lesser value. The balance amount will be saved as store credit against your coupon code.  </p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16043374870716__b34311d7-3cb0-47c8-b83b-62406f898670-16857107399de0c9f0-0",
+        "template--16043374870716__b34311d7-3cb0-47c8-b83b-62406f898670-16857107399de0c9f0-2",
+        "template--16043374870716__b34311d7-3cb0-47c8-b83b-62406f898670-16857107399de0c9f0-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Store Credit",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5436d29c-494e-4ebb-be68-ea5575fdabb6",
+    "5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d",
+    "fec55e75-1a38-486c-bf08-237238652a26",
+    "d10d4f5e-f418-4ff2-8ab6-2185e6b599cc",
+    "b5039a4a-ee80-4f16-81e3-06e2a2d1e69d",
+    "78cfc619-0078-49f4-bc0a-75364ed28603",
+    "1d9fd624-d694-40ac-8517-945bbf1867c5",
+    "b34311d7-3cb0-47c8-b83b-62406f898670"
+  ]
+}

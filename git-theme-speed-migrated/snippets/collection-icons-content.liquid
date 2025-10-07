@@ -1,0 +1,682 @@
+{% assign icon_handle_cleaned = icon_handle | downcase | replace: ' ', '-' %}
+{% assign final_handle = icon_handle_cleaned | append: '-collection' %}
+
+{% assign popover = shop.metaobjects.collection_popover[final_handle] %}
+
+{% if popover != blank %}
+  <h6 class="h6">{{ popover.header.value }}</h6>
+  {{ popover.para.value }}
+{% else %}
+  <p>No content found for icon handle: {{ final_handle }}</p>
+{% endif %}
+
+
+{%- comment -%}
+{% assign pid = product.id %}
+
+{%- case collection-icons-content -%}
+  {%- when 'Young Maverick'-{{ pid }} -%}
+    <h6 class="h6">Young Maverick Brand</h6>
+    <br>
+    <p>New on the scene, but bringing seasoned expertise!</p><br>
+    <p>This headphone or gear might come from a fresh, up-and-coming brand, but it boasts the quality and innovation of a
+      well-established name.
+    </p><br>
+    <p>If you see a product marked as "🥊 Young Maverick Brand”, it means you're getting cutting-edge technology and
+      top-notch performance from a brand that's already making waves in the industry.
+    </p>
+
+  {%- when 'Type-c'-{{ pid }} -%}
+    <h6 class="h6">{{ shop.metaobjects.snapshot_popover['type-c'].header.value }}</h6>
+    {{ shop.metaobjects.snapshot_popover['type-c'].body.value }}
+
+  {%- when 'Dream Fit'-{{ pid }} -%}
+    <h6 class="h6">Fits like a Dream</h6>
+    <br>
+    <p>Struggling to get a good fit? Try these for a glove-like fit. They fit as if it were tailor-made for you.</p><br>
+    <p>This headphone offers an exceptional fit and is designed to provide maximum comfort.</p><br>
+    <p>If you see a product marked as “ 👠 Fits like a dream”, you can trust that it will provide a snug and comfortable
+      fit, enhancing your overall listening experience.
+    </p>
+
+  {%- when 'Commuting'-{{ pid }} -%}
+    <h6 class="h6">Great for Commuting</h6>
+    <br>
+    <p>Some headphones can be the perfect companion for your daily commute.</p><br>
+    <p>This headphone or gear is designed to be portable and easy to carry, making your commute a breeze.</p><br>
+    <p>If you see a product marked as “🛺 Great for commuting”, expect it to be easy to carry and have a rugged build so
+      you can transform your mundane journey into an enjoyable experience, leaving you more time to daydream or plan
+      your next adventure!
+    </p>
+
+  {%- when 'Enthusiasts'-{{ pid }} -%}
+    <h6 class="h6">For Enthusiasts on a Budget</h6>
+    <br>
+    <p>We are here to help you find the best bang for your buck.</p><br>
+    <p>This headphone or gear is made for all passionate hobbyists who want top-notch gear without breaking the bank.
+    </p><br>
+    <p>If you see a product marked as “🪴 For Enthusiasts on a Budget”, get ready to indulge in your music with
+      high-quality, affordable products that keep your wallet happy and your enthusiasm alive!
+    </p>
+
+  {%- when 'Value for Money'-{{ pid }} -%}
+    <h6 class="h6">Value for Money</h6>
+    <br>
+    <p>Great sound always doesn't have to come with a fancy price tag.</p><br>
+    <p>Every once in a while we come across a product that give you a lot more value for the price.</p><br>
+    <p>If you see products marked as "🥜 Value For Money" you can be sure you're getting a great bang for your buck.</p>
+
+  {%- when 'Community Fav'-{{ pid }} -%}
+    <h6 class="h6">Audiophile Community Favourite</h6>
+    <br>
+    <p>This headphone or gear has a seal of approval from our audiophile community.</p><br>
+    <p>It is hit among the pickiest of audio enthusiasts. It comes with two thumbs up and is the community’s and one of
+      our favourites.
+    </p><br>
+    <p>If you see a product marked as “🦋 Audiophile Community Favourite”, you're in for a sonic treat with top-tier
+      sound quality that will make your ears swoon and elevate your listening experience to new heights!
+    </p>
+
+  {%- when 'Premium Economy'-{{ pid }} -%}
+  <h6 class="h6">{{ shop.metaobjects.snapshot_popover['premium-economy'].header.value }}</h6>
+    {{ shop.metaobjects.snapshot_popover['premium-economy'].body.value }}
+
+  {%- when 'For Beginners'-{{ pid }} -%}
+    <h6 class="h6">Ideal for Beginners</h6>
+    <br>
+    <p>Lost in the Audio Maze? Let Us Guide Your Beginner Audiophile Journey!</p><br>
+    <p>If you are a newcomer in the audio world, this headphone or gear is a stepping stone for those overwhelmed by the
+      plethora of options available.
+    </p><br>
+    <p>If you see a product marked with “🌱 Ideal for Beginners," it indicates that this device is perfect for starting
+      your audiophile journey.
+    </p>
+
+  {%- when 'Serious Audiophiles'-{{ pid }} -%}
+    <h6 class="h6">Serious Audiophiles Only</h6>
+    <br>
+    <p>Diving deeper into exploring the hobby is never enough.</p><br>
+    <p>If you're an audiophile on a hunt for a device that meets your high standards, this is one such headphone or gear
+      designed for discerning audiophiles like you in mind.
+    </p><br>
+    <p>If you see a product marked with “🦈 Serious Audiophiles Only" we assure you that this device can match your depth
+      of knowledge and expertise to take your passion for audio to the next level.
+    </p>
+
+  {%- when 'Worth It'-{{ pid }} -%}
+    <h6 class="h6">I Am Worth It</h6>
+    <br>
+    <p>Only for the most passionate and discerning audiophiles who want the very best.</p><br>
+    <p>Audiophiles desire class-defining products that not only meet their needs but truly blows their expectation in
+      quality and performance.
+    </p><br>
+    <p>If you see a product marked with “👑 I Am Worth It," rest assured that it's a timeless investment. Its value
+      cannot be measured with ordinary benchmarks and is an indulgence only for a select few.
+    </p>
+
+  {%- when 'Calls'-{{ pid }} -%}
+    <h6 class="h6">Works for Taking Calls</h6>
+    <br>
+    <p>Incoming calls, but no microphone? No problem, I’ve got you covered!</p><br>
+    <p>This headphone or gear seamlessly works for taking an incoming call while listening to music, allowing you to
+      handle calls effortlessly while connected to your source device.
+    </p><br>
+    <p>If you see an IEM marked with “☎️ Works for Taking Calls" it means you can seamlessly take calls or attend online
+      conferences, ensuring smooth communication without hassle.
+    </p>
+
+  {%- when 'Upgraded Cable'-{{ pid }} -%}
+    <h6 class="h6">Upgradeable 2-Pin Cable</h6>
+    <br>
+    <p>Not happy with your current cable? Swap it out!</p><br>
+    <p>If you're searching for an in-ear monitor with a detachable design, these IEMs fit the bill.</p><br>
+    <p>If you see an IEM marked with "🔌 Upgradeable 2-Pin Cable," it means it comes with a detachable cable featuring
+      2-pin connectors. You can easily swap or upgrade the cable, allowing for customisation or maintenance whenever you
+      desire.
+    </p>
+
+  {%- when 'Gaming'-{{ pid }} -%}
+    <h6 class="h6">Perfect for Gaming</h6>
+    <br>
+    <p>Gamers, we got you covered.</p><br>
+    <p>This headphone or gear designed to elevate your gaming sessions to epic levels. Be prepared to immerse in your
+      gameplay like never before.
+    </p><br>
+    <p>If you see a product marked as “🎮 Perfect for Gaming”, get ready for immersive, and a gaming experience so
+      smooth, you'll wonder why weren’t you using these before.
+    </p>
+
+  {%- when 'Studio Professionals'-{{ pid }} -%}
+    <h6 class="h6">Great for Studio & Professionals</h6>
+    <br>
+    <p>When you need the best to deliver your best.</p><br>
+    <p>This headphone or gear meets the high standards and requirements of a professional and studio environments. Plug
+      these in and focus on doing your best work.
+    </p><br>
+    <p>If you see products marked as “🎙️ Great for Studio & Professionals”, you can trust that you're getting precision,
+      reliability, and top-tier performance, perfect for bringing your creative and professional projects to life!
+    </p>
+
+  {%- when 'DJs' -%}
+    <h6 class="h6">Ideal for DJs</h6>
+    <br>
+    <p>Focus on the mix, let us take care of the headphones.</p><br>
+    <p>This headphone or gear is a hit with DJs, designed to keep the beats flowing and the crowd dancing.</p><br>
+    <p>If you see products marked as “🎚️ Ideal for DJs”, expect that it delivers superb sound quality, and durability to
+      withstand even the wildest gigs, ensuring your sets are always on point!
+    </p>
+
+  {%- when 'Workplace' -%}
+    <h6 class="h6">Ideal for the workplace</h6>
+    <br>
+    <p>Headphones have become an essential part of the workplace.</p><br>
+    <p>This headphone or IEM offers isolation, does not leak sound or has a clear microphone making it perfect to use
+      during your work hours for conferencing and listening to music.
+    </p><br>
+    <p>If you see products marked as “👨‍💻 Ideal for the Workplace”, get ready for increased productivity, and maybe even a
+      few glances from your coworkers as you breeze through your workday with your favourite music!
+    </p>
+
+  {%- when 'Movies TV' -%}
+    <h6 class="h6">Ideal for Movies and TV</h6>
+    <br>
+    <p>Your companion for watching Movies and TV.</p><br>
+    <p>This headphone or gear means that the product is your ticket to cinematic bliss, enhancing your viewing experience
+      from the comfort of your couch.
+    </p><br>
+    <p>If you see products marked as “📺 Ideal for Movies and TV”, prepare for immersive audio experience, and the
+      ultimate cozy night in, transforming your living room into your own personal theatre!
+    </p>
+
+  {%- when 'Stage Shows' -%}
+    <h6 class="h6">Ideal for Stage & Live Shows</h6>
+    <br>
+    <p>You deserve a perfectly crafted product for your special performances.</p><br>
+    <p>This headphone or gear indicates that this product is specially designed to accompany you during stage events and
+      live shows.
+    </p><br>
+    <p>If you see a product marked with “🎸 Stage & Live Shows", it means this product is ideal for artists, offering the
+      performance and reliability needed for your best shows.
+    </p>
+
+  {%- when 'Lightweight' -%}
+    <h6 class="h6">Super Lightweight Design</h6>
+    <br>
+    <p>Want something as light as a feather?</p><br>
+    <p>If you are looking for a product that does not weigh down your ears, this headphone or gear is designed with a
+      super lightweight build.
+    </p><br>
+    <p>If you see a product marked with “🪶 Super Lightweight Design", rest assured that you're getting a product that
+      won't burden your ears, ensuring a comfortable and enjoyable music listening session without discomfort.
+    </p>
+
+  {%- when 'Metal Build' -%}
+    <h6 class="h6">Built like a Tank</h6>
+    <br>
+    <p>No need to worry about durability.</p><br>
+    <p>If you're seeking a headphone or gear with a strong, rugged build, this snapshot indicates that this is the one
+      for you.
+    </p><br>
+    <p>If you see a product marked with “🪖 Built like a Tank", it means this product is crafted with metal in its
+      design, ensuring exceptional robustness and durability.
+    </p>
+
+  {%- when 'Open Back' -%}
+    <h6 class="h6">Open-Back Design</h6>
+    <br>
+    <p>The best-sounding headphones are always open-backs, and for good reason!</p><br>
+    <p>This headphone features an open-back design, preserving the natural feel of your music and creating a spacious
+      soundstage. If you're searching for headphones with an open-back design, this is the one for you.
+    </p><br>
+    <p>If you see a product marked with “💨 Open-Back Design", it indicates that this product features an open-back
+      design, for an immersive listening experience.
+    </p>
+
+  {%- when 'Closed Back' -%}
+    <h6 class="h6">Closed-Back Design</h6>
+    <br>
+    <p>No ambient noise comes between my music and me.</p><br>
+    <p>If you love to immerse yourself in your music, shutting out surrounding sound, this headphone is perfect for you.
+    </p><br>
+    <p>If you see a product marked with “🔒 Closed-Back Design", it indicates that this product features a closed-back
+      design, providing excellent isolation and allowing you to focus solely on your music.
+    </p>
+
+  {%- when 'Cult' -%}
+    <h6 class="h6">Cult Following</h6>
+    <br>
+    <p>Cause some things just demand the dedication.</p><br>
+    <p>This headphone or gear has a dedicated fanbase, adored by those in the know and praised for its audio quality.
+    </p><br>
+    <p>If you see products marked as “🧑🏼‍🤝‍🧑🏼 Cult Following”, you’re about to join an exclusive club of enthusiasts who swear
+      by its awesomeness, enjoying a product that stands out from the crowd and never fails to impress!
+    </p>
+
+  {%- when 'Tweak Sound' -%}
+    <h6 class="h6">Tweak & Tune the Sound</h6>
+    <br>
+    <p>Why settle for a fixed sound signature</p><br>
+    <p>This headphone or gear indicates that the product offers customisable tuning settings, perfect for those who love
+      to fine-tune every region of the frequency spectrum.
+    </p><br>
+    <p>If you see products marked as “🔧 Tweak & Tune the Sound”, you’ll enjoy the freedom to adjust your audio
+      experience to perfection, ensuring your sound is always just the way you like it, whether you’re a bass lover or a
+      treble tweaker!
+    </p>
+
+  {%- when 'Team Fav' -%}
+    <h6 class="h6">Our Team's Favourite</h6>
+    <br>
+    <p>Cause after all, we are audiophiles first!</p><br>
+    <p>This headphone or gear has won the hearts of our team, standing out as a top pick among our gurus.</p><br>
+    <p>If you see products marked as “💙 Our Team’s Favourite”, you're choosing a product that’s been tested, loved, and
+      enthusiastically recommended by our team, giving you confidence that it’s a standout choice!
+    </p>
+
+  {%- when 'Popular' -%}
+    <h6 class="h6">Incredibly Popular</h6>
+    <br>
+    <p>Some things deserve all the attention.</p><br>
+    <p>This headphone or gear is a crowd favourite, winning over fans everywhere with its undeniable audio quality.</p><br>
+    <p>If you see products marked as “🥇 Incredibly Popular”, you’re opting for a tried-and-true choice that’s loved by
+      many, ensuring you're getting something that’s proven to be awesome and widely acclaimed.
+    </p>
+
+  {%- when 'Analyse Music' -%}
+    <h6 class="h6">Perfect to Analyse Music</h6>
+    <br>
+    <p>Delve deeper into the Bassline, Riffs and Harmonies.</p><br>
+    <p>This headphone or gear is designed for those who dive deep into the nuances of sound, offering precision for music
+      analysis.
+    </p><br>
+    <p>If you see products marked as “🔍 Perfect to Analyse Music”, get ready to dissect every beat, note, and harmony
+      with exceptional clarity, making it an ideal tool for musicians, producers, and audiophiles who crave detailed
+      insights into their music.
+    </p>
+
+  {%- when 'Sparkly' -%}
+    <h6 class="h6">Bright & Sparkly Highs</h6>
+    <br>
+    <p>Who says Treble can’t be done right.</p><br>
+    <p>This headphone or gear shines the best for its ability to deliver crisp, clear, and shimmering high frequencies
+      that stands out.
+    </p><br>
+    <p>If you see products marked as “✨ Bright & Sparkly Highs”, you’re in for an auditory treat, enjoying every cymbal,
+      note, and melody with unparalleled clarity and brilliance.
+    </p>
+
+  {%- when 'Crisp Vocals' -%}
+    <h6 class="h6">Crisp Vocals & Instruments</h6>
+    <br>
+    <p>Vocals and Instruments sound too good, its like a warm hug.</p><br>
+    <p>This headphone or gear excels at delivering clear, clean vocals and instruments, making every sound pop.</p><br>
+    <p>If you see products marked as “🍿 Crisp Vocals & Instruments”, prepare for an audio experience where every word
+      and note is perfectly articulated, letting you enjoy your music with pristine clarity and detail.
+    </p>
+
+  {%- when 'Balanced Sound' -%}
+    <h6 class="h6">Balanced Sound Signature</h6>
+    <br>
+    <p>Perfectly Balanced, Accurately Presented.</p><br>
+    <p>This headphone or gear delivers a perfectly balanced audio profile, with highs, mids, and lows in sweet
+      equilibrium.
+    </p><br>
+    <p>If you see products marked as “⚖️ Balanced Sound Signature”, you’re set to enjoy a well-rounded listening
+      experience where no single element overpowers the others, making your music sound just as the artist intended.
+    </p>
+
+  {%- when 'V-Shaped' -%}
+    <h6 class="h6">V-shaped Sound Signature</h6>
+    <br>
+    <p>Perfect for those who like a party in their head.</p><br>
+    <p>This headphone or gear boosts the bass and treble for a dynamic and lively audio experience.</p><br>
+    <p>If you see products marked as “🌶️ V-shaped Sound Signature”, get ready for punchy lows and sparkling highs that
+      make your music pop, perfect for energising your workouts, parties, or just jamming out.
+    </p>
+
+  {%- when 'Extra Bass' -%}
+    <h6 class="h6">Extra-bass Sound Signature</h6>
+    <br>
+    <p>When you need deep low-end rumble and copious amounts sub-bass.</p><br>
+    <p>This headphone or gear comes with the promise that the product emphasises deep, powerful bass, making your music
+      feel full and rich.
+    </p><br>
+    <p>If you see products marked as “🎛️ Extra-bass Sound Signature”, get ready to feel every beat and thump, perfect for
+      bass lovers who want their soundtracks to hit hard and resonate with depth.
+    </p>
+
+  {%- when 'Bright' -%}
+    <h6 class="h6">Bright Sound Signature</h6>
+    <br>
+    <p>When you love sparkly and airy treble.</p><br>
+    <p>This headphone or gear highlights the high frequencies, making your audio crisp and lively.</p><br>
+    <p>If you see products marked as “☀️ Bright Sound Signature”, expect a listening experience where every detail shines
+      through with clarity, giving your music a fresh, vibrant, and energetic feel.
+    </p>
+
+  {%- when 'Flat' -%}
+    <h6 class="h6">Flat Sound Signature</h6>
+    <br>
+    <p>For those on a quest to try and hear the “purest” audio possible.</p><br>
+    <p>This headphone or gear offers an neutral, uncoloured audio profile, perfect for purists who crave accuracy.</p><br>
+    <p>If you see products marked as “📏 Flat Sound Signature”, you’re in for a true-to-life listening experience,
+      hearing your music exactly as it was recorded, without any artificial boosts or tweaks.
+    </p>
+
+  {%- when 'Party' -%}
+  <h6 class="h6">{{ shop.metaobjects.snapshot_popover.party.header.value }}</h6>
+    {{ shop.metaobjects.snapshot_popover.party.body.value }}
+
+  {%- when 'Kickass Bass' -%}
+    <h6 class="h6">{{ shop.metaobjects.snapshot_popover['kickass-bass'].header.value }}</h6>
+    {{ shop.metaobjects.snapshot_popover['kickass-bass'].body.value }}
+
+  {%- when 'Warm Sound' -%}
+    <h6 class="h6">Warm & Smooth Sound Signature</h6>
+    <br>
+    <p>Warm & smooth sound signature to suit your cosy time music listening.</p><br>
+    <p>This headphone or gear is designed to deliver a sound signature that's both rich and silky, making your listening
+      experience soothing and enjoyable.
+    </p><br>
+    <p>If you see a product marked with "🧈 Warm & Smooth Sound Signature", it means this device offers a pleasing audio
+      profile perfect for those who appreciate a mellow, inviting sound that enhances every note.
+    </p>
+
+  {%- when 'Layback' -%}
+    <h6 class="h6">Perfect to Layback & Relax</h6>
+    <br>
+    <p>Looking for something that matches your lay-back-and-relax mood?</p><br>
+    <p>This headphone or gear provides a soothing and immersive audio experience, perfect for those moments when you want
+      to unwind with your favourite tunes.
+    </p><br>
+    <p>If you see a product marked with "🥃 Perfect to Lay Back & Relax," it means this device is designed to offer a
+      relaxing sound profile, making it perfect for those moments when you just want to kick back and let the music wash
+      over you.
+    </p>
+
+  {%- when 'Pumped' -%}
+    <h6 class="h6">Great to Get Pumped Up</h6>
+    <br>
+    <p>Need a musical energy boost? Let's get you pumped up!</p><br>
+    <p>This headphone or gear is designed to deliver high-energy, powerful sound that elevates your mood and gets you
+      moving.
+    </p><br>
+    <p>If you see a product marked with "💪🏻 Great to Get Pumped Up," it means this device is perfect for energizing your
+      day with dynamic, invigorating audio that keeps you motivated and ready to take on anything.
+    </p>
+
+  {%- when 'Ultra Wide' -%}
+    <h6 class="h6">Ultra-Wide Sound Stage</h6>
+    <br>
+    <p>Do you wish to bring the concert hall to your ears?</p><br>
+    <p>This headphone or gear offers an ultra-wide soundstage, giving your music a spacious and immersive feel as if
+      you're right there in the middle of a live performance.
+    </p><br>
+    <p>If you see a product marked with "😳 Ultra-Wide Soundstage," it means this product is designed to deliver
+      expansive audio, making your listening experience feel grand and enveloping, perfect for those who love a broad
+      and detailed sound.
+    </p>
+
+  {%- when 'Layered Nuanced' -%}
+    <h6 class="h6">Layered and Nuanced Sound</h6>
+    <br>
+    <p>Imagine sitting on the second row of a music hall. Instruments should sound like they are coming from different
+      places on the stage - Layered and nuanced.
+    </p><br>
+    <p>This headphone or gear is designed to deliver a rich, detailed audio experience, with every note and subtlety
+      coming through crystal clear.
+    </p><br>
+    <p>If you see a product marked with "🍰 Layered and Nuanced Sound," it means this device is crafted to provide an
+      intricate soundscape, perfect for audiophiles who appreciate the depth and complexity in their music.
+    </p>
+
+  {%- when 'Smooth Treble' -%}
+    <h6 class="h6">Smooth & Sweet Treble</h6>
+    <br>
+    <p>Seeking something that sounds smooth to your ears and devoid of harshness?</p><br>
+    <p>This headphone or gear is designed to deliver high frequencies that are gentle on the ears, offering a listening
+      experience that's both refined and delightful.
+    </p><br>
+    <p>If you see a product marked with "🍦 Smooth & Sweet Treble," it indicates that this device offers treble that is
+      smooth and sweet, ensuring your music is free of harshness and full of clarity, perfect for those who love crisp
+      and detailed highs.
+    </p>
+
+  {%- when 'Sharp Details' -%}
+    <h6 class="h6">Sharp & Precise Details</h6>
+    <br>
+    <p>Are you a lover of sharp and precise details in your music?</p><br>
+    <p>This headphone or gear delivers meticulous and accurate details in your audio, ideal for those who prioritise
+      precise sound reproduction.
+    </p><br>
+    <p>If you see a product marked with "📌 Sharp & Precise Details", it means this device excels in capturing fine
+      nuances and intricacies in your music, ensuring a high level of clarity and fidelity.
+    </p>
+
+  {%- when 'Drivers' -%}
+    <h6 class="h6">Drivers / Hybrid Drivers</h6>
+    <br>
+    <p>Looking for a combo of rich and detailed sound? Here’s the perfect blend!"</p><br>
+    <p>This headphone or gear features hybrid drivers, combining different types of drivers to deliver both rich,
+      full-bodied sound and intricate, detailed audio. It's like having the best of both worlds in one device.
+    </p><br>
+    <p>If you see a product marked with "🔈 Drivers / Hybrid Drivers”, it means you're getting a device that expertly
+      balances multiple driver technologies to provide an exceptional listening experience, blending the depth of
+      dynamic drivers with the precision of balanced armature drivers. Perfect for those who want it all in their music.
+    </p>
+
+  {%- when 'Needs Amp' -%}
+    <h6 class="h6">Needs Amplification</h6>
+    <br>
+    <p>I need more power to thrive.</p><br>
+    <p>This headphone or gear shines brightest with a bit of extra power. It’s designed to deliver top-notch performance
+      when paired with an amplifier, giving you that full, rich sound you crave.
+    </p><br>
+    <p>If you see a product marked as "🚂 Needs Amplification", it means this device is built to excel with an amp,
+      ensuring you get the most out of your music with enhanced volume and clarity. Perfect for audiophiles who love
+      their sound big and bold.
+    </p>
+
+  {%- when 'Aggressive' -%}
+    <h6 class="h6">Aggressive and Energetic</h6>
+    <br>
+    <p>Ready for an audio adrenaline rush?</p><br>
+    <p>This headphone or gear is built to deliver powerful, high-energy sound that keeps you on the edge of your seat,
+      perfect for those who crave a thrilling, dynamic listening experience.
+    </p><br>
+    <p>If you see a product marked as "🧨 Aggressive and Energetic”, it means this device pumps out intense, vibrant
+      audio, ensuring your music is always lively and exhilarating.
+    </p>
+
+  {%- when 'Established' -%}
+    <h6 class="h6">Established & Reputed</h6>
+    <br>
+    <p>Trust us, our reputation in the audio world speaks for itself!</p><br>
+    <p>This headphone or gear comes from a well-respected brand known for its high-quality audio equipment, so you can be
+      confident in your purchase.
+    </p><br>
+    <p>If you see a product marked as “🎖️ Established & Reputed”, it means you're getting a top-tier device from a brand
+      that's earned its stripes in the audio industry.
+    </p>
+
+  {%- when 'Specialist' -%}
+    <h6 class="h6">Specialist</h6>
+    <br>
+    <p>A masterpiece from the experts who know audio inside and out!</p><br>
+    <p>This headphone or gear is crafted by specialists who know their stuff, ensuring every detail is perfect.</p><br>
+    <p>If you see a product marked as “🌟 Specialist”, it means you're choosing a device designed by experts who
+      specialize in creating this specific category of device.
+    </p>
+
+  {%- when 'Revered Audiophiles' -%}
+    <h6 class="h6">Revered by Audiophiles</h6>
+    <br>
+    <p>Audiophiles can be really picky and tough to impress and if the audiophile community says something sounds good,
+      you can bet it's great!
+    </p><br>
+    <p>This headphone or gear has gained recognition and admiration from audiophiles, who are known for their discerning
+      taste in high-fidelity audio. They appreciate its precision, attention to detail and its ability to deliver an
+      immersive sonic experience.
+    </p><br>
+    <p>If you see a product marked as "🐀򣀼􎰠Revered by Audiophiles", it means that it meets the highest standards of sound
+      quality and performance, making it a top choice for anyone who values exceptional audio experiences.
+    </p>
+
+   {%- when 'Vocal Forward Sound' -%}
+    <h6 class="h6">{{ shop.metaobjects.snapshot_popover['vocal-forward-sound-signature'].header.value }}</h6>
+    {{ shop.metaobjects.snapshot_popover['vocal-forward-sound-signature'].body.value }}
+
+{%- when 'U-Shaped Sound' -%}
+    <h6 class="h6">{{ shop.metaobjects.snapshot_popover['u-shaped-sound-signature'].header.value }}</h6>
+    {{ shop.metaobjects.snapshot_popover['u-shaped-sound-signature'].body.value }}
+
+  {%- when 'Dark Sound' -%}
+    <h6 class="h6">{{ shop.metaobjects.snapshot_popover['dark-sound-signature'].header.value }}</h6>
+    {{ shop.metaobjects.snapshot_popover['dark-sound-signature'].body.value }}
+
+  {%- when 'Warm & Sparkly Sound' -%}
+    <h6 class="h6">{{ shop.metaobjects.snapshot_popover['warm-sparkly-sound-signature'].header.value }}</h6>
+    {{ shop.metaobjects.snapshot_popover['warm-sparkly-sound-signature'].body.value }}
+
+  {%- when 'Neutral + Sparkle Sound' -%}
+    <h6 class="h6">{{ shop.metaobjects.snapshot_popover['neutral-sparkle-sound-signature'].header.value }}</h6>
+    {{ shop.metaobjects.snapshot_popover['neutral-sparkle-sound-signature'].body.value }}
+
+  {%- when 'Neutral + Bass Sound' -%}
+    <h6 class="h6">{{ shop.metaobjects.snapshot_popover['neutral-bass-sound-signature'].header.value }}</h6>
+    {{ shop.metaobjects.snapshot_popover['neutral-bass-sound-signature'].body.value }}
+
+  
+  {%- when 'Balanced Output' -%}
+    <h6 class="h6">Balanced Output</h6>
+    <br>
+    <p>Upgrading from single-ended to balanced can be the easiest way to improve your sound.</p><br>
+    <p>This DAC, Amp or Hi-Res player offers a balanced output, ensuring pristine audio quality with minimised
+      interference and enhanced clarity for your listening pleasure.
+    </p><br>
+    <p>If you see a product marked as "⚖️ Balanced Output”, get ready for a symphony of crystal-clear tunes, free from
+      any unwanted noise drama!
+    </p>
+
+  {%- when 'On-the-Go' -%}
+    <h6 class="h6">For Audiophiles On-the-Go</h6>
+    <br>
+    <p>Are you an audiophile looking to carry your music with you wherever you go?</p><br>
+    <p>This headphone or gear is portable and is designed to deliver top-notch audio quality on the move, ensuring your
+      favourite tracks sound their best no matter where you are.
+    </p><br>
+    <p>If you see a product marked "🛺 For Audiophiles On-the-Go", it means this product is perfectly portable, turning
+      every journey into a musical adventure with studio-quality sound!
+    </p>
+
+  {%- when 'Home' -%}
+    <h6 class="h6">For Audiophiles at Home</h6>
+    <br>
+    <p>Cause music hit differently when you are in your own space.</p><br>
+    <p>This headphone or gear is perfect for those who demand exceptional sound quality in their personal sanctuary.</p><br>
+    <p>If you see products marked as “🏠 For Audiophiles at Home”, get ready to transform your living space into an
+      audiophile's paradise, with rich, immersive sound that makes every listening session a masterpiece.
+    </p>
+
+  {%- when 'Power Output' -%}
+    <h6 class="h6">Power Output</h6>
+    <br>
+    <p>When you need that juice to get the best out of your products.</p><br>
+    <p>This headphone or gear packs a punch, revealing the product's impressive power output capabilities, ensuring it
+      can handle even the most demanding products with ease.
+    </p><br>
+    <p>If you see products marked as “🚀 Power Output”, you're in for a treat with robust performance for driving
+      high-fidelity products without breaking a sweat.
+    </p>
+
+  {%- when 'DAC Chip' -%}
+    <h6 class="h6">DAC Chip</h6>
+    <br>
+    <p>Know the secret to your pristine audio.</p><br>
+    <p>This headphone or gear reveals the secret sauce behind superior audio quality, highlighting the presence of a
+      high-performance DAC chip for pristine sound reproduction.
+    </p><br>
+    <p>If you see products marked as “⚙️ DAC Chip”, expect to experience your music with unparalleled clarity, detail,
+      and fidelity, ensuring that every note and nuance is faithfully reproduced for your listening pleasure.
+    </p>
+
+  {%- when 'Multipoint' -%}
+    <h6 class="h6">Multi-point Connection</h6>
+    <br>
+    <p>Do it all by connecting to all your device at once.</p><br>
+    <p>This headphone or gear can connect to multiple devices simultaneously, offering convenience and versatility in
+      your tech setup.
+    </p><br>
+    <p>If you see products marked as “🤹🏼‍♂️ Multi-point Connection”, you can switch seamlessly between different devices
+      without the hassle of constant pairing and unpairing, making multitasking a breeze and keeping you connected to
+      all your gadgets at once.
+    </p>
+
+  {%- when 'Bluetooth' -%}
+    <h6 class="h6">Use Wirelessly with Bluetooth</h6>
+    <br>
+    <p>Enjoy the convenience of seamless wireless connectivity</p><br>
+    <p>This headphone or gear indicates that the product supports wireless connectivity via Bluetooth, freeing you from
+      the tangles of cords and cables.
+    </p><br>
+    <p>If you see products marked as “✂️ Use Wirelessly with Bluetooth”, enjoy the freedom to stream music, make calls,
+      and more, all without being tethered to your device, giving you the flexibility to move around and multitask with
+      ease.
+    </p>
+
+  {%- when 'Battery Life' -%}
+    <h6 class="h6">Battery Life</h6>
+    <br>
+    <p>No need to be connected to the power socket with these devices.</p><br>
+    <p>This headphone or gear promises long-lasting battery performance, ensuring your device keeps up with your
+      adventures without missing a beat.
+    </p><br>
+    <p>If you see products marked as “⏳ Battery Life”, be rest assured that you'll enjoy extended usage time, whether
+      it's for uninterrupted music playback, extended gaming sessions, or all-day productivity, keeping you powered up
+      throughout your day.
+    </p>
+
+  {%- when 'Battery Capacity' -%}
+    <h6 class="h6">Battery Capacity</h6>
+    <br>
+    <p>Power that keeps your music going.</p><br>
+    <p>This headphone or gear has ample battery capacity, promising you plenty of juice to power through your day with
+      gusto.
+    </p><br>
+    <p>If you see products marked as “🔋 Battery Capacity”, rejoice in the knowledge that your device is equipped with a
+      robust battery, providing you with extended usage time and reducing the frequency of recharges, so you can focus
+      on your favourite tracks.
+    </p>
+
+  {%- when 'Connect' -%}
+    <h6 class="h6">Connect With Cable</h6>
+
+    <br>
+    <p>This device comes with multiple connectivity options. Be sure to check if your source and output support these
+      input and output options.
+    </p>
+
+  {%- when 'Storage' -%}
+    <h6 class="h6">Storage</h6>
+    <br>
+    <p>Storage is important. Even in this era of streaming music, you’d want to make sure you have enough space to store
+      your amazing collection of music on your player. Imagine a long flight, it’s your offline files you’re going to be
+      listening to.
+    </p><br>
+
+    <p>Keeping your entire collection of Hi-Resolution music in one place is the most convenient way of carrying your
+      music library. However, Hi-Resolution files are heavy. Most songs in a FLAC format can be about 100mb per track.
+      So more space is always better.
+    </p><br>
+
+    <p>Most players support both internal storage and expandable storage via an external memory card. Make sure you check
+      both - the internal memory on players, and consider the maximum supported size of the expandable storage. It’s
+      best to keep your library of offline files in expandable storage and use the internal storage for saving files
+      from streaming apps.
+    </p><br>
+
+    <p>At the time of writing this article, MicroSD cards for 256 GB were easily available and affordable for less than
+      Rs. 2000. Higher capacity cards are also available, but that seems to be the sweet spot.
+    </p>
+{%- endcase -%}
+{%- endcomment -%}

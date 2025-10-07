@@ -1,0 +1,175 @@
+{% assign pp_timeline = shop.metaobjects.product_page_timeline['product-page-timeline'] %}
+{% capture c_date %}{{'now' | date:'%a' }}{% endcapture %}
+{% assign timeline = product.metafields.hpz.timeline %}
+
+<script>
+  // ====================Retrieving Sheet Data=====================
+  var sheetData = undefined;
+  var sheetUrl = "{{ 'pincode_list.json' | asset_url }}";
+  var pinJson;
+  let SheetReady = new CustomEvent("sheet_ready");
+  var inputValue, cod, date, fromDate, toDate, sellFromDate, sellToDate, deliverDate, addDays, currentTime;
+  var defpin = '400001';
+  var oldpin = sessionStorage.getItem("localPincode");
+  let submitBtn = document.getElementById('pinSubmit');
+  let week_days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
+  var PincodeData = sessionStorage.getItem("pincodeData");
+  if(PincodeData === null){
+    let fetchRes = fetch(sheetUrl);
+    fetchRes.then(res => res.json()).then(d => {
+      pinJson = d.values;
+      sheetData = JSON.stringify(d.values);
+      document.dispatchEvent(SheetReady);
+      sessionStorage.setItem("pincodeData",sheetData);
+    })
+  }
+  else{
+    pinJson = JSON.parse(PincodeData);
+    document.dispatchEvent(SheetReady);
+  }
+
+  date = document.getElementsByClassName('day-text');
+  {% capture adddays_data %}
+    {% if timeline == 24 %}
+      {% if product.price >= 5000000 and c_date == 'Mon' or c_date == 'Tue' or c_date == 'Wed'  or c_date == 'Thu'  or c_date == 'Fri' %}
+        addDays = {{ pp_timeline.days_to_add_monday_friday_timeline_24_and_price_a50k }};
+      {% elsif product.price <= 5000000 and c_date == 'Mon' or c_date == 'Tue' or c_date == 'Wed' or c_date == 'Thu'  or c_date == 'Fri'  %}
+        addDays = {{ pp_timeline.days_to_add_when_monday_friday_timeline_24_and_price_50k }};
+      {% elsif c_date == 'Sat' or c_date == 'Sun' %}
+        addDays = {{ pp_timeline.days_to_add_saturday_sunday_timeline_24 }};
+      {% endif %}
+    {% elsif timeline == 48 %}
+      {%  if product.price >= 5000000 and c_date == 'Mon' or c_date == 'Tue' or c_date == 'Wed' or c_date == 'Thu'  or c_date == 'Fri' %}
+        addDays = {{ pp_timeline.days_to_add_monday_friday_timeline_48_and_price_a50k }};
+      {% elsif product.price <= 5000000 and c_date == 'Mon' or c_date == 'Tue'  or c_date == 'Wed' or c_date == 'Thu'  or c_date == 'Fri'  %}
+        addDays = {{ pp_timeline.days_to_add_monday_friday_timeline_48_and_price_50k }};
+      {% elsif c_date == 'Sat' or c_date == 'Sun' %}
+        addDays = {{ pp_timeline.days_to_add_saturday_sunday_timeline_48 }};
+      {% endif %}
+    {% elsif timeline == 72 %} 
+      addDays = {{ pp_timeline.days_to_add_timeline_72}};
+    {% elsif timeline == 100 %} 
+      addDays = {{ pp_timeline.days_to_add_timeline_100}};
+    {% elsif timeline == 120 %} 
+      addDays = {{ pp_timeline.days_to_add_timeline_120}};
+    {% elsif timeline == 240 %}
+      addDays = {{ pp_timeline.days_to_add_timeline_240}}; 
+    {% elsif timeline == 336 %} 
+      addDays = {{ pp_timeline.days_to_add_timeline_336}};
+    {% endif %}
+  {% endcapture %}
+
+  Date.prototype.addDays = function (days) {
+    let date = new Date(this.valueOf());
+    date.setDate(date.getDate() + days);
+    return date;
+  }
+
+  function ordinal_suffix(dt) {
+    return dt.getDate()+(dt.getDate() % 10 == 1 && dt.getDate() != 11 ? 'st' : (dt.getDate() % 10 == 2 && dt.getDate() != 12 ? 'nd' : (dt.getDate() % 10 == 3 && dt.getDate() != 13 ? 'rd' : 'th')));
+  }
+
+  let gmtDateTime = new Date();
+  function checkInSheet_js(pincode) {
+    var result = "NA";
+    var availability = "";
+    for(var i=0; i < pinJson.length; i++){
+      if(!pinJson[i] || !pinJson[i].length) { continue; }
+      else if(pinJson[i]) {
+        var onlyPrepaid = pinJson[i][0];
+        var fullyServiced = pinJson[i][2];
+        if(onlyPrepaid && onlyPrepaid.indexOf(pincode) != -1){
+          result = "OP";
+          availability = pinJson[i][1];
+          break;
+        }
+        else if(fullyServiced && fullyServiced.indexOf(pincode) != -1){
+          result = "FS";
+          availability = pinJson[i][3];
+          break;
+        }
+        if(availability) { availability = availability;}
+        else { availability = "";}
+      }
+    }
+    return {result: result, availability: availability};
+  }
+  function getDays(days) {
+    {{ adddays_data }}
+    currentTime = new Date().getHours();
+    addDays = addDays + parseInt(days);
+    if(currentTime > 14) { addDays = addDays + 1;}
+    fromDate = gmtDateTime.addDays(addDays);
+    if (gmtDateTime.getDay() == 0) {
+      fromDate = fromDate.next().monday();
+      toDate = gmtDateTime.addDays(addDays + 2);
+    } else {
+      toDate = gmtDateTime.addDays(addDays + 2);
+    }
+    sellFromDate = `${week_days[fromDate.getDay()]}, ${fromDate.toLocaleString('default', { month: 'short' })} ${ordinal_suffix(fromDate)}`;
+    sellToDate = `${week_days[toDate.getDay()]}, ${toDate.toLocaleString('default', { month: 'short' })} ${ordinal_suffix(toDate)}`;
+    date.innerHTML = `<span>Delivery By:</span><br>
+    <span class="expecDate">${sellFromDate} - ${sellToDate} </span>`;
+  }
+  function getData(inputValue){
+  cod = document.getElementsByClassName('cod-text')[0];
+  date = document.getElementsByClassName('day-text')[0];
+  // sessionStorage.setItem("localPincode", inputValue);
+  var response = checkInSheet_js(inputValue);
+  var result = response.result;
+  console.log("result "+result);
+  var days = response.availability;
+  getDays(days);
+  var showCod = false;
+  {% if product.price > 100000 and product.price < 3000000 %}
+    showCod = true;
+  {% endif %}  
+  var codavai = true;
+  {% if product.tags contains 'nocod' %}
+    codavai = false;
+  {% endif %}
+  console.log("COD A: ",codavai);
+    if(result == "FS") {
+      if(showCod == true) { cod.innerHTML = '<span>Cash On Delivery</span><span> Available 😃</span>'; }
+      if(codavai == false) { cod.innerHTML = ''; }
+      getDays(days);
+    } else if(result == "OP") {
+      cod.innerHTML = `<span style="font-weight: 500;font-size: 14px;line-height: 16px;color: #777777;font-weight:bold">
+        Cash On Delivery not available
+      </span>`;
+      getDays(days);
+    } else {
+      cod.innerHTML = `<span style="font-weight: 500;font-size: 14px;line-height: 16px;color: #777777;font-weight:bold">
+      Sorry! Pincode not serviceable
+      </span>`;
+      date.innerHTML = '';
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", (event) => {
+    var PincodeData = sessionStorage.getItem("pincodeData");
+    var oldpin = sessionStorage.getItem("localPincode");
+    console.log("oldpin: "+oldpin);
+    console.log("PincodeData: "+PincodeData);
+    let PinInput = document.getElementById('pincodeInput');
+    var inpval = defpin;
+    if(oldpin === null){ inpval = defpin; }
+    else{ inpval = oldpin;}
+    console.log("inpval: "+inpval);
+    getData(inpval);
+    PinInput.value = inpval;
+    PinInput.onpaste = function(e) { e.preventDefault(); }
+    PinInput.onkeypress = function(e) {
+      let removedText = this.value.replace(/\D/, '');
+      this.value = removedText;
+    }
+    submitBtn.onclick = function(){
+      inputValue= PinInput.value;
+      getData(inputValue);
+      sessionStorage.setItem("localPincode", inputValue);
+    };
+    PinInput.onclick = function(e){
+      if(cod && date){ cod.innerHTML = ''; date.innerHTML = '';}
+    };
+  });
+</script>

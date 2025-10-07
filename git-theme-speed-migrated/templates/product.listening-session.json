@@ -1,0 +1,892 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "01d8fcfc-bd2c-4baa-ae0d-d245f10de494": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n.product-info__liquid {\nmargin-block-start: 0.5rem;\n    margin-block-end: 0.5rem;\n}\n}\n\n\n\n</style>"
+          }
+        },
+        "100bf138-add1-405e-b1ac-3826a30f283c": {
+          "type": "separator",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "none",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "92c3f846-9d52-472d-8896-4f47805c3928": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{{ product.metafields.hpz.experience_details }}\n<style>\n\n.experience-details-grid {\n  display: grid;\n  grid-template-columns: 10% 60%;\n  background-color: #f7f7f7;\n  grid-gap: 0.4rem;\n  padding-left: 20px;\n  padding-bottom: 10px;\n  padding-top: 10px;\nbackground-color:#f1f1f1;\nborder-radius:1rem;\n\n}    \n\n.experience-details-grid div {\n align-self: center;\n}\n    \n @media screen and (max-width: 740px) {\n  .experience-details-grid {\n    display: grid;\n    grid-template-columns: 20% 80%;\n  }\n}\n\n\n.experience-details-grid span {\n  \n    font-size: 1rem;\n    font-weight: 700;\n    letter-spacing: 1.1;\n    font-family: 'Roboto',sans-serif;\n    font-weight: var(--heading-font-weight);\n    font-style: var(--heading-font-style);\n    letter-spacing: var(--heading-letter-spacing);\n    text-transform: capitalize;\n    overflow-wrap: anywhere;\n    line-height: 1.1;\n\n  \n}\n       \n.experience-details-grid p {  \n  font-size: 1rem;\n  font-weight: 500;\n  \n}\n    \n.experience-details-grid img {  \n    width: 30px;   \n}    \n</style>"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "b253fc0f-99f2-4bff-a2e6-585277f6538e": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% render 'below-buy-button.liquid'  %}"
+          }
+        },
+        "26c544be-f0bd-45b6-b9e2-bae47c526358": {
+          "type": "associated_products",
+          "disabled": true,
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": false,
+            "products_count": 10,
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "badges",
+        "01d8fcfc-bd2c-4baa-ae0d-d245f10de494",
+        "100bf138-add1-405e-b1ac-3826a30f283c",
+        "price",
+        "rating",
+        "payment_terms",
+        "separator",
+        "description",
+        "variant_picker",
+        "92c3f846-9d52-472d-8896-4f47805c3928",
+        "quantity_selector",
+        "buy_buttons",
+        "b253fc0f-99f2-4bff-a2e6-585277f6538e",
+        "26c544be-f0bd-45b6-b9e2-bae47c526358"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": false,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "cd99f2db-8a8e-45e1-8ed0-c871e3d0c632": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"grid\"><div>\n<p class=\"h2\">About Rediscover Amit Trivedi\n</p></div>\n\n<div><p>\nAmit Trivedi needs no introduction - he has carved his name in the Bollywood music industry and dished out countless memorable and hit tracks that the nation groves to. Music from films like Dev D, Lootera, and Andhadhun showcase his versatility and Avant-Guard taste that has translated into memorable moments. His music ranges in a broad spectrum with influences from qawwali, folk-fusion, love songs, rock songs, and fusion tracks. Join us for this listening session as we delve into some of his well-known compositions and sonic experiments.\n</p>\n\n</div>\n</div>\n\n\n\n\n\n\n<div class=\"grid\"><div>\n<p class=\"h2\">Who Is it For?</p></div>\n\n<div><p>\n\nAnyone who has their minds blown by Amit Trivedi. Headphone Zone Experiences and our listening sessions are designed for anyone looking to discover new music or rediscover music they’ve loved for years.<br>\nThe events are best suited for people who are new in the world of audiophilia or just starting out in the hobby. Of course, seasoned audiophiles are welcome to join in as we listen to our favorite artists on some of the finest sounding gear in the world.\n</p>\n\n</div>\n</div>\n\n\n\n<style>\n.h2{\nfont-size:2rem;important;\n}\n\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "f80cf58c-f6e9-42bd-8cfd-8e8ddbd93a01": {
+      "type": "media-with-text",
+      "blocks": {
+        "6b368e84-4848-4eb4-b28a-7907d50cbb58": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Listening session .mp4",
+            "external_video_url": "",
+            "autoplay": true,
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "About Headphone Zone Listening Sessions",
+            "content": "<p>Music isn't ever meant to be experienced alone. <strong>It is so much more powerful when shared. </strong>We’ve had the chance to listen to our music on some of the best sounding headphones in the world and we wanted to <strong>share what that feels like with you. </strong>Think of your favourite artist, and a song you’ve heard hundreds of times before. We promise to deliver those <strong>riffs, percussions, bass lines and solos </strong>that were always there, but were never heard.<br/><br/>Headphone Zone's Guided Listening Sessions are carefully <strong>curated by  music geeks and hosted by audiophiles</strong>, that bring together India's most passionate and discerning music listeners with one simple aim - to <strong>Rediscover music</strong>.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "6b368e84-4848-4eb4-b28a-7907d50cbb58"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 741px) {.media-with-text__media > * {height: 300px; } .h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "5fb1392d-719c-4f56-8177-4d0386831d83": {
+      "type": "press",
+      "blocks": {
+        "template--16054015230140__5fb1392d-719c-4f56-8177-4d0386831d83-1687437482859918e8-2": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "Preshit D",
+            "content": "Raghav's trivia & details really add a new dimension to each song, and then when you listen to these tracks on Headphone Zone's high-quality gear, you really get to know all the layers & depth the music has.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "template--16054015230140__5fb1392d-719c-4f56-8177-4d0386831d83-1687437482859918e8-1": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "Ujjwal Thaakar",
+            "content": "The amount of trivia and getting to relive the songs I grew up listening to as a teenager was worth every second and rupee I spent. Highly recommended. Also you get to hear these on the very best audio equipment in the world.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "template--16054015230140__5fb1392d-719c-4f56-8177-4d0386831d83-1687437482859918e8-0": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "Varun",
+            "content": "A Brilliant Experience - Listening to great music followed by their amazing introduction and insider stories by Raghav. Like listening to a modern version of Anu Kapoor describe stories.",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--16054015230140__5fb1392d-719c-4f56-8177-4d0386831d83-1687437482859918e8-2",
+        "template--16054015230140__5fb1392d-719c-4f56-8177-4d0386831d83-1687437482859918e8-1",
+        "template--16054015230140__5fb1392d-719c-4f56-8177-4d0386831d83-1687437482859918e8-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_size": "medium",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "impact_image_with_text_F4wBDw": {
+      "type": "impact-image-with-text",
+      "blocks": {
+        "image_WKyKxk": {
+          "type": "image",
+          "source": "{{ product.metafields.hpz.impact_image_with_text.value }}",
+          "settings": {
+            "image": "{{ product.metafields.hpz.impact_image_with_text.value.image.value }}",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "{{ product.metafields.hpz.impact_image_with_text.value.text | metafield_tag }}",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_WKyKxk"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "impact_features_6kbFzd": {
+      "type": "impact-features",
+      "blocks": {
+        "item_cqRRmK": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.hpz.impact_scrolling_features.value.image_1.value }}",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "{{ product.metafields.hpz.impact_scrolling_features.value.header_1.value }}",
+            "content": "{{ product.metafields.hpz.impact_scrolling_features.value.para_1 | metafield_tag }}"
+          }
+        },
+        "item_kQ697E": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.hpz.impact_scrolling_features.value.image_2.value }}",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "{{ product.metafields.hpz.impact_scrolling_features.value.header_2.value }}",
+            "content": "{{ product.metafields.hpz.impact_scrolling_features.value.para_2 | metafield_tag }}"
+          }
+        },
+        "item_NmTtdB": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.hpz.impact_scrolling_features.value.image_3.value }}",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "{{ product.metafields.hpz.impact_scrolling_features.value.header_3.value }}",
+            "content": "{{ product.metafields.hpz.impact_scrolling_features.value.para_3 | metafield_tag }}"
+          }
+        },
+        "item_EJJ9LJ": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.hpz.impact_scrolling_features.value.image_4.value }}",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "{{ product.metafields.hpz.impact_scrolling_features.value.header_4.value }}",
+            "content": "{{ product.metafields.hpz.impact_scrolling_features.value.para_4 | metafield_tag }}"
+          }
+        },
+        "item_JYNCVA": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.hpz.impact_scrolling_features.value.image_5.value }}",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "{{ product.metafields.hpz.impact_scrolling_features.value.header_5.value }}",
+            "content": "{{ product.metafields.hpz.impact_scrolling_features.value.para_5 | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "item_cqRRmK",
+        "item_kQ697E",
+        "item_NmTtdB",
+        "item_EJJ9LJ",
+        "item_JYNCVA"
+      ],
+      "custom_css": [
+        ".h1 {font-size: 2rem !important;}",
+        "@media screen and (max-width: 700px) {.h1 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "fade",
+        "image_position": "end",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "818e6806-d856-4135-9958-e937324403ce": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--16054015230140__818e6806-d856-4135-9958-e937324403ce-16874348087d0b2e7d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/book-an-audio-tour-gif.gif",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Experience the World's Finest Headphones",
+            "content": "<p>Experience the entire listening session on the world's finest collection of Headphones, Amplifiers and DAC's featuring gear from brands such as<strong> Audeze, Astell&Kern, Burson Audio, Cayin, Chord Electronics, Dan Clark Audio, EarMen, Focal, Final Audio, Gustard, Hifiman, Meze Audio, Sennheiser, STAX, Woo Audio.</strong></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16054015230140__818e6806-d856-4135-9958-e937324403ce-16874348087d0b2e7d-0"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 2rem !important;}",
+        "@media screen and (max-width: 700px) {.h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "551dca3e-3318-4319-9ca8-5b0ec1908eb2": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Headphone-Zone-OFFICE-EXPERIENCE-1350-550_1500x.progressive_16_dc4a4211-2906-49f9-9709-e651e5b389e4.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "b15b6526-7876-4e1f-8382-36fa417769d0": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "@media screen and (max-width: 700px) {.h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"grid\">\n<div>\n<a id=\"location\" style=\"text-decoration:none;\">\n<p class=\"h2\">We’re Bang In The Heart Of Bollywood</p></a>\n<br><p class=\"product-page-body\">The Headphone Zone Experience Studio is right in the heart of the Bollywood district of Mumbai, Andheri. We’ve build this space, bang in the middle of the hustle and bustle of the maximum city. A space where you can blast your open-backs at 100% and won’t be frowned upon for sound leakage.\nWe’ve got Mumbai’s finest craft breweries next door, and venues for the best live music. Within walking distance are 27 resto-pubs, excellent fine-dining restaurants, and uncountable street eateries. We’re not guaranteeing this is the ultimate day out, but its definitely worth the ride.<br><br><a href=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.3510663775196!2d72.82664721473868!3d19.136104087053486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6acd5b4b0985%3A0x544235ebb4017fbd!2sHeadphone%20Zone!5e0!3m2!1sen!2sin!4v1615211070636!5m2!1sen!2sin\" >Find us on the Map</p></a>\n</div>\n<div >\n<div class=\"map-responsive\"> <iframe loading=\"lazy\" style=\"border: 0;\" height=\"450\" width=\"600\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.3510663775196!2d72.82664721473868!3d19.136104087053486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6acd5b4b0985%3A0x544235ebb4017fbd!2sHeadphone%20Zone!5e0!3m2!1sen!2sin!4v1615211070636!5m2!1sen!2sin\" allowfullscreen=\"\"></iframe></div></div>\n</div>\n\n\n<style>\n.h2{\nfont-size:2rem;important;\n}\n\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "7eb7f7aa-75a7-48d7-a61f-59309062954e": {
+      "type": "rich-text",
+      "blocks": {
+        "6522c407-6716-4f2c-a66c-66d62d0af704": {
+          "type": "subheading",
+          "settings": {
+            "text": "In Support of The Silent Olympiad"
+          }
+        },
+        "template--16054015230140__7eb7f7aa-75a7-48d7-a61f-59309062954e-1687437389a99427ab-1": {
+          "type": "heading",
+          "settings": {
+            "text": "100% of Proceeds go to Charity.",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--16054015230140__7eb7f7aa-75a7-48d7-a61f-59309062954e-1687437389a99427ab-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We're going to be listening to music like you've never heard before. But spare a thought for those who can't hear at all. All proceeds from this event go to support the Silent Olympiad, a beautiful sport and cultural event for children with hearing and speech impairment.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "6522c407-6716-4f2c-a66c-66d62d0af704",
+        "template--16054015230140__7eb7f7aa-75a7-48d7-a61f-59309062954e-1687437389a99427ab-1",
+        "template--16054015230140__7eb7f7aa-75a7-48d7-a61f-59309062954e-1687437389a99427ab-2"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 700px) {.h3 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#444444"
+      }
+    },
+    "e7792541-626f-4c02-8c16-9b4337cc481b": {
+      "type": "media-grid",
+      "blocks": {
+        "template--16054015230140__e7792541-626f-4c02-8c16-9b4337cc481b-1687437306c0e4d3c2-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2023-06-22_at_5.56.20_PM_1.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16054015230140__e7792541-626f-4c02-8c16-9b4337cc481b-1687437306c0e4d3c2-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2023-06-22_at_5.56.21_PM_2.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16054015230140__e7792541-626f-4c02-8c16-9b4337cc481b-1687437306c0e4d3c2-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2023-06-22_at_5.56.23_PM_1.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "d11d7e6b-5306-4f59-9644-5b572062458e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2023-06-22_at_5.56.22_PM_1.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "227c891b-06e8-4bbc-8863-a01e9a10d73d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2023-06-22_at_5.56.21_PM.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16054015230140__e7792541-626f-4c02-8c16-9b4337cc481b-1687437306c0e4d3c2-0",
+        "template--16054015230140__e7792541-626f-4c02-8c16-9b4337cc481b-1687437306c0e4d3c2-1",
+        "template--16054015230140__e7792541-626f-4c02-8c16-9b4337cc481b-1687437306c0e4d3c2-2",
+        "d11d7e6b-5306-4f59-9644-5b572062458e",
+        "227c891b-06e8-4bbc-8863-a01e9a10d73d"
+      ],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "603a0a67-1eae-431b-9877-76f35a7e7259": {
+      "type": "featured-collection",
+      "custom_css": [
+        "@media screen and (max-width: 700px) {.h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "collection": "headphone-zone-experiences",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 50,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Upcoming Listening Sessions",
+        "content": "",
+        "link_url": "shopify://collections/headphone-zone-experiences",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "96bb1a0a-d456-4793-ac4d-efcdd840641f": {
+      "type": "media-grid",
+      "blocks": {
+        "template--16054015230140__96bb1a0a-d456-4793-ac4d-efcdd840641f-1687438951dc9db5e6-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC08851.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16054015230140__96bb1a0a-d456-4793-ac4d-efcdd840641f-1687438951dc9db5e6-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC08890.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16054015230140__96bb1a0a-d456-4793-ac4d-efcdd840641f-1687438951dc9db5e6-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC08868.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "faca4c14-5966-4c46-b4e5-3b873544189a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC08886.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "58b320d2-32dd-49e8-86c9-0a4a5ef74a9c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC08869.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16054015230140__96bb1a0a-d456-4793-ac4d-efcdd840641f-1687438951dc9db5e6-0",
+        "template--16054015230140__96bb1a0a-d456-4793-ac4d-efcdd840641f-1687438951dc9db5e6-2",
+        "template--16054015230140__96bb1a0a-d456-4793-ac4d-efcdd840641f-1687438951dc9db5e6-1",
+        "faca4c14-5966-4c46-b4e5-3b873544189a",
+        "58b320d2-32dd-49e8-86c9-0a4a5ef74a9c"
+      ],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "bcd6722e-ed2d-41ad-85e9-23c0ef95098f": {
+      "type": "faq",
+      "blocks": {
+        "template--15988441645244__bcd6722e-ed2d-41ad-85e9-23c0ef95098f-167782670427de49ab-0": {
+          "type": "item",
+          "settings": {
+            "title": "Do I need to get my set-up along?",
+            "content": "<p>Not really, but you're welcome to get any audio gear you have along. We'll be already providing our audio gear for you to experience.</p>"
+          }
+        },
+        "template--15988441645244__bcd6722e-ed2d-41ad-85e9-23c0ef95098f-167782670427de49ab-1": {
+          "type": "item",
+          "settings": {
+            "title": "What sort of gear will I get to listen to?",
+            "content": "<p>We have gear from the finest brand in the world like Audeze, Chord, Campfire Audio, HiFiMAN, STAX and more!</p>"
+          }
+        },
+        "template--15988441645244__bcd6722e-ed2d-41ad-85e9-23c0ef95098f-167782670427de49ab-2": {
+          "type": "item",
+          "settings": {
+            "title": "I'm an absolute newbie. Will I be able to understand what's going on?",
+            "content": "<p>This event has been created keeping people like you in mind. If you don't understand anything, just ask! Who doesn't love an interactive session?</p>"
+          }
+        },
+        "61aef5f8-2858-4ec3-bda8-e78e396ac921": {
+          "type": "item",
+          "settings": {
+            "title": "How different is this from Headphone Connect?",
+            "content": "<p>Headphone Connect is an audiophile meet-up event. While we do have listening sessions there, you won't get the guided explanations you'd receive in this masterclass.</p>"
+          }
+        },
+        "d18031a9-47b1-401d-bdba-f2024afcdf04": {
+          "type": "item",
+          "settings": {
+            "title": "Is there a dress code for the event?",
+            "content": "<p>Yes, don't forget your mask! Also, you can pick up an Audiophile T-shirt <a href=\"https://www.headphonezone.in/collections/the-indian-audiophile-forum-merchandise\" target=\"_blank\" title=\"Headphone Zone Merchandise\">here</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15988441645244__bcd6722e-ed2d-41ad-85e9-23c0ef95098f-167782670427de49ab-0",
+        "template--15988441645244__bcd6722e-ed2d-41ad-85e9-23c0ef95098f-167782670427de49ab-1",
+        "template--15988441645244__bcd6722e-ed2d-41ad-85e9-23c0ef95098f-167782670427de49ab-2",
+        "61aef5f8-2858-4ec3-bda8-e78e396ac921",
+        "d18031a9-47b1-401d-bdba-f2024afcdf04"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 3rem !important;}",
+        "@media screen and (max-width: 700px) {.h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Have a question? Get in touch!",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "167525932377cb380e": {
+      "type": "apps",
+      "blocks": {
+        "08b03131-bf1b-4945-a40d-a881a32d292b": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "08b03131-bf1b-4945-a40d-a881a32d292b"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "aa8d69e5-6801-4926-b763-d06fc8b10a5c": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<div class=\"youtube-thumb\" data-id=\"Q18yPshlwKk\"></div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cd99f2db-8a8e-45e1-8ed0-c871e3d0c632",
+    "f80cf58c-f6e9-42bd-8cfd-8e8ddbd93a01",
+    "5fb1392d-719c-4f56-8177-4d0386831d83",
+    "impact_image_with_text_F4wBDw",
+    "impact_features_6kbFzd",
+    "818e6806-d856-4135-9958-e937324403ce",
+    "551dca3e-3318-4319-9ca8-5b0ec1908eb2",
+    "b15b6526-7876-4e1f-8382-36fa417769d0",
+    "7eb7f7aa-75a7-48d7-a61f-59309062954e",
+    "e7792541-626f-4c02-8c16-9b4337cc481b",
+    "603a0a67-1eae-431b-9877-76f35a7e7259",
+    "96bb1a0a-d456-4793-ac4d-efcdd840641f",
+    "bcd6722e-ed2d-41ad-85e9-23c0ef95098f",
+    "167525932377cb380e",
+    "aa8d69e5-6801-4926-b763-d06fc8b10a5c"
+  ]
+}

@@ -1,0 +1,396 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "fa1f498d-aec3-4b6b-ad43-a873c0fd254a": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<div align=\"center\" class=\"left-on-mob\" style=\"margin-top: 30px;\">\n<svg width=\"450\" height=\"150\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M212.32 107.18v10.16h-4.8V87.83h4.8c-.017.46.03.922.14 1.37a8.792 8.792 0 019.19-1.79 10.22 10.22 0 016.87 7.28 12.073 12.073 0 01-1.79 11 10.318 10.318 0 01-14.41 1.49zm-.14-9.06c.14.83.28 1.65.41 2.34a5.707 5.707 0 005.08 4.25 5.298 5.298 0 005.22-2.61 6.996 6.996 0 00-.14-7.82 5.38 5.38 0 00-8.23-1.38 6.942 6.942 0 00-2.34 5.22zm98.3 2.47a5.663 5.663 0 004.53 3.85 6.681 6.681 0 006.59-1.93c1.51.83 2.88 1.51 4.39 2.34a10 10 0 01-5.22 4c-4.39 1.37-8.51 1-11.94-2.33A11.258 11.258 0 01306 94.83a10.772 10.772 0 0111.441-7.907 10.771 10.771 0 019.699 9.967C327.09 98 327 99 327 100c0 .55-.28.69-.82.69h-14.47a4.137 4.137 0 00-1.23-.1zM322 96.06c.13-2.47-2.34-4.39-5.49-4.53-3.15-.14-5.91 1.92-5.91 4.53H322zm-69.46 12.36h-4.8v-11a12.669 12.669 0 00-.41-3.16 3.67 3.67 0 00-3.16-2.89 4.998 4.998 0 00-6.45 5c-.14 3.7 0 7.41 0 11.12v1h-4.81V81h4.81v8.1A6.94 6.94 0 01242 87c3-.27 6-.14 8.24 2.34a9.13 9.13 0 012.2 5.76c.13 2.47.13 5.08.13 7.55l-.03 5.77zM278.63 98a11.327 11.327 0 01-19.387 7.905 11.332 11.332 0 01-2.384-12.363 11.33 11.33 0 0110.511-6.932A11.52 11.52 0 01278.63 98zm-11.26 6.59a6.48 6.48 0 004.605-1.944A6.482 6.482 0 00273.82 98a6.559 6.559 0 00-6.59-6.45 6.52 6.52 0 10.14 13v.04zm19.77-16.76v1.09a6.632 6.632 0 014.25-2.06c3-.27 6-.13 8.24 2.34a9.149 9.149 0 012.2 5.76c.13 2.48.13 5 .13 7.42v5.9h-4.8v-11a13.802 13.802 0 00-.41-3.3 3.69 3.69 0 00-2.89-2.74c-3.56-.83-6.58 1.23-6.58 4.94v12h-4.81V87.55a25.43 25.43 0 004.67.28zm-89.23 20.59V107c-.69.42-1.24 1-1.93 1.38a9.356 9.356 0 01-5.49 1 10.23 10.23 0 01-6-3 11.652 11.652 0 01-2.88-5.63 11.875 11.875 0 011.78-9.61 9.809 9.809 0 016.69-4.14 9.28 9.28 0 016.59 1.24l1.24.82V81h4.8v27.46l-4.8-.04zm0-10.71a7.284 7.284 0 00-1.65-4.39 5.815 5.815 0 00-4.457-1.871 5.822 5.822 0 00-4.333 2.141 7.431 7.431 0 00.14 8.79 5.395 5.395 0 006.18 1.78c2.61-.82 4.12-3.16 4.12-6.45zM125.7 80.82h4.8v27.46h-4.8V96.75h-12.08v11.53h-4.81V80.82h4.81v11.4h12.08v-11.4zm28.82 24.03a24.844 24.844 0 01-1.92 1.92 11.512 11.512 0 01-9.33 2.47 10.116 10.116 0 01-5.77-2.61 10.208 10.208 0 01-3.29-5.9 12.08 12.08 0 012.06-9.88A11.09 11.09 0 01150.41 88a10.09 10.09 0 014.94 7c.434 1.814.386 3.71-.14 5.5H139a5.904 5.904 0 004.12 3.7 6.248 6.248 0 006.86-1.92c1.52.92 3.02 1.72 4.54 2.57zm-4-8.79a4.306 4.306 0 00-2.74-3.84 7.911 7.911 0 00-3.57-.69 5.43 5.43 0 00-4.53 2.61 4.704 4.704 0 00-.69 1.92h11.53zm21.99-.82a4.093 4.093 0 00-3.43-3.71c-2.6-.456-5.277.03-7.55 1.37h-.14a94.786 94.786 0 01-2.06-3.84c.69-.27 1.37-.69 2.06-1a19.996 19.996 0 017-1.37 9.439 9.439 0 015.08 1.37 8.57 8.57 0 013.16 3.84 11.194 11.194 0 011.1 4.67c.13 3.85.13 7.69.13 11.53v.28h-4.8v-2.2c-.41.41-.69.82-1 1.1a9.207 9.207 0 01-11.12.41 7.07 7.07 0 01-1.51-9.47 7.708 7.708 0 015.08-3.16 14.18 14.18 0 014.11-.14c1.301.04 2.6.147 3.89.32zm-5.77 9.61c.41 0 .83-.14 1.24-.14a5.439 5.439 0 004.8-5.22c0-.27-.13-.41-.41-.54a18.53 18.53 0 00-5.49-.42 4.59 4.59 0 00-2.88 1.24 2.804 2.804 0 00-.907 1.971 2.8 2.8 0 00.767 2.029c.69.94 1.65 1.08 2.88 1.08zm271.13-4.26h-16.06a6 6 0 004 3.71c2.33.69 5.36.14 6.87-1.92 1.51.82 2.88 1.51 4.53 2.33a24.796 24.796 0 01-1.93 1.92 11.65 11.65 0 01-9.19 2.47 10.102 10.102 0 01-5.77-2.6 9.893 9.893 0 01-3.29-5.77 12.132 12.132 0 012.05-9.88 10.15 10.15 0 016.87-4 11.15 11.15 0 017.27 1.24 10.233 10.233 0 014.93 6.91c.322 1.861.227 3.77-.28 5.59zM422 96.06h11.53a4.328 4.328 0 00-2.75-3.84 6.689 6.689 0 00-6 0 4.944 4.944 0 00-2.78 3.84zm-77.34 12.22v-4.39c.036-.205.129-.396.27-.55 4.53-5.77 8.93-11.53 13.46-17.16 0-.14.13-.14.27-.28H344.8v-4.8h19.76v4.39c0 .14-.13.41-.13.55-4.4 5.77-8.93 11.4-13.32 17.16-.14.14-.14.28-.27.41h13.86v4.81c-6.86-.14-13.45-.14-20.04-.14zm45.58-10.16a11.256 11.256 0 01-6.984 10.416 11.26 11.26 0 11-4.136-21.676 11.219 11.219 0 0111.12 11.26zM379 104.57a6.444 6.444 0 005.959-3.982 6.45 6.45 0 10-12.409-2.468 6.27 6.27 0 006.45 6.45zm34.57 3.71h-4.8V97.57a22.019 22.019 0 00-.28-3 4.09 4.09 0 00-3.84-3.43 5.3 5.3 0 00-3.71.82 5.494 5.494 0 00-2.19 3.71c0 .55-.14 1-.14 1.51v11.12h-4.81V87.83h4.81v1.23l.55-.55a6.49 6.49 0 014.12-1.65 12.45 12.45 0 015.49.69 6.685 6.685 0 013.84 4.53 16.69 16.69 0 01.83 5.77V108a.42.42 0 01.13.28zM73.94 59.8L75.07 46l-25.94 7.25a33.69 33.69 0 00.45 19.4c.68-.22 1.36-.22 2-.45A13.93 13.93 0 1139 87.31a13 13 0 013.38-10.37A34.84 34.84 0 0136.5 58a32.29 32.29 0 00-13.08 34.5c4.51 16.92 21.88 27.29 38.79 22.78A31.661 31.661 0 0085.9 86.86l6.54-4.74-18.5-22.32zM115.48 70a6.63 6.63 0 01-3.55-.93 7 7 0 01-2.64-2.64 7.218 7.218 0 010-7.09 7.217 7.217 0 012.64-2.65 6.63 6.63 0 013.55-.93 6.373 6.373 0 015.32 2.74l-2.7 1.6a3.38 3.38 0 00-2.62-1.1 3.92 3.92 0 100 7.84 3.35 3.35 0 002.62-1.14l2.7 1.6a6.435 6.435 0 01-5.32 2.7zm19.4-10.52h-5.76v2H134v2.74h-4.88v2h5.76v3.22h-9V56.26h9v3.22zm9.12 6.81h5.43v3.22h-8.67V56.26H144v10.03zm19.78-6.81H158v2h4.87v2.74H158v2h5.76v3.22h-9V56.26h9l.02 3.22zm15.42.52c0 .48-.103.953-.3 1.39-.19.4-.479.744-.84 1 .469.33.833.789 1.05 1.32a4.133 4.133 0 01-1.82 5.257 4.126 4.126 0 01-1.95.503h-5.75V56.26h5.47a4.29 4.29 0 012.94 1.05 3.415 3.415 0 011.2 2.69zm-6.4-.55v1.87h2.13c.7-.06 1-.38 1-1a.873.873 0 00-.92-.92l-2.21.05zm3.46 5.65c0-.69-.4-1-1.2-1h-2.26v2.22h2.37A1.002 1.002 0 00176 66c.202-.254.295-.578.26-.9zm18.99 4.41h-3.53l-2.34-4.23h-1.27v4.23h-3.22V56.26h4.75a4.516 4.516 0 013.3 1.33 4.438 4.438 0 01.82 5.29 4.657 4.657 0 01-1.47 1.59l2.96 5.04zm-7.14-10v3.08h1.18c.479.03.95-.132 1.31-.45a1.599 1.599 0 00.47-1.19 1.378 1.378 0 00-.41-1 1.71 1.71 0 00-1.21-.4l-1.34-.04zm21.27 10l-.83-2.11h-4.73l-.82 2.11h-3.55l5.43-13.25h2.65l5.36 13.25h-3.51zm-4.51-4.85h2.62l-1.31-3.39-1.31 3.39zm21.5-5.18h-3.53v10h-3.24v-10h-3.54v-3.22h10.31v3.22zM235 69.51h-3.24V56.26H235v13.25zm14-5.92v-7.33h3.21v13.25h-2.65l-5.52-7.32v7.32h-3.21V56.26h2.65l5.52 7.33zm15.72-1.71h5.69v5.54a7.004 7.004 0 01-5.69 2.58 6.63 6.63 0 01-3.55-.93 7.117 7.117 0 01-2.64-2.64 7.218 7.218 0 010-7.09 7.29 7.29 0 012.64-2.65 6.63 6.63 0 013.55-.93 6.233 6.233 0 015 2.08l-2.21 2.26a3.553 3.553 0 00-2.79-1.1 3.92 3.92 0 100 7.84 3.85 3.85 0 002.49-.72V64.6h-2.49v-2.72zm62.03 2.19v5.44h-3.24v-5.44l-4.71-7.81h3.66l2.67 4.33 2.68-4.33h3.63l-4.69 7.81zm18.64-4.59h-5.76v2h4.88v2.74h-4.88v2h5.76v3.22h-9V56.26h9v3.22zm14.89 10.03l-.83-2.11h-4.73l-.81 2.11h-3.55l5.43-13.25h2.65l5.35 13.25h-3.51zm-4.51-4.85h2.61l-1.3-3.39-1.31 3.39zm23.41 4.85h-3.53l-2.34-4.23H372v4.23h-3.22V56.26h4.75a4.516 4.516 0 013.3 1.33 4.315 4.315 0 011.35 3.2 4.22 4.22 0 01-.53 2.09 4.657 4.657 0 01-1.47 1.59l3 5.04zm-7.14-10v3.08h1.18c.479.03.95-.132 1.31-.45a1.558 1.558 0 00.47-1.19 1.378 1.378 0 00-.41-1 1.71 1.71 0 00-1.21-.4l-1.34-.04zm12.05.58a4.003 4.003 0 011.38-3.09 5.27 5.27 0 013.67-1.23 5.11 5.11 0 014.75 2.63l-2.69 1.78a2.1 2.1 0 00-2-1.21 3.001 3.001 0 00-1.38.26.795.795 0 00-.52.71c0 .42.75.79 2.23 1.11a8.61 8.61 0 013.72 1.64 3.699 3.699 0 011.19 3 3.852 3.852 0 01-1.44 3.07 5.75 5.75 0 01-3.79 1.24 6.52 6.52 0 01-3.16-.78 6.063 6.063 0 01-2.31-2.22l2.82-1.83c.216.474.563.876 1 1.16a2.799 2.799 0 001.66.52 2.69 2.69 0 001.44-.35.994.994 0 00.56-.87c0-.35-.25-.65-.77-.88a10.705 10.705 0 00-2.39-.64 5.553 5.553 0 01-2.93-1.39 3.514 3.514 0 01-1.04-2.63zm39.15 2.8a6.732 6.732 0 01-.94 3.55 7.125 7.125 0 01-2.64 2.64 6.57 6.57 0 01-3.54.93 6.66 6.66 0 01-3.56-.93 7.125 7.125 0 01-2.64-2.64 7.218 7.218 0 010-7.09 7.29 7.29 0 012.64-2.65 7.152 7.152 0 019.718 2.636 7.145 7.145 0 01.962 3.554zm-9.88-2.77a3.94 3.94 0 000 5.54 3.86 3.86 0 005.5 0 3.94 3.94 0 000-5.54 3.86 3.86 0 00-5.5 0zm24.24-.64h-5.88v2h5v2.74h-5v5.26h-3.23V56.26h9.11v3.22zM291.553 69.491h-3.262v-8.206l-1.416 1.405-2.227-2.136 4.21-4.305h2.671l.024 13.242zm10.61-13.748a5.034 5.034 0 013.441 1.157 3.866 3.866 0 011.326 3.078c0 1.296-.735 2.682-2.204 4.16l-2.209 2.116h4.583v3.237h-9.553v-2.646l4.04-3.888c1.372-1.287 2.059-2.2 2.063-2.74a1.127 1.127 0 00-.402-.937 1.659 1.659 0 00-1.047-.314 1.344 1.344 0 00-1.029.384 1.324 1.324 0 00-.387 1.021l-3.059-.422a3.884 3.884 0 011.27-2.946 4.245 4.245 0 011.45-.96 4.279 4.279 0 011.717-.3z\" fill=\"#3C07FF\"/><path d=\"M55.672 50.586L7.96 30.715l14.712 50.18C38.277 77.482 50.21 64.83 56.982 51.11l-1.309-.524z\" fill=\"url(#paint0_linear_9_2)\"/><path d=\"M56.981 51.133l-2.895-1.208a78.32 78.32 0 01-5.153 13.811A67.724 67.724 0 0056.98 51.11v.023z\" fill=\"url(#paint1_linear_9_2)\"/><path d=\"M46.466 46.756l-6.475-2.697c-2.364 12.69-9.048 24.426-18.296 33.526.24.816.735 2.51.99 3.335 13.755-1.38 21.338-22.364 24.52-33.863l-.739-.301z\" fill=\"url(#paint2_linear_9_2)\"/><path d=\"M32.846 41.074l-6.967-2.913c-.439 8.585-3.67 16.912-8.72 23.895.718 2.46 1.555 5.312 2.277 7.77 7.122-8.032 12.048-18.104 13.41-28.752z\" fill=\"url(#paint3_linear_9_2)\"/><path d=\"M18.942 36.102c0-.272-.017-.544-.033-.816l-7.326-3.05c1.223 3.94.33 8.071.33 12.005l2.812 9.595c2.852-5.455 4.431-11.593 4.217-17.734z\" fill=\"url(#paint4_linear_9_2)\"/><defs><linearGradient id=\"paint0_linear_9_2\" x1=\"-1077.73\" y1=\"55.824\" x2=\"358.555\" y2=\"55.824\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#FF7DB2\"/><stop offset=\"1\" stop-color=\"#8178FF\"/></linearGradient><linearGradient id=\"paint1_linear_9_2\" x1=\"-32150.1\" y1=\"56.837\" x2=\"32248\" y2=\"56.837\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#F99580\"/><stop offset=\".57\" stop-color=\"#FAD964\"/></linearGradient><linearGradient id=\"paint2_linear_9_2\" x1=\"-116.535\" y1=\"62.49\" x2=\"365.079\" y2=\"62.49\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#F99580\"/><stop offset=\".57\" stop-color=\"#FAD964\"/></linearGradient><linearGradient id=\"paint3_linear_9_2\" x1=\"-20.841\" y1=\"54.017\" x2=\"134.006\" y2=\"54.017\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#F99580\"/><stop offset=\".57\" stop-color=\"#FAD964\"/></linearGradient><linearGradient id=\"paint4_linear_9_2\" x1=\"12.631\" y1=\"43.036\" x2=\"26.542\" y2=\"43.036\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#F99580\"/><stop offset=\".57\" stop-color=\"#FAD964\"/></linearGradient></defs></svg><style><!--\n.celebrating{width:40%}\n--></style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "ed553c3f-45de-4057-984c-fc168e98e7fa": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15988441874620__ed553c3f-45de-4057-984c-fc168e98e7fa-1677836842baea77a1-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Read Our Story, As Told By Our Ceo & Founder, Raghav",
+            "heading_tag": "h3",
+            "text_color": "#444444",
+            "gradient": ""
+          }
+        },
+        "template--15988441874620__ed553c3f-45de-4057-984c-fc168e98e7fa-1677836842baea77a1-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>\"It’s hard to believe its been 11 years since Headphone Zone first opened its doors. It’s not a short amount of time. Even after a decade, I still wake up every morning as excited as ever to go to work and continue doing what I know best. I guess thats how you know your doing something right. If you're reading this page, then you've probably had a big role in the story of Headphone Zone. I thank you for joining me for the ride.\"</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15988441874620__ed553c3f-45de-4057-984c-fc168e98e7fa-1677836842baea77a1-1",
+        "template--15988441874620__ed553c3f-45de-4057-984c-fc168e98e7fa-1677836842baea77a1-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "3149fc63-e7b8-46db-892e-619e38365b04": {
+      "type": "media-with-text",
+      "blocks": {
+        "5d28357d-ef5f-442c-8bc7-103e13173a66": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-History-2011_feddd1ed-e259-4e22-ad62-57b420431262.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "2011",
+            "title": "An Idea is Born",
+            "content": "<p>\"After graduating from university, I chose to work with my family business based in Chennai which at the time was involved with the distribution and marketing of audio video accessories.<br/><br/>My first job was to market Headphones through large format electronic retailers across India - everyone from Croma, Reliance Digital, Big Bazaar and others, who were all convinced that headphones had a lot of potential. But that's when I realised that most big retailers had little or no understanding of Headphones. They were usually just hung on a peg hook like a pendrive, and the customer got a terrible experience in store and limited options outside it. <br/><br/>I was convinced that with some real focus, genuine passion and great customer service thrown in, Headphones can be a serious retail category in India. I guess, just wanted to prove a point to everyone that a concept like Headphone Zone could work.\"</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "0fb07079-33bb-4fc4-ae67-b2a00b6460b9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-History-2012.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "2012",
+            "title": "The First Headphone Zone Store Opens in Bangalore",
+            "content": "<p>\"Buying headphones is a sensory experience, and being able to listen to the way your music can sound on them is extremely important. We started our first retail store in Bangalore’s Garuda Mall keeping that in mind. <br/><br/>The Headphone Zone store had 20 sectionalised categories - everything from Headphones for athletes, frequent fliers, and DJs. We had over 600 different headphones all in one store, and they were always beautifully displayed. It was pretty fantastic. <br/><br/>If you spent a few hours in the store, you'd quickly realise that everyone loves their music. It's almost universal. And we always had great music playing at the store. It was a transformative experience listening to it on some great sounding headphones. I thoroughly enjoyed talking with each customer who walked in everyday, and I knew this was 'my thing'. The time I spent in the store laid the foundation for our customer service philosophy that we carry till date.\"</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "b7a17bb6-25eb-4cfe-abd1-c4627eeb261d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-History-2013_be436101-2480-45a2-a973-9e187d06b30b.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "2013",
+            "title": "We Open Some More Retail Stores",
+            "content": "<p>When designing our stores, we wanted to maximize the space and use very little floor space which was incredibly expensive. Thankfully, our products could be retailed off the wall. We pioneered the concept of a 'store on a wall' with some of the coolest shopping malls in India. We were really proud of how we expressed the brand through the visual merchandising and a personalized customer experience. But giving each store the attention for it to give customers a consistently great experience was a big challenge.<br/></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "323f7f2e-9b19-4891-8f80-40b545079825": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-History-2014_0babf26f-1d55-4d4b-bfd5-f24397342170.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "2014",
+            "title": "We Go Online with the Headphone Zone Webstore",
+            "content": "<p>\"I very quickly realised that to bring Headphone Zone to music listeners across India, we would have to open stores in every town, every neighbourhood, almost like Café Coffee Day outlets. That would be really expensive and super unsustainable.<br/></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "a54bdc66-1604-4937-9e6e-dbf2dea2820a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Timeline-2015.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "2015",
+            "title": "We Shift to a Bigger Office & Build our Team",
+            "content": "<p>\"A few years after moving to Mumbai, we were lucky to find that the website was growing rapidly and we needed more people on board. We left our cramped co-working space for a very cozy 1 storied office right beside an old bakery & bang in the middle of Mumbai’s Bollywood district.<br/></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "34c7f53a-e2c6-47c9-9e90-a1365f41049a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-History-2016_82409022-ed4e-4c45-93b7-94ab7b165f93.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "2016",
+            "title": "Headphone Connect is Born + Girl Power!",
+            "content": "<p>\"2016 was the year we created Headphone Connect - a unique community meetup event for headphone enthusiasts and audiophiles and held the first event in Mumbai. We would book out the coolest craft breweries across India and travel with bags full of expensive headphones, DACs and players. We'd invite everyone we knew to spend a day with us over good food, great craft beers, some incredible music, and ofcourse the finest collection of Headphones put together anywhere.<br/></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "2d51d6a7-231d-4c4e-a377-cc20534afb5a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Timeline-2017.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "2017",
+            "title": "We Move Offices Again & Double Up in Size",
+            "content": "<p>\"We were confronted with problems of scaling and automating processes and business operations the most this year. We were shipping twice as many headphones, and everything needed to catch up to speed. 2017 was a great year for us but also one with many ups and downs. We worked much harder than ever before, made some mistakes along the way. But we learnt that chocolate cake makes everything better. A lot of customers quickly discovered this too and we’ve sent out thousands of chocolate cakes to customers since.<br/></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "4859190a-60cb-4a39-bc04-d6678ea152e8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Timeline-2018.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "2018",
+            "title": "We create Headphone Zone. Again.",
+            "content": "<p>\"We found that to take Headphone Zone to the next level, our existing brand was lacking, and was really created for a store in a mall. Redeveloping the Headphone Zone brand was the need of the hour. It meant letting go of everything we had created so far to make way for something new. Until now, we would attempt to do everything in-house, but this we decided to leave to the experts. We had to ask ourselves a lot of tough questions that helped us shape and define our brand's ethos, personality and communication style.<br/></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "1c0f30f7-fd5b-4d65-b935-07447a79c29b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-History-2019_71763b62-b167-4093-88cd-4562811a4ed8.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "2019",
+            "title": "Our Customer Happiness Officers & Headphone Gurus take Center Stage",
+            "content": "<p>\"For the first time, we had a large dedicated team of Headphone Gurus and Customer Happiness Officers who interacted with hundreds of customers everyday. It got pretty chaotic with 10 or more people being on calls simultaneously. We got very lucky finding another space in the same building and moved the teams there. This meant that there were problems when Maggi was made only in one office! But we still made it a point to come together everyday.<br/></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "34de69fe-f0e7-4552-9f1c-df4dd3011319": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-History-2020_d827e60c-70d3-45d9-848e-5fe46e726ee4.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "2020",
+            "title": "A Year Where we Didn't let the Pandemic Get the Best of us",
+            "content": "<p>\"The year started out really positive for the team. We'd had 3 Townhalls with ambitious projections and plans for the year. Then March happened. COVID-19 lockdowns affected everyone and we were no different. We really thought we were in serious trouble.<br/></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "template--15988441874620__3149fc63-e7b8-46db-892e-619e38365b04-16778360520fc117ec-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-11years-History-2021.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "2021",
+            "title": "A Year of Ups and Downs",
+            "content": "<p>The year began on a high with a lot of us resuming Work from Office, and then the 2nd wave of COVID-19 hit, and one after another many from the team contracted the virus. To add to the gloom, one of the offices on our floor broke into quite a disastrous fire. But things started looking up! By June, vaccinated and victorious, it was finally viable for all of us to fill the vacancy of our empty office. </p><p>The year ended on a high too with us running some of our most successful sales ever like Black Friday Cyber Monday and the Christmas Sale.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "c54f0a54-86b8-4687-8b9d-e9806a35309c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-2022-timeline-new.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "2022",
+            "title": "What Unfolded in The Year 2022",
+            "content": "<p>A very momentous year for us. We saw rapid traction from resuming Headphone Zone's first meetup event after the pandemic: about 2000 enthusiastic audiophiles attended Headphone Connect in 8 cities over our summer and winter edition. Despite half the team being constantly on the move to host the event, we managed to grow from 2021 through our successful sales. We also hosted our very first Garba Night. But it was not all just fun and games, we got to connect with our warehouse team in Chennai to build better processes and form bonds closer than ever.<br/></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_x8FFcM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Museum-2023.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "2023",
+            "title": "Creativity, Music, Enthusiasm & Abundance",
+            "content": "<p>A very happening year for the team with a lot of events: 12 Headphone Connects, 2 Club Audiophile meetups co-hosted alongwith Moonshine, and several listening sessions. Creatively, the team was quite empowered. The result: 2 Diwali ad films created 100% in-house including acting, singing, shooting & editing. We also created our own pack of tournament grade playing cards that we designed and made from scratch, with each card featuring an artist that we love listening to. 2023 was the year we hired like crazy and had to take up a second office space just to fit everyone!</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "5d28357d-ef5f-442c-8bc7-103e13173a66",
+        "0fb07079-33bb-4fc4-ae67-b2a00b6460b9",
+        "b7a17bb6-25eb-4cfe-abd1-c4627eeb261d",
+        "323f7f2e-9b19-4891-8f80-40b545079825",
+        "a54bdc66-1604-4937-9e6e-dbf2dea2820a",
+        "34c7f53a-e2c6-47c9-9e90-a1365f41049a",
+        "2d51d6a7-231d-4c4e-a377-cc20534afb5a",
+        "4859190a-60cb-4a39-bc04-d6678ea152e8",
+        "1c0f30f7-fd5b-4d65-b935-07447a79c29b",
+        "34de69fe-f0e7-4552-9f1c-df4dd3011319",
+        "template--15988441874620__3149fc63-e7b8-46db-892e-619e38365b04-16778360520fc117ec-0",
+        "c54f0a54-86b8-4687-8b9d-e9806a35309c",
+        "image_x8FFcM"
+      ],
+      "custom_css": [
+        ".bold {color: #3c07ff;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "230399ff-a657-456a-af16-d06b6cb5fe50": {
+      "type": "custom-html",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "html": "<h3 class=\"heading h2\" style=\"text-align:center;\">Credits</h3><br>\n<p style=\"text-align:center;\">Team Headphone Zone Would Like to Recognize and Thank Those Who Were a Part of Our Journey \n</p>\n\n<div class=\"credits-span\">Friends And Collaborators</div>\n\n<div class=\"credits-grid\">\n\n<p>Abhisek Sarda &amp; Opposite</p>\n<p>Aditya Mahagaonkar &amp; WhatKnot</p>\n<p>Aditya Marathe &amp; WhatKnot</p>\n<p>Ali Pardiwala</p>\n<p>Alif\n\n</p>\n<p>Amit Jain</p>\n<p>Amit Jivani</p>\n<p>Anand Kulkarni &amp; Flop Films</p>\n<p>Annkur Agarwal</p>\n<p>Apurva Kothari &amp; NoNasties</p>\n<p>Ashutosh Pande</p>\n<p>Berty Ashley</p>\n<p>Bhagyashree Jain</p>\n\n<p>Chand Ajmera</p>\n<p>Deepak Gopalakrishnan</p>\n<p>Dhruv Bhutani</p>\n<p>Ershad Khaleebullah</p>\n<p>Garima Yadav</p>\n<p>Harini Iyer\n</p>\n<p>Harsh Pareek &amp; iBraine</p>\n<p>Harshit Mishra</p>\n<p>Heeta Parikh &amp; Silverspun</p>\n<p>Hina Palkar</p>\n<p>Jinesh Dedhia</p>\n<p>K.J. Singh</p>\n<p>Karan Singh</p>\n<p>Kausshal Dugarr</p>\n<p>Khyati Dodhia</p>\n<p>Kirdaar</p>\n\n<p>Liz D'Souza &amp; Lizlyn</p>\n<p>Martin Nillson</p>\n<p>Neil Batavia</p>\n<p>Neeraj Arya's Kabir Cafe\n</p>\n<p>Nikhil Kumar Verma</p>\n<p>Nishant Padhiar</p>\n<p>Paroma Chatterjee</p>\n<p>Pradeep Gidwani &amp; The Pint Room</p>\n<p>Pranav Saboo</p>\n<p>Pratik Jain &amp; Paxton Equips</p>\n<p>Rahul Shah &amp; Gadget Zone</p>\n<p>Ramit Mehra</p>\n<p>Ravi Bhushan</p>\n<p>Rebecca Tobin</p>\n<p>Rhys Sebastian</p>\n<p>Sankar Thiagasamudram</p>\n<p>Sanskruti Serrao</p>\n<p>Shashank Kumar &amp; PushOwl</p>\n<p>Shashwat Swaroop &amp; Marmeto</p>\n<p>Siddharth Mangharam</p>\n<p>Smita Rajagopal &amp; Smitten</p>\n<p>Sunil Kumar &amp; TAMSE Associates</p>\n<p>Swati Poddar</p>\n<p>Tuhin Mehta</p>\n<p>Udayan Arayan &amp; GM Audio</p>\n<p>Vargab Bakshi</p>\n<p>Varun Dayal</p>\n<p>Zohran Miranda</p>\n</div>\n<div class=\"credits-span\">Alumni And Contributors</div>\n\n\n<div class=\"credits-grid\">\n\n<p>Abheer Monga</p>\n<p>Abhinav Mehrotra</p>\n<p>Ahsan Lilani</p>\n<p>Aliza Baidya</p>\n<p>Anisha Peter</p>\n<p>Bernadette Braganza</p>\n<p>Bhavika Sisodia</p>\n<p>Brajendra Kumar</p>\n<p>Chintamani Kulkarni</p>\n<p>Deepa Nirmal</p>\n<p>Delwyn Mathews</p>\n<p>Dhananjay Bhat</p>\n<p>Dia Aurangabaadkar</p>\n<p>Durva Hadkar</p>\n<p>Hetashri Thaker</p>\n\n<p>Ishwari Pawar</p>\n<p>Jay Vohra</p>\n<p>Joel D'Souza</p>\n<p>Kanchan Mishra</p>\n<p>Karina Raghani</p>\n<p>Khushali Thakkar</p>\n<p>Kritika Dayal</p>\n<p>Mehvish Khan</p>\n<p>Miloni Shah</p>\n<p>Mrudula Khaire</p>\n<p>Namita Jaiswal</p>\n<p>Nausheen Shaikh</p>\n<p>Pradhumn Ranawat</p>\n<p>Pranav Pandit</p>\n\n<p>Prasanna Lal</p>\n<p>Praveen Kamath</p>\n\n<p>Raj Gandhi</p>\n<p>Rajesh Kumar Singh</p>\n<p>Rajul Sangoi</p>\n<p>Reedhi Mukherjee</p>\n<p>Renishka D'Souza</p>\n<p>Rhea Dare</p>\n<p>Rishikesh Kisla</p>\n<p>Ronika Debnath</p>\n<p>Salim Lakdawala</p>\n<p>Sanjana Vaswani</p>\n<p>Shahil Darbar</p>\n<p>Shain Shroff</p>\n<p>Shanika Jhunjhunwala</p>\n\n<p>Shanth Swaroop</p>\n<p>Sheena Riberio</p>\n<p>Sheldon Phulpagar</p>\n<p>Sujala Reddy</p>\n<p>Uttara Gautam</p>\n<p>Valisha Lobo</p>\n<p>Varad Jadhav</p>\n<p>Varun Soni</p>\n<p>Vernon Baptista</p>\n<p>Vinamra Garg</p>\n<p>Yash Bohra</p>\n</div>\n<br>\n<style>\n\n.credits-grid {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  margin: auto;\n  background-color: #f7f7f7;\n    padding-top:20px;\n    padding-bottom:20px;\n  padding-left:30px;\n}\n\n\n\n.credits-grid p {\n  margin: 0px;\n  padding: 0px;\n  text-align:left;\n  padding-bottom:5px;\n\n  \n}\n    \n.credits-span {\n  text-align: center!important;\n  margin-top: 50px;\n  margin-bottom: 20px;\n  font-weight: 700;\n  letter-spacing: 2px;\nfont-size:25px;\n  \n } \n\n@media screen and (max-width: 740px) {\n  .credits-grid {\n    grid-template-columns: 1fr;\n    }\n    .credits-grid p {\n    padding-left: 10px;\n      \n  }\n}\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "fa1f498d-aec3-4b6b-ad43-a873c0fd254a",
+    "ed553c3f-45de-4057-984c-fc168e98e7fa",
+    "3149fc63-e7b8-46db-892e-619e38365b04",
+    "230399ff-a657-456a-af16-d06b6cb5fe50"
+  ]
+}

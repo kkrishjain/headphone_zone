@@ -1,0 +1,468 @@
+{% assign faqs = product.metafields.hpz.faqs_json.value %}
+{% if faqs %}
+<div class="faq-tab-section">
+  <div class="accordion-box rounded bg-secondary text-custom" style="--text-color: 26 26 26;">
+    {% if faqs.q1 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q1 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans1 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif %}
+    {% if faqs.q2 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q2 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans2 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q3 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q3 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans3 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q4 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q4 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans4 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q5 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q5 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans5 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q6 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q6 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans6 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q7 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q7 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans7 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q8 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q8 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans8 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q9 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q9 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans9 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q10 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q10 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans10 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q11 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q11 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans11 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q12 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q12 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans12 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q13 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q13 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans13 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q14 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q14 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans14 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q15 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q15 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans15 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q16 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q16 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans16 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q17 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q17 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans17 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q18 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q18 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans18 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q19 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q19 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans19 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q20 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q20 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans20 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q21 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q21 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans21 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q22 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q22 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans22 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q23 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q23 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans23 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q24 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q24 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans24 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q25 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q25 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans25 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q26 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q26 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans26 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q27 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q27 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans27 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q28 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q28 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans28 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q29 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q29 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans29 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q30 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q30 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans30 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif -%}
+    {%- if faqs.q31 %}
+      <details class=" accordion  group" aria-expanded="false" is="accordion-disclosure" style="overflow: visible; height: auto;">
+        <summary>
+          <div class="accordion__toggle bold">
+            <span>{{ faqs.q31 }}</span>
+          </div>
+        </summary>
+        <div class="accordion__content" style="opacity: 1; transform: translateY(-4px);">
+          <div class="prose hpz-al">
+            <p>{{ faqs.ans31 }}</p>
+          </div>
+        </div>
+      </details>
+    {% endif %}
+  </div>
+</div>
+  <style>
+    .faq-tab-section .hpz-al {text-align:left;}
+    @media screen and (min-width: 700px) {
+      .faq-tab-section .accordion__toggle:after {
+        content: '\002B';
+        color: rgb(var(--text-color));
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+       }
+      .faq-tab-section  .accordion[aria-expanded="true"] .accordion__toggle:after {
+        content: "\2212";
+      }
+    }
+    @media screen and (max-width: 699px) {
+      .faq-tab-section  .accordion__content .accordion__toggle:after {
+        content: '\002B';
+        color: rgb(var(--text-color));
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+       }
+     .faq-tab-section .accordion__content .accordion[aria-expanded="true"] .accordion__toggle:after {
+        content: "\2212";
+      }
+    }
+  </style>
+{% endif %}

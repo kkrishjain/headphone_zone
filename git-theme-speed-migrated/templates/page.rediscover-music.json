@@ -1,0 +1,528 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "1cabaaa7-6afe-4042-a8f4-10ee244cc1e2": {
+      "type": "impact-text",
+      "blocks": {
+        "template--16033491583164__1cabaaa7-6afe-4042-a8f4-10ee244cc1e2-168432703066104b33-0": {
+          "type": "item",
+          "settings": {
+            "title": "Rediscover the music you love",
+            "subheading": "Good gear will help you hear music as the artist intended. Hear more sounds, more instruments, more nuance, more vocals - and fall in love with your favourite songs all over again.",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "template--16033491583164__1cabaaa7-6afe-4042-a8f4-10ee244cc1e2-168432703066104b33-0"
+      ],
+      "custom_css": [
+        "h2 {font-size: 3rem;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_mobile": true,
+        "text_alignment": "start",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "linear-gradient(127deg, rgba(74, 182, 231, 1) 6.475%, rgba(66, 207, 231, 1) 11%, rgba(237, 113, 163, 1) 81%)",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "c21a84a2-40f6-432f-a66a-a7bc39d81b83": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--16033491583164__c21a84a2-40f6-432f-a66a-a7bc39d81b83-16842402284d5870c1-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Rediscover the music you love",
+            "heading_tag": "h1"
+          }
+        },
+        "template--16033491583164__c21a84a2-40f6-432f-a66a-a7bc39d81b83-16842402284d5870c1-2": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Good headphones will help you hear music as the artist intended. Hear more sounds, more instruments, more nuance, more vocals - and fall in love with your favourite songs all over again. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16033491583164__c21a84a2-40f6-432f-a66a-a7bc39d81b83-16842402284d5870c1-1",
+        "template--16033491583164__c21a84a2-40f6-432f-a66a-a7bc39d81b83-16842402284d5870c1-2"
+      ],
+      "custom_css": [
+        "@media (min-width: 500px) {.prose {width: 60%; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Headphone-Zone-3-Things-Varun-Desk.jpg",
+        "mobile_text_position": "place-self-start text-start",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
+        "text_color": "#444444",
+        "overlay_color": "#444444",
+        "overlay_opacity": 0
+      }
+    },
+    "e11ad86f-2339-4331-bb2f-367b9ff0d88e": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "kz-zsn-pro-x",
+          "final-e1000",
+          "blon-bl-03",
+          "7hz-salnotes-zero",
+          "truthear-hexa",
+          "moondrop-chu"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 10,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Best Wired Earphones",
+        "content": "<p>You don’t need to spend a fortune to enjoy your favourite songs. These legendary beginner friendly picks truly give you bang for your buck.</p>",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "8946f3d3-7ff9-4a38-9c88-1c981aff95d5": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "astell-kern-ak-xb10",
+          "ifi-audio-go-link",
+          "venture-electronics-abigail-pro",
+          "fiio-ka1",
+          "shanling-ua1s",
+          "7hz-71"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Best Portable Amp/DACs",
+        "content": "<p>The in-built DAC in your phone isn't good enough for lossless playback. Explore these dongle DACs</p>",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "78534ea8-a384-4b8e-959d-7110297c54c4": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "meze-99-classics",
+          "hifiman-sundara",
+          "v-moda-crossfade-lp2",
+          "hifiman-he400se",
+          "audio-technica-ath-m50x",
+          "beyerdynamic-dt-770-pro"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Best Wired Headphones",
+        "content": "<p>We’ll say it: wired sounds better. If your phone has a jack, or you’re using a laptop, or will use a USB DAC, these are our top picks.</p>",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "55c809bf-ecdb-4402-8820-656bcd09cba3": {
+      "type": "rich-text",
+      "blocks": {
+        "f927e6cc-1652-420e-9201-42b80104650d": {
+          "type": "icon",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Logo-Polka.png",
+            "icon_width": 56,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": ""
+          }
+        },
+        "template--16033491583164__55c809bf-ecdb-4402-8820-656bcd09cba3-1684242062c126ca24-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Headphones that can take your fandom up a notch",
+            "heading_tag": "h5",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--16033491583164__55c809bf-ecdb-4402-8820-656bcd09cba3-1684242062c126ca24-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>K-pop? Heavy metal? Electronic? Bollywood? Classic rock? Rap? Classical?</p><p>It doesn’t matter what or who you’re a fan of. If you like music of any kind, the right headphones can truly elevate your experience. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "f927e6cc-1652-420e-9201-42b80104650d",
+        "template--16033491583164__55c809bf-ecdb-4402-8820-656bcd09cba3-1684242062c126ca24-1",
+        "template--16033491583164__55c809bf-ecdb-4402-8820-656bcd09cba3-1684242062c126ca24-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "linear-gradient(54deg, rgba(225, 240, 249, 1) 14%, rgba(252, 235, 239, 1) 85%)",
+        "text_color": ""
+      }
+    },
+    "c5ea06a2-9aa7-41ae-9470-a185b2e22d04": {
+      "type": "media-grid",
+      "blocks": {
+        "effac9b6-b51d-43fa-9d35-32cb1ad36596": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Rediscover-Music-Square.mp4",
+            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "show_video_controls": false,
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "162667fc-68e3-4774-9984-11b32b258723": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Komal-Rediscover.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "f6e13f19-2afd-4736-8898-89c4a1522fd5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rediscover-Music-Praveen.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "effac9b6-b51d-43fa-9d35-32cb1ad36596",
+        "162667fc-68e3-4774-9984-11b32b258723",
+        "f6e13f19-2afd-4736-8898-89c4a1522fd5"
+      ],
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 150,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "9c98a861-1e18-4331-be68-f9fc8d4bedc8": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "template--16033491583164__9c98a861-1e18-4331-be68-f9fc8d4bedc8-1684242601ba6805e6-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Rediscover-Music-Points-1.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Music First",
+            "content": "<p>Some brands sell fashion and lifestyle. We get it. Call us old school, but we’re all about the music. Even if you’re buying the cheapest item here, rest assured it will <em>sound</em> amazing.</p>"
+          }
+        },
+        "template--16033491583164__9c98a861-1e18-4331-be68-f9fc8d4bedc8-1684242601ba6805e6-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Rediscover-Music-Points-2_477d9584-1bca-4ea9-a67b-5e1919835c9e.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Curated for beginners",
+            "content": "<p>Don’t worry - we won’t give you audiophile terms or tell you to buy a vinyl player. Everything you see on this page is handpicked by our headphone gurus for those just getting started.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16033491583164__9c98a861-1e18-4331-be68-f9fc8d4bedc8-1684242601ba6805e6-0",
+        "template--16033491583164__9c98a861-1e18-4331-be68-f9fc8d4bedc8-1684242601ba6805e6-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "fc4aa67d-8ed8-40ac-8659-c51d6e0dae10": {
+      "type": "custom-html",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<div class=\"punchline-grid\">\n    <div>\n      <blockquote class=\"testimonial__content blockquote\">As a Headphone Guru, I always get questions from customers and friends about beginner earphones, for those who don’t want to drop a bomb on expensive audiophile equipment. Well, I’m thrilled to bring you this curation of our gear, especially for those just getting started. We can’t wait to bring the world of great audio to you!</blockquote>\n      <div class=\"employee-info\">\n        <button aria-controls=\"product-punchlinearia-expanded=\" false>\n          <p>\n            VARUN DAMA\n          </p>\n          <em>\n            Headphone Guru\n          </em>\n        </button>\n      </div>\n    </div>\n\n    <div>\n      <div class=\"employee-details\">\n        <div class=\"employee-attribution\">\n          <div class=\"employee-attribution-img\">\n            <img loading=\"lazy\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Varun-Headphone-Guru_ccbacc92-6201-4581-93f6-ffeb5e27edfb.png?v=1684243978\">\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n<br>\n          <a class=\"button button--xl\" href=\"https://www.headphonezone.in/pages/talk-to-a-headphone-guru\" target=\"_blank\">Talk to a Guru</a>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "e0533d41-86b6-43f4-a41a-e75d04dce9d9": {
+      "type": "multi-column",
+      "blocks": {
+        "template--16033491583164__e0533d41-86b6-43f4-a41a-e75d04dce9d9-1684310397b4f8cb88-0": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "India's #1 Audiophile Store since 2011",
+            "heading_tag": "h4",
+            "content": "<p>We’ve been the purveyors of the world's finest headphones redefining music listening for over a decade.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16033491583164__e0533d41-86b6-43f4-a41a-e75d04dce9d9-1684310397b4f8cb88-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "We've got the Basics Right",
+            "heading_tag": "h4",
+            "content": "<p>We’ve got a dedicated team of customer happiness officers. We’ve got official warranty on all our products. We ship most products the next day. Importantly, over 250,000 people have bought from us.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--16033491583164__e0533d41-86b6-43f4-a41a-e75d04dce9d9-1684310397b4f8cb88-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Owned, Operated & Funded by  Indians",
+            "heading_tag": "h4",
+            "content": "<p>We’re a passionate young team who like you, love music and our aim is to share the joy of music listening through the world’s greatest audio gear.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--16033491583164__e0533d41-86b6-43f4-a41a-e75d04dce9d9-1684310397b4f8cb88-0",
+        "template--16033491583164__e0533d41-86b6-43f4-a41a-e75d04dce9d9-1684310397b4f8cb88-1",
+        "template--16033491583164__e0533d41-86b6-43f4-a41a-e75d04dce9d9-1684310397b4f8cb88-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Why buy from us? Good question.",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "64e87cdd-00af-4fd3-a4ea-0b9fb788b152": {
+      "type": "custom-html",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<div class=\"prose\">\n<h2 class=\"h2\"><split-lines>Our Team Playlist</split-lines></h2>\n<p>P.S. These tracks will come alive on the right headphones</p>\n</div>\n<br>\n<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/playlist/4Y8YmdhLI1gh57TujzBZFK?utm_source=generator&amp;theme=0\" width=\"100%\" height=\"352\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "70493952-b7e8-497c-8841-b7906678f813": {
+      "type": "press",
+      "blocks": {
+        "template--16033491583164__70493952-b7e8-497c-8841-b7906678f813-1684327754c538aa75-0": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Artboard_2_copy_3.png",
+            "logo_width": 145,
+            "author": "Ramesh Kavassery",
+            "content": "Headphone Zone is an awesome one-stop online store for earphones and headphones ! The team of Headphone Zone catering to query calls from customers to technically explain features and comparisons immensely helps in making a suitable choice.",
+            "show_rating": false,
+            "rating": 5
+          }
+        },
+        "e87e6d09-5d2f-40b5-a8e4-02ea4e95534a": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Artboard_2_copy.png",
+            "logo_width": 145,
+            "author": "Vishal B",
+            "content": "They have a wide range of choices on their website and a lot of categorizations as per price and types and I usually found the prices to be lower than on major e-commerce websites.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "template--16033491583164__70493952-b7e8-497c-8841-b7906678f813-1684327754c538aa75-1": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Artboard_2_afe8539b-f720-45c4-b15e-5dadee427579.png",
+            "logo_width": 145,
+            "author": "Tapas Ghosh",
+            "content": "One of the best place to buy high end quality audio products with after sales services under warranty. They bring some very good brands to Indian consumers specially to audiophiles.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "template--16033491583164__70493952-b7e8-497c-8841-b7906678f813-1684327754c538aa75-2": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Artboard_2_copy_2.png",
+            "logo_width": 145,
+            "author": "Abhishek Tyagi",
+            "content": "It's great to be able to purchase audio products the rest of the world is fawning over. I will keep coming back to build my collection. Great job guys",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--16033491583164__70493952-b7e8-497c-8841-b7906678f813-1684327754c538aa75-0",
+        "e87e6d09-5d2f-40b5-a8e4-02ea4e95534a",
+        "template--16033491583164__70493952-b7e8-497c-8841-b7906678f813-1684327754c538aa75-1",
+        "template--16033491583164__70493952-b7e8-497c-8841-b7906678f813-1684327754c538aa75-2"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "background": "#ffffff",
+        "background_gradient": "linear-gradient(360deg, rgba(NaN, NaN, NaN, 1), rgba(252, 239, 187, 1) 100%)",
+        "text_color": "#444444",
+        "heading_color": "#444444",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1cabaaa7-6afe-4042-a8f4-10ee244cc1e2",
+    "c21a84a2-40f6-432f-a66a-a7bc39d81b83",
+    "e11ad86f-2339-4331-bb2f-367b9ff0d88e",
+    "8946f3d3-7ff9-4a38-9c88-1c981aff95d5",
+    "78534ea8-a384-4b8e-959d-7110297c54c4",
+    "55c809bf-ecdb-4402-8820-656bcd09cba3",
+    "c5ea06a2-9aa7-41ae-9470-a185b2e22d04",
+    "9c98a861-1e18-4331-be68-f9fc8d4bedc8",
+    "fc4aa67d-8ed8-40ac-8659-c51d6e0dae10",
+    "e0533d41-86b6-43f4-a41a-e75d04dce9d9",
+    "64e87cdd-00af-4fd3-a4ea-0b9fb788b152",
+    "70493952-b7e8-497c-8841-b7906678f813"
+  ]
+}

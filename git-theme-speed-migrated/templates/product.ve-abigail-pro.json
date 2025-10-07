@@ -1,0 +1,993 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "badges": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "vendor": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "63ddac27-6381-4fa5-88af-c83da4f7291e": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% if product.metafields.hpz.badge_rank.value != blank %}\n\n<div class=\"product-info__badge-list\">\n<span class=\"best-rank\">#{{ product.metafields.hpz.badge_rank.value }} BEST SELLER\n</span>\n<p style=\"color: #777;font-size: 0.9rem;display:flex;align-items: center;\">in</p>\n<a href=\"{{ product.metafields.hpz.badge_rank_collection_link.value }}\" style=\"text-decoration:underline;color:#777;display:flex;align-items: center;\"><p style=\"font-size: 0.9rem;color:#777777;display:flex;align-items: center;\">{{ product.metafields.hpz.badge_rank_collection_title.value }}</p></a>\n\n\n</div>\n{% endif %}\n<style>\n.best-rank{\ndisplay: inline-block;\n    box-sizing: border-box;\n    color: #444;\n    background-color: #FFDF97;\n    padding: 6px 10px;\n    font-size:0.7rem;\n    position: relative;\n    height: 25px;\n    border-radius: 90px 90px 90px 90px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 1px;\ndisplay:flex;\nalign-items: center;\n}\n\n.product-info__badge-list {\ngap: var(--spacing-2);\n    flex-wrap: wrap;\n    display: flex;\n}\n\n.product-info__liquid {\nmargin-block-start: 0.5rem;\n    margin-block-end: 0.5rem;\n}\n\n</style>"
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "b685d88d-9505-43d3-b6c8-b8fb5b6996ee": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "579635fa-203e-4e32-abad-91ede0a255e3": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "none",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "product_variations_FXEqHR": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "{{ product.metafields.hpz.variant_option_name.value }}",
+            "option_value_metafield": "hpz.variants_value",
+            "products": "{{ product.metafields.hpz.variant_products.value }}",
+            "selector_style": "block"
+          }
+        },
+        "3c8720c5-4762-48f6-9daa-be6239f73340": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{{ product.metafields.hpz.offer_message }}\n\n\n<div id=\"variant-message\" class=\"delivery-main-block\">Choose this variant if you want to use this with a Headphone or IEM with a standard cable with a 3.5mm jack\n\n</div>\n<script>\ndocument.addEventListener('variant:change', function(event) {\n  let variant = event.detail.variant; // Gives you access to the whole variant details\n  let product = event.detail.product; // Gives you access to the whole product that the variant belongs to\n  let form = event.target; // The form that triggers the change\n  \n  if (variant.title === \"3.5mm\") {\n    document.querySelector(\"#variant-message\").innerHTML=\"Choose this variant if you want to this with a Headphone or IEM with a standard cable with a 3.5mm jack\";\n  }\n  if (variant.title === \"4.4mm\"){\n    document.querySelector(\"#variant-message\").innerHTML=\"Choose this variant if you want to use this with a Headphone or IEM that has a balanced cable with a 4.4mm jack.\";\n  }\n});\n</script>\n\n\n\n{%- render 'freebie' -%}\n\n\n{{ product.metafields.hpz.offer_message_sale }}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "b253fc0f-99f2-4bff-a2e6-585277f6538e": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% render 'below-buy-button.liquid'  %}"
+          }
+        },
+        "26c544be-f0bd-45b6-b9e2-bae47c526358": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": false,
+            "products_count": 10,
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "badges",
+        "vendor",
+        "title",
+        "63ddac27-6381-4fa5-88af-c83da4f7291e",
+        "separator",
+        "b685d88d-9505-43d3-b6c8-b8fb5b6996ee",
+        "price",
+        "579635fa-203e-4e32-abad-91ede0a255e3",
+        "variant_picker",
+        "product_variations_FXEqHR",
+        "3c8720c5-4762-48f6-9daa-be6239f73340",
+        "buy_buttons",
+        "b253fc0f-99f2-4bff-a2e6-585277f6538e",
+        "26c544be-f0bd-45b6-b9e2-bae47c526358"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_fixed_add_to_cart": false,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "f276f700-8b25-4e1e-ac56-41cecc78a40b": {
+      "type": "headphone-zone-snapshot",
+      "disabled": true,
+      "custom_css": [
+        ".snapshot-grid {background-color: #ffffff !important;}"
+      ],
+      "settings": {}
+    },
+    "hpz_new_snapshot_TE3mgB": {
+      "type": "hpz-new-snapshot",
+      "settings": {}
+    },
+    "8eaf63d3-b229-4ef2-b701-d2f05bde054d": {
+      "type": "media-with-text",
+      "blocks": {
+        "0adb9347-7683-4243-b12c-42b1784fcc5a": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Headphone-Zone-Venture-Electronics-Abigail-Pro-60-Second-Video.mp4",
+            "external_video_url": "",
+            "autoplay": false,
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 120,
+            "subheading": "",
+            "title": "",
+            "content": "<h4>This is simply the easiest way to upgrade your listening experience. Don’t be fooled by its affordable price tag. This is a brilliant DAC. It simply can’t be compared to off the shelf USB C adapters. Choose between a 3.5mm SE or a 4.4mm balanced output, they’re both brilliant.</h4><p><em>- Raghav Somani </em></p><h4></h4>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f2f2f2",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "0adb9347-7683-4243-b12c-42b1784fcc5a"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 700px) {.media-with-text__media > * {height: 350px; width: 350px; margin: auto; }}"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "6306d58e-94d6-4ff8-8d68-c88b8af2506e": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "f02e7392-9c5e-4edf-b9b5-a33c3e6e80d7": {
+          "type": "heading",
+          "settings": {
+            "text": "A Portable DAC For Everyone",
+            "heading_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "f02e7392-9c5e-4edf-b9b5-a33c3e6e80d7"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Headphone-Zone-Venture-Electronics-Abigail-Pro-Desktop-Banner.jpg",
+        "mobile_image": "shopify://shop_images/Headphone-Zone-Venture-Electronics-Abigail-Pro-Mobile.jpg",
+        "mobile_text_position": "place-self-end-center text-center",
+        "desktop_text_position": "sm:place-self-start-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 2
+      }
+    },
+    "87cbdca5-8a19-4de2-b996-14d4a4fa08af": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--16055452663996__87cbdca5-8a19-4de2-b996-14d4a4fa08af-168784557273f9724d-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Headphone-Zone-3.5mm-Single-Eneded.png",
+            "mobile_icon_width": 120,
+            "icon_width": 100,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "3.5mm Single-Ended",
+            "content": "<p>3.5mm is the most common type of headphone connector, and it is unbalanced and has three contacts for the L+, R+ and shared -. This is known as a TRS (Tip, Ring, Sleeve) connector. If you own an IEM or a headphone with a 3.5mm termination, you can go for the 3.5mm variant.</p>"
+          }
+        },
+        "template--16055452663996__87cbdca5-8a19-4de2-b996-14d4a4fa08af-168784557273f9724d-0": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Headphone-Zone-4.4mm-balanced-Adapter.png",
+            "mobile_icon_width": 120,
+            "icon_width": 100,
+            "icon_background_type": "square",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "4.4mm Balanced",
+            "content": "<p>4.4mm is the most common type of headphone connector for balanced output, and it has five contacts for the L+, L-, R+, R- and Ground. This connector is known as a TRRRS (Tip, Ring, Ring, Ring, Sleeve) connector. If you own an IEM or a headphone with a 4.4mm termination, you can go for the 4.4mm variant.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16055452663996__87cbdca5-8a19-4de2-b996-14d4a4fa08af-168784557273f9724d-1",
+        "template--16055452663996__87cbdca5-8a19-4de2-b996-14d4a4fa08af-168784557273f9724d-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "Which Variant Should You Choose",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "#f1f1f1",
+        "background_gradient": "",
+        "text_color": "#444444"
+      }
+    },
+    "2fc44790-bffa-490e-b83f-ae985acd60c1": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "19a3316f-4330-457b-a773-bf8221dcde3a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Venture-Electronics-Abigail-Pro-1Feature-New-New.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Venture Electronics Presents The Upgraded Abigail Pro",
+            "content": "<p>After the massive success of the Venture Electronics Abigail dongle DAC, the team is back with an upgraded and highly awaited follow-up - the Abigail Pro. The Abigail Pro adopts the best from its predecessor and upgrades various components to deliver clean and high-quality audio. <br/></p>"
+          }
+        },
+        "a5b1af3e-a4cf-4f52-8a9b-e718a348b0cb": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Venture-Electronics-Abigail-Pro-feature-04.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Abigail Pro Now Available With Balanced Output ",
+            "content": "<p>The Abigail Pro now features Venture Electronics' self-developed 3.5mm and 4.4mm connectors, which are of superior quality compared to the first-generation Abigail. The cables featured on the Abigail Pro are also upgraded to a proprietary SPC-Plus cable which is silver plated, and this cable delivers high-quality transmission of audio signals without any loss.<br/></p>"
+          }
+        },
+        "template--16016939548860__2fc44790-bffa-490e-b83f-ae985acd60c1-16818153117aa9ff13-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Venture-Electronics-Abigail-Pro-Feature-03.jpg",
+            "icon": "none",
+            "icon_width": 24,
+            "title": "Easy Connectivity And Plug-And-Play Functionality",
+            "content": "<p>Like the Abigail, the Abigail Pro can be paired with 95% of the market's type-c mobile phones with a straightforward plug-and-play operation. With the Abigail Pro, you now have the option to listen to your music with better presentation and quality.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "19a3316f-4330-457b-a773-bf8221dcde3a",
+        "a5b1af3e-a4cf-4f52-8a9b-e718a348b0cb",
+        "template--16016939548860__2fc44790-bffa-490e-b83f-ae985acd60c1-16818153117aa9ff13-1"
+      ],
+      "custom_css": [
+        ".h1 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "fade",
+        "image_position": "end",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "#444444",
+        "heading_gradient": ""
+      }
+    },
+    "11675a29-1a20-4017-b239-35a3a3d841ff": {
+      "type": "hot-spots",
+      "blocks": {
+        "d846ec91-8353-4dc6-a314-388de87bd26a": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 27,
+            "vertical_position": 41,
+            "horizontal_position_mobile": 28,
+            "vertical_position_mobile": 44,
+            "icon_width": 20,
+            "title": "USB-C Input",
+            "content": ""
+          }
+        },
+        "template--16016939548860__11675a29-1a20-4017-b239-35a3a3d841ff-168181184140c3a3fa-0": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 67,
+            "vertical_position": 43,
+            "horizontal_position_mobile": 86,
+            "vertical_position_mobile": 44,
+            "icon_width": 20,
+            "title": "4.4mm Balanced Output",
+            "content": ""
+          }
+        },
+        "69624583-a1d0-4f55-9c34-f4da85ce88e3": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 17,
+            "vertical_position": 42,
+            "horizontal_position_mobile": 13,
+            "vertical_position_mobile": 44,
+            "icon_width": 20,
+            "title": "USB-C-To-Type A Adaptor",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "d846ec91-8353-4dc6-a314-388de87bd26a",
+        "template--16016939548860__11675a29-1a20-4017-b239-35a3a3d841ff-168181184140c3a3fa-0",
+        "69624583-a1d0-4f55-9c34-f4da85ce88e3"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "image": "shopify://shop_images/Headphone-Zone-Venture-Electronics0Abigail-pro-Hotspot.jpg",
+        "mobile_image": "shopify://shop_images/Headphone-Zone-Venture-Electronics-Abigail-pro-Mobile-Hotspot.jpg",
+        "title": "Hassle-Free Connectivity",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "#ffffff",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#444444",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#444444",
+        "hot_spot_content_opacity": 100,
+        "hot_spot_content_blur_radius": 3
+      }
+    },
+    "5abe5ff1-17d0-4144-9b0b-07f6f583f54d": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--16036000825532__5abe5ff1-17d0-4144-9b0b-07f6f583f54d-1684494073fda9dec5-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Venture-Electronics-Abigail-Pro-Box.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "picto-box",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Accessories To Get You Started",
+            "content": "<p>1. USB-C-To-USB-A Adaptor</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f1f1f1",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16036000825532__5abe5ff1-17d0-4144-9b0b-07f6f583f54d-1684494073fda9dec5-0"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "8cc4e7ce-a8d5-47c9-93a4-d73b58830f0f": {
+      "type": "press",
+      "blocks": {
+        "template--16017804034236__8cc4e7ce-a8d5-47c9-93a4-d73b58830f0f-1683626238c7b9ebc4-0": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 150,
+            "author": "<p class=\"press__author text-subdued\">RAGHAV SOMANI</p>\n\n<em style=\"font-family: var(--text-font-family);\n    color: #444;\n    font-size: 14px;\">Founder, Headphone Zone</em>",
+            "content": "The Abigail Pro presents noticeably better sound than most built-in smartphone DACs. While it may not deliver the detail and dynamics of higher-end options, it’s enough to convince sceptics of the significant improvement that comes with upgrading your DAC.",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--16017804034236__8cc4e7ce-a8d5-47c9-93a4-d73b58830f0f-1683626238c7b9ebc4-0"
+      ],
+      "custom_css": [
+        ".h3 {font-family: \"Roboto\", sans-serif;}",
+        ".text-subdued {font-size: 14px; font-family: \"Roboto\", sans-serif; font-weight: 700; font-size: 14pxrem; letter-spacing: 2px; text-transform: uppercase; color: #444444; align-self: center;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_size": "medium",
+        "background": "#f1f1f1",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "7d58f5aa-475e-4209-9132-8f9232125bd4": {
+      "type": "shop-the-look",
+      "blocks": {
+        "template--16048829137084__7d58f5aa-475e-4209-9132-8f9232125bd4-16866498583963f4f4-0": {
+          "type": "product",
+          "settings": {
+            "product": "venture-electronics-abigail-pro",
+            "horizontal_position": 67,
+            "vertical_position": 34
+          }
+        },
+        "template--16048829137084__7d58f5aa-475e-4209-9132-8f9232125bd4-16866498583963f4f4-1": {
+          "type": "product",
+          "settings": {
+            "product": "tripowin-zonie-0-78mm-2pin",
+            "horizontal_position": 20,
+            "vertical_position": 60
+          }
+        },
+        "template--16048829137084__7d58f5aa-475e-4209-9132-8f9232125bd4-16866498583963f4f4-2": {
+          "type": "product",
+          "settings": {
+            "product": "tangzu-waner-s-g",
+            "horizontal_position": 77,
+            "vertical_position": 59
+          }
+        }
+      },
+      "block_order": [
+        "template--16048829137084__7d58f5aa-475e-4209-9132-8f9232125bd4-16866498583963f4f4-0",
+        "template--16048829137084__7d58f5aa-475e-4209-9132-8f9232125bd4-16866498583963f4f4-1",
+        "template--16048829137084__7d58f5aa-475e-4209-9132-8f9232125bd4-16866498583963f4f4-2"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": false,
+        "image": "shopify://shop_images/Headphone-Zone-Venture-Electronics-Abigail-Pro-FBT.jpg",
+        "title": "Frequently Bought Together",
+        "content": "",
+        "background": "#f1f1f1",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "#444444",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": "",
+        "product_card_mobile_background": "",
+        "product_card_mobile_text_color": "",
+        "background_dots": "#ffffff"
+      }
+    },
+    "91359a6c-9bc7-4b8a-bb9e-ba49a4a761a4": {
+      "type": "youtube-reviews",
+      "settings": {}
+    },
+    "da8415cd-1b26-4738-8b5b-48e3e9053fb1": {
+      "type": "headphone-zone-feature-chart",
+      "blocks": {
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-0": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Input",
+            "heading_2": "Output",
+            "heading_3": "Microphone Pass-Through",
+            "heading_4": "DAC",
+            "heading_5": "Audio Format Support",
+            "heading_6": "Power Output",
+            "heading_7": "SNR",
+            "heading_8": "DNR",
+            "heading_9": "THD+N",
+            "heading_10": "A-Weighted Noise",
+            "heading_11": "Crosstalk",
+            "heading_12": "IMD",
+            "heading_13": "Size",
+            "heading_14": "Weight",
+            "heading_15": "Box Contents",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>USB Type-C Male\n</p>",
+            "value_2": "<p>Female 4.4mm Balanced <br> 3.5mm Single-Ended\n\n</p>",
+            "value_3": "<p>3.5mm Single-Ended: Yes<br>4.4mm balanced: No\n</p>",
+            "value_4": "<p>CX31993\n</p>",
+            "value_5": "<p>32bit–384khz\n\n\n</p>",
+            "value_6": "<p>31mW @ 32Ω\n</p>",
+            "value_7": "<p>124dB\n\n</p>",
+            "value_8": "<p>111dB\n\n\n\n</p>",
+            "value_9": "<p>-95dB\n\n\n</p>",
+            "value_10": "<p>1.4 1uv\n\n\n</p>",
+            "value_11": "<p>64dB@1kHz\n\n\n</p>",
+            "value_12": "<p>0.0012%\n\n\n</p>",
+            "value_13": "<p>160mm\n\n\n\n</p>",
+            "value_14": "<p>6g\n\n\n</p>",
+            "value_15": "<p>1. Venture Electronics Abigail Pro<br>2. USB-C to USB-A adaptor\n\n\n</p>",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-0",
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "All You Need To Know About The Venture Electronics Abigail Pro",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "#f1f1f1",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "#444444",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "37c57503-e38d-4849-a9d2-b0b255a872e6": {
+      "type": "headphone-zone-warranty",
+      "disabled": true,
+      "settings": {
+        "period": "",
+        "url": "",
+        "exceptions": ""
+      }
+    },
+    "about_us_brand_bKTike": {
+      "type": "about-us-brand",
+      "blocks": {
+        "image_HGeqXJ": {
+          "type": "image",
+          "source": "{{ product.metafields.hpz.about_brand_on_product_page.value }}",
+          "settings": {
+            "image": "{{ product.metafields.hpz.about_brand_on_product_page.value.image.value }}",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "{{ product.metafields.hpz.about_brand_on_product_page.value.logo.value }}",
+            "icon_width": 120,
+            "subheading": "",
+            "title": "{{ product.metafields.hpz.about_brand_on_product_page.value.heading.value }}",
+            "content": "{{ product.metafields.hpz.about_brand_on_product_page.value.about | metafield_tag }}",
+            "link_text": "{{ product.metafields.hpz.about_brand_on_product_page.value.button_text.value }}",
+            "link_url": "{{ product.metafields.hpz.about_brand_on_product_page.value.button_link.value }}",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "#444444",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_HGeqXJ"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 1.8rem;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "impact_comparisons_tRQRbE": {
+      "type": "impact-comparisons",
+      "blocks": {
+        "headings_RVX6hB": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "{{ product.metafields.hpz.comparison_metaobject.value.heading_1.value }}",
+            "heading_2": "{{ product.metafields.hpz.comparison_metaobject.value.heading_2.value }}",
+            "heading_3": "{{ product.metafields.hpz.comparison_metaobject.value.heading_3.value }}",
+            "heading_4": "{{ product.metafields.hpz.comparison_metaobject.value.heading_4.value }}",
+            "heading_5": "{{ product.metafields.hpz.comparison_metaobject.value.heading_5.value }}",
+            "heading_6": "{{ product.metafields.hpz.comparison_metaobject.value.heading_6.value }}",
+            "heading_7": "{{ product.metafields.hpz.comparison_metaobject.value.heading_7.value }}",
+            "heading_8": "{{ product.metafields.hpz.comparison_metaobject.value.heading_8.value }}",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "values_bAU7gU": {
+          "type": "values",
+          "source": "{{ product.metafields.hpz.comparison_metaobject.value }}",
+          "settings": {
+            "product": "{{ product.metafields.hpz.comparison_metaobject.value.product_1.value }}",
+            "value_1": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_1.value }}</p>",
+            "value_2": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_2.value }}</p>",
+            "value_3": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_3.value }}</p>",
+            "value_4": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_4.value }}</p>",
+            "value_5": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_5.value }}</p>",
+            "value_6": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_6.value }}</p>",
+            "value_7": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_7.value }}</p>",
+            "value_8": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_1_value_8.value }}</p>",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "#f9f9f9",
+            "view_button_text_color": "#444444"
+          }
+        },
+        "values_rGBGq9": {
+          "type": "values",
+          "source": "{{ product.metafields.hpz.comparison_metaobject.value }}",
+          "settings": {
+            "product": "{{ product.metafields.hpz.comparison_metaobject.value.product_2.value }}",
+            "value_1": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_1.value }}</p>",
+            "value_2": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_2.value }}</p>",
+            "value_3": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_3.value }}</p>",
+            "value_4": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_4.value }}</p>",
+            "value_5": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_5.value }}</p>",
+            "value_6": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_6.value }}</p>",
+            "value_7": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_7.value }}</p>",
+            "value_8": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_2_value_8.value }}</p>",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "#f9f9f9",
+            "view_button_text_color": "#444444"
+          }
+        },
+        "values_t9LkjU": {
+          "type": "values",
+          "source": "{{ product.metafields.hpz.comparison_metaobject.value }}",
+          "settings": {
+            "product": "{{ product.metafields.hpz.comparison_metaobject.value.product_3.value }}",
+            "value_1": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_1.value }}</p>",
+            "value_2": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_2.value }}</p>",
+            "value_3": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_3.value }}</p>",
+            "value_4": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_4.value }}</p>",
+            "value_5": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_5.value }}</p>",
+            "value_6": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_6.value }}</p>",
+            "value_7": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_7.value }}</p>",
+            "value_8": "<p>{{ product.metafields.hpz.comparison_metaobject.value.product_3_value_8.value }}</p>",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "#f9f9f9",
+            "view_button_text_color": "#444444"
+          }
+        }
+      },
+      "block_order": [
+        "headings_RVX6hB",
+        "values_bAU7gU",
+        "values_rGBGq9",
+        "values_t9LkjU"
+      ],
+      "custom_css": [
+        ".text-subdued {font-size: 16px !important; line-height: 30px !important;}",
+        "@media screen and (max-width: 700px) {.text-subdued {font-size: 14px !important; line-height: 25px !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "Viewing",
+        "show_product_swatch": false,
+        "background": "#f9f9f9",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "#ffffff",
+        "chart_text_color": "#444444",
+        "chart_true_false_color": ""
+      }
+    },
+    "0bd8fd08-fbd0-41c1-9ba6-0405e0d44515": {
+      "type": "headphonezone-faq",
+      "blocks": {
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-0": {
+          "type": "item",
+          "settings": {
+            "title": "What all devices are compatible with the Venture Electronics Abigail Pro?",
+            "content": "<p>The Venture Electronics Abigail Pro is compatible with devices with a USB-C connection.</p>"
+          }
+        },
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-1": {
+          "type": "item",
+          "settings": {
+            "title": "How is the overall build quality of the Venture Electronics Abigail Pro?",
+            "content": "<p>The Venture Electronics Abigail Pro comes with a sleek and robust design making it an ideal pick for portable use.</p>"
+          }
+        },
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-2": {
+          "type": "item",
+          "settings": {
+            "title": "Can I use the Venture Electronics Abigail Pro with my tab?",
+            "content": "<p>Yes! You can easily connect the Venture Electronics Abigail Pro to your tab with USB C connection.</p>"
+          }
+        },
+        "b0f9de61-dc30-4287-b3e1-a6b45661fb3a": {
+          "type": "item",
+          "settings": {
+            "title": "Can I use the Venture Electronics Abigail Pro while traveling?",
+            "content": "<p>The Venture Electronics Abigail Pro comes with lightweight and portable making them best while commuting.</p>"
+          }
+        },
+        "c794b682-0e8a-431d-ac06-16a631b60b33": {
+          "type": "item",
+          "settings": {
+            "title": "What are the sampling rates supported?",
+            "content": "<p>The Venture Electronics Abigail Pro supports sampling rates of 32-Bit/384kHz PCM signals.</p>"
+          }
+        },
+        "b1d83b4d-c0e8-499a-b350-29b89955c799": {
+          "type": "item",
+          "settings": {
+            "title": "What DAC chip is incorporated in Venture Electronics Abigail Pro?",
+            "content": "<p>The Venture Electronics Abigail Pro comes equipped with CX31993 DAC.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-0",
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-1",
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-2",
+        "b0f9de61-dc30-4287-b3e1-a6b45661fb3a",
+        "c794b682-0e8a-431d-ac06-16a631b60b33",
+        "b1d83b4d-c0e8-499a-b350-29b89955c799"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Have a question? Get in touch!",
+        "content": "<p>Check out the most common questions our customers ask. Still have questions? Talk to our Headphone Gurus.</p>",
+        "team_avatar": "shopify://shop_images/customer_support.png",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 11am-6pm.",
+        "answer_time": "Average answer time: 2-3 Hours",
+        "button_text": "TALK TO A GURU",
+        "button_url": "shopify://pages/talk-to-a-headphone-guru",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "manual_details_product_page_cn7Wcf": {
+      "type": "Manual-details-product-page",
+      "settings": {}
+    },
+    "00afaa75-cf6d-4bf1-b962-d696372e67aa": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 6,
+        "products": [
+          "tripowin-zonie-0-78mm-2pin",
+          "kz-elliptical-pouch-earphone-case",
+          "kz-abs-hard-sided-multifunction-protective-case",
+          "ifi-audio-2-5mm-to-4-4mm-headphone-adapter",
+          "ifi-audio-3-5mm-to-4-4mm-headphone-adapter"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Recommended Accessories",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "167525932377cb380e": {
+      "type": "apps",
+      "blocks": {
+        "08b03131-bf1b-4945-a40d-a881a32d292b": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "08b03131-bf1b-4945-a40d-a881a32d292b"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "recommendations_count": 10,
+        "products": [
+          "moondrop-click",
+          "7hz-71",
+          "venture-electronics-abigail"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f276f700-8b25-4e1e-ac56-41cecc78a40b",
+    "hpz_new_snapshot_TE3mgB",
+    "8eaf63d3-b229-4ef2-b701-d2f05bde054d",
+    "6306d58e-94d6-4ff8-8d68-c88b8af2506e",
+    "87cbdca5-8a19-4de2-b996-14d4a4fa08af",
+    "2fc44790-bffa-490e-b83f-ae985acd60c1",
+    "11675a29-1a20-4017-b239-35a3a3d841ff",
+    "5abe5ff1-17d0-4144-9b0b-07f6f583f54d",
+    "8cc4e7ce-a8d5-47c9-93a4-d73b58830f0f",
+    "7d58f5aa-475e-4209-9132-8f9232125bd4",
+    "91359a6c-9bc7-4b8a-bb9e-ba49a4a761a4",
+    "da8415cd-1b26-4738-8b5b-48e3e9053fb1",
+    "37c57503-e38d-4849-a9d2-b0b255a872e6",
+    "about_us_brand_bKTike",
+    "impact_comparisons_tRQRbE",
+    "0bd8fd08-fbd0-41c1-9ba6-0405e0d44515",
+    "manual_details_product_page_cn7Wcf",
+    "00afaa75-cf6d-4bf1-b962-d696372e67aa",
+    "167525932377cb380e",
+    "product-recommendations"
+  ]
+}

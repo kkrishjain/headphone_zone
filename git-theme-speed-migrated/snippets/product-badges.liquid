@@ -1,0 +1,157 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+PRODUCT BADGES COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used in product listing and product page to render the badges of a given product
+
+********************************************
+Supported variables
+********************************************
+
+* product: the product to render the badges
+* variant: the specific variant to show the badge from
+* types: the types of badge to output. Can be "custom", "sold_out" or "discount" (or a combination separated by comma). If nothing is set, all badges are outputted.
+* context: can be "product" or "card"
+* class: an extra class added on the container
+{%- endcomment -%}
+
+
+{%- assign badge_types = types | default: 'custom, sold_out, discount' | split: ',' -%}
+{%- assign variant = variant | default: product.selected_or_first_available_variant -%}
+{% assign badge_value = product.metafields.custom.badges.value %}
+{% unless product.metafields.custom.badges.value contains 'Best Seller' %}
+{%- capture badges -%}
+  {%- for badge_type in badge_types -%}
+    {%- assign stripped_badge_type = badge_type | strip -%}
+
+    {%- case stripped_badge_type -%}
+      {%- when 'custom' -%}
+        {%- assign custom_badges = product.metafields.custom.badges.value | sort -%}
+        {%- for custom_badge in custom_badges -%}
+          {% unless custom_badge == 'On Sale' or custom_badge == 'Coming Soon' -%}
+            {% unless variant.available == false or 
+                      collection.handle contains 'headphone-zone-x-ddhifi-hi-res-dac-portable-bundles' or
+                      collection.handle contains 'headphones-bundles' or 
+                      collection.handle contains 'iems-bundles' or 
+                      collection.handle contains 'deals-of-the-month-bundles' or
+                      page.handle contains 'deals-of-the-month' 
+            %}
+              {% comment %}{% unless page.handle contains 'sale' or request.page_type == 'index' or collection.handle contains 'sale' %}{% endcomment %}
+                {% if custom_badge == 'Collab' %}{% render 'icon' with 'collab-badge' %}{% endif %}
+                <span class="badge badge--{{ custom_badge | downcase | replace: ' ', '-'  | replace: '#', '' | replace: '1-', '' | replace: '2-', '' | replace: '3-', ''  | replace: '4-', '' | replace: '5-', '' }}">
+                  {{ custom_badge }}
+                </span>
+              {% comment %}{% endunless %}{% endcomment %}
+            {% endunless %}
+          {% endunless %}
+          {% unless page.handle contains 'sale' or request.page_type == 'index' or collection.handle contains 'sale' %}
+            {% if custom_badges contains 'On Sale' %}
+              <span class="badge badge--on-sale">On Sale</span>
+            {% endif %}
+          {%- endunless -%}
+          {% if custom_badges contains 'Coming Soon' and variant.available == false %}
+            <span class="badge badge--coming-soon">Coming Soon</span>
+          {% endif %}
+        {%- endfor -%}
+        
+
+        {%- when 'sold_out' -%}
+          {% unless product.tags contains 'museum' or badge_value contains 'Coming Soon' or badge_value contains 'Going On Sale Soon' %}
+            {%- if variant.available == false or form_id != blank -%}
+              {% unless page.handle contains 'sale' or request.page_type == 'index' or collection.handle contains 'sale' %}
+                <sold-out-badge class="badge badge--sold-out">{{- 'product.general.sold_out_badge' | t -}}</sold-out-badge>
+              {% endunless %}
+            {%- endif -%}
+          {% endunless %}
+          {% if product.tags contains 'museum' %}
+            <sold-out-badge class="badge badge--museum">Discontinued</sold-out-badge>
+          {% endif %}
+      {% unless page.handle contains 'sale' or request.page_type == 'index' or collection.handle contains 'sale' %}
+       {% if badge_value contains 'Going On Sale Soon' %}
+            <sold-out-badge class="badge badge--going-on-sale-soon">Going on Sale Soon</sold-out-badge>
+          {% endif %}
+{% endunless %}
+
+        {%- when 'discount' -%}
+          {%- if settings.show_discount -%}
+            {%- liquid
+              assign show_on_sale_badge = false
+
+              if context == 'product'
+                if variant.compare_at_price > variant.price
+                  assign show_on_sale_badge = true
+                endif
+              elsif context == 'card'
+                if product.compare_at_price > product.price
+                  assign show_on_sale_badge = true
+                endif
+              endif
+            -%}
+
+            {%- if product.compare_at_price > product.price -%}
+              {%- if settings.discount_mode == 'percentage' -%}
+                {%- assign savings = variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round | append: '%' -%}
+              {%- else -%}
+                {%- capture savings -%}{{ variant.compare_at_price | minus: variant.price | money }}{%- endcapture -%}
+              {%- endif -%}
+
+              {%- if show_on_sale_badge -%}
+                <on-sale-badge class="badge badge--on-sale">
+                  {%- liquid
+                    if context == 'product'
+                      echo 'product.general.discount_badge_html' | t: savings: savings
+                    elsif context == 'card'
+                      if product.compare_at_price_varies or variant.compare_at_price == blank
+                        echo 'product.general.on_sale_badge' | t
+                      else
+                        echo 'product.general.discount_badge_html' | t: savings: savings
+                      endif
+                    endif
+                  -%}
+                </on-sale-badge>
+              {%- endif -%}
+            {%- endif -%}
+          {%- endif -%}
+      {%- endcase -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+{% endunless %}
+
+{%- assign rank_one_best_seller = collection.metafields.hpz.collection_page_rank_1.value -%}
+{%- assign rank_two_best_seller = collection.metafields.hpz.collection_page_rank_2.value -%}
+{%- assign rank_three_best_seller = collection.metafields.hpz.collection_page_rank_3.value -%}
+{%- assign rank_four_best_seller = collection.metafields.hpz.collection_page_rank_4.value -%}
+{%- assign rank_five_best_seller = collection.metafields.hpz.collection_page_rank_5.value -%}
+{%- if rank_one_best_seller != blank -%}
+  <div class="product-card__badge-list">
+  {%- if product.handle == rank_one_best_seller.handle -%}
+    <span class="badge badge--best-seller-rank"> #1 Best Seller</span>
+  {%- endif -%}
+  {%- if product.handle == rank_two_best_seller.handle -%}
+    <span class="badge badge--best-seller-rank"> #2 Best Seller</span>
+  {%- endif -%}
+  {%- if product.handle == rank_three_best_seller.handle -%}
+    <span class="badge badge--best-seller-rank"> #3 Best Seller</span>
+  {%- endif -%}
+  {%- if product.handle == rank_four_best_seller.handle -%}
+    <span class="badge badge--best-seller-rank"> #4 Best Seller</span>
+  {%- endif -%}
+  {%- if product.handle == rank_five_best_seller.handle -%}
+    <span class="badge badge--best-seller-rank"> #5 Best Seller</span>
+  {%- endif -%}
+  </div>
+{%- endif -%}
+
+
+{% if custom_badges contains 'Best Seller' and product.available %}
+  <div class="product-card__badge-list">
+    <span class="badge badge--best-seller-rank">Best Seller</span>
+  </div>
+{% endif %}
+  
+{%- if badges != blank -%}
+  <div class="{{ class }}" >
+    {{- badges -}}
+  </div>
+{%- endif -%}

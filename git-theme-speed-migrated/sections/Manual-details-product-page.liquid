@@ -1,0 +1,128 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+  Manual Details on Impact Products
+----------------------------------------------------------------------------------------------------------------------
+
+- This component is used to create manual details on the impact product page.
+
+{%- endcomment -%}
+
+{% schema %}
+{
+  "name": "Manual Details",
+  "class": "manual_details",
+  "presets": [{ "name": "Manual Details" }]
+}
+{% endschema %}
+
+{% assign other_details = product.metafields.hpz.other_details_json.value %}
+{% assign manual_details = product.metafields.hpz.manuals_and_guides_json.value %}
+
+<div class="container white-bg">
+  <p class="header-guide">Other Details</p>
+  <hr>
+  <div class="table-content-wrapper grid">
+    
+      <div class="table-content">
+        <table width="100%">
+          <tbody>
+            {% if other_details.generic != blank %}
+              <tr>
+                <td class="details-header">Generic Name</td>
+                <td class="details-content">{{ other_details.generic }}</td>
+              </tr>
+            {% endif %}
+            {% if other_details['country-origin'] != blank %}
+              <tr>
+                <td class="details-header">Country Of Origin</td>
+                <td class="details-content">{{ other_details['country-origin'] }}</td>
+              </tr>
+            {% endif %}
+            {% if other_details['importer-details'] != blank %}
+              <tr>
+                <td class="details-header">Importer Details</td>
+                <td class="details-content">{{ other_details['importer-details'] }}</td>
+              </tr>
+            {% endif %}
+            {% if other_details.dimensions != blank %}
+              <tr>
+                <td class="details-header">Dimensions</td>
+                <td class="details-content">{{ other_details.dimensions }}</td>
+              </tr>
+            {% endif %}
+            {% if other_details.qty != blank %}
+              <tr>
+                <td class="details-header">Net Quantity</td>
+                <td class="details-content">{{ other_details.qty }}</td>
+              </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+      <div class="table-content">
+        <table width="100%">
+          <tbody>
+            {% if other_details.manufacturer != blank %}
+              <tr>
+                <td class="details-header">Manufacturer Details</td>
+                <td class="details-content">{{ other_details.manufacturer }}</td>
+              </tr>
+            {% endif %}
+
+            {% if other_details.box != blank %}
+              <tr>
+                <td class="details-header">Package Contents</td>
+                <td class="details-content">{{ other_details.box }}</td>
+              </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+  </div>
+  {% if manual_details['title-1'] != blank %}
+    <p class="header-guide">Manuals &amp; Guides</p>
+    <hr>
+    <br>
+    <div>
+      {% if manual_details['title-1'] != blank %}
+        <span class="manual-title">
+          <img src="{{ manual_details.img-1 }}">
+          <a href="{{ manual_details.link-1 }}" target="_blank">{{ manual_details['title-1'] }}</a>
+        </span>
+
+        <p class="manual-subtitle">{{ manual_details['subtitle-1'] }}</p>
+      {% endif %}
+    </div>
+
+    <div>
+      {% if manual_details['title-2'] != blank %}
+        <span class="manual-title">
+          <img src="{{ manual_details.img-2 }}">
+          <a href="{{ manual_details.link-2 }}" target="_blank">{{ manual_details['title-2'] }}</a>
+        </span>
+        <p class="manual-subtitle">{{ manual_details['subtitle-2'] }}</p>
+      {% endif %}
+    </div>
+    <div>
+      {% if manual_details['title-3'] != blank %}
+        <span class="manual-title">
+          <img src="{{ manual_details.img-3 }}">
+          <a href="{{ manual_details.link-3 }}" target="_blank">{{ manual_details['title-3'] }}</a>
+        </span>
+        <p class="manual-subtitle">{{ manual_details['subtitle-3'] }}</p>
+      {% endif %}
+    </div>
+
+    <div>
+      {% if manual_details['title-4'] != blank %}
+        <span class="manual-title">
+          <img src="{{ manual_details.img-4 }}">
+          <a href="{{ manual_details.link-4 }}" target="_blank">{{ manual_details['title-4'] }}</a>
+        </span>
+        <p class="manual-subtitle">{{ manual_details['subtitle-4'] }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+<br>
+<br>

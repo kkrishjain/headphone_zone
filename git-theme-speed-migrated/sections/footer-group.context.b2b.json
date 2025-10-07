@@ -1,0 +1,6 @@
+{
+  "context": {
+    "b2b": true
+  },
+  "parent": "footer-group.json"
+}

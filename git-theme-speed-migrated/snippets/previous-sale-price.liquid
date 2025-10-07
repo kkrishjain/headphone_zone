@@ -1,0 +1,140 @@
+{%- comment -%} HPZ Code Previous Sale Price stuff for Sale {%- endcomment -%}
+{% if product.tags contains 'Senn' %}
+    {% unless product.handle contains 'audeze-maxwell' or 
+              product.handle contains 'headphone-zone-x-ddhifi-hi-res-dac-pro' or 
+              product.handle contains 'fiio-k7' or
+              product.handle contains 'koss-porta-pro-headset' or 
+              product.handle contains 'koss-ksc35-wireless' or 
+              product.handle contains 'koss-porta-pro' or 
+              product.handle contains 'koss-ksc75' or 
+              product.handle contains 'koss-sporta-pro' or 
+              product.handle contains 'denafrips-pontus-15th' or 
+              product.handle contains 'zmf-bokeh' or 
+              product.handle contains 'tangzu-x-hbb-xuan-nv' or 
+              product.handle contains 'blon-bl-03' or 
+              product.handle contains 'tangzu-x-divinus-fudu-verse-1' or 
+              product.handle contains 'meze-alba' or
+              product.handle contains 'fiio-btr7' or 
+              product.handle contains 'final-e1000' or 
+              product.handle contains 'headphone-zone-x-7hz-salnotes-zero' or 
+              product.handle contains 'headphone-zone-x-tangzu-waner-s-g' or 
+              product.handle contains 'cca-hydro' or 
+              product.handle contains 'cayin-ru7' or 
+              product.handle contains 'simgot-ew100p' or 
+              product.handle contains 'tanchjim-one' or 
+              product.handle contains 'tangzu-yu-xuan-ji' or 
+              product.handle contains 'headphone-zone-x-fiio-jd1' or 
+              product.handle contains 'kz-zs10-pro-x' 
+    %}
+    <price-list style="display:block!important;margin-bottom:15px;"
+      {% if form_id %} role="region" aria-live="polite"
+      {% endif %} class="price-list {% if size == 'lg' %}price-list--lg{% endif %} {% if text_alignment == 'center' %}justify-center{% endif %}"
+      {{ block.shopify_attributes }}>
+      {% if product.tags contains 'price-drop' %}
+        <div style="display:block!important;" data-product-price-list-selling>
+          <span><span>Dropped Price: </span></span>
+          <span class="price price--highlight price--large price-text">
+            {{- product.selected_or_first_available_variant.price | money -}}
+          </span>
+        </div>
+      {% endif %}
+      {% if product.tags contains 'Senn' %}
+        <div style="display:block!important;font-weight:bold;" data-product-price-list-selling>
+          <span class="hpz-sale-price">
+            {{- product.selected_or_first_available_variant.price | money -}}
+          </span>
+        </div>
+      {% endif %}
+
+      {% unless product.metafields.hpz.previous_selling_price == proper_price or 
+                product.metafields.hpz.previous_selling_price == proper_mrp %}
+        {% assign previous_selling_price = product.metafields.hpz.previous_selling_price | times: 100.0 %}
+        <span class="price price--compare" style="font-size: 0.781rem; opacity: 0.6;">
+          <span>
+            Usual Price: <span style="font-weight:600;">{{ previous_selling_price | money }}</span>
+          </span>
+        </span>
+      {% endunless %}
+      {% assign proper_price = product.selected_or_first_available_variant.price | divided_by: 100.0 %}
+      {% assign proper_mrp = product.compare_at_price_max | divided_by: 100.0 %}
+      <span data-product-price-compare-list-selling>
+        <span class="price price--compare price-compare-text">
+          <span style="font-weight:500; text-decoration:line-through; font-size: 0.781rem;opacity: 0.6;">
+            {{- product.selected_or_first_available_variant.compare_at_price | money -}}
+          </span>
+        </span>
+      </span>
+    </price-list>
+  {% endunless %}
+{% endif %}
+
+ {% if product.tags contains 'FOSS' %}
+    {% unless product.handle contains 'audeze-maxwell' or
+              product.handle contains '1more-piston-fit' or
+              product.handle contains 'cayin-ru7' or
+              product.handle contains 'fatfreq-x-hbb-deuce' or
+              product.handle contains 'fiio-k7' or
+              product.handle contains 'headphone-zone-x-7hz-salnotes-zero-ltd-ed' or
+              product.handle contains 'headphone-zone-x-fiio-jd1' or
+              product.handle contains 'headphone-zone-x-kz-edx-pro' or
+       product.handle contains 'headphone-zone-x-tangzu-waner-s-g' or
+       product.handle contains 'simgot-ew100p' or
+       product.handle contains 'simgot-ew300' or
+       product.handle contains 'tangzu-waner-s-g-2' or
+       product.handle contains 'fatfrequency-maestro-universals' or
+       product.handle contains 'sivga-luan' or
+       product.handle contains 'sivga-oriole' or
+       product.handle contains 'softears-cerberus' or
+       product.handle contains 'kz-castor' or
+       product.handle contains 'softears-rs10' or
+       product.handle contains 'stax-srm-500t' or
+       product.handle contains 'kanto-ora' or
+       product.handle contains 'kanto-ora4' or
+       product.handle contains 'headphone-zone-omega-stand' or
+       product.handle contains 'cayin-ru9' or
+       product.handle contains 'fiio-ka13' or
+       product.handle contains 'fiio-btr17' or
+       product.handle contains 'fiio-ft1-pro' or
+       product.handle contains 'truthear-x-crinacle-zero-blue2' %}
+    <price-list style="display:block!important;margin-bottom:15px;"
+      {% if form_id %} role="region" aria-live="polite"
+      {% endif %} class="price-list {% if size == 'lg' %}price-list--lg{% endif %} {% if text_alignment == 'center' %}justify-center{% endif %}"
+      {{ block.shopify_attributes }}>
+      {% if product.tags contains 'price-drop' %}
+        <div style="display:block!important;" data-product-price-list-selling>
+          <span><span>Dropped Price: </span></span>
+          <span class="price price--highlight price--large price-text">
+            {{- product.selected_or_first_available_variant.price | money -}}
+          </span>
+        </div>
+      {% endif %}
+      {% if product.tags contains 'FOSS' %}
+        <div style="display:block!important;font-weight:bold;" data-product-price-list-selling>
+          <span class="hpz-sale-price" style="color:#ff4343">
+            {{- product.selected_or_first_available_variant.price | money -}}
+          </span>
+        </div>
+      {% endif %}
+
+      {% unless product.metafields.hpz.previous_selling_price == proper_price
+        or product.metafields.hpz.previous_selling_price == proper_mrp
+      %}
+        {% assign previous_selling_price = product.metafields.hpz.previous_selling_price | times: 100.0 %}
+        <span class="price price--compare" style="font-size: 14px; opacity: 0.6;">
+          <span>
+            Usual Price: <span style="font-weight:600;">{{ previous_selling_price | money }}</span>
+          </span>
+        </span>
+      {% endunless %}
+      {% assign proper_price = product.selected_or_first_available_variant.price | divided_by: 100.0 %}
+      {% assign proper_mrp = product.compare_at_price_max | divided_by: 100.0 %}
+      <span data-product-price-compare-list-selling>
+        <span class="price price--compare price-compare-text">
+          <span style="font-weight:500; text-decoration:line-through; font-size: 14px;opacity: 0.6;">
+            {{- product.selected_or_first_available_variant.compare_at_price | money -}}
+          </span>
+        </span>
+      </span>
+    </price-list>
+  {% endunless %}
+{% endif %}

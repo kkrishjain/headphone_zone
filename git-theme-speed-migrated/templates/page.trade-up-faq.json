@@ -1,0 +1,267 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "d1648601-753d-4112-94a6-c8df5341ae1d": {
+      "type": "faq",
+      "blocks": {
+        "template--16018625364156__d1648601-753d-4112-94a6-c8df5341ae1d-16819854611e88b7d7-0": {
+          "type": "item",
+          "settings": {
+            "title": "Community Powered Initiative",
+            "content": "<p>Designed for a community of passionate hobbyist headphone owners who want to experience audio gear; regardless of whether they're used or new. We'll be monitoring all conversations between the buyer and the seller for better transparency & assurance.</p>"
+          }
+        },
+        "template--16018625364156__d1648601-753d-4112-94a6-c8df5341ae1d-16819854611e88b7d7-1": {
+          "type": "item",
+          "settings": {
+            "title": "As Targeted an Audience as it Gets",
+            "content": "<p>Unlike marketplaces, only those who want to buy a used product with the exact model name and SKU as your pre-owned product will visit your listing on Headphone Zone with the genuine & meaningful intent to purchase your pre-owned product.</p>"
+          }
+        },
+        "template--16018625364156__d1648601-753d-4112-94a6-c8df5341ae1d-16819854611e88b7d7-2": {
+          "type": "item",
+          "settings": {
+            "title": "One Destination for Buying & Selling",
+            "content": "<p>Never before could one sell their old audio gear and upgrade at the same place. With the Headphone Zone Trade-Up Program, the focus is on getting you that upgrade you've been eyeing for sometime, while saving you some money that's stuck in old gear.</p>"
+          }
+        },
+        "fc7c318c-8436-4be9-ac0c-91acc7f2b2a3": {
+          "type": "item",
+          "settings": {
+            "title": "Free Shipping",
+            "content": "<p>We take responsibility of bearing the shipping cost of picking up your packed pre-owned product from you and delivering it to the buyer.<br/>In case of any mishandling or mishap in transit, we would go by the courier company's investigation and that will be the final resolution.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16018625364156__d1648601-753d-4112-94a6-c8df5341ae1d-16819854611e88b7d7-0",
+        "template--16018625364156__d1648601-753d-4112-94a6-c8df5341ae1d-16819854611e88b7d7-1",
+        "template--16018625364156__d1648601-753d-4112-94a6-c8df5341ae1d-16819854611e88b7d7-2",
+        "fc7c318c-8436-4be9-ac0c-91acc7f2b2a3"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Why Trade-Up With Headphone Zone",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "2095fd82-399b-4ea1-b4d5-97fbbf78bb80": {
+      "type": "faq",
+      "blocks": {
+        "template--16018625364156__2095fd82-399b-4ea1-b4d5-97fbbf78bb80-16819854611e88b7d7-0": {
+          "type": "item",
+          "settings": {
+            "title": "100% Working Condition",
+            "content": "<p>Goes without saying, but please make sure that your product is undamaged & working perfectly fine before you decide to list them.</p>"
+          }
+        },
+        "template--16018625364156__2095fd82-399b-4ea1-b4d5-97fbbf78bb80-16819854611e88b7d7-1": {
+          "type": "item",
+          "settings": {
+            "title": "Proof of Purchase (Invoice)",
+            "content": "<p>Its best that you provide us with the invoice (proof of purchase) irrespective of the product being under warranty or not.</p>"
+          }
+        },
+        "template--16018625364156__2095fd82-399b-4ea1-b4d5-97fbbf78bb80-16819854611e88b7d7-2": {
+          "type": "item",
+          "settings": {
+            "title": "Good, High Quality, Clear Images",
+            "content": "<p>While we don't expect professional photos, every visual element should be clearly visible, or your listing won't get approved.</p>"
+          }
+        },
+        "11ae817e-9deb-4e83-8138-d794718de58a": {
+          "type": "item",
+          "settings": {
+            "title": "No Incomplete Information",
+            "content": "<p>The more details, the better! don't shy away from telling the world the story behind your purchase. Who knows? It might sell faster!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16018625364156__2095fd82-399b-4ea1-b4d5-97fbbf78bb80-16819854611e88b7d7-0",
+        "template--16018625364156__2095fd82-399b-4ea1-b4d5-97fbbf78bb80-16819854611e88b7d7-1",
+        "template--16018625364156__2095fd82-399b-4ea1-b4d5-97fbbf78bb80-16819854611e88b7d7-2",
+        "11ae817e-9deb-4e83-8138-d794718de58a"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Eligibility Requirements",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "d474c370-6e62-4723-855c-eebf2b0eec3e": {
+      "type": "faq",
+      "blocks": {
+        "template--16018625364156__d474c370-6e62-4723-855c-eebf2b0eec3e-16819854611e88b7d7-0": {
+          "type": "item",
+          "settings": {
+            "title": "Co-operation & Timeliness",
+            "content": "<p>Interested buyers can and will ask lots of questions about the pre-owned product if the listing details are insufficient. In that case, we depend on your co-operation in responding promptly and with more than enough additional information. In the end, the product won't sell without having built a foundation of trust.</p>"
+          }
+        },
+        "template--16018625364156__d474c370-6e62-4723-855c-eebf2b0eec3e-16819854611e88b7d7-1": {
+          "type": "item",
+          "settings": {
+            "title": "Patience & Understanding",
+            "content": "<p>While we will do everything in our capability to promote your used product, selling them can take a lot of time, especially for rare & expensive products. It's based on the number of interested buyers for the kind of product listed. We understand that it can be frustrating to wait, but it's worth it if you can ultimately trade-up or upgrade.</p>"
+          }
+        },
+        "template--16018625364156__d474c370-6e62-4723-855c-eebf2b0eec3e-16819854611e88b7d7-2": {
+          "type": "item",
+          "settings": {
+            "title": "Full Disclosure",
+            "content": "<p>Take your listing as seriously as you would a visa application. Any false or misleading information will lead to rejection as well as disqualification. In anticipation of buyer questions, we've prepared a comprehensive form and we expect that the answers are truthful and without any scope of misinterpretation or misunderstanding.</p>"
+          }
+        },
+        "d1ed03bc-d3e5-4688-ac66-0e5bd63e6e53": {
+          "type": "item",
+          "settings": {
+            "title": "Follow Through",
+            "content": "<p>Once your listing is live, it's final and it will be really inconvenient for us to take it off if you decide to change your mind. we know it's hard to let go of well-loved favourite old things but once you decide you want to sell it off, please don't back out after buyers see that it is available for purchase.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16018625364156__d474c370-6e62-4723-855c-eebf2b0eec3e-16819854611e88b7d7-0",
+        "template--16018625364156__d474c370-6e62-4723-855c-eebf2b0eec3e-16819854611e88b7d7-1",
+        "template--16018625364156__d474c370-6e62-4723-855c-eebf2b0eec3e-16819854611e88b7d7-2",
+        "d1ed03bc-d3e5-4688-ac66-0e5bd63e6e53"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "What We Expect From You",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "9d820436-100a-44e7-be43-39499ae19b5d": {
+      "type": "faq",
+      "blocks": {
+        "template--16018625364156__9d820436-100a-44e7-be43-39499ae19b5d-16819854611e88b7d7-0": {
+          "type": "item",
+          "settings": {
+            "title": "The Product's Age",
+            "content": "<p>People like pretty things & old, well used products aren't as \"shiny\" as brand new gear, you could spend a little money on them to make them look better.</p>"
+          }
+        },
+        "template--16018625364156__9d820436-100a-44e7-be43-39499ae19b5d-16819854611e88b7d7-1": {
+          "type": "item",
+          "settings": {
+            "title": "Validity Of Warranty",
+            "content": "<p>The perceived value of a used product under warranty is far higher compared to a product that has no warranty and could randomly go bust without any free servicing.</p>"
+          }
+        },
+        "template--16018625364156__9d820436-100a-44e7-be43-39499ae19b5d-16819854611e88b7d7-2": {
+          "type": "item",
+          "settings": {
+            "title": "Availability Of Accessories:",
+            "content": "<p>If all the original accessories along with the packaging as at the time of purchase are available with you, you'll be in a better position to ask for a good price.</p>"
+          }
+        },
+        "1ea18d5d-5d74-48eb-9f1a-2a9574f93e8f": {
+          "type": "item",
+          "settings": {
+            "title": "Current Selling Price:",
+            "content": "<p>Please keep in mind that the price of pre-owned products cannot be higher or even slightly lower than that of the current selling price.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16018625364156__9d820436-100a-44e7-be43-39499ae19b5d-16819854611e88b7d7-0",
+        "template--16018625364156__9d820436-100a-44e7-be43-39499ae19b5d-16819854611e88b7d7-1",
+        "template--16018625364156__9d820436-100a-44e7-be43-39499ae19b5d-16819854611e88b7d7-2",
+        "1ea18d5d-5d74-48eb-9f1a-2a9574f93e8f"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Consider This While Setting The Price",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d1648601-753d-4112-94a6-c8df5341ae1d",
+    "2095fd82-399b-4ea1-b4d5-97fbbf78bb80",
+    "d474c370-6e62-4723-855c-eebf2b0eec3e",
+    "9d820436-100a-44e7-be43-39499ae19b5d"
+  ]
+}

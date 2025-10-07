@@ -1,0 +1,368 @@
+
+/****PLEASE DON'T MAKE CHANGES IN THIS FILE IT'S AFFECT THE CODE IF YOU NEED ANY HELP PLEASE CONTACT TO FLITS TEAM support@getflits.com ****/
+#dummyCancel {display: none;}
+.flits-account-page-container span.flits-order-cancel-label, .flits-account-page-container span.flits-order-cancel-request-label{
+  text-transform: uppercase;
+}
+.flits-account-page-container .flits-phone-with-country-div .flits-country-drpdown .flits-country-flag img, .flits-order-contact-us-popup .flits-phone-with-country-div .flits-country-drpdown .flits-country-flag img{
+  object-fit: contain;
+}
+.flits-account-page-container .flits-account-page-nav{
+  border-radius: 0px;
+}
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item.flits-active:first-child, .flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item:hover:first-child{
+  border-radius: 0px;
+}
+.flits-profile-logout-btn{
+  margin-left: 10px;
+  color: var(--primaryButtonBGColor)!important;
+    }
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item .flits-nav-link .flist-menu-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.2em;
+  color: #444444;
+  font-weight: 600 !important;
+  cursor: pointer;
+  letter-spacing: 2px !important;
+  font-family: 'Roboto', sans-serif;
+}
+.flits-account-page-container .flits-button.flits-primary-btn.flits-profile-save-button, .flits-account-page-container .flits-button.flits-primary-btn.flits-address-add-save-button{
+  color: #444444 !important;
+  background: #ffffff !important;
+  border-color: #444444 !important;
+  border-width: 1px !important;
+}
+.flits-account-page-container .flits-button.flits-primary-btn.flits-profile-save-button:not([disabled]):hover, .flits-account-page-container .flits-button.flits-primary-btn.flits-address-add-save-button:not([disabled]):hover{
+  color: #fff !important;
+  background: #444444 !important;
+  border-color: #fff !important;
+  border-width: 1px !important;
+}
+.flits-account-page-container .flits-button.flits-secondary-btn.flits-profile-cancel-button, .flits-account-page-container .flits-button.flits-secondary-btn.flits-address-cancel-btn{
+  color: var(--primaryButtonBGColor) !important;
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+    border-width: 1px !important;
+    }
+html body .flits-account-page-container.flits-has-hover .flits-button.flits-primary-btn:not([disabled]):hover,
+.modal-footer button:hover{
+  color: #ffffff!important;
+  background: #444444!important;
+  border-color: #3b08ff!important;
+  border-width: 1px !important;
+}
+/* UNO TAB COLOR */
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item.flits-active {
+  background-color: rgb(68, 68, 68) !important;
+  border-left: 4px solid #fff!important;
+  border-left: none !important;
+}
+.flits-account-page-container.flits-has-hover .flits-account-page-nav .flits-nav-tabs .flits-menu-item:hover {
+  background-color: rgb(68, 68, 68);
+  opacity: 1!important;
+}
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item:hover .flits-nav-link .flist-menu-title {
+  color: #fff !important;
+}
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item.flits-active .flits-nav-link .flist-menu-title {
+  color: #fff !important;
+}
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item .flits-nav-link .flits-badge-nav {
+  background-color: rgb(68, 68, 68);
+}
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item.flits-active .flits-badge-nav {
+  background-color: #fff;
+}
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item.flits-active .flits-nav-link .flits-badge-nav {
+  color: rgb(68, 68, 68)!important;
+}
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item .flits-nav-link .flits-badge-nav {
+  color: #fff!important;
+}
+
+
+.flits-order-count-badge
+{
+  display: none!important;
+}
+
+
+.flits-address-count-badge
+{
+  display: none!important;
+}
+
+.flits-order-tracking{
+  text-decoration: underline;
+  color: #1717cf;
+}
+
+.flits-account-page-container .flits-button {
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 14px;
+  letter-spacing: 2px !important;
+  line-height: 1.9;
+}
+.flits-account-page-container #flits_tab_profile .flits-button{
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 14px;
+  line-height: 17.1429px !important;
+  letter-spacing: 2px !important;
+  width: 133px;
+}
+.flits-account-page-container #flits-order-list .flits-button {
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 14px;
+  letter-spacing: 2px !important;
+  line-height: 1.9;
+}
+.flits-account-page-container.flits-has-hover .flits-button.flits-secondary-btn:hover{
+  color: var(--secondaryButtonBGColor) !important;
+    background: transparent !important;
+    border-color: var(--secondaryButtonBGColor) !important;
+      border: 1px solid var(--secondaryButtonBGColor)!important;
+        }
+.flits-account-page-container .flits-read-input .flits-input, .flits-account-page-container .flits-value{
+  font-weight: 500 !important;
+}
+.flits-account-page-container .flits-ribbion-overlay .flits-ribbion{
+  background: #e45646 !important;
+}
+.flits-account-page-container .flits-account-page-tabs, .flits-account-page-container .flits-account-page-nav{
+  min-height: 267px;
+}
+.flits-account-page-container .flits-input[type=date], .flits-account-page-container .flits-input[type=email], .flits-account-page-container .flits-input[type=number], .flits-account-page-container .flits-input[type=password], .flits-account-page-container .flits-input[type=tel], .flits-account-page-container .flits-input[type=text], .flits-account-page-container textarea.flits-form-message, .flits-order-contact-us-popup .flits-input[type=date], .flits-order-contact-us-popup .flits-input[type=email], .flits-order-contact-us-popup .flits-input[type=number], .flits-order-contact-us-popup .flits-input[type=password], .flits-order-contact-us-popup .flits-input[type=tel], .flits-order-contact-us-popup .flits-input[type=text], .flits-order-contact-us-popup textarea.flits-form-message,
+.flits-account-page-container select.flits-input, .flits-order-contact-us-popup select.flits-input,
+.flits-account-page-container .flits-phone-with-country-div .flits-country-drpdown, .flits-order-contact-us-popup .flits-phone-with-country-div .flits-country-drpdown{
+  border-color: rgb(227 227 227) !important;
+  border-radius: 3px;
+}
+.flits-account-page-container .flits-pagination-div .flits-pagination li a{
+  color: #000!important;
+  font-size:14px;
+}
+.flits-account-page-container .flits-pagination-div .flits-pagination li.active a{
+  color: #fff!important;
+}
+.flits-account-page-container .flits-pagination-div .flits-pagination li.active{
+  background-color: #444444 !important;
+}
+.flits-account-page-container .flits-empty-section .flits-empty-text-msg{
+  color: gray !important;
+}
+.flits-account-page-container .flits-empty-section .flits-empty-icon-box svg path{
+  fill: gray;
+}
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item{
+  padding: 6px 15px;
+}
+/* Social login css */
+.social-login-title{
+  position: relative;
+  margin: 25px auto;
+  max-width: 460px;
+  width: 74%;
+}
+.social-login-title span{
+  display: table;
+  margin: 0 auto;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 20px;
+  background: #fff;
+  font-size: 14px;
+}
+.social-login-title:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #cecece;
+  left: 0;
+  top: 10px;
+  z-index: -1;
+}
+.flits-social-login-btn-grp .flits-social-login-btn{
+  width: 140px !important;
+  border-radius: 100px !important;
+}
+.flits-social-login-btn-grp .flits-social-login-btn .flits-social-login-btn-img{
+  border-radius: 20px !important;
+}
+#login-form-container div[data-flits="social-login-parent"] .flits-social-login-container, .shopify-section--main-customers-register div[data-flits="social-login-parent"] .flits-social-login-container{
+  display: none;
+}
+#login-form-container .flits-social-login-container + .page-header .page-header__text-wrapper, .shopify-section--main-customers-register .flits-social-login-container + .page-header .page-header__text-wrapper{
+  margin: 15px auto 40px;
+}
+#login-form-container .flits-social-login-container, .shopify-section--main-customers-register .flits-social-login-container{
+  margin-top: 15px;
+}
+.flits-social-login-btn-grp .flits-social-login-btn .flits-social-login-btn-img img, .flits-social-login-btn-grp .flits-social-login-btn .flits-social-login-btn-img svg{
+  margin: 0;
+}
+/* Custom tab css */
+.flits-banner img{
+  max-width: 100%;
+}
+.flits-banner .h2homepage{
+  font-family: IBM Plex Mono,monospace !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  color: #444 !important;
+  font-size: 35px;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+  line-height: 1.3 !important;
+  text-align: center !important;
+  margin-top: 70px !important;
+  margin-bottom: 0 !important;
+  text-transform: capitalize;
+}
+.flits-banner .h2childhomepage{
+  font-family: Roboto,sans-serif !important;
+  padding-bottom: 10px !important;
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+  letter-spacing: 2px !important;
+  font-size: 16px !important;
+  text-align: center;
+}
+.flits-account-page-container .flits-account-page-nav .flits-nav-tabs .flits-menu-item .flits-nav-link .flist-menu-title{
+  color:#444444!important;
+}
+
+.flits-account-page-container .flits-pagination-div .flits-pagination-btn{
+  height:45px!important;
+  width:45px!important;
+  background:#ffffff!important;
+  border: 1px solid #e6e6e6!important;
+  color:#3c07ff!important;
+  padding:0!important;
+}
+.flits-account-page-container .flits-pagination-div .flits-pagination li{
+  margin:0!important;
+  border-radius:0!important;
+  height:45px!important;
+  width:45px!important;
+  background:#ffffff!important;
+}
+.flits-account-page-container .flits-pagination-div .flits-pagination-btn svg {
+  width: 16px;
+  height: 16px;
+}
+.flits-account-page-container .flits-pagination-div .flits-pagination li.active{
+  background-color:#ffffff!important;
+  border:2px solid #444444!important; 
+}
+.flits-account-page-container .flits-pagination-div .flits-pagination li.active a{
+  color:#444444!important;
+}
+.flits-account-page-container button.flits-button.flits-pagination-btn.flits-prev-btn{
+
+  border-radius: 40px 0px 0px 40px!important;
+}
+.flits-account-page-container button.flits-button.flits-pagination-btn.flits-next-btn{
+  border-radius: 0px 40px 40px 0px!important;
+}
+
+/* Custom Contact Tab */
+.headphone-zone-contact-us-main .headphone-zone-contact-us-body{
+  text-align: center;
+  padding-left: 15px;
+}
+.headphone-zone-contact-us-main .headphone-zone-contact-us-body h2{
+  margin-bottom: 30px;
+}
+.headphone-zone-contact-us-main .headphone-zone-contact-us-body p{
+  margin-bottom: 20px;
+}
+.headphone-zone-contact-us-body .flits-custom-col h6{
+  min-height: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+.headphone-zone-contact-us-body .flits-custom-col{
+  margin-bottom: 30px;
+}
+.headphone-zone-contact-us-body .flits-custom-col .flits-custom-col-inner{
+  padding: 20px;
+  transition: .3s;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  background: white;
+}
+.flits-custom-reorder-main h3{
+  margin: 48px 0 24px;
+}
+
+@media(max-width: 480px){
+  .social-login-title{
+    width: 100%;
+    max-width: 100%;
+  }
+  .flits-account-page-container .flits-button{
+    padding: 10px 20px;
+    height:auto;
+  }
+}
+.flits-menu-item a:hover, 
+.flits-menu-item a:focus{
+	text-decoration: none !important;
+}
+
+.flits-account-page-container span.flits-order-cancel-label,
+.flits-account-page-container span.flits-order-cancel-request-label{
+  /*             background-color: red;
+  color: #fff;
+  padding: 4px;
+  border-radius: 100px; */
+  background-color: #e45646;
+  color: #fff !important;
+  padding: 2px 7px;
+  border-radius: 100px;
+  font-size:14px;
+}
+
+a.flits-profile-logout-btn:hover{
+  color: #444444 !important;
+  text-decoration: underline !important;
+}
+.flits-header-title h1{
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #444 !important;
+  display: block;
+  letter-spacing: 1px !important;
+  font-size: 1.5em !important;
+  margin: 0.67em 0;
+  font-family:Zurich Extended;
+}
+span.flist-menu-title{
+  color: gray!important
+}
+.flits-account-page-container .flits-button{
+  font-family: 'Roboto' !important;
+}
+
+:root{
+  --borderColor: #e6e6e6!important;
+  }
+
+.flits-code-snippet .flits-account-page-container .flits-account-page-tabs{
+  height:100%!important;
+}
+.flits-product-image img{
+  width:auto!important;
+}

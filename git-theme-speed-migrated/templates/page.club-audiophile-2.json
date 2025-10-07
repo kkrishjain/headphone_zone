@@ -1,0 +1,189 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "5436d29c-494e-4ebb-be68-ea5575fdabb6": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Club_Audiophile.svg?v=1685625108\" style=\"width:200px;margin:auto;\">\n<h2 class=\"h2\">Club Audiophile Loyalty Program\n</h2>\n\n<style>\nh2 {\nfont-size:3rem;\ntext-align:center;\nfont-family: \"sora\", sans-serif;\n    font-weight: var(--heading-font-weight);\n    font-style: var(--heading-font-style);\n    letter-spacing: var(--heading-letter-spacing);\n    text-transform: var(--heading-text-transform);\n    overflow-wrap: anywhere;\n}\n\n\n}\n\n\n\n@media screen and (max-width: 700px) {\n  h2 {\n    font-size:2rem!important;\n\n  }\n}\n\n\n\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d": {
+      "type": "faq",
+      "blocks": {
+        "fa0fa772-0658-413a-a070-1944df8d90d7": {
+          "type": "item",
+          "settings": {
+            "title": "How does the Club Audiophile Loyalty Program work?",
+            "content": "<p>We, at Headphone Zone, started Club Audiophile to help you on your audiophile journey and because we have a vision. Like you, we love music, and we want to make sure that, in your pursuit of the best listening experience, you get the opportunity to maximise your savings. After all, it can be an expensive hobby!</p><p><br/>We have come up with a simple point system for you to earn rewards while shopping with us. For every one rupee spent on your purchase at Headphone Zone, one point is awarded to you if you have signed up for the program. You can then redeem your points for your next purchase. Besides placing orders, you can also earn points by leaving a product review.<br/></p><p>You can sign up and learn more here:<a href=\"https://help.headphonezone.in/support/solutions/articles/%20https%3A//www.headphonezone.in/pages/rewards\"> </a><a href=\"https://www.headphonezone.in/pages/rewards\">https://www.headphonezone.in/pages/rewards</a></p>"
+          }
+        },
+        "b624423d-30f9-4acd-b426-df6c9520deff": {
+          "type": "item",
+          "settings": {
+            "title": "How do I redeem my points?",
+            "content": "<p>You can redeem your points at checkout. You will get the option to choose the number of points you want to redeem. You can even choose to not redeem any points and save it for another purchase. A minimum of 20 points is required to redeem them.</p><p><br/></p><p>At checkout, you will see the option to choose how many points you want to redeem on the right. You can use the slider to adjust the number of points you want to redeem against your purchase.</p><p><a href=\"https://help.headphonezone.in/support/solutions/articles/6000242984-how-do-i-redeem-my-points-\" target=\"_blank\" title=\"https://help.headphonezone.in/support/solutions/articles/6000242984-how-do-i-redeem-my-points-\">Read more</a></p><p></p>"
+          }
+        },
+        "4cd47ef2-522c-46da-9df0-2222f4030d15": {
+          "type": "item",
+          "settings": {
+            "title": "Do I need to be an Audiophile to earn points?",
+            "content": "<p>Not at all! Club Audiophile Program is open to each and every customer of Headphone Zone!<br/>All you need to do is place an order with us to be eligible to earn your points. </p>"
+          }
+        },
+        "a58bcddb-ed4e-488f-a6ee-d519c8482b73": {
+          "type": "item",
+          "settings": {
+            "title": "Can I redeem points for any product?",
+            "content": "<p>Club Audiophile members can redeem points on purchasing all products excluding the following: <br/></p><p>1. Pre-Owned Products </p><p>2. Gift Cards</p><p>3. Home Audition Programs.</p><p><br/></p>"
+          }
+        },
+        "7ed30e38-b1d1-4b8a-997d-a7ab29d88a72": {
+          "type": "item",
+          "settings": {
+            "title": "How much are my points worth?",
+            "content": "<p>As per our loyalty program, 20 points = Rs.1<br/></p><p>This means you can get a one rupee discount for every 20 points you earn.</p>"
+          }
+        },
+        "2ec072d0-941a-4a52-b4a5-5d5aa8f4527d": {
+          "type": "item",
+          "settings": {
+            "title": "How do I earn points?",
+            "content": "<p>There are 2 ways to earn the Club Audiophile points on our website and get the maximum benefits on your future purchases.</p><p></p><p>* For every rupee you spend at Headphone Zone, you will earn a point.  </p><p>* You can also leave a product review to earn 100 points.</p><p></p><p>Please note that points will be credited only after 7 days of delivery. No points will be awarded if you return or cancel your order. You cannot redeem or earn points for gift cards, pre-owned products or home audition products.  </p><p><br/></p>"
+          }
+        },
+        "d8bfdc76-5ebf-48dc-a5fa-3724357d6d8c": {
+          "type": "item",
+          "settings": {
+            "title": "For how long are my points valid?",
+            "content": "<p>Points are valid only till 12 months from the time they have been approved. Don't worry! You will receive an email from us a few days before your points expire.</p>"
+          }
+        },
+        "010ec997-5945-4029-b589-25ee96750272": {
+          "type": "item",
+          "settings": {
+            "title": "Can I earn points through any payment method?",
+            "content": "<p>Yes! You can earn points regardless of the payment method you choose unless you have used the store credit that was issued to you for your preowned sale.</p><p><br/></p><p>Please note that points will be credited only after 7 days of the delivery of your order. No points will be awarded if you return or cancel your order. Discounts are capped at Rs. 10,000.  Any returned, canceled, or discounted orders where loyalty points were not used are ineligible to receive any points.</p><p>You cannot earn or redeem points against purchases made for a gift card, pre-owned product, or home audition product.</p>"
+          }
+        },
+        "b90d27cc-aa80-41c5-ab2a-d5620a50c30f": {
+          "type": "item",
+          "settings": {
+            "title": "Where can I check my points?",
+            "content": "<p>You can check your Club Audiophile points history in the <strong>My Account section on the website.</strong></p><p>You just need to login to your Headphone Zone account and go to the ‘Club Audiophile Rewards’ section. </p><p>And once you scroll down in this section, you will be able to see all the details of your Club Audiophile rewards. </p>"
+          }
+        },
+        "056ceab1-6d5d-4f15-b69a-27d7d9780179": {
+          "type": "item",
+          "settings": {
+            "title": "Can I redeem my points for store credit or cash?",
+            "content": "<p>You cannot redeem your points for store credit or cash. You can only redeem them against your next purchase at Headphone Zone.</p><p><br/></p><p>You cannot earn or redeem points against purchases made for a gift card, pre-owned product, or home audition product.</p>"
+          }
+        },
+        "d4586178-8a84-4034-985a-d0aa54b0ddcd": {
+          "type": "item",
+          "settings": {
+            "title": "I already have a gift card / coupon code. Can I use both, my points and the gift card / coupon code?",
+            "content": "<p>Store credit and a discount coupon code can be used together. You just need to paste the store credit code and discount code in the section and it will automatically deduct the price from the order amount. </p><p><br/></p><p>Then you just need to proceed with the payment of the balance amount after deducting the discount and store credit amount.</p>"
+          }
+        },
+        "345b86d9-94b2-4cfa-82cf-2e92a0531065": {
+          "type": "item",
+          "settings": {
+            "title": "How many points can I redeem at a time?",
+            "content": "<p>You can redeem 2,00,000 points i.e. discount off Rs. 10,000 at max in a single purchase. Please note that points will be credited in your account after 7 days of delivery. </p>"
+          }
+        },
+        "186ef9a9-1670-4a29-b243-9bc9ee83530d": {
+          "type": "item",
+          "settings": {
+            "title": "I placed an order. Why have I not received any Club Audiophile Points?",
+            "content": "<p>Any returned, canceled, or discounted orders where loyalty points were not used are ineligible to receive any points.</p><p>You also need to sign up for a Club Audiophile Account to receive points that you can redeem for future purchases.</p>"
+          }
+        },
+        "1871fc8a-9db7-414c-b417-d9730776547c": {
+          "type": "item",
+          "settings": {
+            "title": "Can I use a discount code and redeem points at the same time?",
+            "content": "<p>No, you can only use one discount at checkout. As redemption of loyalty points is a discount, you cannot club this with another discount code.</p>"
+          }
+        },
+        "0b5dd118-caac-4afd-81b1-e78d104f2656": {
+          "type": "item",
+          "settings": {
+            "title": "Can you earn points on all your purchases?",
+            "content": "<p>Club Audiophile members can earn points on all products except Pre-Owned, Home Audition and Gift Card purchases.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "fa0fa772-0658-413a-a070-1944df8d90d7",
+        "b624423d-30f9-4acd-b426-df6c9520deff",
+        "4cd47ef2-522c-46da-9df0-2222f4030d15",
+        "a58bcddb-ed4e-488f-a6ee-d519c8482b73",
+        "7ed30e38-b1d1-4b8a-997d-a7ab29d88a72",
+        "2ec072d0-941a-4a52-b4a5-5d5aa8f4527d",
+        "d8bfdc76-5ebf-48dc-a5fa-3724357d6d8c",
+        "010ec997-5945-4029-b589-25ee96750272",
+        "b90d27cc-aa80-41c5-ab2a-d5620a50c30f",
+        "056ceab1-6d5d-4f15-b69a-27d7d9780179",
+        "d4586178-8a84-4034-985a-d0aa54b0ddcd",
+        "345b86d9-94b2-4cfa-82cf-2e92a0531065",
+        "186ef9a9-1670-4a29-b243-9bc9ee83530d",
+        "1871fc8a-9db7-414c-b417-d9730776547c",
+        "0b5dd118-caac-4afd-81b1-e78d104f2656"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5436d29c-494e-4ebb-be68-ea5575fdabb6",
+    "5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d"
+  ]
+}

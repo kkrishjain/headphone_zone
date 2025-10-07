@@ -1,0 +1,172 @@
+<style>
+  #flits_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8c8c8c80;
+    z-index: 999;
+  }
+
+  #notification-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: 35%;
+    border-radius: 5px;
+  }
+
+  #popup-content {
+    text-align: center;
+    position: relative;
+  }
+
+  .cancelNotificationPop {
+    color: #3b08ff !important;
+    background: #ffffff !important;
+    border-color: #3b08ff !important;
+    border: 1px solid !important;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 14px;
+    letter-spacing: 2px!important;
+    line-height: 1.9;
+    font-weight: 700;
+    font-family: inherit !important;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .cancelNotificationPop:hover {
+    color: #ffffff !important;
+    background: #3b08ff !important;
+    border-color: #3b08ff !important;
+  }
+
+  .notification-popup-text{
+    font-size: 17px;
+    padding: 2px 0;
+  }
+  .closePopupBtn{
+    position:absolute;
+    top: -20px;
+    right:-5px;
+  }
+  .closePopupBtn:hover{
+    cursor: pointer;
+  }
+  #time-remaining{
+    font-weight: 900;
+    font-size: 17px;
+  }
+  #reload_account_btn{
+    display: none;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 14px;
+    letter-spacing: 2px !important;
+    line-height: 1.9;
+    color: #fff;
+    background: #3b08ff;
+  }
+  #reload_account_btn_parent{
+    display: none;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  #reload_account_btn:hover{
+    opacity: 0.7 !important;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #notification-popup {
+      width: 55%;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    #notification-popup {
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    #notification-popup {
+      width: 90%;
+    }
+    #time-remaining, .notification-popup-text{
+      font-size: 15px;
+    }
+    .closePopupBtn{
+      top: -25px;
+    }
+  }
+</style>
+
+<span id="flits_overlay" style="display:none"></span>
+<div id="notification-popup" style="display:none;">
+  <div id="popup-content">
+    <p class="notification-popup-text">In order to cancel you order please wait for</p>
+    <p id="time-remaining"></p>
+    <p class="notification-popup-text">so that our system can catch up with you.</p>
+    <div id="reload_account_btn_parent">
+      <a href="/account" id="reload_account_btn">Reload Page</a>
+    </div>
+    <p class="closePopupBtn" onclick="closePopup()">
+      <svg fill="#000000" width="30px" height="30px" viewBox="-6 -6 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-close"><path d='M7.314 5.9l3.535-3.536A1 1 0 1 0 9.435.95L5.899 4.485 2.364.95A1 1 0 1 0 .95 2.364l3.535 3.535L.95 9.435a1 1 0 1 0 1.414 1.414l3.535-3.535 3.536 3.535a1 1 0 1 0 1.414-1.414L7.314 5.899z' /></svg>
+    </p>
+  </div>
+</div>
+{% unless order.tags contains 'no-cancel' or order.tags contains 'nocancel' or order.tags contains 'pre-order'%}
+  <button type="button" data-id="{{order.id}}" onclick="showPopup()" class="cancelNotificationPop">Cancel Order</button>
+{% endunless %}
+<script>
+  var interval;
+
+  function showPopup() {
+    var timeRemaining = {{ time_remaining }};
+    if (timeRemaining > 0) {
+      updateTimer(timeRemaining);
+    }
+    else{
+      document.getElementById('time-remaining').textContent = "0mins 0s";
+      document.getElementById('reload_account_btn_parent').style.display = "flex";
+      document.getElementById('reload_account_btn').style.display = "block";
+    }
+    interval = setInterval(function() {
+      if (timeRemaining <= 0) {
+        clearInterval(interval);
+        document.getElementById('time-remaining').textContent = "0mins 0s";
+        document.getElementById('reload_account_btn_parent').style.display = "flex";
+        document.getElementById('reload_account_btn').style.display = "block";
+      }
+      else{
+        timeRemaining--;
+        updateTimer(timeRemaining);
+      }
+    }, 1000);
+    document.getElementById('notification-popup').style.display = 'block';
+    document.getElementById('flits_overlay').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closePopup() {
+    clearInterval(interval);
+    document.getElementById('notification-popup').style.display = 'none';
+    document.getElementById('flits_overlay').style.display = 'none';
+    document.body.style.overflow = 'initial';
+  }
+
+  function updateTimer(timeRemaining) {
+    var minutes = Math.floor(timeRemaining / 60);
+    var seconds = timeRemaining % 60;
+    document.getElementById('time-remaining').textContent = minutes + "mins " + seconds + "s";
+  }
+</script>

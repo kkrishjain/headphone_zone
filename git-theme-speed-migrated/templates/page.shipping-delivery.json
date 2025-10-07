@@ -1,0 +1,133 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "5436d29c-494e-4ebb-be68-ea5575fdabb6": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Shipping-help-center.svg?v=1685623259\" style=\"width:200px;margin:auto;\">\n<h2 class=\"h2\">Shipping & Delivery</h2>\n\n<style>\n\nh2 {\nfont-size:3rem;\ntext-align:center;\nfont-family: \"sora\", sans-serif;\n    font-weight: var(--heading-font-weight);\n    font-style: var(--heading-font-style);\n    letter-spacing: var(--heading-letter-spacing);\n    text-transform: var(--heading-text-transform);\n    overflow-wrap: anywhere;\n}\n\n\n}\n\n\n\n@media screen and (max-width: 700px) {\n  h2 {\n    font-size:2rem!important;\n\n  }\n}\n\n\n\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d": {
+      "type": "faq",
+      "blocks": {
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-0": {
+          "type": "item",
+          "settings": {
+            "title": "Where is my order?",
+            "content": "<p>Once your order has ready to be dispatched, you will receive a Shipping Confirmation email which will the courier tracking details that you can use to track your order at every step as it reaches you.</p><p>If you have received your Shipping Confirmation email already, you can track it right here.</p><p><a href=\"https://track.headphonezone.in/\">TRACK YOUR ORDER NOW</a></p><p>If your order has reached your city, it should reach you very soon. You will most likely receive an ‘Out for Delivery’ update from the Courier Company.</p><p><strong>Preowned customers: </strong>If you have bought a pre-owned product, it may take a little more time for the product to be delivered to you (as well as for you to receive the tracking details) as the product has to be first picked up from the seller's location. Once the pickup is arranged, you will receive the tracking details and can track your order. </p>"
+          }
+        },
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-1": {
+          "type": "item",
+          "settings": {
+            "title": "What courier companies will be used for my order?",
+            "content": "<p>Over the years we’ve associated with multiple courier companies, and we’ve stuck to only the most efficient and reliable ones. Depending on your pincode and your payment method, we use BlueDart or Delhivery.<br/><br/>If you’re particular on any of the two BlueDart or Delhivery to be used or not to be used for your order, please let us know before your order has been dispatched or in other words, before you get a Shipping Confirmation email.</p><p>Also, there are no shipping charges, it's free for you!</p>"
+          }
+        },
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-2": {
+          "type": "item",
+          "settings": {
+            "title": "What does \"ships within 24 hours\" mean?",
+            "content": "<p>In a nutshell, ships within 24 hours basically means that your product will be shipped out or dispatched from our warehouse within 24 hours after placing the order. It also indicates that the products are readily available at our warehouse and once we receive your order, we dispatch it out at the earliest. either on the same day or the next working day depending on when you’ve placed your order.</p><p><strong>What it does not mean:</strong><br/>A lot of our customers assume that it means their order will get delivered to them within 24 hours, but that’s not what it means. For an order to reach you, it can take anywhere up to 3-4 business days, depending on which part of India you are placing an order from.<br/><br/>For an accurate timeline, you can enter your pin code on the product page and check for an estimated date of arrival.</p>"
+          }
+        },
+        "61c0e858-7c4b-4ac6-849b-ba98738e80f2": {
+          "type": "item",
+          "settings": {
+            "title": "When will I get my product which is on pre-order?",
+            "content": "<p>A product that is on pre-order usually specifies a timeline for how long it’ll take for us to arrange the product specifically for you.</p><p>If you’re pre-ordering a product, a product is specifically ordered for you from the brand. For exceptional products, this could take longer depending on the availability with the brand. In case it’ll take longer than the timeline showed on the product page, we will let you know at the earliest.</p><p><br/></p>"
+          }
+        },
+        "76485940-1315-4037-b3bb-b3169d95b6a4": {
+          "type": "item",
+          "settings": {
+            "title": "Why is my order not shipped yet?",
+            "content": "<p>If you've just placed an order, we'd request you give us 24 hours to ship your product from our location. We'd need to pick out your product from a large selection, pack it in a secure box along with your invoice and hand it over to the courier company. Typically, all orders placed before 2 PM on our website, on a weekday, are shipped out the same day or on the next business day for sure. </p><p>If you still haven't received confirmation even after 24 hours, this could happen for multiple reasons:<br/><br/><strong>1. Product not readily available:</strong> Any product page with the message “<a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198097-what-does-ships-within-24-hours-mean-\" target=\"_blank\"><strong>Ships within 24hrs</strong></a>” indicates that the product is readily available at our warehouse for us to dispatch within a day. But if the product is not readily available at our warehouse, the product will take a few days or longer. Mostly because it’ll have to be arranged.<br/><br/>If the product you’ve ordered has a longer (<strong>more than 3-4 business days</strong>) delivery timeline then it's mainly because we will take a few days to arrange for the product from the brands.</p><p><strong>2. Incomplete address:</strong> At times, the address provided by you can be too short or incomplete. In such cases, we will definitely email you or call you to have the order shipped with the complete address to avoid any kind of delivery exceptions. Till we don’t receive the complete address, your order will be on hold.<br/><br/><strong>3. CoD not possible:</strong> Courier companies keep updating their list of CoD serviceable locations. While processing your order, it might not be acceptable for CoD even though at the time of checking the serviceability on our website, your pincode would’ve been shown serviceable for CoD.</p><p><strong>In such a case, you can either:</strong><br/>1) Provide an alternate address with a different pincode to which we can try delivering your order.<br/>2) You can pay online and we can dispatch it via our <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000198092-what-courier-companies-will-be-used-for-my-order-\">courier partners</a>.</p><p><strong>4. Delay from the Courier Company’s Side:</strong> There are times when we might’ve kept all our orders ready for dispatch, but there might be a delay caused by the courier company not showing up to collect the orders. This in turn will mean that your order will get dispatched on the next day which causes a delay of 24 hrs. This is for the most part rare but in case of unforeseen weather conditions, this might occur.</p><p><strong>5. Public Holiday/Sunday:</strong> There might be a delay in dispatch if there’s a public holiday or Sunday. All <em>orders that we get by 2 PM are dispatched on the same day (Mon-Sat)</em>. This is not applicable on Sundays and Public Holidays. Also if any order is placed after 2 PM and the following day is a public holiday or a Sunday, the dispatch will take place on the next business day.</p>"
+          }
+        },
+        "3f2114a9-28fc-4194-b538-8fdc76ee61ab": {
+          "type": "item",
+          "settings": {
+            "title": "Can I add or remove my delivery addresses?",
+            "content": "<p>Yes, you can surely add, remove or even delete your delivery addresses. You may follow the steps below:</p><p>In order to add or remove a particular address, you’d first need to log in with your registered mail id and password. </p><p>Once done, click on the<strong> ‘Delivery Address’</strong> tab and then click on the <strong>‘Edit’</strong> option- to edit an existing address with the required details. </p><p>In case of removing or deleting the address, scroll down to the bottom of the page and untick mark the box that reads ‘Set as default address’ as you cannot delete an address if this particular option has ticked in. Once you untick it, you must click on the ‘save address’ option and then come back to the main page, hover around the address that you wish to delete, click on the ‘X’ mark, and then, you can delete it from your account.<br/></p><p>In case you need to add a new address <strong>click on the ‘+’ sign that reads ‘Add a new address’.</strong> Fill in the necessary details and ensure you hit the ‘save address’ tab and you are good to go!<br/></p><p><strong>Please note</strong> - Address changes done here will not be reflected in the orders that you have already placed. Nevertheless, in case you have to change or update your address after placing the order, simply get in touch with us and we shall help you further.</p>"
+          }
+        },
+        "0910b452-90a2-4a2c-86ff-e26535ea68b3": {
+          "type": "item",
+          "settings": {
+            "title": "Will the courier person call me or can I get his number before delivery?",
+            "content": "<p>Every courier company has different policies that they follow. Some courier companies don’t allow for their delivery associates to call the customers, which is why we try and provide<strong>continuous updates via SMS and emails right up to delivery</strong>.<br/><br/>We are not informed in advance about which specific local delivery boy will be assigned for the delivery of your order. Even if we did know, the courier company wouldn’t give us their direct numbers. If you need any special instructions to be given or for the delivery to be scheduled on a particular date & time, do convey it to us and we’ll coordinate the same with the courier company.</p>"
+          }
+        },
+        "02b1f3d1-f74e-4f4d-bb1e-2ff50ccbd6f0": {
+          "type": "item",
+          "settings": {
+            "title": "If my order is stuck somewhere, who should I contact and how?",
+            "content": "<p>Your order could be stuck in transit for many reasons. It could be that the courier company is facing some issues with finding your address or is experiencing delays due to the weather or technical issues.</p><p>Don’t worry, we will make sure that your order is delivered as quickly as possible. :)<br/><br/>In case the courier company isn’t able to trace your address, the best course of action would be to get in touch with us and mention your order id along with a suitable landmark. For any other issue, they will attempt delivery once the issue has been sorted out. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-0",
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-1",
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-2",
+        "61c0e858-7c4b-4ac6-849b-ba98738e80f2",
+        "76485940-1315-4037-b3bb-b3169d95b6a4",
+        "3f2114a9-28fc-4194-b538-8fdc76ee61ab",
+        "0910b452-90a2-4a2c-86ff-e26535ea68b3",
+        "02b1f3d1-f74e-4f4d-bb1e-2ff50ccbd6f0"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "General Shipping & Delivery Questions",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5436d29c-494e-4ebb-be68-ea5575fdabb6",
+    "5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d"
+  ]
+}

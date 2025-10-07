@@ -1,0 +1,95 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+Product Punchline COMPONENT
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used to create an product punchline on the product page.
+The default is set to Raghav but incase there are new faces to be added use the parameters documented below.
+
+********************************************
+Supported JSON parameters
+********************************************
+* text: the punchline text for the product
+* author: person writing the punchline
+* role: authors role in the company
+* img: the url of the image of the author
+* about_author: a breif desciption of the author to show in the popup
+
+********************************************
+Examples
+********************************************
+default JSON punchline
+{ "text": "An awesome punchline" }
+
+Custom Punchline
+{
+  "text": "An awesome punchline",
+  "author": "Ryan Pais",
+  "role": "Website Wizard",
+  "img": "https://cdn.shopify.com/ryan.img",
+  "popup_text": "Ryan is an Audiophile"
+}
+{%- endcomment -%}
+
+
+{% schema %}
+{
+  "name": "Punchline",
+  "class": "headphone-zone-punchline",
+  "presets": [
+    {
+      "name":"Product Punchline"
+    }
+  ]
+}
+{% endschema %}
+
+{% assign punchline = product.metafields.hpz.punchline_json.value %}
+{% if punchline != blank %}
+<div class="container" style="padding-bottom:50px;">
+  <div class="punchline-grid">
+    <div>
+      <blockquote class="testimonial__content blockquote">{{ punchline.text }}</blockquote>
+      <div class="employee-info">
+        <button aria-controls="product-punchline" aria-expanded="false">
+          <p>{% if punchline.author != blank %}{{ punchline.author }}{% else %}RAGHAV SOMANI{% endif %}</p>
+          <em>{% if punchline.role != blank %}{{ punchline.role }}{% else %}Founder & CEO{% endif %}</em>
+          {% render 'icon' with 'info' %}
+        </button>
+      </div>
+    </div>
+    <div>
+      <div class="employee-details">
+        <div class="employee-attribution">
+          <div class="employee-attribution-img">
+            <img loading="lazy" src="{% if punchline.img != blank %}{{ punchline.img }}{% else %}https://cdn.shopify.com/s/files/1/0153/8863/files/Raghav-03.png?v=1580556037{% endif %}" alt="{% if punchline.author != blank %}{{ punchline.author }}{% else %}RAGHAV SOMANI{% endif %}">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <navigation-drawer mobile-opening="bottom" class="navigation-drawer drawer pop-drawer" id="product-punchline" open-from="right">
+    <div class="panel-list__wrapper">
+      <div class="panel">
+        <div class="panel__wrapper">
+          <div class="panel__scroller v-stack gap-8">
+            <button is="close-button" aria-label="{{ 'general.accessibility.close' | t | escape }}">
+              <svg role="presentation" stroke-width="2" focusable="false" width="19" height="19" class="icon icon-close pop-icon" viewBox="0 0 24 24" >
+                <path d="M17.658 6.343 6.344 17.657M17.658 17.657 6.344 6.343" stroke="currentColor"></path>
+              </svg>
+            </button>
+            <h1>About {% if punchline.author != blank %}{{ punchline.author }}{% else %}RAGHAV SOMANI{% endif %}</h1>
+            <p>
+              {% if punchline.about_author != blank %}
+                {{ punchline.about_author }}
+              {% else %}
+                Raghav Somani is the Founder & CEO of Headphone Zone. An avid audiophile and musician since 2008, his choice of headphones include STAX Electrostats, Audeze LCD 3, and for music on the go, the JH Audio Roxanne + Astell&Kern SP1000 is never too far away. On his playlist, you'll find A.R. Rahman, Michael Jackson, and the Eagles.
+              {% endif %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </navigation-drawer>
+</div>
+{% endif %}

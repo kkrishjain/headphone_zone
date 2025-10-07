@@ -1,0 +1,1108 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "badges": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "vendor": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "63ddac27-6381-4fa5-88af-c83da4f7291e": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% if product.metafields.hpz.badge_rank.value != blank %}\n\n<div class=\"product-info__badge-list\">\n<span class=\"best-rank\">#{{ product.metafields.hpz.badge_rank.value }} BEST SELLER\n</span>\n<p style=\"color: #777;font-size: 0.9rem;display:flex;align-items: center;\">in</p>\n<a href=\"{{ product.metafields.hpz.badge_rank_collection_link.value }}\" style=\"text-decoration:underline;color:#777;display:flex;align-items: center;\"><p style=\"font-size: 0.9rem;color:#777777;display:flex;align-items: center;\">{{ product.metafields.hpz.badge_rank_collection_title.value }}</p></a>\n\n\n</div>\n{% endif %}\n<style>\n.best-rank{\ndisplay: inline-block;\n    box-sizing: border-box;\n    color: #444;\n    background-color: #FFDF97;\n    padding: 6px 10px;\n    font-size:0.7rem;\n    position: relative;\n    height: 25px;\n    border-radius: 90px 90px 90px 90px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 1px;\ndisplay:flex;\nalign-items: center;\n}\n\n.product-info__badge-list {\ngap: var(--spacing-2);\n    flex-wrap: wrap;\n    display: flex;\n}\n\n.product-info__liquid {\nmargin-block-start: 0.5rem;\n    margin-block-end: 0.5rem;\n}\n\n</style>"
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "98bf635b-197c-445a-b08f-a84f90b079c9": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "579635fa-203e-4e32-abad-91ede0a255e3": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "none",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "product_variations_HVbdkd": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "{{ product.metafields.hpz.variant_option_name.value }}",
+            "option_value_metafield": "hpz.variants_value",
+            "products": "{{ product.metafields.hpz.variant_products.value }}",
+            "selector_style": "block"
+          }
+        },
+        "3c8720c5-4762-48f6-9daa-be6239f73340": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{{ product.metafields.hpz.offer_message }}\n\n{%- render 'freebie' -%}\n\n{{ product.metafields.hpz.offer_message_sale }}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "b253fc0f-99f2-4bff-a2e6-585277f6538e": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% render 'below-buy-button.liquid'  %}"
+          }
+        },
+        "26c544be-f0bd-45b6-b9e2-bae47c526358": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": false,
+            "products_count": 10,
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "badges",
+        "vendor",
+        "title",
+        "63ddac27-6381-4fa5-88af-c83da4f7291e",
+        "separator",
+        "98bf635b-197c-445a-b08f-a84f90b079c9",
+        "price",
+        "579635fa-203e-4e32-abad-91ede0a255e3",
+        "variant_picker",
+        "product_variations_HVbdkd",
+        "3c8720c5-4762-48f6-9daa-be6239f73340",
+        "buy_buttons",
+        "b253fc0f-99f2-4bff-a2e6-585277f6538e",
+        "26c544be-f0bd-45b6-b9e2-bae47c526358"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_fixed_add_to_cart": false,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "hpz_new_snapshot_Nkxa3X": {
+      "type": "hpz-new-snapshot",
+      "settings": {}
+    },
+    "633495b5-31e2-4cab-ae29-9a8daffa695c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16043778801852__633495b5-31e2-4cab-ae29-9a8daffa695c-1685774050c5b18673-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Sony Presents The Crown Jewel Of Their Signature Series - The IER-Z1R",
+            "heading_tag": "h3",
+            "text_color": "#444444",
+            "gradient": ""
+          }
+        },
+        "template--16043778801852__633495b5-31e2-4cab-ae29-9a8daffa695c-1685774050c5b18673-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The Sony IER-Z1R earphones are meticulously engineered to deliver music that stirs deep emotions and captivates your senses. Every detail, no matter how small, is thoughtfully rendered to ensure you can perceive the most delicate nuances with remarkable accuracy. These IEMs are part of Sony's Signature Series, elevating the high-resolution audio experience to a level where you can truly immerse yourself in the music. Crafted in Japan, and known for top-notch quality and performance, the IER-Z1R embodies excellence in sound reproduction through the use of premium components and manufacturing techniques.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16043778801852__633495b5-31e2-4cab-ae29-9a8daffa695c-1685774050c5b18673-1",
+        "template--16043778801852__633495b5-31e2-4cab-ae29-9a8daffa695c-1685774050c5b18673-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#444444"
+      }
+    },
+    "6306d58e-94d6-4ff8-8d68-c88b8af2506e": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-Impact-New-Desktop-Banner-01.jpg",
+        "mobile_image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-Mobile-Impact-Banner-01.jpg",
+        "mobile_text_position": "place-self-start-end text-end",
+        "desktop_text_position": "sm:place-self-end sm:text-end",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 2
+      }
+    },
+    "media_grid_QyCHpe": {
+      "type": "media-grid",
+      "blocks": {
+        "video_dbPLdF": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/Headphone-Zone-Sony-IER-Z1R-Unboxing-Grid.mp4",
+            "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "show_video_controls": false,
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 3,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_ytVCnr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-Unboxing-Side-Image02.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 1,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_aWGdH7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-Unboxing-Side-Image01.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "video_dbPLdF",
+        "image_ytVCnr",
+        "image_aWGdH7"
+      ],
+      "settings": {
+        "full_width": false,
+        "reduce_width": true,
+        "desktop_row_height": 240,
+        "mobile_row_height": 200,
+        "background": "",
+        "background_gradient": ""
+      }
+    },
+    "29c29ea0-d976-4406-a831-a802d4faefcf": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16057663193276__29c29ea0-d976-4406-a831-a802d4faefcf-16880265366eede841-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Hybrid Driver Array Working In Unison To Present Pristine Audio",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--16057663193276__29c29ea0-d976-4406-a831-a802d4faefcf-16880265366eede841-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>The IER-Z1R headphones feature specially designed drivers that work together harmoniously. The 12mm dynamic driver offers deep bass and detailed mid-high sound, while the 5mm dynamic driver acts as a super tweeter for clean highs. The Balanced Armature driver ensures high-definition sound reproduction with precise details.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16057663193276__29c29ea0-d976-4406-a831-a802d4faefcf-16880265366eede841-1",
+        "template--16057663193276__29c29ea0-d976-4406-a831-a802d4faefcf-16880265366eede841-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#444444"
+      }
+    },
+    "5183af90-9438-4956-8c8c-fd382be1da29": {
+      "type": "hot-spots",
+      "blocks": {
+        "template--16057663193276__5183af90-9438-4956-8c8c-fd382be1da29-1688026608296185f3-0": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 32,
+            "vertical_position": 54,
+            "horizontal_position_mobile": 27,
+            "vertical_position_mobile": 50,
+            "icon_width": 32,
+            "title": "Zirconium Alloy Outer Housing",
+            "content": ""
+          }
+        },
+        "template--16057663193276__5183af90-9438-4956-8c8c-fd382be1da29-1688026608296185f3-1": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 47,
+            "vertical_position": 44,
+            "horizontal_position_mobile": 44,
+            "vertical_position_mobile": 45,
+            "icon_width": 32,
+            "title": "5mm Dynamic Driver As Super Tweeter",
+            "content": ""
+          }
+        },
+        "template--16057663193276__5183af90-9438-4956-8c8c-fd382be1da29-1688026608296185f3-2": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 50,
+            "vertical_position": 64,
+            "horizontal_position_mobile": 46,
+            "vertical_position_mobile": 55,
+            "icon_width": 32,
+            "title": "New Developed Balanced Armature Driver",
+            "content": ""
+          }
+        },
+        "93483389-17ea-4889-8aee-5fdcd85719ef": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 55,
+            "vertical_position": 31,
+            "horizontal_position_mobile": 53,
+            "vertical_position_mobile": 37,
+            "icon_width": 32,
+            "title": "Magnesium Inner Housing",
+            "content": ""
+          }
+        },
+        "f54bc394-e75b-48cb-8823-6bcf29af2dbf": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 66,
+            "vertical_position": 36,
+            "horizontal_position_mobile": 67,
+            "vertical_position_mobile": 42,
+            "icon_width": 32,
+            "title": "Magnsium Dome/Aluminium-Coated LCP Edge 12mm Dynamic Driver",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16057663193276__5183af90-9438-4956-8c8c-fd382be1da29-1688026608296185f3-0",
+        "template--16057663193276__5183af90-9438-4956-8c8c-fd382be1da29-1688026608296185f3-1",
+        "template--16057663193276__5183af90-9438-4956-8c8c-fd382be1da29-1688026608296185f3-2",
+        "93483389-17ea-4889-8aee-5fdcd85719ef",
+        "f54bc394-e75b-48cb-8823-6bcf29af2dbf"
+      ],
+      "settings": {
+        "full_width": false,
+        "image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-Hotspot.jpg",
+        "mobile_image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-Mobile-Hotspot.jpg",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#000000",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 90,
+        "hot_spot_content_blur_radius": 3
+      }
+    },
+    "2fc44790-bffa-490e-b83f-ae985acd60c1": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "19a3316f-4330-457b-a773-bf8221dcde3a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphne-Zone-Sony-IER-Z1R-Features-New-01.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Hear Your Music With Clarity With Frequency Response Upto 100kHz",
+            "content": "<p>The Sony IER-Z1R incorporates a specially developed super tweeter that utilises an aluminium-coated LCP diaphragm and an external magnetic circuit. This advanced design enables the super tweeter to deliver extended ultra-high frequencies with exceptional speed and accuracy, faithfully reproducing the dynamic nuances of music. </p>"
+          }
+        },
+        "a5b1af3e-a4cf-4f52-8a9b-e718a348b0cb": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-Feature-02.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "High-Quality Capacitors Help You Listen To Music, Not Distortion",
+            "content": "<p>Through extensive listening tests, a dedicated film capacitor is integrated into the network to refine and significantly reduce distortion. Additionally, audio-grade solder is employed throughout the system to maximise signal transparency, enhancing the overall audio quality.</p>"
+          }
+        },
+        "54ffa8b6-51ee-4788-b8a6-dd9ffeeb24e8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-New-Features-02.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Featuring Refined-Phase Structure And Sound Space Control",
+            "content": "<p>Ensuring precise time coherence among the three drivers is as crucial as achieving an extended frequency response. The Refined-phase structure meticulously aligns the sound waves by precisely adjusting the width and length of each path. Additionally, the magnesium-alloy construction eliminates vibrations and undesired resonances, resulting in impeccable clarity and vibrant sound reproduction across various musical genres. To achieve balanced sound from low to high frequencies, an acoustic tube connects to the cavity behind the driver unit, creating an expansive soundstage filled with rich and natural musical notes.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "19a3316f-4330-457b-a773-bf8221dcde3a",
+        "a5b1af3e-a4cf-4f52-8a9b-e718a348b0cb",
+        "54ffa8b6-51ee-4788-b8a6-dd9ffeeb24e8"
+      ],
+      "custom_css": [
+        ".h1 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "fade",
+        "image_position": "start",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "#444444",
+        "heading_gradient": ""
+      }
+    },
+    "c9ab1905-e112-475f-8301-349a6a5d68b4": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "8b5f2f8b-b38c-4884-a4b3-de5468f851c7": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-Feature-03.jpg",
+            "icon": "none",
+            "icon_width": 24,
+            "title": "Naturally Controlled Acoustics Fused With Perfectly Straight Layout",
+            "content": "<p>The expertise and intuition of Sony’s engineers play a crucial role in acoustic design, resulting in the most authentic sound reproduction. The meticulously calibrated Sony IER-Z1R acoustic structure seamlessly integrates the trio of driver units to operate as a unified and optimal driver. Positioned coaxially with the nozzle, the super tweeter precisely delivers high-frequency details, offering an exceptionally wide frequency response of up to 100kHz.</p>"
+          }
+        },
+        "94afb898-45dd-420a-9420-63ce279adb39": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-Feature-05.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Comes With Silver-Coated OFC Cable For Preserving Signal Purity",
+            "content": "<p>The Sony IER-Z1R includes a silver-coated oxygen-free copper wire, specifically engineered to minimise resistance and signal-transmission loss. This cable ensures minimal sound degradation, allowing for finer detail and smoother treble sounds. The attention to detail extends to the supplied cable, which optimises the performance of the IER-Z1R, providing superior sound quality, a comfortable wearing experience, and reduced touch noise, allowing you to immerse yourself in music wherever you go.</p>"
+          }
+        },
+        "e9357b43-096c-45fa-8ea8-49a8adcd8b96": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-Feature-06.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Personalise Your Listening Experience 360 Reality Audio And App",
+            "content": "<p>Enhance your music experience with 360 Reality Audio-certified headphones and the Sony | Headphones Connect app. By analysing your unique ear shape, you can optimise your listening experience and immerse yourself in the ultimate music journey.</p>"
+          }
+        },
+        "1ee1e3fc-88f4-4d88-972d-1efdcf064f6b": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-Feature-Impact-01.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Silk Insulator And Non-Magnetic Plating",
+            "content": "<p>The supplied cable features a silk braid design that effectively minimises touch noise and acts as a vibration insulator. It incorporates twisted pair wiring and a non-magnetic undercoat for gold-plated plugs, ensuring smooth and clean signal transmission with seamless transitions.</p>"
+          }
+        },
+        "18196fc4-1b92-4c9c-9021-3453a14419c5": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-Feature-08.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "3.5 Single Ended + 4.4mm Balanced Cable ",
+            "content": "<p>The Sony IER-Z1R is bundled with 3.5mm single-ended and 4.4mm balanced cables. The 4.4mm balanced connection cable ensures complete separation of the left and right sound signals, effectively minimising cross-talk and preventing any degradation in sound quality.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "8b5f2f8b-b38c-4884-a4b3-de5468f851c7",
+        "94afb898-45dd-420a-9420-63ce279adb39",
+        "e9357b43-096c-45fa-8ea8-49a8adcd8b96",
+        "1ee1e3fc-88f4-4d88-972d-1efdcf064f6b",
+        "18196fc4-1b92-4c9c-9021-3453a14419c5"
+      ],
+      "custom_css": [
+        ".h1 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "fade",
+        "image_position": "start",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "#444444",
+        "heading_gradient": ""
+      }
+    },
+    "b60954ba-c96f-4c11-83a6-5738f2fbf70e": {
+      "type": "video",
+      "blocks": {
+        "template--16043778801852__b60954ba-c96f-4c11-83a6-5738f2fbf70e-1685791604d0de613e-0": {
+          "type": "play",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--16043778801852__b60954ba-c96f-4c11-83a6-5738f2fbf70e-1685791604d0de613e-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https://www.youtube.com/watch?v=wWfYh3S5izQ&t=19s",
+        "poster": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-YT-Thumbnail.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 15
+      }
+    },
+    "11675a29-1a20-4017-b239-35a3a3d841ff": {
+      "type": "hot-spots",
+      "blocks": {
+        "d846ec91-8353-4dc6-a314-388de87bd26a": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 60,
+            "vertical_position": 60,
+            "horizontal_position_mobile": 61,
+            "vertical_position_mobile": 53,
+            "icon_width": 20,
+            "title": "3.5mm Single-Ended Headphone Cable",
+            "content": ""
+          }
+        },
+        "template--16016939548860__11675a29-1a20-4017-b239-35a3a3d841ff-168181184140c3a3fa-0": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 32,
+            "vertical_position": 60,
+            "horizontal_position_mobile": 26,
+            "vertical_position_mobile": 53,
+            "icon_width": 20,
+            "title": "4.4mm Balanced Headphone Cable",
+            "content": ""
+          }
+        },
+        "69624583-a1d0-4f55-9c34-f4da85ce88e3": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 20,
+            "vertical_position": 57,
+            "horizontal_position_mobile": 9,
+            "vertical_position_mobile": 53,
+            "icon_width": 20,
+            "title": "Cable holder",
+            "content": ""
+          }
+        },
+        "f5265d28-3296-4b22-99d1-a3b365d58f4b": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 70,
+            "vertical_position": 10,
+            "horizontal_position_mobile": 74,
+            "vertical_position_mobile": 30,
+            "icon_width": 20,
+            "title": "Earbuds",
+            "content": ""
+          }
+        },
+        "cf721c47-76a6-4f59-a536-cd17516436d7": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 20,
+            "vertical_position": 15,
+            "horizontal_position_mobile": 9,
+            "vertical_position_mobile": 32,
+            "icon_width": 32,
+            "title": "Carrying Case",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "d846ec91-8353-4dc6-a314-388de87bd26a",
+        "template--16016939548860__11675a29-1a20-4017-b239-35a3a3d841ff-168181184140c3a3fa-0",
+        "69624583-a1d0-4f55-9c34-f4da85ce88e3",
+        "f5265d28-3296-4b22-99d1-a3b365d58f4b",
+        "cf721c47-76a6-4f59-a536-cd17516436d7"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-Hotspot-02.jpg",
+        "mobile_image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-Mobile-Hotspot-02.jpg",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "#ffffff",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#444444",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#444444",
+        "hot_spot_content_opacity": 100,
+        "hot_spot_content_blur_radius": 3
+      }
+    },
+    "7d58f5aa-475e-4209-9132-8f9232125bd4": {
+      "type": "shop-the-look",
+      "blocks": {
+        "template--16048829137084__7d58f5aa-475e-4209-9132-8f9232125bd4-16866498583963f4f4-0": {
+          "type": "product",
+          "settings": {
+            "product": "astell-kern-ak-xb10",
+            "horizontal_position": 53,
+            "vertical_position": 73
+          }
+        },
+        "template--16048829137084__7d58f5aa-475e-4209-9132-8f9232125bd4-16866498583963f4f4-1": {
+          "type": "product",
+          "settings": {
+            "product": "tripowin-zonie-0-78mm-2pin",
+            "horizontal_position": 32,
+            "vertical_position": 52
+          }
+        }
+      },
+      "block_order": [
+        "template--16048829137084__7d58f5aa-475e-4209-9132-8f9232125bd4-16866498583963f4f4-0",
+        "template--16048829137084__7d58f5aa-475e-4209-9132-8f9232125bd4-16866498583963f4f4-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".h2 {font-size: 2rem !important;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_mobile": false,
+        "image": "shopify://shop_images/Headphone-Zone-Sony-IER-Z1R-FBT.jpg",
+        "title": "Frequently Bought Together",
+        "content": "",
+        "background": "#f1f1f1",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "#444444",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": "",
+        "product_card_mobile_background": "",
+        "product_card_mobile_text_color": "",
+        "background_dots": "#ffffff"
+      }
+    },
+    "91359a6c-9bc7-4b8a-bb9e-ba49a4a761a4": {
+      "type": "youtube-reviews",
+      "settings": {}
+    },
+    "da63785d-8a54-4c5e-8646-246d73467a96": {
+      "type": "press",
+      "blocks": {
+        "template--15998494605500__da63785d-8a54-4c5e-8646-246d73467a96-168076476763097c40-0": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Headfonics-Media-Review-Logo-2020.svg",
+            "logo_width": 165,
+            "author": "",
+            "content": "The IER-Z1R is indeed a welcome addition to their One Sound Signature Series due to its exemplary sound on top of its elegant design and build.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "cbe7e9c7-8ac3-4e37-ad9f-ff062b57c586": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Major-HiFi-Media-Review-Logo-2020.svg",
+            "logo_width": 165,
+            "author": "",
+            "content": "This is one of the more engaging bass responses you’re going to get in an IEM, and it makes it a must-buy solely for that reason alone. Almost everything about its sound signature is incredibly pleasant.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "537aae86-dd30-462d-8569-cb5f6bc51ec5": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Head-Fi-Media-Review-Logo-2020.svg",
+            "logo_width": 165,
+            "author": "",
+            "content": "The Sony IER-Z1R. If someone wants the best bass available in an IEM, they should definitely try the IER-Z1R. It’s an unabashedly fun, colored tuning that works well across various genres.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "775609c2-1ddb-48ed-a193-10f1d2b488f8": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Audio-Reviews-Media-review.svg",
+            "logo_width": 165,
+            "author": "",
+            "content": "If you can get a fit, and if you love bass — the Sony IER-Z1R is a no-brainer really. Build and accessory pack, Sparkly-yet-smooth treble, Engulfing soundstage.",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "template--15998494605500__da63785d-8a54-4c5e-8646-246d73467a96-168076476763097c40-1": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/Headphones-com-new-media-review-logo-2022-01.svg",
+            "logo_width": 165,
+            "author": "",
+            "content": "if you’re looking for an IEM that takes top marks in the categories of bass, treble, and imaging - when most flagships can’t even claim one of these - then this just might be the IEM for you. ",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "template--15998494605500__da63785d-8a54-4c5e-8646-246d73467a96-168076476763097c40-0",
+        "cbe7e9c7-8ac3-4e37-ad9f-ff062b57c586",
+        "537aae86-dd30-462d-8569-cb5f6bc51ec5",
+        "775609c2-1ddb-48ed-a193-10f1d2b488f8",
+        "template--15998494605500__da63785d-8a54-4c5e-8646-246d73467a96-168076476763097c40-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "content_size": "medium",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "da8415cd-1b26-4738-8b5b-48e3e9053fb1": {
+      "type": "headphone-zone-feature-chart",
+      "blocks": {
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-0": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Driver Unit",
+            "heading_2": "Impedance",
+            "heading_3": "Wired Connectivity",
+            "heading_4": "Sensitivity",
+            "heading_5": "Frequency Response",
+            "heading_6": "Headphone Type",
+            "heading_7": "Cord Type",
+            "heading_8": "Cord Length",
+            "heading_9": "Plug",
+            "heading_10": "Weight",
+            "heading_11": "Box Contents",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-1": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>Hybrid, 2DD + 1 BA Drivers\n</p>",
+            "value_2": "<p>40ohms (1kHz)\n\n\n</p>",
+            "value_3": "<p>3.5mm Single-Ended <br> 4.4mm balanced \n</p>",
+            "value_4": "<p>103dB / mW\n\n\n</p>",
+            "value_5": "<p>3Hz-100,000Hz\n\n\n</p>",
+            "value_6": "<p>Closed, Hybrid\n\n\n\n\n</p>",
+            "value_7": "<p>Detachable Y type\n\n\n\n</p>",
+            "value_8": "<p>Approx. 1.2 m (48 in) , silver-coated OFC strands\n\n\n\n</p>",
+            "value_9": "<p>L-shaped non-magnetic gold-plated stereo mini plug / L-shaped non-magnetic gold-plated balanced standard plug\n\n\n</p>",
+            "value_10": "<p>Approx. 26 g without cable\n\n\n\n</p>",
+            "value_11": "<p>1. Sony IER-Z1R<br>2. Cable holder<br>3. Headphone cable (approx. 1.2 m (47 1 / 4 in) ) <br>4.  Balanced-connection headphone cable (approx. 1.2 m (47 1 / 4 in) )<br>5. Hybrid earbuds (SS / S / MS / M / ML / L / LL)<br>6. Triple Comfort Earbuds (SS / S / MS / M / ML / L)<br>7. Clip\n<br>8. Carrying Case<br>9. Cleaning Cloth\n\n\n\n\n\n\n\n</p>",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-0",
+        "template--16031262376124__da8415cd-1b26-4738-8b5b-48e3e9053fb1-16838814001bcb6935-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "<img src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Sony-IER-Z1R-Graph.png?v=1688039351\">",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "viewing_product": "",
+        "show_product_swatch": true,
+        "background": "#f1f1f1",
+        "background_gradient": "",
+        "text_color": "#444444",
+        "heading_color": "#444444",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "37c57503-e38d-4849-a9d2-b0b255a872e6": {
+      "type": "headphone-zone-warranty",
+      "disabled": true,
+      "settings": {
+        "period": "",
+        "url": "",
+        "exceptions": ""
+      }
+    },
+    "about_us_brand_qiUCVH": {
+      "type": "about-us-brand",
+      "blocks": {
+        "image_eGeyQL": {
+          "type": "image",
+          "source": "{{ product.metafields.hpz.about_brand_on_product_page.value }}",
+          "settings": {
+            "image": "{{ product.metafields.hpz.about_brand_on_product_page.value.image.value }}",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "custom_icon": "{{ product.metafields.hpz.about_brand_on_product_page.value.logo.value }}",
+            "icon_width": 120,
+            "subheading": "",
+            "title": "{{ product.metafields.hpz.about_brand_on_product_page.value.heading.value }}",
+            "content": "{{ product.metafields.hpz.about_brand_on_product_page.value.about | metafield_tag }}",
+            "link_text": "{{ product.metafields.hpz.about_brand_on_product_page.value.button_text.value }}",
+            "link_url": "{{ product.metafields.hpz.about_brand_on_product_page.value.button_link.value }}",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#444444",
+            "text_gradient": "",
+            "button_background": "#444444",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_eGeyQL"
+      ],
+      "custom_css": [
+        ".h2 {font-size: 1.8rem;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "0bd8fd08-fbd0-41c1-9ba6-0405e0d44515": {
+      "type": "headphonezone-faq",
+      "blocks": {
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-0": {
+          "type": "item",
+          "settings": {
+            "title": "What is the driver configuration like?",
+            "content": "<p>The Sony IER-Z1R hosts two dynamic driver + onebalanced armature drivers hybrid structure.\n</p>"
+          }
+        },
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-1": {
+          "type": "item",
+          "settings": {
+            "title": "How do these sound?",
+            "content": "<p>The Sony IER-Z1R has a Balanced sound signature presenting a precise sound and an enriching listening experience, where sounds are naturally presented without extreme emphasis on any region.\n</p>"
+          }
+        },
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-2": {
+          "type": "item",
+          "settings": {
+            "title": "What are the terminations like?",
+            "content": "<p>The IER-Z1R comes with two cables, 3.5mm (Single-Ended) and 4.4mm (Balanced) for easy connectivity and compatibility with most sources.\n</p>"
+          }
+        },
+        "b0f9de61-dc30-4287-b3e1-a6b45661fb3a": {
+          "type": "item",
+          "settings": {
+            "title": "Do these come with a microphone?",
+            "content": "<p>Nope! It does not come with a microphone.</p>"
+          }
+        },
+        "c794b682-0e8a-431d-ac06-16a631b60b33": {
+          "type": "item",
+          "settings": {
+            "title": "What is the material of the cable like?",
+            "content": "<p>Sony have included a high-grade silver-coated OFC strands cable with the IER-Z1R.\n</p>"
+          }
+        },
+        "b1d83b4d-c0e8-499a-b350-29b89955c799": {
+          "type": "item",
+          "settings": {
+            "title": "Does it come with a detachable cable?",
+            "content": "<p>Yes, it does come with detachable cables.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-0",
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-1",
+        "template--16031262376124__0bd8fd08-fbd0-41c1-9ba6-0405e0d44515-168388321597b29a9d-2",
+        "b0f9de61-dc30-4287-b3e1-a6b45661fb3a",
+        "c794b682-0e8a-431d-ac06-16a631b60b33",
+        "b1d83b4d-c0e8-499a-b350-29b89955c799"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Have a question? Get in touch!",
+        "content": "<p>Check out the most common questions our customers ask. Still have questions? Talk to our Headphone Gurus.</p>",
+        "team_avatar": "shopify://shop_images/customer_support.png",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 11am-6pm.",
+        "answer_time": "Average answer time: 2-3 Hours",
+        "button_text": "TALK TO A GURU",
+        "button_url": "shopify://pages/talk-to-a-headphone-guru",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "manual_details_product_page_LzWJDd": {
+      "type": "Manual-details-product-page",
+      "settings": {}
+    },
+    "00afaa75-cf6d-4bf1-b962-d696372e67aa": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 6,
+        "products": [
+          "effect-audio-cadmus-iem-upgrade-cable",
+          "headphone-zone-double-flange-silicone-eartips",
+          "headphone-zone-two-tone-silicone-eartips",
+          "ddhifi-tc44a-lightning-4-4mm-miniaturization-adapter-for-iphone",
+          "ifi-audio-itraveller",
+          "ddhifi-c10a-magnetic-cable-clip"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "Recommended Accessories",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "167525932377cb380e": {
+      "type": "apps",
+      "blocks": {
+        "08b03131-bf1b-4945-a40d-a881a32d292b": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "08b03131-bf1b-4945-a40d-a881a32d292b"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "recommendations_count": 10,
+        "products": [
+          "64-audio-u12t-2025",
+          "noble-audio-kublai-khan",
+          "campfire-audio-solaris-stellar-horizon",
+          "64-audio-u18t"
+        ],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hpz_new_snapshot_Nkxa3X",
+    "633495b5-31e2-4cab-ae29-9a8daffa695c",
+    "6306d58e-94d6-4ff8-8d68-c88b8af2506e",
+    "media_grid_QyCHpe",
+    "29c29ea0-d976-4406-a831-a802d4faefcf",
+    "5183af90-9438-4956-8c8c-fd382be1da29",
+    "2fc44790-bffa-490e-b83f-ae985acd60c1",
+    "c9ab1905-e112-475f-8301-349a6a5d68b4",
+    "b60954ba-c96f-4c11-83a6-5738f2fbf70e",
+    "11675a29-1a20-4017-b239-35a3a3d841ff",
+    "7d58f5aa-475e-4209-9132-8f9232125bd4",
+    "91359a6c-9bc7-4b8a-bb9e-ba49a4a761a4",
+    "da63785d-8a54-4c5e-8646-246d73467a96",
+    "da8415cd-1b26-4738-8b5b-48e3e9053fb1",
+    "37c57503-e38d-4849-a9d2-b0b255a872e6",
+    "about_us_brand_qiUCVH",
+    "0bd8fd08-fbd0-41c1-9ba6-0405e0d44515",
+    "manual_details_product_page_LzWJDd",
+    "00afaa75-cf6d-4bf1-b962-d696372e67aa",
+    "167525932377cb380e",
+    "product-recommendations"
+  ]
+}

@@ -1,0 +1,19 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+PRODUCT VENDOR
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used to generate a vendor link, by checking the existence of a vendor collection, and fallback
+to the automatic one if none is found
+
+********************************************
+Supported variables
+********************************************
+
+* vendor: the vendor to use
+* class: class to add to the vendor (by default the vendor is always subdued)
+{%- endcomment -%}
+
+{%- if vendor != blank -%}
+  <a href="{{ shop.url }}/collections/{{ product.vendor | handleize}}" class="{{ class }} link-faded">{{- vendor -}}</a>
+{%- endif -%}

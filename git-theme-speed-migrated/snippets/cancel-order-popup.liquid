@@ -1,0 +1,112 @@
+{% comment %}
+  <!--   We have removed this CSS file from the theme and added all the css of this file in flits_custom_snippet.liquid -->
+  {{ 'bootstrapModal.min.css' | asset_url | stylesheet_tag }}
+{% endcomment %}
+
+<style>
+  <!--   We have moved CSS from here to flits_custom_snippet.liquid -->
+</style>
+
+<script>
+  // We have moved javascript code from here to file "flits_custom.js"  Search Cancel-order-popup in that js. - By Flits Team.
+</script>
+
+<!-- The Modal -->
+<!-- <div class="modal modal-backdrop" id="cancelOrderModal" data-keyboard="false" tabindex="-1" data-backdrop="static"> -->
+
+<modal-content id="cancelOrderModal" class="modal modal-backdrop flits-modal-content" data-keyboard="false" tabindex="-1" data-backdrop="static" style="display:none">
+  <div class="modal-dialog">
+    <div class="modal__content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+
+        <button type="button" class="modal__close-button" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+          {%- render 'icon' with 'close' -%}
+        </button>
+        <h4 class="modal-title">Why do you want to cancel?</h4>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body" style="overflow:hidden">
+        <select required="required" class="cancelOrderReason">
+          <option value="I would like to choose another product" selected="selected">
+            I would like to choose another product
+          </option>
+          <option value="I don't want this product any more">I don't want this product any more</option>
+          <option value="I want to change the variant (For ex: Black to Blue)">
+            I want to change the variant (For ex: Black to Blue)
+          </option>
+          <option value="Order would not arrive on time">Order would not arrive on time</option>
+          <option value="Product price too high">Product price too high</option>
+          <option value="Need to change payment method">Need to change payment method</option>
+          <option value="Need to change shipping address">Need to change shipping address</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button onclick="cancelOrderReasonWithCalling(event);" id="cancelOrderFinalBtn" type="button" class="btn" data-action="close" style="color:white">
+          Cancel Order
+        </button>
+        <button type="button" class="btn" data-action="close" style="color:white">Don't Cancel</button>
+      </div>
+    </div>
+  </div>
+</modal-content>
+<!-- </div> -->
+
+<!-- The Modal -->
+<modal-content class="modal modal-backdrop flits-modal-content" id="dummyModal" data-keyboard="false" tabindex="-1" data-backdrop="static" style="display:none">
+  <div class="modal__overlay"></div>
+  <div class="modal-dialog">
+    <div class="modal__content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <span>&nbsp;</span>
+        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+        <button type="button" class="modal__close-button" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+          {%- render 'icon' with 'close' -%}
+        </button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body" style="overflow:hidden; text-align: center;">
+        <p>
+          In order to cancel your order please wait up for <br>
+          <b id="time"></b> <br>
+          so that our system can catch up with you.
+        </p>
+      </div>
+    </div>
+  </div>
+</modal-content>
+
+<!-- //modal start here -->
+<modal-content class="modal modal-backdrop flits-modal-content" id="formModal" style="display:none">
+  <div class="modal__overlay"></div>
+  <div class="modal__content"></div>
+</modal-content>
+
+<modal-content class="modal modal-backdrop flits-modal-content" id="successModal" style="display:none">
+  <div class="modal-dialog">
+    <div class="modal__content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        &nbsp;
+        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+        <button type="button" class="modal__close-button" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+          {%- render 'icon' with 'close' -%}
+        </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body" style=" overflow:hidden; text-align: center;font-size: 16px; padding-top: 24px;">
+        <p class="response_text"></p>
+      </div>
+    </div>
+  </div>
+</modal-content>
+<script>
+  // We have moved javascript code from here to file "flits_custom.js"  Search Cancel-order-popup in that js. - By Flits Team.
+</script>

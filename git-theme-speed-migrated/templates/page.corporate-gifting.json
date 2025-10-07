@@ -1,0 +1,205 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "f2da703b-f92a-483e-bc5e-8ecb4e01812f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15989809971388__f2da703b-f92a-483e-bc5e-8ecb4e01812f-1678091809f4b559a2-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Why Do Headphones Make For The Perfect Gift?",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--15989809971388__f2da703b-f92a-483e-bc5e-8ecb4e01812f-1678091809f4b559a2-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h3></h3><p>There's no better gift than a gift of great sound and headphones are the gift that will keep on giving.</p><p> Who doesn't love listening to music? for those long work calls, video conferences, afterwork virtual parties and a lot more: What good is a gift if it is not personal, doesn't add utility or doesn't feel good? Used for commuting, work or leisure, headphones are a dynamic product complementing every lifestyle.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15989809971388__f2da703b-f92a-483e-bc5e-8ecb4e01812f-1678091809f4b559a2-1",
+        "template--15989809971388__f2da703b-f92a-483e-bc5e-8ecb4e01812f-1678091809f4b559a2-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "15c72a72-3d9c-4778-a607-4af6e44c9460": {
+      "type": "multi-column",
+      "blocks": {
+        "template--15989809971388__15c72a72-3d9c-4778-a607-4af6e44c9460-1678097462680dd09a-0": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Employees",
+            "heading_tag": "h4",
+            "content": "<p>Increases work productivity as well as focus, boosts confidence & morale & eases the flow of communication.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--15989809971388__15c72a72-3d9c-4778-a607-4af6e44c9460-1678097462680dd09a-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Managers",
+            "heading_tag": "h4",
+            "content": "<p>Strikes a bond, breaks the ice while creating healthy work culture, and eases any work strains.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--15989809971388__15c72a72-3d9c-4778-a607-4af6e44c9460-1678097462680dd09a-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Clients/Customers",
+            "heading_tag": "h4",
+            "content": "<p>Builds and strengthens business relationships, displays appreciation, creates social media buzz & increases brand value.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--15989809971388__15c72a72-3d9c-4778-a607-4af6e44c9460-1678097462680dd09a-0",
+        "template--15989809971388__15c72a72-3d9c-4778-a607-4af6e44c9460-1678097462680dd09a-1",
+        "template--15989809971388__15c72a72-3d9c-4778-a607-4af6e44c9460-1678097462680dd09a-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "small",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "<p><strong>Here's How Headphones For Corporate Gifts Work For Each Type Of Entity In The Corporate Ecosystem:</strong></p>",
+        "background": "#f4f4f4",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "0136efb3-9fcb-4c15-af21-7e1b3c8fc62a": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--15989809971388__0136efb3-9fcb-4c15-af21-7e1b3c8fc62a-1678096350caa0151d-0": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Headphone-Zone-Value-For-Money-New.svg",
+            "mobile_icon_width": 100,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "rgba(0,0,0,0)",
+            "icon_color": "",
+            "title": "Value For Money",
+            "content": "<p>Based on your specific requirements, we offer the best options available from India's largest range of headphones. You can be rest assured that you're getting the best value for your money.</p>"
+          }
+        },
+        "template--15989809971388__0136efb3-9fcb-4c15-af21-7e1b3c8fc62a-1678096350caa0151d-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Headphone-Zone-Tons-Of-Option-New.svg",
+            "mobile_icon_width": 100,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Tons Of Options",
+            "content": "<p>Some of our range allows for personalization on the headphones themselves. Besides this, we have an extensive range of complementing accessories to complete the gifting experience.</p>"
+          }
+        },
+        "template--15989809971388__0136efb3-9fcb-4c15-af21-7e1b3c8fc62a-1678096350caa0151d-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/Headphone-Zone-Express-Shipping-New.svg",
+            "mobile_icon_width": 100,
+            "icon_width": 120,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Express Shipping",
+            "content": "<p>Post consultation, in-stock items will be ready to ship quickly and we offer express shipping to any location in the country.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15989809971388__0136efb3-9fcb-4c15-af21-7e1b3c8fc62a-1678096350caa0151d-0",
+        "template--15989809971388__0136efb3-9fcb-4c15-af21-7e1b3c8fc62a-1678096350caa0151d-1",
+        "template--15989809971388__0136efb3-9fcb-4c15-af21-7e1b3c8fc62a-1678096350caa0151d-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "Why Headphone Zone For Your Corporate Gifts?",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "65afefd9-d961-4735-a826-5b0340554267": {
+      "type": "custom-html",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<h3 class=\"heading h2\" style=\"font-size: 28px;text-align:center;\">OUR PARTNER BRANDS\n</h3>\n\n<br> <br> <br>\n<div class=\"Partner-Brands\">\n<a href=\"https://www.headphonezone.in/collections/1custom\"> <img alt=\"1Custom\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand-Logo_1CUSTOM.svg?v=1635331379\"> </a> <a href=\"https://www.headphonezone.in/collections/64-audio\"> <img alt=\"64audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/64-audio-brand-logo-01.svg?v=1651151571\"> </a> <a href=\"https://www.headphonezone.in/collections/abyss\"> <img alt=\"Abyss\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Abyss-brand-logo.svg?v=1620110167\"> </a> <a href=\"https://www.headphonezone.in/collections/alo-audio\"> <img alt=\"ALO Audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/ALO-Audio-Brand-Logo.svg?v=1613547082\"> </a> <a href=\"https://www.headphonezone.in/collections/altiat\"> <img alt=\"Altiat\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Altiat-Brand-Logo-New.svg?v=1661261309\"> </a> <a href=\"https://www.headphonezone.in/collections/astell-kern\"> <img alt=\"Astell&amp;Kern\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Astell_Kern-Logo-2020.svg?v=1587027274\"> </a> <a href=\"https://www.headphonezone.in/collections/audeze\"> <img alt=\"audeze\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Audeze-Logo-2020.svg?v=1587027274\"> </a> <a href=\"https://www.headphonezone.in/collections/audio-technica\"> <img alt=\"audiotechnica\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Audio-technica-Logo-2020.svg?v=1587027274\"> </a> <a href=\"https://www.headphonezone.in/collections/audioquest\"> <img alt=\"Audio-quest\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Audio-quest-Logo-2020.svg?v=1587027274\"> </a> <a href=\"https://www.headphonezone.in/collections/aune-audio\"> <img alt=\"Aune-Audio-Brands-logo\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Aune-Logo-2020.svg?v=1587027274\"> </a> <a href=\"https://www.headphonezone.in/collections/beyerdynamic-headphones\"> <img alt=\"beyerdynamic\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Beyerdynamic-Logo-2020.svg?v=1587027274\"> </a> <a href=\"https://www.headphonezone.in/collections/blon\"> <img alt=\"blon\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Blon-Logo-2020-new.svg?v=1614290165\"> </a> <a href=\"https://www.headphonezone.in/collections/bowers-wilkins-headphones-and-earphones\"> <img alt=\"Bowers&amp;Wilkins\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Bowers_Wilkins-Logo-2020.svg?v=1587027274\"> </a> <a href=\"https://www.headphonezone.in/collections/burson-audio\"> <img alt=\"Burson Audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Burson-Audio-Brand-Logo-01.svg?v=1649685392\"> </a> <a href=\"https://www.headphonezone.in/collections/campfire-audio\"> <img alt=\"Campfire-audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Campfire-Audio-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/cayin\"> <img alt=\"Cayin\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Cayin-Logo-2020.svg?v=1587027274\"> </a> <a href=\"https://www.headphonezone.in/collections/cca\"> <img alt=\"CCA\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand-Logo-CCA_0cef708f-835d-4592-a588-c11b9df0d113.svg?v=1637587246\"> </a> <a href=\"https://www.headphonezone.in/collections/chord-electronics-ltd\"> <img alt=\"chord\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Chord-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/comply\"> <img alt=\"comply\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Comply-Logo-2020.svg?v=1585651039\"> </a> <a href=\"https://www.headphonezone.in/collections/dan-clark-audio\"> <img alt=\"dan-clark-audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand-Logos-Dan-Clark-Audio.svg?v=1593171355\"> </a> <a href=\"https://www.headphonezone.in/collections/darkvoice\"> <img alt=\"DarkVoice\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Darkvoice-Brand-Logo-01.svg?v=1631083991\"> </a> <a href=\"https://www.headphonezone.in/collections/ddhifi\"> <img alt=\"ddhifi\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand_Logos-17-dd-HiFi.svg?v=1587118539\"> </a> <a href=\"https://www.headphonezone.in/collections/dekoni-audio\"> <img alt=\"dekoni-audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Dekoni-Brand-Logo-01.svg?v=1631606427\"> </a> <a href=\"https://www.headphonezone.in/collections/denafrips\"> <img alt=\"Denafrips\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/denafrips-Brand-Logo.svg?v=1626948352\"> </a> <a href=\"https://www.headphonezone.in/collections/earmen\"> <img alt=\"Earmen\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/earman-brand-logo.svg?v=1595398693\"> </a> <a href=\"https://www.headphonezone.in/collections/effect-audio\"> <img alt=\"Effect Audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand_Logos-21-Effect-Audio.svg?v=1587118539\"> </a> <a href=\"https://www.headphonezone.in/collections/epos\"> <img alt=\"EPOS\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand-Logo_EPOS.svg?v=1637051309\"> </a> <a href=\"https://www.headphonezone.in/collections/etymotic-research\"> <img alt=\"etymotic\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Etymotic-Logo-2020-01.svg?v=1593526283\"> </a> <a href=\"https://www.headphonezone.in/collections/fiio\"> <img alt=\"fiio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Fiio-Brand-Logo-2021.svg?v=1621688341\"> </a> <a href=\"https://www.headphonezone.in/collections/final-audio\"> <img alt=\"final audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Final-Audio-Brand-Logo-01.svg?v=1633671838\"> </a> <a href=\"https://www.headphonezone.in/collections/focal\"> <img alt=\"Focal\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Focal-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/grado\"> <img alt=\"Grado\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Grado-Brand-Logo-2022-1.svg?v=1648206157\"> </a> <a href=\"https://www.headphonezone.in/collections/gustard\"> <img alt=\"Gustard\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Gustard-Brand-Logo-2021.svg?v=1626760877\"> </a> <a href=\"https://www.headphonezone.in/collections/hedd\"> <img alt=\"HEDD\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/HEDDaudio-Logo-2020.svg?v=1595840576\"> </a> <a href=\"https://www.headphonezone.in/collections/hiby\"> <img alt=\"HiBy\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand_Logos-25-HiBy.svg?v=1614287892\"> </a> <a href=\"https://www.headphonezone.in/collections/hidizs\"> <img alt=\"Hidizs\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand-Logo_HIDIZS.svg?v=1635331379\"> </a> <a href=\"https://www.headphonezone.in/collections/hifiman\"> <img alt=\"HiFi-MAN\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Hifiman-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/ibasso\"> <img alt=\"iBasso\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand_Logos-28-iBasso.svg?v=1587118539\"> </a> <a href=\"https://www.headphonezone.in/collections/ifi-audio\"> <img alt=\"iFi Audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/iFi-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/ikko\"> <img alt=\"IKKO\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/IKKO-brand-logo.svg?v=1620108376\"> </a> <a href=\"https://www.headphonezone.in/collections/jabra\"> <img alt=\"Jabra\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Jabra-Logo-2020-1.svg?v=1589521217\"> </a> <a href=\"https://www.headphonezone.in/collections/jhaudio-earphones\"> <img alt=\"jh-audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/JH-Audio-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/jvc\"> <img alt=\"JVC\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/JVC-brand-logo-1.svg?v=1615988262\"> </a> <a href=\"https://www.headphonezone.in/collections/klipsch\"> <img alt=\"Klipsch\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Klipsch-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/kz-acoustics\"> <img alt=\"Kz\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand_Logos-36-KZ.svg?v=1614287892\"> </a> <a href=\"https://www.headphonezone.in/collections/letshuoer\"> <img alt=\"Letshouer\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Letshouer-Logo-Homepage.svg?v=1671258629\"> </a> <a href=\"https://www.headphonezone.in/collections/little-dot\"> <img alt=\"Little Dot\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Little_Dot_logo.svg?v=1646218477\"> </a> <a href=\"https://www.headphonezone.in/collections/lotoo\"> <img alt=\"Lotoo\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Lotoo-Brand-Logo-01.svg\"> </a> <a href=\"https://www.headphonezone.in/collections/lypertek\"> <img alt=\"Lypertek\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand_Logos-37-LYPERTEK.svg?v=1587118539\"> </a> <a href=\"https://www.headphonezone.in/collections/marshall-speakers-headphones\"> <img alt=\"Marshall\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Marshall-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/matrix-audio\"> <img alt=\"Matrix Audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Matrix_Audio_Brand_Logo.svg?v=1603795984\"> </a> <a href=\"https://www.headphonezone.in/collections/mee-audio\"> <img alt=\"mee-audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand_Logos-41-MEE-Audio.svg?v=1587118539\"> </a> <a href=\"https://www.headphonezone.in/collections/meze-audio\"> <img alt=\"meze\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Meze-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/moondrop\"> <img alt=\"moondrop\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Moondrop-Brand-Logos.svg?v=1615958122\"> </a> <a href=\"https://www.headphonezone.in/collections/monoprice\"> <img alt=\"monoprice\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Monoprice-Brand-Logo-01.svg?v=1649922169\"> </a> <a href=\"https://www.headphonezone.in/collections/noble-audio\"> <img alt=\"Noble Audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Noble-Audio-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/obravo\"> <img alt=\"oBravo\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand_Logos-44-oBravo.svg?v=1587118539\"> </a> <a href=\"https://www.headphonezone.in/collections/oriveti\"> <img alt=\"ORIVETI\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/ORIVETI-Brand-Logo-2022.svg?v=1668498359\"> </a> <a href=\"https://www.headphonezone.in/collections/raal-requisite\"> <img alt=\"raal-requisite\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand-Logo-Raal-requisite.svg?v=1636950493\"> </a> <a href=\"https://www.headphonezone.in/collections/razer-gaming-headphones\"> <img alt=\"Razer\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Razor-Brand-Logo-New.svg?v=1594893062\"> </a> <a href=\"https://www.headphonezone.in/collections/rme\"> <img alt=\"RME\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/RME-Logo-2021.svg?v=1621576295\"> </a> <a href=\"https://www.headphonezone.in/collections/schiit\"> <img alt=\"Schiit\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Schiit-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/sennheiser\"> <img alt=\"Sennheiser\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Sennheiser-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/shanling\"> <img alt=\"Shanling\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand_Logos-52-Shanling.svg?v=1587118539\"> </a> <a href=\"https://www.headphonezone.in/collections/shokz\"> <img alt=\"Shokz\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Shokz-brand-logo.svg?v=1670225901\"> </a> <a href=\"https://www.headphonezone.in/collections/shure\"> <img alt=\"Shure\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Shure-brand-logo-1.svg?v=1615988699\"> </a> <a href=\"https://www.headphonezone.in/collections/singxer\"> <img alt=\"Singxer\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand-Logo_Singxer.svg?v=1629445626\"> </a> <a href=\"https://www.headphonezone.in/collections/s-m-s-l\"> <img alt=\"S.M.S.L\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/smsl-Brand-Logo.svg?v=1626944475\"> </a> <a href=\"https://www.headphonezone.in/collections/sonos\"> <img alt=\"Sonos\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Sonos-Brand-Logo-01.svg?v=1641199724\"> </a> <a href=\"https://www.headphonezone.in/collections/sony-headphones\"> <img alt=\"Sony\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Sony-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/soundmagic-earphones\"> <img alt=\"SoundMAGIC\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/SoundMAGIC-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/spinfit\"> <img alt=\"spinfit\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand_Logos-57-SpinFit.svg?v=1587118539\"> </a> <a href=\"https://www.headphonezone.in/collections/stax\"> <img alt=\"STAX\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/STAX-Logo-2020.svg?v=1587027275\"> </a> <a href=\"https://www.headphonezone.in/collections/tanchjim\"> <img alt=\"Tanchjim\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand-Logo_Tanjim-Company.svg?v=1629445626\"> </a> <a href=\"https://www.headphonezone.in/collections/tempotec\"> <img alt=\"TempoTec\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Temotec-Brand-Logo-01.svg?v=1629271708\"> </a> <a href=\"https://www.headphonezone.in/collections/thieaudio\"> <img alt=\"Thieaudio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Thie-Audio-brand-logo-1.svg?v=1615988699\"> </a> <a href=\"https://www.headphonezone.in/collections/topping\"> <img alt=\"Topping\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Topping-Audio-Brand-Logo.svg?v=1614290760\"> </a> <a href=\"https://www.headphonezone.in/collections/tripowin\"> <img alt=\"Tripowin\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/TRIPOWIN-brand-logo-1.svg?v=1615988699\"> </a> <a href=\"https://www.headphonezone.in/collections/truthear\"> <img alt=\"Truthear\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Truthear-Brand-Logo-Homepage.svg?v=1675841368\"> </a> <a href=\"https://www.headphonezone.in/collections/unique-melody\"> <img alt=\"Unique Melody\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand-Logo-Uniuqe-Melody-01.svg?v=1630416310\"> </a> <a href=\"https://www.headphonezone.in/collections/venture-electronics\"> <img alt=\"Venture Electronics\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Venture-Electronics-Brand-Logo.svg?v=1627631237\"> </a> <a href=\"https://www.headphonezone.in/collections/violectric\"> <img alt=\"Violectric\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand-Logos-Violectric.svg?v=1592996939\"> </a> <a href=\"https://www.headphonezone.in/collections/vision-ears\"> <img alt=\"Vision Ears\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Brand-Logos-Vision-Ears-New.svg?v=1593171723\"> </a> <a href=\"https://www.headphonezone.in/collections/v-moda\"> <img alt=\"V-Moda\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/V-moda-Logo-2022.svg?v=1651666403\"> </a> <a href=\"https://www.headphonezone.in/collections/westone-audio\"> <img alt=\"Westone Audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Westone_Audio-01.svg?v=1660118270\"> </a> <a href=\"https://www.headphonezone.in/collections/woo-audio\"> <img alt=\"Woo Audio\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Woo-Audio-Logo-2020.svg?v=1587030757\"> </a> <a href=\"https://www.headphonezone.in/collections/xduoo\"> <img alt=\"xDuoo\" src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/xDuoo-Brand-Logo-circle-new.svg?v=1628057268\"> </a>\n</div>\n<style><!--\n.Partner-Brands {\n        --partner-grid: 7rem;\n        display: grid;\n        grid-template-columns: repeat(auto-fill, minmax(var(--partner-grid), 1fr));\n        gap: 1rem;\n        width: 100%;\n        margin: auto;\n    }\n    .Partner-Brands a img {\n        width: 120px;\n        height: 70px;\n        margin:0!important;\n    }\n--></style>",
+        "background": "#f4f4f4",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "423e14b9-6030-4e0f-a470-bbd5e56e4d07": {
+      "type": "custom-html",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<h3 class=\"heading h2\" style=\"font-size: 28px;text-align:center;\">What are your Gifting Requirements</h3>\n<iframe id=\"JotFormIFrame-80213148040442\" allowtransparency=\"true\" src=\"https://form.jotform.me/80213148040442\" frameborder=\"0\" style=\"width: 1px; min-width: 100%; height: 539px; border: none;\" scrolling=\"no\" onload=\"window.parent.scrollTo(0,0)\"> </iframe>\n<script type=\"text/javascript\">// <![CDATA[\nvar ifr = document.getElementById(\"JotFormIFrame-80213148040442\"); if(window.location.href && window.location.href.indexOf(\"?\") > -1) { var get = window.location.href.substr(window.location.href.indexOf(\"?\") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf(\"?\") > -1 ? src + \"&\" + get : src + \"?\" + get; ifr.src = src; } } window.handleIFrameMessage = function(e) { var args = e.data.split(\":\"); if (args.length > 2) { iframe = document.getElementById(\"JotFormIFrame-\" + args[(args.length - 1)]); } else { iframe = document.getElementById(\"JotFormIFrame\"); } if (!iframe) { return; } switch (args[0]) { case \"scrollIntoView\": iframe.scrollIntoView(); break; case \"setHeight\": iframe.style.height = args[1] + \"px\"; break; case \"collapseErrorPage\": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + \"px\"; } break; case \"reloadPage\": window.location.reload(); break; case \"loadScript\": var src = args[1]; if (args.length > 3) { src = args[1] + ':' + args[2]; } var script = document.createElement('script'); script.src = src; script.type = 'text/javascript'; document.body.appendChild(script); break; } var isJotForm = (e.origin.indexOf(\"jotform\") > -1) ? true : false; if(isJotForm && \"contentWindow\" in iframe && \"postMessage\" in iframe.contentWindow) { var urls = {\"docurl\":encodeURIComponent(document.URL),\"referrer\":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({\"type\":\"urls\",\"value\":urls}), \"*\"); } }; if (window.addEventListener) { window.addEventListener(\"message\", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent(\"onmessage\", handleIFrameMessage); }\n// ]]></script>\n<hr>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f2da703b-f92a-483e-bc5e-8ecb4e01812f",
+    "15c72a72-3d9c-4778-a607-4af6e44c9460",
+    "0136efb3-9fcb-4c15-af21-7e1b3c8fc62a",
+    "65afefd9-d961-4735-a826-5b0340554267",
+    "423e14b9-6030-4e0f-a470-bbd5e56e4d07"
+  ]
+}

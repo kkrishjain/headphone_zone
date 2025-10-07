@@ -1,0 +1,500 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "5436d29c-494e-4ebb-be68-ea5575fdabb6": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<img src=\"https://cdn.shopify.com/s/files/1/0153/8863/files/Warranty-help-center.svg?v=1685623259\" style=\"width:200px;margin:auto;\">\n<h2 class=\"h2\">Product Service & Repair</h2>\n\n<div class=\"raiseticket\">\n<div>\n<a href=#raiseticket><p> New support ticket</p></a>\n</div>\n<div>\n<a href=\"https://help.headphonezone.in/support/tickets\">\n<p>Check ticket status</p></a>\n</div>\n</div>\n\n\n<style>\n.raiseticket {\n\ndisplay: grid;\n    grid-template-columns: repeat(2,1fr);\n    width: 25%;\n    text-align: center;\n    margin: auto;\ngap:10px;\npadding-top:20px;\n\n\n}\n\n.raiseticket p {\n    font-family: 'Roboto', sans-serif;\n    font-size: 18px;\n    letter-spacing: 0.0rem;\n    font-weight: bold;\n}\n\n\n@media screen and (max-width: 700px) {\n  .raiseticket {\n    display: grid;\n    grid-template-columns: 1fr;\n width: 100%;\n    text-align: center;\npadding-top:20px;\n\n  }\n}\n\nh2 {\nfont-size:3rem;\ntext-align:center;\nfont-family: \"sora\", sans-serif;\n    font-weight: var(--heading-font-weight);\n    font-style: var(--heading-font-style);\n    letter-spacing: var(--heading-letter-spacing);\n    text-transform: var(--heading-text-transform);\n    overflow-wrap: anywhere;\n}\n\n\n}\n\n\n\n@media screen and (max-width: 700px) {\n  h2 {\n    font-size:2rem!important;\n\n  }\n}\n\n\n\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d": {
+      "type": "faq",
+      "blocks": {
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-0": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the LYPERTEK TEVI",
+            "content": "<h5><strong>Pairing the LYPERTEK TEVI</strong></h5><ol><li>Double tap either earbud to start pairing.</li><li>Go to Bluetooth settings on your device.</li><li>Turn Bluetooth on.</li><li>Select LYPERTEK.</li><li>You're good to go.</li></ol><p><br/></p><h5><strong>Resetting the LYPERTEK TEVI</strong></h5><ol><li>Forget the TEVI bluetooth name, [LYPERTEK] TEVI - L / R,  from the Bluetooth list on the phone.</li><li>Put both earphones into the charging case; (Make sure the charging case has power)</li><li>Press and hold both TEVI L/R for 5 seconds.  Remember to make sure you can see the light.</li><li>Once you see the light flash, release the fingers. Then TEVI was reset.</li><li>Take out both earphones from the charging case, LED of one side earphone is flashing, which means it is at pairing mode.  </li><li>Follow the pairing procedure to connect TEVI with the phone again.</li></ol>"
+          }
+        },
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-1": {
+          "type": "item",
+          "settings": {
+            "title": "How to pair and Reset the LYPERTEK LEVI",
+            "content": "<h5><strong>Pairing the LYPERTEK LEVI</strong></h5><ol><li>Put LEVI into the charging case</li><li>Close the charging case</li><li>Open the charging case. LEVI will enter Bluetooth pairing mode automatically </li><li>Select LYPERTEK LEVI from the Devices list in the phone</li><li>Connected</li></ol><h5><strong><br/>How to reset the LYPERTEK LEVI</strong></h5><ol><li>Turn off both sides</li><li>Turn them back on and long press both sides when it is with white light flashing.</li><li>Release the buttons when white and red lights are flashing </li></ol>"
+          }
+        },
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-2": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the JAYS f-Five True Wireless",
+            "content": "<h5><strong>Pairing the JAYS f-Five True Wireless</strong></h5><ol><li>Take the earbuds out of the charging case and they will go to pairing mode automatically.</li><li>Go to Bluetooth settings on your device and select JAYS - f-Five True wireless and click on pairing and it's done</li></ol><p><br/></p><h5><strong>Resetting the JAYS f-Five True Wireless</strong></h5><ol><li>Disconnect device from Bluetooth pairing</li><li>Take Left or Right f-Five earbud our from charging case. Short press 5 times. LED will go White and RED in constant light. </li><li>Take other earbud out from charging case. Short press 5 times. LED will go White and RED in constant light.</li><li>Put both earbuds back in to the charging case.</li><li>Remove them from the charging case. When they are paired again to device, reset is complete.</li></ol>"
+          }
+        },
+        "61c0e858-7c4b-4ac6-849b-ba98738e80f2": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Jabra Elite Active 65T",
+            "content": "<h5><strong>How to Pair the Jabra Elite Active 65T</strong></h5><ol><li>Press and hold (3 sec) the Left and Right buttons on the earbuds simultaneously until the right earbud LED flashes blue.</li><li>The earbuds are now ready to pair with your phone.</li><li>Wear the earbuds and follow the voice-guided pairing instructions to pair to your smartphone. </li></ol><p><br/></p><h5><strong>How to Reset the Jabra Elite Active 65T</strong></h5><ol><li>Ensure the right earbud is sufficiently charged and turned on. If the earbud is in the charging case, you will need to remove it.</li><li>Press and hold (approximately 10 seconds) the Multi-function button on the right earbud until the LED briefly flashes purple (note that the LED will flash red before it flashes purple).</li><li>The earbuds have now been reset. The LED will automatically turn green to indicate it is on and then blue to indicate pairing mode</li><li>Before you re-pair your earbuds with your mobile device, remember to delete the previous pairing in the Bluetooth menu. Refer to the user manual of your mobile device for instructions. </li></ol>"
+          }
+        },
+        "76485940-1315-4037-b3bb-b3169d95b6a4": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Jabra Elite 65T",
+            "content": "<h5><strong>How to Pair the Jabra Elite 65T</strong></h5><ol><li>Press and hold (3 sec) the Left and Right buttons on the earbuds simultaneously until the right earbud LED flashes blue.</li><li>The earbuds are now ready to pair with your phone.</li><li>Wear the earbuds and follow the voice-guided pairing instructions to pair to your smartphone.</li></ol><p><strong><br/></strong></p><h5><strong>How to Reset the Jabra Elite 65T</strong></h5><ol><li>Ensure the right earbud is sufficiently charged and turned on.If the earbud is in the charging case, you will need to remove it.</li><li>Press and hold (approximately 10 seconds) the Multi-function button on the right earbud until the LED briefly flashes purple (note that the LED will flash red before it flashes purple).</li><li>The earbuds have now been reset. The LED will automatically turn green to indicate it is on and then blue to indicate pairing mode. </li></ol>"
+          }
+        },
+        "3f2114a9-28fc-4194-b538-8fdc76ee61ab": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Jabra Elite 75T",
+            "content": "<h5><strong>How to Pair the Jabra Elite 75T</strong></h5><ol><li>Press and hold (3 sec) the Left and Right buttons on the earbuds simultaneously until the right earbud LED flashes blue.</li><li>The earbuds are now ready to pair to your phone</li><li>Wear the earbuds and follow the voice-guided pairing instructions to pair to your smartphone.<br/> </li></ol><h5><strong>How to Reset the Jabra Elite 75T</strong></h5><p>To reset, simultaneously press and hold (10 seconds) the Right and Left buttons until the LEDs flash purple.</p>"
+          }
+        },
+        "0910b452-90a2-4a2c-86ff-e26535ea68b3": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Jabra Elite Active 75T",
+            "content": "<h5><strong>How to Pair the Jabra Elite Active 75T</strong></h5><ol><li>Press and hold (3 sec) the Left and Right buttons on the earbuds simultaneously until the right earbud LED flashes blue.</li><li>The earbuds are now ready to pair to your phone</li><li>Wear the earbuds and follow the voice-guided pairing instructions to pair to your smartphone.<br/> </li></ol><h5><strong>How to Reset the Jabra Elite Active 75T</strong></h5><p>To reset, simultaneously press and hold (10 seconds) the Right and Left buttons until the LEDs flash purple.</p>"
+          }
+        },
+        "89d11cc0-c3a2-4c0f-b91b-a2eebb4ec204": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Sony - WF-XB700",
+            "content": "<h5><strong>Pairing the Sony - WF-XB700</strong><br/></h5><p>1. Unlock the screen of the Android smartphone if it is locked.<br/>Remove the headset from the charging case.</p><p><br/>2. The headset turns on automatically. Check that the indicators (blue) flash.</p><p><br/>3. Insert the headset units into both ears.<br/> If the headset has automatically connected to the last connected device, you will hear the voice guidance say, “Bluetooth connected”, from the left unit of the headset.</p><p><br/>4. Check the connection status on the Android smartphone. If it is not connected, proceed to step  4.<br/><br/>5. Display the devices paired with the Android smartphone.<br/>    Select [Settings] - [Device connection] - [Bluetooth].</p><p><br/>6. Touch the switch to turn on the Bluetooth function.<br/><br/>7. Touch [WF-XB700].<br/><br/>8. You will hear the voice guidance say, “Bluetooth connected”, from the left unit of the headset.</p><h5><br/><strong>Resetting the Sony - WF-XB700</strong></h5><p>1. Press and hold the button on the left unit for about 20 seconds.</p><p><br/>2. Release your finger when the indicator light (red) of the headset flashes and turns off.</p><p><br/>3. Press and hold the button on the right unit for about 20 seconds.</p><p><br/>4. Release your finger when the indicator light (red) of the headset flashes and turns off.</p>"
+          }
+        },
+        "f627a6b5-9ac4-4511-9947-d67e30e88526": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Shanling MTW100",
+            "content": "<h5><strong>How to Pair the Shanling MTW100</strong></h5><p>MTW100 will automatically pair and connect to the device right after they are picked from the charging case. </p><p><strong><br/></strong></p><h5><strong>How to Reset the Shanling MTW100</strong></h5><ol><li>Remove the Shanling MTW100 from the list of all the devices connected to your phone. </li><li>Take the left earbud from the charging case, tap the touch sensor four times, and place it back into the charging case. </li><li>Repeat the same with the right earbud and put it back into the charging case.</li><li>The factory reset is done and now both the earbuds are connected to each other after you remove them from the charging case. </li></ol>"
+          }
+        },
+        "de46a9ec-e78c-4c6f-993f-ca8fb04c083b": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Sennheiser CX 400BT TWS",
+            "content": "<h5><strong>How to Pair the Sennheiser CX 400BT TWS</strong></h5><ol><li>Take both earbuds out of the charging case and insert them into your ears</li><li>Simultaneously touch and hold the right and the left touch control for 3 seconds and it will go on pairing</li><li>Search the earbuds on your device and the pairing is done </li></ol><p><strong><br/></strong></p><h5><strong>How to Reset the Sennheiser CX 400BT TWS</strong></h5><ol><li>Connect the case to the charger</li><li>Insert both the earbuds in the charging and press and hold the touch control on both the earbuds for 5 second and the reset is done </li></ol>"
+          }
+        },
+        "1057cbfe-6d90-4cf4-8aff-a54d4304b773": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Sony - WF-1000XM3",
+            "content": "<h5><strong>Pairing the Sony - WF-1000XM3</strong></h5><p></p><p>1. Remove both units of the headset from the charging case.<br/><br/>2. The headset turns on automatically. Check that the indicator (blue) flashes.<br/><br/>3. Enter pairing mode on this headset.<br/>When you pair the headset with a device for the first time after purchase or after initializing the headset (if the headset has no pairing information), the headset enters pairing mode automatically if you remove the headset from the charging case. In this case, wear the headset and proceed to step 3.<br/><br/>4. When you pair a second or subsequent device (if the headset has pairing information for other devices), put the headset in both ears, then hold your fingers to the touch sensors on both the left and right units for about 7 seconds.<br/><br/>5. You will hear voice guidance “Bluetooth pairing” from the left unit.<br/>Unlock the screen of the Android smartphone if it is locked.<br/><br/>6. Find the headset on the Android smartphone.</p><h5><strong>Resetting the Sony - WF-1000XM3</strong></h5><p></p><p>1. If the headset cannot be turned on or cannot be operated even when it is turned on, reset the headset. Place the headset in the charging case, leave the lid of the charging case open, then hold your finger to the touch sensor on the left unit for about 20 seconds.<br/><br/>2. Release your finger when the indicator (red) of the headset turns off after flashing.<br/><br/>3. Then hold your finger to the touch sensor on the right unit for about 20 seconds.<br/><br/>4. Release your finger when the indicator (red) of the headset turns off after flashing.<br/><br/>5. When there is a problem with the headset, the indicator (red) of the headset remains off and does not start flashing even if you perform the procedures described above. In this case, hold your finger to the touch sensor longer (for about 30 seconds), and release your finger when the indicator (red) of the headset turns on.<br/><br/></p>"
+          }
+        },
+        "0d2df382-7c9c-4d1f-8df4-06ab8406c2ed": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Sony - WF-SP800N",
+            "content": "<h5><strong>Pairing the Sony - WF-SP800N</strong></h5><p><br/>1. Remove both units of the headset from the charging case. The headset turns on automatically. Check that the indicators (blue) flash.<br/><br/>2. Enter pairing mode on this headset.</p><p>When you pair the headset with a device for the first time after purchase or after initializing the headset (if the headset has no pairing information), the headset enters pairing mode automatically if you remove the headset from the charging case. In this case, put the headset on both ears and proceed to step 3. When you pair a second or subsequent device (if the headset has pairing information for other devices), insert the headset units into both ears, then hold your fingers to the touch sensors on both the left and right units for about 7 seconds. When both units of the headset are worn, you will hear the voice guidance say, “Bluetooth pairing”, from the left unit.<br/><br/>3. Unlock the screen of the Android smartphone if it is locked.</p><p><br/>4. Find the headset on the Android smartphone.</p><h5><br/><strong>Resetting the Sony - WF-SP800N</strong></h5><p><br/>1. Place the headset into the charging case, leave the lid of the charging case open, then hold your finger to the touch sensor on the left unit for about 20 seconds.</p><p><br/>2. Release your finger when the indicator (red) of the headset turns off after flashing.</p><p><br/>3. Hold your finger to the touch sensor on the right unit for about 20 seconds.</p><p><br/>4. Release your finger when the indicator (red) of the headset turns off after flashing.</p>"
+          }
+        },
+        "0c2d144f-2d84-4bf7-9d07-ef924e0acf8f": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the JAYS - m-Five True Wireless",
+            "content": "<h5><strong>Pairing the JAYS - m-Five True Wireless</strong></h5><ol><li>To power on, place the earpieces in the charging case then take them out of the charging case, both earpieces at the same time. The LED on both earpieces will<br/>flash in white.<br/></li><li> Once the two earpieces have connected to each other, the LED on one of the earpieces will turn off and the LED on the other earpiece will flash in red and white as the earphones enter pairing mode automatically.<br/></li><li> To pair, go to Bluetooth® settings on your device and select “JAYS m-Five True Wireless”. The white and red flashing LED on the earpiece will turn off upon a successful connection.</li></ol><h5><br/><strong>Resetting the JAYS - m-Five True Wireless</strong></h5><p><br/>Forget the earbuds from all the devices connected and re-pair it</p>"
+          }
+        },
+        "5b6d60e8-18b8-4313-a1b4-3b447c64fc20": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Shure Aonic 215 True Wireless",
+            "content": "<h5><strong>Pairing the Shure Aonic 215 True Wireless</strong></h5><p>1.Turn off the earphones.</p><p><br/>2.Put the earphones on your head.</p><p><br/>3.Press and hold button on the right adapter. Continue to hold after you hear “Power on”.</p><p><br/>4.When you hear \"Bluetooth pairing mode\" (about 5 seconds), release the button.</p><p><br/>5.From your audio source, select \"Shure TW1.\"</p><p><br/>6.After a pause (about 4 seconds) you will hear “Connected”.</p><p><br/>7.Press and hold the button on the left adapter until you hear \"Power on\".<br/> </p><h5><strong>Resetting the Shure Aonic 215 True Wireless</strong></h5><p><br/>1.Place adapters in charging case</p><p><br/>2.Press and hold both buttons, 7 seconds The adapters reset. </p>"
+          }
+        },
+        "71b119c5-0164-49a1-929e-2658735212d2": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Sennheiser Momentum True wireless",
+            "content": "<h5><strong>Pairing the Sennheiser Momentum TWS</strong></h5><p><br/>1. Take both earbuds out of the charging case and insert them into your ears.The distance between the earbuds and the Bluetooth device should not exceed 50 cm.</p><p><br/></p><p>2. Simultaneously touch and hold the right and the left touch control panel for 5 seconds until you hear the voice prompt “Pairing” and a beep. The LEDs of the earbuds flash blue and red. The earbuds are in pairing mode.</p><p><br/>3. Activate Bluetooth on your Bluetooth device.</p><p><br/>4. Via the menu of your Bluetooth device, start the search for new Bluetooth devices. All active Bluetooth devices in the proximity of your smartphone are displayed. </p><h5><strong>Resetting the Sennheiser Momentum TWS </strong></h5><p>reset the earphones to the factory default settings. This deletes, among other things, all pairing settings.<br/><br/>1. Use the USB cable to connect the charging case to a power source (&gt; 12).<br/><br/>2. Insert the earbuds into the charging case and, within 60 seconds, touch and hold the right and the left touch control panel for at least 30 seconds. The earphones are reset to the factory default settings. <br/><br/></p>"
+          }
+        },
+        "f0cfac52-6a80-4606-96e1-7c02a5c981e1": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Sennheiser Momentum True wireless 2",
+            "content": "<h5><strong>Pairing the Sennheiser Momentum TWS 2</strong></h5><p>1. Take both earbuds out of the charging case and insert them into your ears<br/><br/>2. Simultaneously touch and hold the right and the left touch control panel for 3 seconds until you hear the voice prompt “Pairing” and a beep.The LEDs of the earbuds flash blue and red. The earbuds are in pairing mode.<br/><br/>3.Activate Bluetooth on your Bluetooth device.<br/><br/>4.Via the menu of your Bluetooth device, start the search for new Bluetooth devices.<br/><br/>All active Bluetooth devices in the proximity of your smartphone are displayed.<br/><br/>From the list of found Bluetooth devices, select “MOMENTUM TW 2”.  </p><h5><strong>Resetting the Sennheiser Momentum TWS  2</strong></h5><p>1.Use the USB cable to connect the charging case to a power source.<br/> <br/>2.Insert the earbuds into the charging case and, within 60 seconds,<br/>touch and hold the right and the left touch control panel for 6 seconds simultaneously.<br/> <br/>3.This will restart your earbuds</p>"
+          }
+        },
+        "547f4031-e7b4-4d07-b1fd-f93a67b06a45": {
+          "type": "item",
+          "settings": {
+            "title": "How to pair and Reset Mee Audio x10",
+            "content": "<h5><strong>Pairing Process</strong></h5><p>1. Remove right earpiece from case, press and hold the button for 5 seconds to power it off, then press and hold the button for 5 seconds again until the blue and white lights flash indicating pairing mode.<br/><br/>2. Select “MEE audio X10” in the Bluetooth menu of the new device you wish to pair to complete the pairing process.</p><h5><strong>Reset Process</strong></h5><p>1. Place both earpieces in the case. Next, remove the right earpiece from case.</p><p><br/>2. Press and hold the button for 5 seconds to power it off, then press and hold the button for 5 seconds again until the blue and white lights flash in an alternating manner, indicating pairing mode.</p><p><br/>3. Once the right earpiece is in pairing mode, press the button 6 times rapidly to reset the earpiece. A white light will come on indicating that it was reset.</p><p><br/>4. Put the right earpiece back in the case</p><p><br/>5. Take left earpiece out of the case.</p><p><br/>6. Press the button on the left earpiece 6 times rapidly to reset the earpiece. A white light will come on indicating that it was reset.</p><p><br/>7. Put the left earpiece back in the case.</p><p><br/>8. Take both earpieces out of the case and follow the instructions in the “PAIRING” section to create a new pairing with your device. </p><p><br/></p><p><strong>Reset video link; </strong><a href=\"https://www.youtube.com/watch?v=GKoxaoPURr8\" target=\"_blank\"><span style=\"text-decoration:underline\">https://www.youtube.com/watch?v=GKoxaoPURr8</span></a></p>"
+          }
+        },
+        "2682dcab-27d8-4728-a03d-c39294d900c6": {
+          "type": "item",
+          "settings": {
+            "title": "How to pair and Reset the JVC HA-A10T",
+            "content": "<h5><strong>Pairing Process</strong></h5><p>1. Take out both the L (left) and R (right) earphones. After the earphones are taken out, the L (left) and R (right) indicators light up in white for 1 second, and the power turns on automatically<br/><br/>2 .When the L and R earphones are connected with each other, the R indicator starts to flash slowly in white.After a short while, the L indicator starts to flash quickly and alternately between red and white, and a voice message saying “Pairing mode” can be heard.<br/><br/>3. Turn on the Bluetooth function of the BLUETOOTH device.Select “JVC HA-A10T” from the device  list.</p><h5><strong>Reset process</strong></h5><p>1. Press the button on both the earphones to turn off the power.<br/><br/>2. Press and hold the button on the L earphone for about 20 seconds. After pressing and holding for 10 seconds, the indicator flashes 3 times in white. Continue to press for another 10 seconds until the indicator flashes 3 times in white again, then release your finger.<br/><br/>3. Press and hold the button on the R earphone for about 20 seconds. After pressing and holding for 10 seconds, the indicator flashes 3 times in white. Continue to press for another 10 seconds until the indicator flashes 3 times in white again, then release your finger.<br/><br/>4. Place both earphones into the charging case, then take them out. After the earphones are taken out, the L (left) and R (right) indicators light up in white for 1 second, and the power turns on automatically.<br/><br/>5. After a while, the L and R earphones are connected to each other and the R indicator starts to flash slowly in white. Then the L indicator starts to flash quickly and alternately between red and white. </p>"
+          }
+        },
+        "9220ebee-c4c9-45bb-9f20-5a0cac761026": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the JAYS - m-Seven True Wireless",
+            "content": "<h5><strong>Pairing the JAYS - m-Seven True Wireless</strong></h5><p>1. To power on, place the earpieces in the charging case then take them out of the charging case, both earpieces at the same time. The LED on both earpieces will flash in white.<br/><br/>2. Once the two earpieces have connected to each other, the LED on the left earpiece will turn off and the LED on the right earpiece will flash in red and white as the earphones enter pairing mode automatically.<br/><br/>3. To pair, go to Bluetooth® settings on your device and select “JAYS m-Seven True Wireless”. The LED on the<br/>right earpiece will turn off upon a successful connection.</p><h5><strong>Resetting the JAYS - m-Seven True Wireless</strong></h5><p></p><ol><li>To reset the earphones, place both earpieces in the charging case and ensure them to fully touch with the pogopins. <br/></li><li>Place a finger on the center of top of both left and right earpiece and keep them there until the LED on both earpieces flashes twice in purple as the earphones reset. Please note there are<br/>about 2-3 seconds between the first and second flash. <br/></li><li>Lift both earphones out of the box simultaneously. The earphones will now enter interconnection mode<br/>and try pairing to each other. <br/></li><li>When the left earphone indicator turns off and the right earphone indicator flashes in white and red light, switch off and on your Bluetooth on your device then connect it with your m-Sevens.</li></ol>"
+          }
+        },
+        "a549488f-781a-4bb9-b368-c6c8a3d4c03c": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the KLIPSCH - T5 II True Wireless",
+            "content": "<h5><strong>Pairing the KLIPSCH - T5 II True Wireless</strong></h5><p>Please Note: The earphones should automatically power on and enter \"Pairing Mode\" once you remove them from a charged case.</p><p>1. To manually put the earphones into pairing mode while they are in the case, press the button on the right earphone 3 times.</p><p><br/>2. To manually put the earphones into pairing mode while they are out of the case, press and hold the button on each earphone simultaneously for 3 seconds.</p><p><br/>3. Once the earphones are in \"Pairing Mode\", go to your device's Bluetooth menu and tap on the Klipsch T5 II to connect.</p><h5><strong>Resetting the KLIPSCH - T5 II True Wireless</strong></h5><p>1. Long press both earphones for 8 seconds while out of the case.<br/><br/>2. Once done successfully, you will hear a voice prompt advise \"earphones are reset\" in both earphones. Please note: You will have to forget the earphones from your device’s Bluetooth history and pair to the earphones again after completing this step.<br/><br/>3. Place the earphones back in the case.<br/><br/>4. Earphones have now been fully reset and are ready to pair to your device</p>"
+          }
+        },
+        "e6251f70-9631-461b-a740-3afb2a93c2b9": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the JAYS - t-Seven True Wireless",
+            "content": "<h5><strong>Pairing the JAYS - t-Seven True Wireless</strong></h5><p>1. Power on/off and pairing To power on, place the earpieces in the charging case. The left and right earbud will pair and turn on automatically.</p><p><br/>2. To pair, open the lid of the charging case and go to Bluetooth® settings on your device and select “JAYS t-Seven” to pair with the earphones. If the pairing fails, the earpieces will stay in pairing mode for a few minutes until they finally power off.</p><h5><br/>3. To power off, place the earpieces in the charging case and they will turn off automatically. If the Bluetooth® on the paired device turns off, the earphones will turn off automatically.<br/><br/><br/><strong>Resetting the JAYS - t-Seven True Wireless</strong></h5><h5></h5><p>To reset, place the earpieces in the charging case. Press and hold the button on the back of the charging case for 10 seconds. The LED’s will flash, once the LED’s are turned off, the reset is done.</p>"
+          }
+        },
+        "d070ce70-01cc-4daa-a407-b5a0c71163c5": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Jabra - Elite 85t",
+            "content": "<h5><strong>Pairing the Jabra - Elite 85t</strong></h5><p>To enter pairing mode, simultaneously press and hold (3 seconds) the Left and Right buttons on the earbuds, until the LED on the right earbud flashes blue. The earbuds are now ready to pair with your mobile device. To pair, go to the Bluetooth menu on your mobile device and select the Jabra Elite 85t from the list.<br/><br/><strong>Video link on how to pair your Jabra - Elite 85t: </strong><a href=\"https://www.youtube.com/watch?v=cLRbdQv0c48\" title=\"https://www.youtube.com/watch?v=cLRbdQv0c48\">https://www.youtube.com/watch?v=cLRbdQv0c48</a></p><h5><strong>Resetting the Jabra - Elite 85t:</strong><br/></h5><p>When you reset your Jabra Elite 85t, previously paired devices and settings will be cleared.<br/><br/>Follow these steps to reset.<br/><br/>1. Place both earbuds in the charging case. Simultaneously press and hold (10 seconds) the Left and Right buttons on the earbuds until the LEDs on the earbuds flash purple.<br/><br/>2. Close the lid of the charging case for 5 seconds to complete the reset.<br/><br/>3. Before you re-pair your earbuds with your mobile device, remember to delete the previous pairing in the Bluetooth menu. Refer to the user manual of your mobile device for instructions.<br/><br/><strong>Note: </strong>You can repeat these steps if the reset was not successful or to verify the results.</p><h5></h5><h5></h5><h5></h5><h5></h5><h5><br/></h5>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-0",
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-1",
+        "template--16042020176060__5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d-1685621043495149e8-2",
+        "61c0e858-7c4b-4ac6-849b-ba98738e80f2",
+        "76485940-1315-4037-b3bb-b3169d95b6a4",
+        "3f2114a9-28fc-4194-b538-8fdc76ee61ab",
+        "0910b452-90a2-4a2c-86ff-e26535ea68b3",
+        "89d11cc0-c3a2-4c0f-b91b-a2eebb4ec204",
+        "f627a6b5-9ac4-4511-9947-d67e30e88526",
+        "de46a9ec-e78c-4c6f-993f-ca8fb04c083b",
+        "1057cbfe-6d90-4cf4-8aff-a54d4304b773",
+        "0d2df382-7c9c-4d1f-8df4-06ab8406c2ed",
+        "0c2d144f-2d84-4bf7-9d07-ef924e0acf8f",
+        "5b6d60e8-18b8-4313-a1b4-3b447c64fc20",
+        "71b119c5-0164-49a1-929e-2658735212d2",
+        "f0cfac52-6a80-4606-96e1-7c02a5c981e1",
+        "547f4031-e7b4-4d07-b1fd-f93a67b06a45",
+        "2682dcab-27d8-4728-a03d-c39294d900c6",
+        "9220ebee-c4c9-45bb-9f20-5a0cac761026",
+        "a549488f-781a-4bb9-b368-c6c8a3d4c03c",
+        "e6251f70-9631-461b-a740-3afb2a93c2b9",
+        "d070ce70-01cc-4daa-a407-b5a0c71163c5"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "True Wireless Earbuds",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "fec55e75-1a38-486c-bf08-237238652a26": {
+      "type": "faq",
+      "blocks": {
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-0": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the SoundMAGIC E11BT",
+            "content": "<h5><strong>Pairing the SoundMAGIC E11BT</strong></h5><ol><li>Hold the power button five seconds and the light will start flashing red and blue which indicates that the earphone is ready to pair.</li><li>Select \"SoundMAGIC E11BT\" displayed on the screen of you device and the pairing is complete.</li></ol><h5><strong>Resetting the SoundMAGIC E11BT</strong></h5><p></p><ol><li>Forget the SoundMAGIC E11BT from all the connected devices</li><li>Press the \"\"Multifunction\"\"button for about 20 seconds; you will hear the first \"\"Dududu\"\" prompt about on 10 seconds, keep holding the button until you will hear that second \"\"Dududu\"\" prompt. </li></ol>"
+          }
+        },
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-1": {
+          "type": "item",
+          "settings": {
+            "title": "How to pair and Reset the Sony C200",
+            "content": "<h5><strong>Pairing</strong></h5><p>1. Turn on the headset when you pair the headset with a device for the first time after you bought it        or after you initialized the headset (the headset has no pairing information). The headset enters pairing mode automatically.<br/><br/>2. When you pair a second or subsequent device (the headset has pairing information for other devices), press and hold the button for about 7 seconds.</p><p><br/>3. Check that the indicator (blue) repeatedly flashes twice in a row. You will hear a voice guidance “Bluetooth pairing”.</p><p><br/>4. [WI-C200] will be displayed on the list of detected devices on the screen of the Bluetooth device.If it is not displayed, repeat from step 1.</p><p><br/>5. Select [WI-C200] displayed on the screen of the Bluetooth device for pairing.</p><h5><strong>Reset</strong></h5><p>If the headset cannot be turned on or cannot be operated even when it is turned on, press the power button and - button simultaneously while charging. The headset will be reset. The device registration (pairing) information is not deleted. </p>"
+          }
+        },
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-2": {
+          "type": "item",
+          "settings": {
+            "title": "How to pair and Reset the Sony C400",
+            "content": "<h5><strong>Pairing</strong></h5><p>1. Turn on the headset. Press and hold the button for about 2 seconds.<br/><br/>2. Display the devices paired with the smartphone. Select [Setting] - [Bluetooth] Touch [WI-C400].          You hear voice guidance “BLUETOOTH connected”. </p><h5><strong>Reset</strong></h5><p>Disconnect the micro-USB cable, turn off the headset, then press and hold the power button and play/pause button simultaneously for more than 7 seconds. The indicator (blue) flashes 4 times ( ), and the settings such as the volume adjustment are reset to the factory settings. All pairing information is deleted. </p>"
+          }
+        },
+        "b513c8ea-6796-45b0-9de5-9c1a5301ea13": {
+          "type": "item",
+          "settings": {
+            "title": "How to pair and Reset the Jabra Elite 25e",
+            "content": "<h5><strong>Pairing</strong></h5><p>1. To enter pairing mode, press and hold (5 seconds) the Multi-function button until the LED flashes        blue (minimum of 4 flashes).<br/><br/>2. Pairing mode is announced in the earbuds and the LED continues to flash blue.<br/><br/>3. To pair, go to the Bluetooth menu on your mobile device and select the Jabra Elite 25e from the list.</p><h5><strong>Reset</strong></h5><p>1. Turn on your Jabra Elite 25e.<br/><br/>2. Simultaneously press and hold (5 seconds) the Volume up button and the Multi-function button.<br/><br/>3. Turn off your Jabra Elite 25e.<br/><br/>4. Turn on your Jabra Elite 25e, and it will be ready to pair again.</p>"
+          }
+        },
+        "0647d574-506b-4eaa-9a88-6ed06e11230a": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Sony WI-SP510",
+            "content": "<h5><strong>Pairing the Sony WI-SP510</strong></h5><ol><li>Enter pairing mode on this headset</li><li>Perform the pairing procedure on the Bluetooth device to search for this headset</li><li>Select [WI-SP510] displayed on the screen of the Bluetooth device for pairing and it's done</li></ol><h5><strong>Resetting the Sony WI-SP510</strong></h5><ol><li>If the headset cannot be turned on or cannot be operated even when it is turned on, press both the (power) button and the – button simultaneously while charging. The headset will be reset. The device registration (pairing) information is not deleted.</li></ol>"
+          }
+        },
+        "66dbe99b-8dd9-4f7f-a2fa-85b35a15d659": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the MEE Audio X6 (2nd Gen)",
+            "content": "<h5><strong>Pairing the MEE Audio X6 (2nd Gen)</strong></h5><p>1. Press and hold the Multifunction button for about 4 seconds until you hear the headset say “Pairing” and the light flashes red and blue.</p><p><br/>2. Open the Bluetooth menu on the device you wish to pair (usually located in Settings &gt; Bluetooth). If needed, select “search for devices”, “add new device”, or “refresh”.</p><p><br/>3. Select “MEE audio X6” and allow pairing to complete.</p><h5><strong>Resetting the MEE Audio X6 (2nd Gen)</strong></h5><p>1. To perform a full reset, first put the X6 in standby mode (headset is powered on but not connected to any devices).</p><p><br/>2. Make sure to turn off Bluetooth or delete the “MEE audio X6” pairing from any nearby devices that have previously been paired with the X6. </p><p><br/>3. Once in standby mode, press and hold the Multifunction and volume up buttons simultaneously until you hear the headset say “Factory Reset Complete”. </p><p><br/>4. All previously paired devices will be cleared from memory and a new pairing will need to be created before the X6 can be used.</p>"
+          }
+        },
+        "92a0c239-4741-416d-92e0-1e9b6007d563": {
+          "type": "item",
+          "settings": {
+            "title": "How to pair and Reset the Sony XB400",
+            "content": "<h5><strong>Pairing</strong></h5><p>1. Unlock the screen of the Android smartphone if it is locked.</p><p><br/>2. Turn on the headset. Press and hold the (power) button for about 2 seconds</p><p><br/>3. Display the devices paired with the Android smartphone. Select [Settings] - [Device connection] -        [Bluetooth]. Touch [WI-XB400].</p><h5><strong>Reset</strong></h5><p>If the headset cannot be turned on or cannot be operated even when it is turned on, press both the (power) button and the - button simultaneously while charging. The headset will be reset. The device registration (pairing) information is not deleted.</p>"
+          }
+        },
+        "ca667b41-e271-4f29-8c21-fc9a41a8b456": {
+          "type": "item",
+          "settings": {
+            "title": "How to pair and Reset the Sennheiser CX350 BT",
+            "content": "<h5><strong>Pairing</strong></h5><p>1.If you switch on the headphones for the first time, they auto­matically switch to pairing mode.</p><h5><strong>Reset </strong></h5><p>1. Turn the headset off.</p><p><br/>2. Connect the headset to a power supply using the charging cable.</p><p><br/>3. Keep both the volume buttons pressed and power on the headset. The LED will flash purple three      (3) times and then enter pairing mode (LED alternates flashing red/blue). The headset now tries to pair to a Bluetooth device.</p>"
+          }
+        },
+        "8d5b4c21-9da3-4a1a-8465-7a176a414d0e": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Sony - WI-C310",
+            "content": "<h5><strong>Pairing the SONY - WI-C310</strong></h5><p>1. Turn on the headset when you pair the headset with a device for the first time after you bought it or after you initialized the headset (the headset has no pairing information). The headset enters pairing mode automatically.<br/><br/>2. When you pair a second or subsequent device (the headset has pairing information for other devices), press and hold the button for about 7 seconds.<br/><br/>3. Check that the indicator (blue) repeatedly flashes twice in a row. You will hear a voice guidance “Bluetooth pairing”. [WI-C310] will be displayed on the list of detected devices on the screen of the Bluetooth device.If it is not displayed, repeat from step 1.</p><p><br/>4. Select [WI-C310] displayed on the screen of the Bluetooth device for pairing.</p><h5><strong>Resetting the SONY - WI-C310</strong></h5><p>If the headset cannot be turned on or cannot be operated even when it is turned on, press the button and - button simultaneously while charging. The headset will be reset. The device registration (pairing) information is not deleted.</p>"
+          }
+        },
+        "fc65fcb3-7e0f-4b34-bd82-2f6530236239": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the JAYS - t-Four Wireless",
+            "content": "<h5><strong>Pairing the JAYS - t-Four Wireless</strong></h5><p>Switch on your JAYS by pressing the center button for about 3 seconds. This will automatically open it for pairing.</p><h5><strong>Resetting the JAYS - t-Four Wireless</strong></h5><ol><li>Make sure the earphones are not connected to another device.<br/></li><li>Disable and enable Bluetooth on your device.<br/></li><li>Move the earphones closer to the device or alter their positions<br/>to avoid Bluetooth interference.<br/></li><li>Verify no other wireless equipment interfere with your earphone<br/>Bluetooth signal.</li></ol>"
+          }
+        },
+        "65f5f306-5673-4d78-9619-2e9505a9162c": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the MEE Audio - X5",
+            "content": "<h5><strong>Pairing the MEE Audio - X5</strong></h5><ol><li>Press and hold the Multifunction button for about 4 seconds until you hear the headset say “Pairing” and the light flashes red and blue.<br/></li><li>Open the Bluetooth menu on the device you wish to pair (usually located in Settings &gt; Bluetooth). If needed, select “search for devices”, “add new device”, or “refresh”.<br/></li><li>Select “MEE audio X5” and allow pairing to complete.</li></ol><h5><strong>Resetting the MEE Audio - X5</strong></h5><ol><li>To perform a full reset, first put the X5 in standby mode (headset is powered on but not connected to any devices). Make sure to turn off Bluetooth or delete the “MEE audio X5”pairing from any nearby devices that have previously been paired with the X5.<br/></li><li>Once in standby mode, press and hold the Multifunction and volume up buttons simultaneously until you hear the headset say “Factory Reset Complete”. All previously paired devices will be cleared from memory and a new pairing will need to be created before the X5 can be used.</li></ol>"
+          }
+        },
+        "3265d674-8a53-4bab-b348-982242214676": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the JVC - EC20BT",
+            "content": "<h5><strong>Pairing the JVC - EC20BT</strong></h5><ol><li>Check that the power is turned off.ON/OFF<br/></li><li>Perform one of the following operations depending on the connection status. When connecting for the first time Hold down button for 3 seconds until the indicator flashes alternately in red and blue.<br/></li><li>When there are 2 or more the BLUETOOTH devices to connect to Hold down button for 7 seconds until the indicator flashes alternately in red and blue.<br/></li><li>Turn on the Bluetooth function of the BLUETOOTH device.<br/></li><li>Select “JVC HA-EC20BT” from the device list. The indicator flashes slowly in blue when a connection is completed.</li></ol><h5><strong>Resetting the JVC - EC20BT</strong></h5><p>For reset just hold power button for 15 seconds and it will reset the earphones.</p>"
+          }
+        },
+        "fc6a1e24-67c5-4c0a-84fe-fcaa3fa37c34": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Shure - SE215 (BT2)",
+            "content": "<h5><strong>Pairing the Shure - SE215 BT2</strong></h5><p>With the wireless earphones OFF, activate pairing mode by holding center button for 7 seconds on the remote. Navigate to Bluetooth settings in the source device settings, and the device SHURE BT2 should appear in available devices. Select SHURE BT2, and your device should be paired.</p><h5><strong>Resetting the Shure - SE215 (BT2)</strong></h5><p>Turn off the earphones and plug into a charger. Press and hold, 15 seconds. Hold past pairing mode until earphones turn off again.</p>"
+          }
+        },
+        "ba7a5d75-7113-4542-9ad4-50375cbb5fb0": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Troubleshoot the V-MODA - Forza Metallo Wireless",
+            "content": "<h5><strong>Pairing the V-MODA - Forza Metallo Wireless</strong></h5><p>PAIRING AND CONNECTING WITH A NEW BLUETOOTH DEVICE When pairing with one, two or more Bluetooth devices, perform the following pairing procedure every time you pair a new device.<br/><br/>1. Press the power button to turn on the headphones. Power on tone plays, headband vibrates, battery level orange LED flashes, then white LED flashes twice every second and pairing tone plays. Your headphones are in pairing mode.<br/><br/>2. Check your Bluetooth device and connect your headphones. Once “V-MODA Forza” appears in the “new/available Bluetooth devices” section of your phone/Bluetooth device, select it to begin pairing. If passkey input is required on the display of a Bluetooth device, type “0000”.<br/><br/>3. Ready to rock. When the Bluetooth connection is established, connected tone plays and white LED on your headphones stays lit.</p><h5><strong>Troubleshooting the V-MODA - Forza Metallo Wireless</strong></h5><p>Make sure headphones are not connected to the charger and they are powered on - Turn off the headphones and turn them on again.</p><p></p><ol><li>Remember to turn on the Bluetooth feature on your device.<br/></li><li>Turn off the Bluetooth feature on any other device which has been previously paired.<br/></li><li>Reset paired devices history by pressing and holding Volume + and Volume - for 3 seconds.<br/></li><li>Try to pair with another device to make sure that both the headphones and your Bluetooth device are working properly.<br/></li><li>Go to Bluetooth settings and select “V-MODA Forza\"</li></ol>"
+          }
+        },
+        "cf0e0633-c6e7-4bd3-99bf-ef97efc9457b": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair the V-MODA - BassFit Wireless",
+            "content": "<h5><strong>Pairing the V-MODA - BassFit Wireless</strong></h5><p>Press and hold the \"V (power button)\" button and the \" - \" button for 5 seconds. <br/><br/>On your device, go to Bluetooth® settings and select “V-MODA BassFit”</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-0",
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-1",
+        "template--16042753261756__fec55e75-1a38-486c-bf08-237238652a26-1685624204aed315c7-2",
+        "b513c8ea-6796-45b0-9de5-9c1a5301ea13",
+        "0647d574-506b-4eaa-9a88-6ed06e11230a",
+        "66dbe99b-8dd9-4f7f-a2fa-85b35a15d659",
+        "92a0c239-4741-416d-92e0-1e9b6007d563",
+        "ca667b41-e271-4f29-8c21-fc9a41a8b456",
+        "8d5b4c21-9da3-4a1a-8465-7a176a414d0e",
+        "fc65fcb3-7e0f-4b34-bd82-2f6530236239",
+        "65f5f306-5673-4d78-9619-2e9505a9162c",
+        "3265d674-8a53-4bab-b348-982242214676",
+        "fc6a1e24-67c5-4c0a-84fe-fcaa3fa37c34",
+        "ba7a5d75-7113-4542-9ad4-50375cbb5fb0",
+        "cf0e0633-c6e7-4bd3-99bf-ef97efc9457b"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Wireless Earphones",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "d10d4f5e-f418-4ff2-8ab6-2185e6b599cc": {
+      "type": "faq",
+      "blocks": {
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-0": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Troubleshoot the JAYS - q-Seven Wireless",
+            "content": "<h5><strong>Pairing the JAYS - q-Seven Wireless</strong></h5><ol><li>To power on, press and hold the multi-function button for 2 seconds until the operation LED lights up in white.<br/></li><li>The headphones enter pairing mode automatically as the operation LED flashes quickly in red and white.<br/></li><li>To pair, go to Bluetooth® settings on your device and select “JAYS q-Seven Wireless”. The operation LED will flash slowly in white upon a successful connection.</li></ol><h5><strong>Troubleshooting the JAYS - q-Seven Wireless</strong></h5><ol><li> Make sure the headphones are not connected to another device.<br/></li><li> Disable and enable Bluetooth on your device.<br/></li><li> Move the headphones closer to the device or alter their positions to avoid Bluetooth interference.<br/></li><li> Verify no other wireless equipment interfere with your headphones Bluetooth signal.</li></ol>"
+          }
+        },
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-1": {
+          "type": "item",
+          "settings": {
+            "title": "How to pair and Reset the Bowers and wilkins PX7",
+            "content": "<h5><strong>Pairing</strong></h5><p>1. The first time you switch on your headphones,Bluetooth pairing mode will be enabled,the indicator will flash blue. If pairing mode is not enabled, please slide and hold the power switch to the upper (Bluetooth Icon)position for 5 seconds, let go when the indicator blinks blue and when an audible cue is presented.<br/><br/>2. Ensure the Bluetooth feature is enabled on the audio device, PX7 will appear in the discovery list,select it to pair.<br/><br/>3. The indicator will flash blue while pairing is in progress,this will change to solid blue and an  audible cue presented when pairing is successful. </p><h5><strong>Reset</strong></h5><p>You can clear the paired device history and restore all settings to their defaults. With PX7 powered on,simultaneously hold the Volume +, Volume - and Noise Cancellation buttons for 10 seconds until the indicator LED extinguishes, let go when the indicator lights up again,the headphones will be ready to pair to a device. Alternatively, you can reset from the Bowers & Wilkins Headphones app, please see Reset under Settings in the app</p>"
+          }
+        },
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-2": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Troubleshoot the JAYS - x-Five Wireless",
+            "content": "<h5><strong>Pairing the JAYS - x-Five Wireless</strong></h5><ol><li>To power on, press and hold the on/off button for 2s, the LED will blink in blue three times. </li><li>To pair, press and hold the on/off button for 5s, the LED will blink ®<br/>x-Five Wireless”. The blinking LED will turn off upon a successful connection<br/>followed by a short audio beep.</li><li>To force pairing mode, press and hold the on/off button for 5s from off state.</li></ol><h5><strong>Troubleshooting the JAYS - x-Five Wireless</strong></h5><p>Problem pairing and connecting:</p><p><br/>Make sure the headphones are not connected to another device.<br/><br/></p><p>Toggle Bluetooth On and Off on your device.<br/><br/>Move the headphones closer to the device or alter their positions.<br/><br/>Verify no other wireless equipment interfere with your earphone</p>"
+          }
+        },
+        "182fa2b1-565f-4b58-afa0-39f0d2a46b1f": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Troubleshoot the Audeze - Mobius",
+            "content": "<h5><strong>Pairing the Audeze - Mobius</strong></h5><ol><li>Double click the Power button and Mobius will go into pairing mode.<br/></li><li>You will then hear the Gypsy Muse within say the command “Pairing.” In your iPhone/Android device, go to Settings &gt; Bluetooth. You will see Audeze Mobius 3D BT under Other Devices.<br/></li><li>Select your Mobius and you should then be connected.</li></ol><h5><strong>Troubleshooting the Audeze - Mobius</strong></h5><p></p><ol><li>Unplug Mobius. Power it down.<br/></li><li>Close App. Disconnect USB. Restart PC.<br/></li><li>Power on Mobius, connect it to PC, put it in 8ch mode.<br/></li><li>Make your computer forget Mobius if paired in bluetooth too.<br/></li><li>Start App.</li></ol>"
+          }
+        },
+        "0db2c25a-4526-40bf-a393-454ce545f28d": {
+          "type": "item",
+          "settings": {
+            "title": "How to Pair and Reset the Sony - WH-XB700",
+            "content": "<h5><strong>Pairing the Sony - WH-XB700</strong></h5><p>1. Turn on the headset when you pair the headset with a device for the first time after you bought it or after you initialised the headset (the headset has no pairing information). The headset enters pairing mode automatically.<br/><br/>2. When you pair a second or subsequent device (the headset has pairing information for other devices), press and hold the button for about 7 seconds.<br/><br/>3. Check that the indicator (blue) repeatedly flashes twice in a row. You will hear a voice guidance “Bluetooth pairing”.<br/><br/>4. Perform the pairing procedure on the Bluetooth device to search for this headset. [WH-XB700] will be displayed on the list of detected devices on the screen of the Bluetooth device. If it is not displayed, repeat from step 1.<br/><br/>5. Select [WH-XB700] displayed on the screen of the Bluetooth device for pairing. If Passkey (*) input is required, input “0000”.<br/><br/>*A Passkey may be called “Passcode”, “PIN code”, or “Password”.<br/><br/>Make the Bluetooth connection from the Bluetooth device.<br/>Some devices automatically connect with the headset when the pairing is complete. You will hear a voice guidance “Bluetooth connected”</p><h5><strong>Resetting the Sony - WH-XB700</strong></h5><p>1. Press and hold the button on the left unit for about 20 seconds.</p><p><br/>2. Release your finger when the indicator (red) turns off after flashing.</p><p><br/>3. Then press and hold the button on the right unit for about 20 seconds.4. Release your finger when the indicator (red) turns off after flashing.</p>"
+          }
+        },
+        "cb0eed50-a58c-4d46-9cf5-e65fe96844b2": {
+          "type": "item",
+          "settings": {
+            "title": "Can I request for a Re-inspection under Warranty Claim?",
+            "content": "<p>Yes, you can. Please elaborate about your problem so that it is easier for us to discover the defect (The more details, the better).</p><p>Eg. If you say that you are facing issues with the mic, don't forget to tell us the devices you have used your in-ear with. We will try connecting it with multiple devices to find the <a href=\"https://headphonezone.freshdesk.com/support/solutions/articles/6000199291-what-is-a-manufacturing-defect-\" target=\"_blank\">manufacturing defect</a>.</p><p><br/></p>"
+          }
+        },
+        "831869cb-cd38-40fa-b0e5-61e43ca12925": {
+          "type": "item",
+          "settings": {
+            "title": "Can you send the replacement as soon as I ship the product to you?",
+            "content": "<p>Without inspecting the product we won’t be able to issue a replacement to you. Replacements will be issued only if the defect mentioned has been detected.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-0",
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-1",
+        "template--16042753261756__d10d4f5e-f418-4ff2-8ab6-2185e6b599cc-1685624204aed315c7-2",
+        "182fa2b1-565f-4b58-afa0-39f0d2a46b1f",
+        "0db2c25a-4526-40bf-a393-454ce545f28d",
+        "cb0eed50-a58c-4d46-9cf5-e65fe96844b2",
+        "831869cb-cd38-40fa-b0e5-61e43ca12925"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2rem;}",
+        "@media screen and (max-width: 700px) {h2 {font-size: 1.5rem !important; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Wireless Headphones",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "887271bd-3f1f-4165-9fac-286e3b01c6a7": {
+      "type": "custom-html",
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<a id=\"raiseticket\"></a>\n\n<script type=\"text/javascript\" src=\"https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js\"></script>\n<style type=\"text/css\" media=\"screen, projection\">\n    @import url(https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.css); \n</style> \n<iframe title=\"Feedback Form\" class=\"freshwidget-embedded-form\" id=\"freshwidget-embedded-form\" src=\"https://help.headphonezone.in/widgets/feedback_widget/new?&amp;widgetType=embedded&amp;formTitle=Contact+the+Team&amp;submitTitle=Submit+a+Ticket&amp;submitThanks=Thank+you.+You+will+hear+back+from+the+Headphone+Zone+team+shortly.&amp;searchArea=no\" scrolling=\"yes\" height=\"900px\" width=\"100%\" frameborder=\"0\">\n</iframe>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5436d29c-494e-4ebb-be68-ea5575fdabb6",
+    "5ba0bd09-847e-4f07-bfe1-ea6a4bd85a0d",
+    "fec55e75-1a38-486c-bf08-237238652a26",
+    "d10d4f5e-f418-4ff2-8ab6-2185e6b599cc",
+    "887271bd-3f1f-4165-9fac-286e3b01c6a7"
+  ]
+}
