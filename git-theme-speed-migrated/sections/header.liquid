@@ -24,12 +24,12 @@ the underlying logic of the menu.
     --header-background-opacity: {{ section.settings.background_opacity | divided_by: 100.0 }};
     --header-background-blur-radius: {{ section.settings.background_blur_radius }}px;
     --header-transparent-text-color: {{ section.settings.transparent_header_text_color.rgb }};
-    {% comment %}
+
     {%- if section.settings.logo != blank -%}
       --header-logo-width: {{ section.settings.logo_mobile_max_width }}px;
       --header-logo-height: {{ section.settings.logo_mobile_max_width | divided_by: section.settings.logo.aspect_ratio | round }}px;
     {%- endif -%}
-    {% endcomment %}
+
     position: {% if section.settings.enable_sticky %}sticky{% else %}relative{% endif %};
     top: 0;
     z-index: 10;
@@ -51,12 +51,11 @@ the underlying logic of the menu.
 
   @media screen and (min-width: 700px) {
     #shopify-section-{{ section.id }} {
-      {% comment %}
       {%- if section.settings.logo != blank -%}
         --header-logo-width: {{ section.settings.logo_max_width }}px;
         --header-logo-height: {{ section.settings.logo_max_width | divided_by: section.settings.logo.aspect_ratio | round }}px;
       {%- endif -%}
-      {% endcomment %}
+
       --header-padding-block: {% if section.settings.reduce_padding %}var(--spacing-6){% else %}var(--spacing-8-5){% endif %};
     }
   }
@@ -98,7 +97,7 @@ the underlying logic of the menu.
           </a>
 
           {%- if section.settings.layout != 'drawer' and section.settings.menu.links.size > 0 -%}
-            <nav class="header__link-list {% if section.settings.layout == 'logo_left_navigation_center' %}justify-center{% endif %} wrap nav-space" role="navigation">
+            <nav class="header__link-list {% if section.settings.layout == 'logo_left_navigation_center' %}justify-center{% endif %} wrap" role="navigation">
               <ul class="contents" role="list">
                 {%- for link in section.settings.menu.links -%}
                   {% liquid
@@ -118,7 +117,7 @@ the underlying logic of the menu.
 
                   <li>
                     {%- if link.levels == 0 and mega_menu_block == '' -%}
-                      <a href="{{ link.url }}" class="bold link-faded-reverse nav-font {% if link.title contains 'SALE' %} red-color {% endif %}  {% if link.title contains 'Favourites' %} blue-color {% endif %}" {% if link.current %}aria-current="page"{% endif %}>{{- link.title -}}</a>
+                      <a href="{{ link.url }}" class="bold link-faded-reverse" {% if link.current %}aria-current="page"{% endif %}>{{- link.title -}}</a>
                     {%- else -%}
                       {%- if mega_menu_block != '' -%}
                         {%- comment -%}
@@ -129,24 +128,24 @@ the underlying logic of the menu.
                         {%- endcomment -%}
                         {%- unless mega_menu_block.settings.layout == 'drawer' -%}
                           <details is="mega-menu-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}" {{ mega_menu_block.shopify_attributes }}>
-                            <summary class="text-with-icon gap-2.5 bold link-faded-reverse nav-font{% if link.title contains 'SALE' %} red-color {% endif %} {% if link.title contains 'Favourites' %} blue-color {% endif %}" {% if link.url != '#' %}data-url="{{ link.url | escape }}"{% endif %}>
+                            <summary class="text-with-icon gap-2.5 bold link-faded-reverse" {% if link.url != '#' %}data-url="{{ link.url | escape }}"{% endif %}>
                               {{- link.title -}} {%- render 'icon' with 'chevron-bottom' -%}
                             </summary>
 
                            {%- render 'mega-menu-horizontal', link: link, mega_menu_block: mega_menu_block -%}
                           </details>
                         {%- else -%}
-                          <button aria-controls="navigation-drawer-{{ forloop.index }}" aria-expanded="false" class="text-with-icon gap-2.5 bold link-faded-reverse nav-font" {% if link.title == 'On Sale' %} style="color:#ED473F;" {% endif %} {% if link.title == 'Favourites' %} style="color:#3c07ff;" {% endif %}>
+                          <button aria-controls="navigation-drawer-{{ forloop.index }}" aria-expanded="false" class="text-with-icon gap-2.5 bold link-faded-reverse">
                             {{- link.title -}} {%- render 'icon' with 'chevron-bottom' -%}
                           </button>
 
-                          <navigation-drawer class="navigation-drawer drawer lg-max:hidden {%- if link.title == 'Categories'%} categories-menu {%- endif -%}" id="navigation-drawer-{{ forloop.index }}" open-from="left" mega-menu>
+                          <navigation-drawer class="navigation-drawer drawer lg-max:hidden" id="navigation-drawer-{{ forloop.index }}" open-from="left" mega-menu>
                             {%- render 'navigation-panel', navigation_layout: section.settings.layout, main_menu: link, is_mega_menu: true, mega_menu_block: mega_menu_block -%}
                           </navigation-drawer>
                         {%- endunless -%}
                       {%- else -%}
                         <details class="relative" is="dropdown-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}">
-                          <summary class="text-with-icon gap-2.5 bold link-faded-reverse nav-font {% if link.title contains 'SALE' %} red-color {% endif %}" {% if link.url != '#' %}data-url="{{ link.url | escape }}"{% endif %}>
+                          <summary class="text-with-icon gap-2.5 bold link-faded-reverse" {% if link.url != '#' %}data-url="{{ link.url | escape }}"{% endif %}>
                             {{- link.title -}} {%- render 'icon' with 'chevron-bottom' -%}
                           </summary>
 
@@ -162,7 +161,7 @@ the underlying logic of the menu.
                                     <details class="relative" is="dropdown-disclosure" trigger="{{ section.settings.menu_open_trigger | escape }}">
                                       <summary class="dropdown-menu__item group" {% if sub_link.url != '#' %}data-url="{{ sub_link.url | escape }}"{% endif %}>
                                         <span><span class="reversed-link">{{- sub_link.title -}}</span></span>
-                                        {%- render 'icon' with 'chevron-right' -%}
+                                        {%- render 'icon' with 'chevron-right', direction_aware: true -%}
                                       </summary>
 
                                       <div class="dropdown-menu">
@@ -200,12 +199,12 @@ the underlying logic of the menu.
       {%- endcomment -%}
 
       {%- capture logo_content -%}
-        {%- comment -%}
         {%- if section.settings.logo -%}
           {%- capture sizes -%}{{ section.settings.logo_max_width }}px{%- endcapture -%}
           {%- capture widths -%}{{ section.settings.logo_max_width | times: 2 | at_most: section.settings.logo.width }}, {{ section.settings.logo_max_width | times: 3 | at_most: section.settings.logo.width }}{%- endcapture -%}
           <span class="sr-only">{{ shop.name }}</span>
-          {{- section.settings.logo | image_url: width: section.settings.logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image' -}}
+          {%- assign alt_text = section.settings.logo.alt | default: shop.name -%}
+          {{- section.settings.logo | image_url: width: section.settings.logo.width | image_tag: sizes: sizes, alt: alt_text, widths: widths, class: 'header__logo-image' -}}
 
           {%- if section.settings.transparent_logo -%}
             {{- section.settings.transparent_logo | image_url: width: section.settings.transparent_logo.width | image_tag: sizes: sizes, widths: widths, class: 'header__logo-image header__logo-image--transparent' -}}
@@ -213,9 +212,6 @@ the underlying logic of the menu.
         {%- else -%}
           <span class="header__logo-text h4">{{ shop.name }}</span>
         {%- endif -%}
-      {%- endcomment -%}
-      <span class="sr-only">{{ shop.name }}</span>
-      {% render 'icon' with  'nav-logo-animation' %}
       {%- endcapture -%}
 
       {%- if request.page_type == 'index' -%}
@@ -233,12 +229,12 @@ the underlying logic of the menu.
       {%- endcomment -%}
 
       <div class="header__secondary-nav">
-        {%- if section.settings.header != 'drawer' and section.settings.secondary_menu.links.size > 0 -%}
+        {%- if section.settings.layout != 'drawer' and section.settings.secondary_menu.links.size > 0 -%}
           <nav class="header__link-list" role="navigation">
             <ul class="contents">
               {%- for link in section.settings.secondary_menu.links -%}
                 <li>
-                  <a href="{{ link.url }}" class="bold link-faded-reverse nav-font" {% if link.title == 'On Sale' %} style="color:#ED473F;" {% endif %} {% if link.title == 'SALE' %} style="color:#ED473F;" {% endif %}>{{ link.title }}</a>
+                  <a href="{{ link.url }}" class="bold link-faded-reverse">{{ link.title }}</a>
                 </li>
               {%- endfor -%}
             </ul>
@@ -267,7 +263,7 @@ the underlying logic of the menu.
           
           {%- if shop.customer_accounts_enabled -%}
             <li>
-              <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="tap-area">
+              <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="hidden tap-area sm:block">
                 <span class="sr-only">{% if customer %}{{ 'header.general.account' | t }}{% else %}{{ 'header.general.login' | t }}{% endif %}</span>
                 {%- render 'icon' with 'account' -%}
               </a>
@@ -498,13 +494,15 @@ the underlying logic of the menu.
       "type": "checkbox",
       "id": "show_country_flag",
       "label": "Show country flag",
-      "default": true
+      "default": true,
+      "visible_if": "{{ section.settings.show_country_selector }}"
     },
     {
       "type": "checkbox",
       "id": "show_country_name",
       "label": "Show country name",
-      "default": false
+      "default": false,
+      "visible_if": "{{ section.settings.show_country_selector }}"
     },
     {
       "type": "header",
@@ -551,7 +549,8 @@ the underlying logic of the menu.
       "step": 2,
       "unit": "px",
       "label": "Background blur radius",
-      "default": 4
+      "default": 4,
+      "visible_if": "{{ section.settings.background_opacity < 100 }}"
     }
   ],
   "blocks": [

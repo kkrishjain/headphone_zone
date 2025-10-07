@@ -54,13 +54,14 @@ LIQUID
             {%- assign collection = block.settings.collection -%}
             {%- assign collection_url = block.settings.url | default: collection.url -%}
 
-            <a data-ga-category="Steals you can’t miss Section" {% if collection_url != blank %}href="{{ collection_url }}"{% endif %} class="collection-card {% if block.settings.text_position contains 'place-self-end' %}collection-card--reverse-transition{% endif %} shadow" reveal-js>
+            <a {% if collection_url != blank %}href="{{ collection_url }}"{% endif %} class="collection-card {% if block.settings.text_position contains 'place-self-end' %}collection-card--reverse-transition{% endif %} shadow" reveal-js>
               <div class="content-over-media group rounded-sm" style="--content-over-media-overlay: {{ block.settings.overlay_color.rgb }} / {{ block.settings.overlay_opacity | divided_by: 100.0 }}">
                 {%- if collection != blank or block.settings.image != blank -%}
                   {%- assign image = block.settings.image | default: collection.featured_image -%}
 
                   {%- if image != blank -%}
-                    {{- image | image_url: width: 500 | image_tag: loading: 'lazy', width: 500, class: 'zoom-image' -}}
+                    {%- capture sizes -%}(max-width: 699px) 73vw, {{ settings.page_width | divided_by: section.settings.collections_per_row }}px{%- endcapture -%}
+                    {{- image | image_url: width: image.width | image_tag: loading: 'lazy', sizes: sizes, widths: '200,300,400,500,600,800,1000,1200,1400,1600', class: 'zoom-image' -}}
                   {%- endif -%}
 
                   <div class="collection-card__content-wrapper text-custom {{ block.settings.text_position }}" style="--text-color: {{ block.settings.text_color.rgb }}">
@@ -174,7 +175,8 @@ LIQUID
       "type": "checkbox",
       "id": "show_progress_bar",
       "label": "Show carousel progress bar",
-      "default": false
+      "default": false,
+      "visible_if": "{{ section.settings.stack_collections == false }}"
     },
     {
       "type": "text",
@@ -375,6 +377,7 @@ LIQUID
   "presets": [
     {
       "name": "Collection list",
+      "category": "Collections",
       "blocks": [
         {
           "type": "collection"

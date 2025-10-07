@@ -14,10 +14,6 @@
       margin-block-start: calc(-1 * var(--header-height) * var(--section-is-first));
     {%- endif -%}
   }
-
-  #shopify-section-{{ section.id }} img {
-    max-width: 1500px;
-  }
 </style>
 
 <div {% render 'section-properties' %} {% if section.settings.allow_transparent_header %}allow-transparent-header{% endif %}>
@@ -38,7 +34,7 @@
           >
         {%- endif -%}
 
-        {{- section.settings.image | image_url: width: 1500 | image_tag: sizes: sizes, fetchpriority: fetch_priority, widths: '200,300,400,500,800,1000,1200,1500', style: 'max-width:1500px;width:100%;height:auto;' -}}
+        {{- section.settings.image | image_url: width: section.settings.image.width | image_tag: sizes: sizes, fetchpriority: fetch_priority, widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200' -}}
       </picture>
     {%- else -%}
       {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder' | replace: '<svg', '<svg preserveAspectRatio="xMinYMin slice"' }}
@@ -430,6 +426,7 @@
   "presets": [
     {
       "name": "Image with text overlay",
+      "category": "Banners",
       "blocks": [
         {
           "type": "subheading",

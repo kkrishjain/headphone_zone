@@ -24,7 +24,9 @@
 
       {{- section.settings.content -}}
 
-      
+      {%- if section.settings.button_text != blank -%}
+        {% render 'button', content: section.settings.button_text, href: section.settings.button_url, size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color %}
+      {%- endif -%}
     {%- endcapture -%}
 
     {%- if content != blank -%}
@@ -50,9 +52,6 @@
           {%- endfor -%}
         </div>
       </div>
-{%- if section.settings.button_text != blank -%}
-        {% render 'button', content: section.settings.button_text, href: section.settings.button_url, size: 'xl', background: section.settings.button_background, text_color: section.settings.button_text_color %}
-      {%- endif -%}
     {%- endif -%}
   </div>
 </div>
@@ -483,6 +482,7 @@
   "presets": [
     {
       "name": "Accordion content",
+      "category": "Content",
       "blocks": [
         {
           "type": "item",

@@ -41,65 +41,37 @@ LIQUID
 ------------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
 
-{%- if collection.metafields.hpz.subcoll_image_1.value != blank and request.page_type == 'collection' -%}
-  <div {% render 'section-properties' %}>
-    <div class="section-stack">
-      {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, heading_color: section.settings.heading_color, heading_gradient: section.settings.heading_gradient, content: section.settings.content, link_text: section.settings.link_text, link_url: section.settings.link_url -%}
+<div {% render 'section-properties' %}>
+  <div class="section-stack">
+    {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, heading_color: section.settings.heading_color, heading_gradient: section.settings.heading_gradient, content: section.settings.content, link_text: section.settings.link_text, link_url: section.settings.link_url -%}
+
+    <div class="floating-controls-container">
+      {%- assign scroll_area_id = 'scroll-area-' | append: section.id -%}
+
+      <image-link-blocks id="{{ scroll_area_id }}" class="image-link-blocks scroll-area bleed md:unbleed">
+        {%- for block in section.blocks -%}
+          {%- liquid
+            assign loading_strategy = nil
   
-      <div class="floating-controls-container">
-        {%- assign scroll_area_id = 'scroll-area-' | append: section.id -%}
-  
-        <image-link-blocks id="{{ scroll_area_id }}" class="image-link-blocks scroll-area bleed md:unbleed">
-          {%- for block in section.blocks -%}
-            {%- liquid
-              assign loading_strategy = nil
-    
-              if section.index > 3 or forloop.index > 3
-                assign loading_strategy = 'lazy'
-              endif
-            -%}
-  
-            <div {% render 'surface', class: 'image-link-blocks__item group rounded', background: block.settings.background, text_color: block.settings.text_color, background_fallback: 'bg-secondary' %} {{ block.shopify_attributes }}>
-              {%- if block.settings.stretch_image -%}
-                {%- capture item_content -%}
-                  {%- if block.settings.image != blank -%}
-                    {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading_strategy, sizes: '(max-width: 699px) 160px, 285px', widths: '200,300,400,500,600,700,800,900,1000,1200', class: 'zoom-image' -}}
-                  {%- else -%}
-                    {{- 'image' | placeholder_svg_tag: 'zoom-image placeholder' -}}
-                  {%- endif -%}
-  
-                  {%- if block.settings.link_text != blank -%}
-                    <div class="place-self-end-start w-full bold">
-                      <div class="h-stack justify-between gap-2">
-                        {{ block.settings.link_text | escape }}
-  
-                        {%- if block.settings.link_url != blank -%}
-                          {%- if block.settings.stretch_image -%}
-                            {% render 'icon' with 'circle-button-right-clipped', direction_aware: true %}
-                          {%- else -%}
-                            <span class="circle-chevron">{% render 'icon' with 'chevron-right-small', direction_aware: true %}</span>
-                          {%- endif -%}
-                        {%- endif -%}
-                      </div>
-                    </div>
-                  {%- endif -%}
-                {%- endcapture -%}
-  
-                <a {% if block.settings.link_url %}href="{{ block.settings.link_url }}"{% endif %} class="content-over-media rounded" style="--content-over-media-overlay: {{ block.settings.overlay_color.rgb }} / {{ block.settings.overlay_opacity | divided_by: 100.0 }}">
-                  {{- item_content -}}
-                </a>
-              {%- else -%}
-                <a {% if block.settings.link_url != blank %}href="{{ block.settings.link_url }}"{% endif %} class="image-link-blocks__inner">
-                  {%- if block.settings.image != blank -%}
-                    {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading_strategy, sizes: '(max-width: 699px) 160px, 285px', widths: '200,300,400,500,600,700,800,900,1000,1200', class: 'image-link-blocks__image zoom-image' -}}
-                  {%- else -%}
-                    {{- 'image' | placeholder_svg_tag: 'image-link-blocks__image placeholder' -}}
-                  {%- endif -%}
-  
-                  {%- if block.settings.link_text != blank -%}
-                    <p class="image-link-blocks__title {% if block.settings.link_url != blank %}image-link-blocks__title--animate{% endif %} text-center bold">
-                      {{- block.settings.link_text | escape -}}
-  
+            if section.index > 3 or forloop.index > 3
+              assign loading_strategy = 'lazy'
+            endif
+          -%}
+
+          <div {% render 'surface', class: 'image-link-blocks__item group rounded', background: block.settings.background, text_color: block.settings.text_color, background_fallback: 'bg-secondary' %} {{ block.shopify_attributes }}>
+            {%- if block.settings.stretch_image -%}
+              {%- capture item_content -%}
+                {%- if block.settings.image != blank -%}
+                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading_strategy, sizes: '(max-width: 699px) 160px, 285px', widths: '200,300,400,500,600,700,800,900,1000,1200', class: 'zoom-image' -}}
+                {%- else -%}
+                  {{- 'image' | placeholder_svg_tag: 'zoom-image placeholder' -}}
+                {%- endif -%}
+
+                {%- if block.settings.link_text != blank -%}
+                  <div class="place-self-end-start w-full bold">
+                    <div class="h-stack justify-between gap-2">
+                      {{ block.settings.link_text | escape }}
+
                       {%- if block.settings.link_url != blank -%}
                         {%- if block.settings.stretch_image -%}
                           {% render 'icon' with 'circle-button-right-clipped', direction_aware: true %}
@@ -107,27 +79,54 @@ LIQUID
                           <span class="circle-chevron">{% render 'icon' with 'chevron-right-small', direction_aware: true %}</span>
                         {%- endif -%}
                       {%- endif -%}
-                    </p>
-                  {%- endif -%}
-                </a>
-              {%- endif -%}
-            </div>
-          {%- endfor -%}
-        </image-link-blocks>
-  
-        <button is="prev-button" class="circle-button circle-button--fill border group" aria-controls="{{ scroll_area_id }}" disabled>
-          <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
-          <span class="animated-arrow animated-arrow--reverse"></span>
-        </button>
-  
-        <button is="next-button" class="circle-button circle-button--fill border group" aria-controls="{{ scroll_area_id }}">
-          <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
-          <span class="animated-arrow"></span>
-        </button>
-      </div>
+                    </div>
+                  </div>
+                {%- endif -%}
+              {%- endcapture -%}
+
+              <a {% if block.settings.link_url %}href="{{ block.settings.link_url }}"{% endif %} class="content-over-media rounded" style="--content-over-media-overlay: {{ block.settings.overlay_color.rgb }} / {{ block.settings.overlay_opacity | divided_by: 100.0 }}">
+                {{- item_content -}}
+              </a>
+            {%- else -%}
+              <a {% if block.settings.link_url != blank %}href="{{ block.settings.link_url }}"{% endif %} class="image-link-blocks__inner">
+                {%- if block.settings.image != blank -%}
+                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading_strategy, sizes: '(max-width: 699px) 160px, 285px', widths: '200,300,400,500,600,700,800,900,1000,1200', class: 'image-link-blocks__image zoom-image' -}}
+                {%- else -%}
+                  {{- 'image' | placeholder_svg_tag: 'image-link-blocks__image placeholder' -}}
+                {%- endif -%}
+
+                {%- if block.settings.link_text != blank -%}
+                  <p class="image-link-blocks__title {% if block.settings.link_url != blank %}image-link-blocks__title--animate{% endif %} text-center bold">
+                    {{- block.settings.link_text | escape -}}
+
+                    {%- if block.settings.link_url != blank -%}
+                      {%- if block.settings.stretch_image -%}
+                        {% render 'icon' with 'circle-button-right-clipped', direction_aware: true %}
+                      {%- else -%}
+                        <span class="circle-chevron">{% render 'icon' with 'chevron-right-small', direction_aware: true %}</span>
+                      {%- endif -%}
+                    {%- endif -%}
+                  </p>
+                {%- endif -%}
+              </a>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </image-link-blocks>
+
+      <button is="prev-button" class="circle-button circle-button--fill border group" aria-controls="{{ scroll_area_id }}" disabled>
+        <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
+        <span class="animated-arrow animated-arrow--reverse"></span>
+      </button>
+
+      <button is="next-button" class="circle-button circle-button--fill border group" aria-controls="{{ scroll_area_id }}">
+        <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
+        <span class="animated-arrow"></span>
+      </button>
     </div>
   </div>
-{% endif %}
+</div>
+
 {% schema %}
 {
   "name": "Image link blocks",
@@ -184,7 +183,8 @@ LIQUID
           "type": "color",
           "id": "overlay_color",
           "label": "Overlay",
-          "default": "#000000"
+          "default": "#000000",
+          "visible_if": "{{ block.settings.stretch_image }}"
         },
         {
           "type": "range",
@@ -194,7 +194,8 @@ LIQUID
           "max": 100,
           "step": 1,
           "unit": "%",
-          "default": 0
+          "default": 0,
+          "visible_if": "{{ block.settings.stretch_image }}"
         }
       ]
     }
@@ -285,6 +286,7 @@ LIQUID
   "presets": [
     {
       "name": "Image link blocks",
+      "category": "Media",
       "blocks": [
         {
           "type": "item"

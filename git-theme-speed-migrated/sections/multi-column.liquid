@@ -27,7 +27,7 @@
               <div class="multi-column__item justify-{{ section.settings.text_alignment }} snap-start" style="--multi-column-item-column-count: span {{ 12.0 | divided_by: block.settings.column_size | round }}" {{ block.shopify_attributes }}>
                 {%- if block.settings.video != blank -%}
                   <video-media autoplay style="--aspect-ratio: {{ block.settings.video.aspect_ratio }}">
-                    {{ block.settings.video | video_tag: playsinline: true, muted: true, loop: true, preload: 'metadata', class: 'rounded' }}
+                    {{ block.settings.video | video_tag: playsinline: true, muted: true, controls: block.settings.show_controls, loop: true, preload: 'metadata', class: 'rounded' }}
                   </video-media>
                 {%- elsif block.settings.image != blank -%}
                   {%- capture sizes -%}(max-width: 699px) calc(73vw - 40px), (max-width: 999px) calc(38vw - 64px), calc(min({{ settings.page_width }}px, 100vw) / {{ block.settings.column_size }}){%- endcapture -%}
@@ -191,6 +191,13 @@
           "info": "Video are muted automatically and will autoplay."
         },
         {
+          "type": "checkbox",
+          "id": "show_controls",
+          "label": "Show video controls",
+          "default": false,
+          "visible_if": "{{ block.settings.video != blank }}"
+        },
+        {
           "type": "select",
           "id": "column_size",
           "label": "Desktop item size",
@@ -324,6 +331,7 @@
   "presets": [
     {
       "name": "Multi-column",
+      "category": "Storytelling",
       "blocks": [
         {
           "type": "item",

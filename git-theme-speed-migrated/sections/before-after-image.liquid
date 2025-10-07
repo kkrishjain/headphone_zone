@@ -100,7 +100,7 @@ LIQUID
         </div>
 
         <div class="before-after__cursor-wrapper">
-          <split-cursor class="before-after__cursor" style="--background: {{ section.settings.drag_cursor_background.rgb }}">
+          <split-cursor class="before-after__cursor" tabindex="0" style="--background: {{ section.settings.drag_cursor_background.rgb }}">
             <span class="sr-only">{{ 'general.accessibility.drag' | t }}</span>
 
             <svg role="presentation" focusable="false" width="28" height="35" viewBox="0 0 32 40">
@@ -174,8 +174,8 @@ LIQUID
       "type": "checkbox",
       "id": "expand_image",
       "label": "Expand image",
-      "info": "Only applicable when text position is set to center.",
-      "default": false
+      "default": false,
+      "visible_if": "{{ section.settings.text_position == 'center' }}"
     },
     {
       "type": "select",
@@ -281,7 +281,8 @@ LIQUID
   ],
   "presets": [
     {
-      "name": "Before/after image"
+      "name": "Before/after image",
+      "category": "Media"
     }
   ]
 }

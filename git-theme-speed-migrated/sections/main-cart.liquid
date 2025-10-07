@@ -99,6 +99,32 @@
 
                   {%- when 'totals' -%}
                     <div class="cart-form__totals v-stack gap-2" {{ block.shopify_attributes }}>
+                      {%- if section.settings.allow_discount_application or cart.cart_level_discount_applications.size > 0 -%}
+                        <div class="v-stack gap-2.5">
+                          {%- if section.settings.allow_discount_application -%}
+                            {%- render 'cart-discount' -%}
+                          {%- endif -%}
+
+                          {%- if cart.cart_level_discount_applications.size > 0 -%}
+                            <div class="h-stack gap-2">
+                              {%- for discount_application in cart.cart_level_discount_applications -%}
+                                <div class="h-stack gap-4 justify-between">
+                                  <div class="badge">
+                                    {%- render 'icon' with 'discount' -%} {{ discount_application.title }} (-{{ discount_application.total_allocated_amount | money }})
+
+                                    {%- if section.settings.allow_discount_application and discount_application.type != '' -%}
+                                      <cart-discount-remove-button discount-code="{{ discount_application.title | escape }}" class="h-stack align-center">
+                                        <button type="button">{%- render 'icon' with 'delete', width: 8, stroke_width: 3 -%}</button>
+                                      </cart-discount-remove-button>
+                                    {%- endif -%}
+                                  </div>
+                                </div>
+                              {%- endfor -%}
+                            </div>
+                          {%- endif -%}
+                        </div>
+                      {%- endif -%}
+
                       {%- if block.settings.show_order_weight -%}
                         <div class="h-stack gap-4 justify-between">
                           <span class="text-subdued">{{ 'cart.general.weight' | t }}</span>
@@ -110,16 +136,6 @@
                         <span class="text-subdued">{{ 'cart.general.subtotal' | t }}</span>
                         <span class="text-subdued">{{ cart.items_subtotal_price | money }}</span>
                       </div>
-
-                      {% for discount_application in cart.cart_level_discount_applications %}
-                        <div class="h-stack gap-4 justify-between">
-                          <div class="badge">
-                            {%- render 'icon' with 'discount' -%} {{- discount_application.title -}}
-                          </div>
-
-                          <span class="text-subdued">-{{ discount_application.total_allocated_amount | money }}</span>
-                        </div>
-                      {% endfor %}
 
                       <div class="h-stack gap-4 justify-between">
                         <span class="h5">{{ 'cart.general.total' | t }}</span>
@@ -178,7 +194,6 @@
                     {%- render 'button', type: 'submit', icon: 'picto-lock', content: checkout_button, size: 'xl', name: 'checkout', stretch: true, block: block -%}
                 {%- endcase -%}
               {%- endfor -%}
-              {% render 'hpz-shipping-timeline' %}
             </form>
 
             {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
@@ -612,6 +627,12 @@
     }
   ],
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "allow_discount_application",
+      "label": "Allow discount application",
+      "default": false
+    },
     {
       "type": "checkbox",
       "id": "show_shipping_estimator",

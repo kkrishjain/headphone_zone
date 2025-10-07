@@ -1,9 +1,9 @@
 {%- render 'section-spacing-collapsing' -%}
 
 {%- comment -%}
-  ------------------------------------------------------------------------------------------------------------------------
-  CSS
-  ------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+CSS
+------------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
 
 <style>
@@ -28,26 +28,45 @@
 
     @media screen and (min-width: 1000px) {
       #block-{{ section.id }}-{{ block.id }} {
-        --media-with-text-item-grid-template: {% if block.settings.media_position == 'start' %}"media content" / minmax(0, {{ media_ratio }}fr) minmax(0, {{ content_ratio }}fr){% else %}"content media" / minmax(0, {{ content_ratio }}fr) minmax(0, {{ media_ratio }}fr){% endif %};
+        {%- if section.settings.alternate_media_position -%}
+          {% assign modulo = forloop.index0 | modulo: 2 %}
+
+          {% if modulo == 0 %}
+            --media-with-text-item-grid-template: "media content" / minmax(0, {{ media_ratio }}fr) minmax(0, {{ content_ratio }}fr);
+          {%- else -%}
+            --media-with-text-item-grid-template: "content media" / minmax(0, {{ content_ratio }}fr) minmax(0, {{ media_ratio }}fr);
+          {%- endif -%}
+        {%- else -%}
+          {%- if block.settings.media_position == 'start' -%}
+            --media-with-text-item-grid-template: "media content" / minmax(0, {{ media_ratio }}fr) minmax(0, {{ content_ratio }}fr);
+          {%- else -%}
+            --media-with-text-item-grid-template: "content media" / minmax(0, {{ content_ratio }}fr) minmax(0, {{ media_ratio }}fr);
+          {%- endif -%}
+        {%- endif -%}
       }
     }
   {%- endfor -%}
 </style>
 
 {%- comment -%}
-  ------------------------------------------------------------------------------------------------------------------------
-  LIQUID
-  ------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+LIQUID
+------------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
 
 <div {% render 'section-properties' %}>
   <media-with-text class="media-with-text {% if section.settings.spacing == 'none' %}{% if section.settings.full_width %}full-bleed{% else %}rounded{% endif %}{% endif %}">
     {%- for block in section.blocks -%}
       <div id="block-{{ section.id }}-{{ block.id }}" class="media-with-text__item" {{ block.shopify_attributes }}>
-        <div
-          class="media-with-text__media {% unless section.settings.spacing == 'none' %}rounded{% endunless %}"
-          reveal-on-scroll="true"
-        >
+        <div class="media-with-text__media {% unless section.settings.spacing == 'none' %}rounded{% endunless %}" reveal-on-scroll="true">
+          {%- liquid
+            assign loading_strategy = nil
+  
+            if section.index > 3 or forloop.index > 3
+              assign loading_strategy = 'lazy'
+            endif
+          -%}
+
           {%- if block.type == 'image' -%}
             {%- if block.settings.image != blank -%}
               {%- assign width_ratio = 100.0 | divided_by: block.settings.media_width -%}
@@ -55,14 +74,7 @@
 
               {%- capture sizes -%}(max-width: 999px) 100vw, min({{ maximum_image_width | ceil }}px, {{ block.settings.media_width }}vw){% endcapture %}
 
-              {{-
-                block.settings.image
-                | image_url: width: block.settings.image.width
-                | image_tag:
-                  loading: 'lazy',
-                  sizes: sizes,
-                  widths: '300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600'
-              -}}
+              {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: loading: loading_strategy, sizes: sizes, widths: '300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600' -}}
             {%- else -%}
               {{- 'image' | placeholder_svg_tag: 'aspect-short placeholder' -}}
             {%- endif -%}
@@ -71,63 +83,35 @@
               {%- assign poster_image = block.settings.poster_image | default: block.settings.video.preview_image -%}
 
               {%- if poster_image -%}
-                {{- poster_image | image_url: width: poster_image.width | image_tag: loading: 'lazy', sizes: '(max-width: 699px) 400px, 800px', widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: 'rounded' -}}
+                {{- poster_image | image_url: width: poster_image.width | image_tag: loading: loading_strategy, sizes: '(max-width: 699px) 400px, 800px', widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200', class: 'rounded' -}}
               {%- else -%}
                 {{ 'image' | placeholder_svg_tag: 'rounded' }}
               {%- endif -%}
             {%- endcapture -%}
 
             {%- if block.settings.video -%}
-              <video-media
-                {% if block.settings.autoplay %}
-                  autoplay
-                {% else %}
-                  show-play-button
-                {% endif %}
-                style="--aspect-ratio: {{ block.settings.video.aspect_ratio }}"
-              >
+              <video-media {% if block.settings.autoplay %}autoplay{% else %}show-play-button{% endif %} style="--aspect-ratio: {{ block.settings.video.aspect_ratio }}">
                 {%- unless block.settings.autoplay -%}
                   {{- poster -}}
                 {%- endunless -%}
 
                 {%- if block.settings.autoplay -%}
-                  {{-
-                    block.settings.video
-                    | video_tag: playslinline: true, muted: true, loop: true, preload: 'metadata'
-                  -}}
+                  {{- block.settings.video | video_tag: playslinline: true, muted: true, loop: true, preload: 'metadata' -}}
                 {%- else -%}
-                  {{-
-                    block.settings.video
-                    | video_tag: playslinline: true, controls: true, muted: false, loop: false, preload: 'metadata'
-                  -}}
+                  {{- block.settings.video | video_tag: playslinline: true, controls: true, muted: false, loop: false, preload: 'metadata' -}}
                 {%- endif -%}
               </video-media>
             {%- else -%}
-              <video-media
-                host="{{ block.settings.external_video_url.type }}"
-                {% if block.settings.autoplay %}
-                  autoplay
-                {% else %}
-                  show-play-button
-                {% endif %}
-              >
+              <video-media host="{{ block.settings.external_video_url.type }}" {% if block.settings.autoplay %}autoplay{% else %}show-play-button{% endif %}>
                 {%- unless block.settings.autoplay -%}
                   {{- poster -}}
                 {%- endunless -%}
 
                 <template>
                   {%- if block.settings.external_video_url.type == 'youtube' -%}
-                    <iframe
-                      src="https://www.youtube.com/embed/{{ block.settings.external_video_url.id }}?playsinline=1&autoplay=1&controls=0&mute={% if block.settings.autoplay %}1{% else %}0{% endif %}&loop=1&playlist={{ block.settings.external_video_url.id }}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}"
-                      allow="autoplay; encrypted-media"
-                      allowfullscreen="allowfullscreen"
-                    ></iframe>
+                    <iframe src="https://www.youtube.com/embed/{{ block.settings.external_video_url.id }}?playsinline=1&autoplay=1&controls=0&mute={% if block.settings.autoplay %}1{% else %}0{% endif %}&loop=1&playlist={{ block.settings.external_video_url.id }}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
                   {%- elsif block.settings.external_video_url.type == 'vimeo' -%}
-                    <iframe
-                      src="https://player.vimeo.com/video/{{ block.settings.external_video_url.id }}?autoplay=1&autopause=1&background=1&loop=1&muted={% if block.settings.autoplay %}1{% else %}0{% endif %}&transparent=0&responsive=1&portrait=0&title=0&byline=0&color={{ settings.text_color | remove_first: '#' }}"
-                      allow="autoplay; encrypted-media;"
-                      allowfullscreen="allowfullscreen"
-                    ></iframe>
+                    <iframe src="https://player.vimeo.com/video/{{ block.settings.external_video_url.id }}?autoplay=1&autopause=1&background={% if block.settings.autoplay %}1{% else %}0{% endif %}&loop=1&muted={% if block.settings.autoplay %}1{% else %}0{% endif %}&transparent=0&responsive=1&portrait=0&title=0&byline=0&color={{ settings.text_color | remove_first: '#' }}" allow="autoplay; encrypted-media;" allowfullscreen="allowfullscreen"></iframe>
                   {%- endif -%}
                 </template>
               </video-media>
@@ -136,33 +120,18 @@
         </div>
 
         {%- capture content_class -%}media-with-text__content {% unless section.settings.spacing == 'none' %}rounded{% endunless %}{%- endcapture -%}
-        <div
-          {% render 'surface',
-            class: content_class,
-            background: block.settings.background,
-            background_gradient: block.settings.background_gradient,
-            text_color: block.settings.text_color
-          %}
-        >
+        <div {% render 'surface', class: content_class, background: block.settings.background, background_gradient: block.settings.background_gradient, text_color: block.settings.text_color %}>
           <div class="prose break-all {{ block.settings.text_position }}" reveal-on-scroll="true">
             {%- if block.settings.custom_icon != blank -%}
               {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
               {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.custom_icon.width }}{%- endcapture -%}
-              {{-
-                block.settings.custom_icon
-                | image_url: width: block.settings.custom_icon.width
-                | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'media-with-text__icon'
-              -}}
+              {{- block.settings.custom_icon | image_url: width: block.settings.custom_icon.width | image_tag: loading: loading_strategy, sizes: sizes, widths: widths, class: 'media-with-text__icon' -}}
             {%- elsif block.settings.icon != 'none' -%}
-              {%- render 'icon' with block.settings.icon,
-                width: block.settings.icon_width,
-                height: block.settings.icon_width,
-                class: 'media-with-text__icon'
-              -%}
+              {%- render 'icon' with block.settings.icon, width: block.settings.icon_width, height: block.settings.icon_width, class: 'media-with-text__icon' -%}
             {%- endif -%}
 
             {%- if block.settings.subheading != blank -%}
-              <p class="bold">{{ block.settings.subheading | escape }}</p>
+              <p class="subheading">{{ block.settings.subheading | escape }}</p>
             {%- endif -%}
 
             {%- if block.settings.title != blank -%}
@@ -174,122 +143,7 @@
             {{- block.settings.content -}}
 
             {%- if block.settings.link_text != blank -%}
-              {%- unless template contains 'collection' -%}
-                {%- render 'button',
-                  href: block.settings.link_url,
-                  content: block.settings.link_text,
-                  size: 'xl',
-                  background: block.settings.button_background,
-                  text_color: block.settings.button_text_color
-                -%}
-              {%- endunless -%}
-              {%- if template contains 'collection' -%}
-                <button
-                  type="button"
-                  class="lightbox-210803499973466 button"
-                  is="custom-button"
-                  style="background-color:#444;text-transform:uppercase;"
-                >
-                  Let Us Know
-                </button>
-                <script src="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
-                <script type="text/javascript">
-                  var JFL_210803499973466 = new JotformFeedback({
-                    formId: '210803499973466',
-                    base: 'https://form.jotform.com/',
-                    windowTitle: 'Request a Product',
-                    backgroundColor: '#FFA500',
-                    fontColor: '#FFFFFF',
-                    type: '1',
-                    height: 500,
-                    width: 700,
-                    openOnLoad: false
-                  });
-                </script>
-                <script type="text/javascript">
-                  var ifr = document.getElementById("lightbox-210803499973466");
-                  if (ifr) {
-                    var src = ifr.src;
-                    var iframeParams = [];
-                    if (window.location.href && window.location.href.indexOf("?") > -1) {
-                      iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
-                    }
-                    if (src && src.indexOf("?") > -1) {
-                      iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-                      src = src.substr(0, src.indexOf("?"))
-                    }
-                    iframeParams.push("isIframeEmbed=1");
-                    ifr.src = src + "?" + iframeParams.join('&');
-                  }
-                  window.handleIFrameMessage = function(e) {
-                    if (typeof e.data === 'object') { return; }
-                    var args = e.data.split(":");
-                    if (args.length > 2) { iframe = document.getElementById("lightbox-" + args[(args.length - 1)]); } else { iframe = document.getElementById("lightbox"); }
-                    if (!iframe) { return; }
-                    switch (args[0]) {
-                      case "scrollIntoView":
-                        iframe.scrollIntoView();
-                        break;
-                      case "setHeight":
-                        iframe.style.height = args[1] + "px";
-                        if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
-                          iframe.style.minHeight = args[1] + "px";
-                        }
-                        break;
-                      case "collapseErrorPage":
-                        if (iframe.clientHeight > window.innerHeight) {
-                          iframe.style.height = window.innerHeight + "px";
-                        }
-                        break;
-                      case "reloadPage":
-                        window.location.reload();
-                        break;
-                      case "loadScript":
-                        if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
-                        var src = args[1];
-                        if (args.length > 3) {
-                            src = args[1] + ':' + args[2];
-                        }
-                        var script = document.createElement('script');
-                        script.src = src;
-                        script.type = 'text/javascript';
-                        document.body.appendChild(script);
-                        break;
-                      case "exitFullscreen":
-                        if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-                        else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-                        else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-                        else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-                        else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-                        break;
-                    }
-                    var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-                    if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-                      var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-                      iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
-                    }
-                  };
-                  window.isPermitted = function(originUrl, whitelisted_domains) {
-                    var url = document.createElement('a');
-                    url.href = originUrl;
-                    var hostname = url.hostname;
-                    var result = false;
-                    if( typeof hostname !== 'undefined' ) {
-                      whitelisted_domains.forEach(function(element) {
-                          if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
-                              result = true;
-                          }
-                      });
-                      return result;
-                    }
-                  };
-                  if (window.addEventListener) {
-                    window.addEventListener("message", handleIFrameMessage, false);
-                  } else if (window.attachEvent) {
-                    window.attachEvent("onmessage", handleIFrameMessage);
-                  }
-                </script>
-              {%- endif -%}
+              {%- render 'button', href: block.settings.link_url, content: block.settings.link_text, size: 'xl', background: block.settings.button_background, text_color: block.settings.button_text_color -%}
             {%- endif -%}
           </div>
         </div>
@@ -312,8 +166,14 @@
       "type": "checkbox",
       "id": "full_width",
       "label": "Full width",
-      "info": "Only has effect when spacing is set to none.",
-      "default": false
+      "default": false,
+      "visible_if": "{{ section.settings.spacing == 'none' }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "alternate_media_position",
+      "label": "Alternate media position",
+      "info": "When enabled, block-level media positioning is ignored, and media alternate positions automatically.",
     },
     {
       "type": "select",
@@ -791,7 +651,7 @@
           "type": "image_picker",
           "id": "poster_image",
           "label": "Poster image",
-          "info": "Only used when autoplay is disabled."
+          "visible_if": "{{ block.settings.autoplay == false }}"
         },
         {
           "type": "checkbox",
@@ -1223,6 +1083,7 @@
   "presets": [
     {
       "name": "Media with text",
+      "category": "Media",
       "blocks": [
         {
           "type": "image"

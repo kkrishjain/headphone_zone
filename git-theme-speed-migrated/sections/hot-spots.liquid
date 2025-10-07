@@ -21,11 +21,6 @@
     overflow: visible; /* allows dot to show outside */
   }
 
-  #shopify-section-{{ section.id }} .section-stack {
-    max-width: 1500px;
-    margin: 0 auto;
-  }
-
   {%- if section.settings.full_width -%}
     @media screen and (min-width: 1000px) {
       #shopify-section-{{ section.id }} {
@@ -422,6 +417,7 @@
   "presets": [
     {
       "name": "Hot spots",
+      "category": "Storytelling",
       "blocks": [
         {
           "type": "item",
