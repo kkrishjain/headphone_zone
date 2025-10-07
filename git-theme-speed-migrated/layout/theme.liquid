@@ -45,16 +45,6 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
     {%- render 'microdata-schema' -%}
     {%- render 'css-variables' -%}
     {%- render 'js-variables' -%}
-    {% render 'returnprime_js' %}
-    <script>
-      if (!(HTMLScriptElement.supports && HTMLScriptElement.supports('importmap'))) {
-        const importMapPolyfill = document.createElement('script');
-        importMapPolyfill.async = true;
-        importMapPolyfill.src = "{{ 'es-module-shims.min.js' | asset_url }}";
-
-        document.head.appendChild(importMapPolyfill);
-      }
-    </script>
 
     <script type="importmap">
       {%- comment -%}On Safari 16.3 and lower, a polyfill is used to load importmap{%- endcomment -%}
@@ -69,34 +59,13 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
 
     <script type="module" src="{{ 'vendor.min.js' | asset_url }}"></script>
     <script type="module" src="{{ 'theme.js' | asset_url }}"></script>
-    <script type="module" src="{{ 'sections.js' | asset_url }}"></script>
 
     {{ content_for_header }}
 
-
-
-
     {{- 'theme.css' | asset_url | stylesheet_tag: preload: true -}}
-    
-    {%- comment -%}Optimized font loading - preload and async{%- endcomment -%}
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
-    </noscript>
-    
+  </head>
 
-    {%- comment -%}Move large CSS blocks to external file for better caching{%- endcomment -%}
-    {% if request.page_type == 'product' %}
-      {{ 'judgeme-custom.css' | asset_url | stylesheet_tag }}
-    {% endif %}
-
-
-    
-</head>
-
-  <body class="{% if settings.show_page_transition %}page-transition{% endif %} {% if settings.zoom_image_on_hover %}zoom-image--enabled{% endif %}">
+  <body class="{% if settings.zoom_image_on_hover %}zoom-image--enabled{% endif %}">
     {%- render 'shadow-dom-templates' -%}
 
     <a href="#main" class="skip-to-content sr-only">{{ 'general.accessibility.skip_to_content' | t }}</a>
@@ -125,82 +94,5 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         {%- sections 'footer-group' -%}
       {%- endif -%}
     </main>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P75GTR4" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    {% include 'subscribe-it-helper' %}
-    {%- render 'flits_capture_code' with 'load_snippet', template: 'flits_snippet' -%}
-    {% comment %} {% render 'appikon-discounts' %} {% endcomment %}
-    {%- if request.page_type == 'product'%}
-      <script src="https://form.jotform.com/static/feedback2.js" defer></script>
-      <script defer>
-        document.addEventListener('DOMContentLoaded', function() {
-          var JFL_201834565399466 = new JotformFeedback({
-            formId: '201834565399466',
-            base: 'https://form.jotform.com/',
-            windowTitle: 'Talk to a Headphone Guru',
-            background: '#ffffff',
-            fontColor: '#444444',
-            type: '1',
-            height: 500,
-            width: 700,
-            openOnLoad: false
-          });
-        });
-      </script>
-    {%- endif -%}
-    <script defer>
-      if(location.pathname !== "/account") {
-        document.addEventListener('DOMContentLoaded', function() {
-          const reviewTab = document.querySelector("a#ireviews");
-          const reviewSection = document.querySelector("div#judgeme_product_reviews");
-          
-          if (reviewTab && reviewSection) {
-            reviewTab.addEventListener("click", function() {
-              reviewSection.scrollIntoView({ behavior: 'smooth' });
-            });
-          }
-        });
-      }
-    </script>
-        {%- comment -%}Optimized inline styles{%- endcomment -%}
-    {% if template contains 'product' %}
-      <style>.jdgm-prev-badge{float:right!important}
-        
-      </style>
-    {% endif %}
-    {% if template contains 'collection' %}
-      <style>.text-on-sale{font-size:0.9rem}</style>
-    {% endif %}
-    {% render 'returnprime_css' %}
-    {% render 'returnprime_js' %} 
-
-{% if template contains 'product' and product.tags contains 'hidenotify' %}
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const observer = new MutationObserver(function (mutations) {
-      mutations.forEach(function (mutation) {
-        mutation.addedNodes.forEach(function (node) {
-          if (node.nodeType === 1) { // Ensure it's an element node
-            const btn = node.querySelector('.bitespeed-notify-me-button') || (node.classList && node.classList.contains('bitespeed-notify-me-button') ? node : null);
-            if (btn) {
-              btn.style.display = 'none';
-              observer.disconnect(); // Stop observing once button is hidden
-            }
-          }
-        });
-      });
-    });
-
-    observer.observe(document.body, { childList: true, subtree: true });
-  });
-</script>
-{% endif %}
-
-
-   
-
   </body>
 </html>
