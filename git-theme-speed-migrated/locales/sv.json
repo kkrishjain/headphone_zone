@@ -351,6 +351,10 @@
       "one_result": "Det finns en fraktkostnad för din adress:",
       "multiple_results": "Det finns flera fraktpriser för din adress:",
       "error": "Ett eller flera fel uppstod vid hämtning av fraktpriser:"
+    },
+    "discount": {
+      "label": "Rabattkod",
+      "error": "Ange en giltig rabattkod"
     }
   },
   "404": {
@@ -367,7 +371,7 @@
       "products": "Produkter",
       "suggestions": "Förslag",
       "collections": "Samlingar",
-      "posts": "Blogginlägg",
+      "articles": "Blogginlägg",
       "pages": "Sidor",
       "clear": "Ta bort",
       "view_all": "Visa alla",

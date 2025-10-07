@@ -352,6 +352,10 @@
       "one_result": "Jūsu adresē ir pieejams viens piegādes tarifs:",
       "multiple_results": "Jūsu adresē ir pieejami vairāk piegādes tarifi:",
       "error": "Aprēķinot piegādes tarifus, radās viena vai vairākas kļūdas:"
+    },
+    "discount": {
+      "label": "Atlaides kods",
+      "error": "Ievadiet derīgu atlaides kodu"
     }
   },
   "404": {
@@ -368,7 +372,7 @@
       "products": "Produktus",
       "suggestions": "Ieteikumi",
       "collections": "Kolekcijas",
-      "posts": "Bloga rakstus",
+      "articles": "Bloga rakstus",
       "pages": "Lapas",
       "clear": "Notīrīt",
       "view_all": "Skatīt visu",
