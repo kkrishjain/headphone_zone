@@ -351,6 +351,10 @@
       "one_result": "Det er en fraktpris til din adresse:",
       "multiple_results": "Det er flere fraktpriser til din adresse:",
       "error": "Én eller flere feil oppstod under innhenting av fraktpriser:"
+    },
+    "discount": {
+      "label": "Rabattkode",
+      "error": "Skriv inn en gyldig rabattkode"
     }
   },
   "404": {
@@ -367,7 +371,7 @@
       "products": "Produkter",
       "suggestions": "Forslag",
       "collections": "Samlinger",
-      "posts": "Blogginnlegg",
+      "articles": "Blogginnlegg",
       "pages": "Sider",
       "clear": "Fjern",
       "view_all": "Vis alle",

@@ -351,6 +351,10 @@
       "one_result": "Er is één verzendtarief voor je adres:",
       "multiple_results": "Er zijn meerdere verzendtarieven voor je adres:",
       "error": "Er zijn een of meer fouten opgetreden bij het ophalen van de verzendtarieven:"
+    },
+    "discount": {
+      "label": "Kortingscode",
+      "error": "Voer een geldige kortingscode in"
     }
   },
   "404": {
@@ -367,7 +371,7 @@
       "products": "Producten",
       "suggestions": "Suggesties",
       "collections": "Collecties",
-      "posts": "Blogberichten",
+      "articles": "Blogberichten",
       "pages": "Pagina's",
       "clear": "Wissen",
       "view_all": "Alles weergeven",

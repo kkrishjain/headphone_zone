@@ -357,6 +357,10 @@
       "one_result": "Jūsų adresui taikomas vienas siuntimo tarifas:",
       "multiple_results": "Jūsų adresui taikomi keli siuntimo tarifai:",
       "error": "Nuskaitant siuntimo tarifus įvyko viena arba daugiau klaidų:"
+    },
+    "discount": {
+      "label": "Nuolaidos kodas",
+      "error": "Įveskite galiojantį nuolaidos kodą"
     }
   },
   "404": {
@@ -373,7 +377,7 @@
       "products": "Prekės",
       "suggestions": "Pasiūlymai",
       "collections": "Rinkiniai",
-      "posts": "Tinklaraščio įrašai",
+      "articles": "Tinklaraščio įrašai",
       "pages": "Puslapiai",
       "clear": "Išvalyti",
       "view_all": "Peržiūrėti visus",

@@ -350,6 +350,10 @@
       "one_result": "配送至您的地址有一種運費：",
       "multiple_results": "配送至您的地址有數種運費：",
       "error": "檢索運費時出現一個或多個錯誤："
+    },
+    "discount": {
+      "label": "折扣碼",
+      "error": "請輸入有效的折扣碼"
     }
   },
   "404": {
@@ -366,7 +370,7 @@
       "products": "產品",
       "suggestions": "建議",
       "collections": "系列",
-      "posts": "部落格文章",
+      "articles": "部落格文章",
       "pages": "頁面",
       "clear": "清除",
       "view_all": "查看全部",
